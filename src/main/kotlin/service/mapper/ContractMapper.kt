@@ -11,7 +11,7 @@ class ContractMapper {
     fun getJson() {
         try {
             InputStreamReader(
-                this.javaClass.getResourceAsStream("/sample-contract.json")
+                this.javaClass.getResourceAsStream("/contracts/sample-contract3.json")
             ).use { reader ->
                 val result: ContractModel = Gson().fromJson(reader, ContractModel::class.java)
                 println(result.consumer.name) // prints "bat"

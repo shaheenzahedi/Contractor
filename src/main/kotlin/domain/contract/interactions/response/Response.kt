@@ -1,7 +1,8 @@
-package domain.contract
+package domain.contract.interactions.response
 
 
 import com.google.gson.annotations.SerializedName
+import domain.contract.interactions.response.matchingRules.MatchingRules
 
 data class Response(
     @SerializedName("body")

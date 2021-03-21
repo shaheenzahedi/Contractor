@@ -1,7 +1,8 @@
-package domain.contract
+package domain.contract.interactions
 
 
 import com.google.gson.annotations.SerializedName
+import domain.contract.interactions.response.Response
 
 data class Interaction(
     @SerializedName("description")
