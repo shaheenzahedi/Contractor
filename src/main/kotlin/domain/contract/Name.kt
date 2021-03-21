@@ -1,11 +1,11 @@
-package data.contract
+package domain.contract
 
 
 import com.google.gson.annotations.SerializedName
 
-data class ContentType(
+data class Name(
     @SerializedName("combine")
     val combine: String,
     @SerializedName("matchers")
-    val matchers: List<MatcherX>
+    val matchers: List<Matcher>
 )

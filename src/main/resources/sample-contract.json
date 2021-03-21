@@ -40,23 +40,23 @@
                                 }
                             ],
                             "combine": "AND"
-
+                        }
                     }
-                }
-            },
-            "providerStates": [
-                {
-                    "name": "User 1 exists"
-                }
-            ]
-
+                },
+                "providerStates": [
+                    {
+                        "name": "User 1 exists"
+                    }
+                ]
+            }
+        }
     ],
     "metadata": {
         "pactSpecification": {
             "version": "3.0.0"
         },
         "pact-jvm": {
-            "version": "3.5.24
+            "version": "3.5.24"
         }
     }
 }

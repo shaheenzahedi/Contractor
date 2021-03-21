@@ -1,4 +1,7 @@
 package presentation
+
+import service.mapper.ContractMapper
+
 fun main(args: Array<String>) {
-    println("Hello World!")
+    ContractMapper().getJson()
 }

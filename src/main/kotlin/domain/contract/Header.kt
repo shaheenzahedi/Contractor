@@ -1,4 +1,4 @@
-package data.contract
+package domain.contract
 
 
 import com.google.gson.annotations.SerializedName
