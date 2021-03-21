@@ -1,9 +1,9 @@
-package data
+package data.contract
 
 
 import com.google.gson.annotations.SerializedName
 
-data class Header(
+data class Headers(
     @SerializedName("Content-Type")
-    val contentType: ContentType
+    val contentType: String
 )

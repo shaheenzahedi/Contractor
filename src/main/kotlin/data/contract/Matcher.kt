@@ -1,4 +1,4 @@
-package data
+package data.contract
 
 
 import com.google.gson.annotations.SerializedName
