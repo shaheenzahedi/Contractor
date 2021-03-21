@@ -6,10 +6,7 @@ import java.io.File
 
 
 class JsonMapper<T> {
-    fun getJson(clazz: Class<T>,path:String): T =
-        Gson()
-            .fromJson(
-                File(path).readText(),
-                clazz
-            )
+    fun getJson(clazz: Class<T>, path: String): T = path.asResource { Gson().fromJson(it, clazz) }
+    private fun String.asResource(work: (String) -> T) = work(getResourceAsText(this))
+    private fun getResourceAsText(path: String) = File(path).readText()
 }
