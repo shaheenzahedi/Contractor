@@ -1,9 +1,9 @@
-package domain.contract.interactions.response.matchingRules
+package domain.contract.interactions
 
 
 import com.google.gson.annotations.SerializedName
 
-data class Name(
+data class CombineMatchers(
     @SerializedName("combine")
     val combine: String,
     @SerializedName("matchers")

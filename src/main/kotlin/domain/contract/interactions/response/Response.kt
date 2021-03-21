@@ -2,17 +2,18 @@ package domain.contract.interactions.response
 
 
 import com.google.gson.annotations.SerializedName
-import domain.contract.interactions.response.matchingRules.MatchingRules
+import domain.contract.interactions.MatchingRules
+import domain.contract.interactions.providerStates.ProviderState
 
 data class Response(
+    @SerializedName("status")
+    val status: Int,
     @SerializedName("body")
-    val body: Body,
+    val body: LinkedHashMap<String,Any>,
     @SerializedName("headers")
-    val headers: Headers,
+    val headers: LinkedHashMap<String,Any>,
     @SerializedName("matchingRules")
     val matchingRules: MatchingRules,
     @SerializedName("providerStates")
-    val providerStates: List<ProviderState>,
-    @SerializedName("status")
-    val status: Int
+    val providerStates: List<ProviderState>
 )
