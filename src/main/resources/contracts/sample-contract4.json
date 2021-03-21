@@ -1,0 +1,59 @@
+{
+  "provider": {
+    "name": "Our Provider"
+  },
+  "consumer": {
+    "name": "Our Little Consumer"
+  },
+  "interactions": [
+    {
+      "description": "a request for json data",
+      "request": {
+        "method": "GET",
+        "path": "/provider.json",
+        "query": {
+          "validDate": [
+            "2020-06-16T11:49:49.485"
+          ]
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json; charset=UTF-8"
+        },
+        "body": {
+          "date": "2013-08-16T15:31:20+10:00",
+          "test": "NO",
+          "count": 100
+        },
+        "matchingRules": {
+          "header": {
+            "Content-Type": {
+              "matchers": [
+                {
+                  "match": "regex",
+                  "regex": "application/json(;\\s?charset=[\\w\\-]+)?"
+                }
+              ],
+              "combine": "AND"
+            }
+          }
+        }
+      },
+      "providerStates": [
+        {
+          "name": "data count > 0"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "3.0.0"
+    },
+    "pact-jvm": {
+      "version": "4.1.2"
+    }
+  }
+}
