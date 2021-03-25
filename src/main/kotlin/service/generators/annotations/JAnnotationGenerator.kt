@@ -6,7 +6,7 @@ import com.squareup.javapoet.ClassName
 class JAnnotationGenerator(
     override val springBootTestAnnotation: AnnotationSpec.Builder = AnnotationSpec
         .builder(ClassName.get("org.springframework.boot.test.context", "SpringBootTest"))
-        .addMember("classes", "[MooverApp::class]"),
+        .addMember("classes", "[SampleApp::class]"),
     override val autoConfigureMockMvcAnnotation: AnnotationSpec.Builder = AnnotationSpec
         .builder(ClassName.get("org.springframework.boot.test.autoconfigure.web.servlet", "AutoConfigureMockMvc")),
     override val withMockUserAnnotation: AnnotationSpec.Builder = AnnotationSpec
