@@ -12,6 +12,7 @@ import service.mapper.JsonMapper
 class CDCTestGenApplication : KoinComponent {
     val integrationTestGenerator by inject<IntegrationTestGenerator>()
     val jsonMapper by inject<JsonMapper>()
+    val fileResource by inject<FileResource>()
     val fileResourceModule = module {
         single { FileResource() }
         single { JsonMapper(get() as FileResource) }

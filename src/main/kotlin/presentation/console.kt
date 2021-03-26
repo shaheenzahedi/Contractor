@@ -22,5 +22,9 @@ fun main(args: Array<String>) {
             ContractModel::class.java,
             "src/main/resources/contracts/sample-contract6.json"
         )
-    Files.writeString(Paths.get("src/main/resources/generated_tests/test.java"),application.integrationTestGenerator.getJavaITBuilder().build().toString())
+    application.fileResource.write(
+        "src/main/resources/generated_tests/test.java",
+        application.integrationTestGenerator.getJavaITBuilder().build().toString()
+    )
+
 }
