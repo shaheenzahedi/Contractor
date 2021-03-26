@@ -2,11 +2,11 @@ package service.mapper
 
 
 import com.google.gson.Gson
-import java.io.File
+import service.io.IResource
 
 
-class JsonMapper<T> {
-    fun getJson(clazz: Class<T>, path: String): T = path.asResource { Gson().fromJson(it, clazz) }
-    private inline fun String.asResource(work: (String) -> T) = work(getResourceAsText(this))
-    private fun getResourceAsText(path: String) = File(path).readText()
+class JsonMapper(
+    private val resource: IResource
+) {
+    fun <T> getJson(clazz: Class<T>, path: String): T = Gson().fromJson(resource.getResourceAsRawText(path), clazz)
 }
