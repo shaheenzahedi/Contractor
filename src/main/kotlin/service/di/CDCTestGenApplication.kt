@@ -11,7 +11,7 @@ class CDCTestGenApplication : KoinComponent {
     val integrationTestGenerator by inject<IntegrationTestGenerator>()
     val integrationTestJavaModule = module {
         single { JAnnotationGenerator() }
-        single { JFieldGenerator() }
+        single { JFieldGenerator(get() as JAnnotationGenerator) }
         single { IntegrationTestGenerator(get() as JAnnotationGenerator, get() as JFieldGenerator) }
     }
 }

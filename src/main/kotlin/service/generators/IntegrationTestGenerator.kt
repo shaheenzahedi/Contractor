@@ -10,7 +10,7 @@ import javax.lang.model.element.Modifier as JModifier
 
 class IntegrationTestGenerator(
     private val annotationGenerator: IAnnotationGenerator,
-    private val fieldGenerator:IFieldGenerator
+    private val fieldGenerator: IFieldGenerator
 ) {
     fun getJavaITBuilder(): JTypeSpec.Builder {
         return JTypeSpec.classBuilder("SampleIntegrationTest")
@@ -18,12 +18,6 @@ class IntegrationTestGenerator(
             .addAnnotation(annotationGenerator.autoConfigureMockMvcAnnotation.build())
             .addAnnotation(annotationGenerator.withMockUserAnnotation.build())
             .addAnnotation(annotationGenerator.extensionsAnnotation.build())
-            .addField(
-                JFieldSpec
-                    .builder(JClassName.get("com.example", "SampleRepository"), "fooRepo")
-                    .addAnnotation(annotationGenerator.autowiredAnnotation.build())
-                    .addModifiers(JModifier.PRIVATE, JModifier.STATIC, JModifier.FINAL)
-                    .build()
-            )
+            .addField(fieldGenerator.repositoryField().build())
     }
 }
