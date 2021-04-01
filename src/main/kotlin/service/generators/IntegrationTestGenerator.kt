@@ -19,5 +19,6 @@ class IntegrationTestGenerator(
             .addField(fieldGenerator.repositoryField().build())
             .addMethod(methodGenerator.setupTestMethod().build())
             .addMethod(methodGenerator.initTestMethod().build())
+            .addMethod(methodGenerator.createEntityMethod().build())
     }
 }

@@ -21,7 +21,7 @@ fun main(args: Array<String>) {
         )
 
     application.fileResource.write(
-        "src/main/resources/generated_tests/test.java",
+        "src/main/resources/generated_tests/SampleIntegrationTest.java",
         application.integrationTestGenerator.getJavaBuilder().build().toString()
     )
 

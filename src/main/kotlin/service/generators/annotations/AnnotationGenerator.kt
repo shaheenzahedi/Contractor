@@ -10,4 +10,6 @@ interface AnnotationGenerator {
     val extensionsAnnotation: AnnotationSpec.Builder
     val autowiredAnnotation: AnnotationSpec.Builder
     val beforeEachAnnotation:AnnotationSpec.Builder
+    val transactionalAnnotation:AnnotationSpec.Builder
+    val testAnnotation:AnnotationSpec.Builder
 }

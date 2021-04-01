@@ -17,5 +17,9 @@ class JAnnotationGenerator(
     override val autowiredAnnotation: AnnotationSpec.Builder = AnnotationSpec
         .builder(ClassName.get("org.springframework.beans.factory.annotation", "Autowired")),
     override val beforeEachAnnotation: AnnotationSpec.Builder = AnnotationSpec
-        .builder(ClassName.get("org.junit.jupiter.api", "BeforeEach"))
+        .builder(ClassName.get("org.junit.jupiter.api", "BeforeEach")),
+    override val transactionalAnnotation: AnnotationSpec.Builder = AnnotationSpec
+        .builder(ClassName.get("org.springframework.transaction.annotation", "Transactional")),
+    override val testAnnotation: AnnotationSpec.Builder = AnnotationSpec
+        .builder(ClassName.get("org.junit.jupiter.api", "Test"))
 ) : AnnotationGenerator

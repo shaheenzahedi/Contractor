@@ -5,4 +5,5 @@ import com.squareup.javapoet.MethodSpec
 interface MethodGenerator {
     fun setupTestMethod(): MethodSpec.Builder
     fun initTestMethod(): MethodSpec.Builder
+    fun createEntityMethod(): MethodSpec.Builder
 }
