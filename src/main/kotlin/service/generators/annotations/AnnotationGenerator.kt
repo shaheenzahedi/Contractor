@@ -9,4 +9,5 @@ interface AnnotationGenerator {
     val withMockUserAnnotation: AnnotationSpec.Builder
     val extensionsAnnotation: AnnotationSpec.Builder
     val autowiredAnnotation: AnnotationSpec.Builder
+    val beforeEachAnnotation:AnnotationSpec.Builder
 }
