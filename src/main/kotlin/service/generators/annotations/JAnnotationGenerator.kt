@@ -16,4 +16,4 @@ class JAnnotationGenerator(
         .addMember("value", "ExtendWith(MockitoExtension::class)"),
     override val autowiredAnnotation: AnnotationSpec.Builder = AnnotationSpec
         .builder(ClassName.get("org.springframework.beans.factory.annotation", "Autowired"))
-) : IAnnotationGenerator
+) : AnnotationGenerator

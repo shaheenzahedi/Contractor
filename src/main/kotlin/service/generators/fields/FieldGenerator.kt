@@ -2,6 +2,6 @@ package service.generators.fields
 
 import com.squareup.javapoet.FieldSpec
 
-interface IFieldGenerator {
+interface FieldGenerator {
     fun repositoryField():FieldSpec.Builder
 }

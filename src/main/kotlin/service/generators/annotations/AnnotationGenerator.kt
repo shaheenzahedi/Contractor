@@ -3,7 +3,7 @@ package service.generators.annotations
 import com.squareup.javapoet.AnnotationSpec
 
 
-interface IAnnotationGenerator {
+interface AnnotationGenerator {
     val springBootTestAnnotation: AnnotationSpec.Builder
     val autoConfigureMockMvcAnnotation: AnnotationSpec.Builder
     val withMockUserAnnotation: AnnotationSpec.Builder
