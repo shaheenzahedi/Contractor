@@ -20,5 +20,9 @@ class IntegrationTestGenerator(
             .addMethod(methodGenerator.setupTestMethod().build())
             .addMethod(methodGenerator.initTestMethod().build())
             .addMethod(methodGenerator.createEntityMethod().build())
+            .addMethod(methodGenerator.getAllEntitiesMethod().build())
+            .addMethod(methodGenerator.getEntityMethod().build())
+            .addMethod(methodGenerator.updateEntityMethod().build())
+            .addMethod(methodGenerator.deleteEntityMethod().build())
     }
 }
