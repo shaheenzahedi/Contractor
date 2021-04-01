@@ -17,6 +17,7 @@ class IntegrationTestGenerator(
             .addAnnotation(annotationGenerator.withMockUserAnnotation.build())
             .addAnnotation(annotationGenerator.extensionsAnnotation.build())
             .addField(fieldGenerator.repositoryField().build())
-            .addMethod(methodGenerator.getAllMethod().build())
+            .addMethod(methodGenerator.setupTestMethod().build())
+            .addMethod(methodGenerator.initTestMethod().build())
     }
 }

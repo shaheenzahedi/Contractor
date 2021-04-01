@@ -6,8 +6,11 @@ import service.generators.annotations.JAnnotationGenerator
 class JMethodGenerator(
     private val annotationGenerator: JAnnotationGenerator
 ) : MethodGenerator {
-    override fun getAllMethod(): MethodSpec.Builder {
-        return MethodSpec.methodBuilder("setup")
+    override fun setupTestMethod(): MethodSpec.Builder =
+        MethodSpec.methodBuilder("setup")
             .addAnnotation(annotationGenerator.beforeEachAnnotation.build())
-    }
+
+    override fun initTestMethod(): MethodSpec.Builder =
+        MethodSpec.methodBuilder("initTest")
+            .addAnnotation(annotationGenerator.beforeEachAnnotation.build())
 }
