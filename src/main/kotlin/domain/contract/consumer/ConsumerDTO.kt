@@ -1,9 +1,9 @@
-package domain.contract.interactions.providerStates
+package domain.contract.consumer
 
 
 import com.google.gson.annotations.SerializedName
 
-data class ProviderState(
+data class ConsumerDTO(
     @SerializedName("name")
     val name: String
 )

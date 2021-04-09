@@ -2,21 +2,21 @@ package domain.contract
 
 
 import com.google.gson.annotations.SerializedName
-import domain.contract.consumer.Consumer
-import domain.contract.interactions.Interaction
-import domain.contract.interactions.providerStates.ProviderState
-import domain.contract.metadata.Metadata
-import domain.contract.provider.Provider
+import domain.contract.consumer.ConsumerDTO
+import domain.contract.interactions.InteractionDTO
+import domain.contract.interactions.providerStates.ProviderStateDTO
+import domain.contract.metadata.MetadataDTO
+import domain.contract.provider.ProviderDTO
 
 data class ContractModel(
     @SerializedName("consumer")
-    val consumer: Consumer,
+    val consumerDTO: ConsumerDTO,
     @SerializedName("interactions")
-    val interactions: List<Interaction>,
+    val interactionDTOS: List<InteractionDTO>,
     @SerializedName("metadata")
-    val metadata: Metadata,
+    val metadataDTO: MetadataDTO,
     @SerializedName("provider")
-    val provider: Provider,
+    val providerDTO: ProviderDTO,
     @SerializedName("providerStates")
-    val providerStates: List<ProviderState>
+    val providerStateDTOS: List<ProviderStateDTO>
 )

@@ -3,7 +3,7 @@ package domain.contract.metadata
 
 import com.google.gson.annotations.SerializedName
 
-data class PactJvm(
+data class PactJvmDTO(
     @SerializedName("version")
     val version: String
 )

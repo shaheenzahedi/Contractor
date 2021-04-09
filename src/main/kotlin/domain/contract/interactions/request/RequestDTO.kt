@@ -2,9 +2,9 @@ package domain.contract.interactions.request
 
 
 import com.google.gson.annotations.SerializedName
-import domain.contract.interactions.MatchingRules
+import domain.contract.interactions.MatchingRulesDTO
 
-data class Request(
+data class RequestDTO(
     @SerializedName("method")
     val method: String,
     @SerializedName("path")
@@ -12,5 +12,5 @@ data class Request(
     @SerializedName("query")
     val query: LinkedHashMap<String,Any>,
     @SerializedName("matchingRules")
-    val matchingRules: MatchingRules
+    val matchingRulesDTO: MatchingRulesDTO
 )
