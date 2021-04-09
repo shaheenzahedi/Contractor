@@ -10,10 +10,14 @@ This project is based on a Master's thesis in FUM(Ferdowsi University of Mashhad
 - [ ] Unit Test Genration
     - [ ] Java 
     - [ ] Kotlin
-- [x] Json mapping
+- [x] Library Support
     - [x] Pact
     - [ ] Spring Cloud Contract
-	
+- [x] Input Language Support
+    - [x] Json
+    - [ ] YAML
+    - [ ] Groovy DSL
+    - [ ] Pact DSL
 ### Libraries being used
  - [JavaPoet](https://github.com/square/javapoet)
  - [KotlinPoet](https://square.github.io/kotlinpoet/)
