@@ -1,6 +1,5 @@
 package service.generators.methods
 
-import com.squareup.javapoet.AnnotationSpec
 import com.squareup.javapoet.MethodSpec
 import service.generators.annotations.AnnotationGenerator
 
