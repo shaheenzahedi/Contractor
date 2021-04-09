@@ -5,6 +5,8 @@ import org.koin.core.component.inject
 import org.koin.dsl.module
 import service.generators.IntegrationTestGenerator
 import service.generators.annotations.JAnnotationGenerator
+import service.generators.classes.ClassGenerator
+import service.generators.classes.JClassGenerator
 import service.generators.fields.JFieldGenerator
 import service.generators.methods.JMethodGenerator
 import service.io.FileResource
@@ -19,9 +21,16 @@ class CDCTestGenApplication : KoinComponent {
         single { JsonMapper(get() as FileResource) }
     }
     val integrationTestJavaModule = module {
-        single { JAnnotationGenerator() }
+        single { JClassGenerator() }
+        single { JAnnotationGenerator(get() as JClassGenerator) }
         single { JMethodGenerator(get() as JAnnotationGenerator) }
-        single { JFieldGenerator(get() as JAnnotationGenerator) }
-        single { IntegrationTestGenerator(get() as JAnnotationGenerator, get() as JFieldGenerator, get() as JMethodGenerator) }
+        single { JFieldGenerator(get() as JAnnotationGenerator, get() as JClassGenerator) }
+        single {
+            IntegrationTestGenerator(
+                get() as JAnnotationGenerator,
+                get() as JFieldGenerator,
+                get() as JMethodGenerator
+            )
+        }
     }
 }

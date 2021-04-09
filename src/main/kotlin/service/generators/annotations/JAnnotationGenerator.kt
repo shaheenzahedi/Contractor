@@ -1,25 +1,26 @@
 package service.generators.annotations
 
 import com.squareup.javapoet.AnnotationSpec
-import com.squareup.javapoet.ClassName
+import service.generators.classes.ClassGenerator
 
 class JAnnotationGenerator(
+    private val classGenerator: ClassGenerator,
     override val springBootTestAnnotation: AnnotationSpec.Builder = AnnotationSpec
-        .builder(ClassName.get("org.springframework.boot.test.context", "SpringBootTest"))
+        .builder(classGenerator.getSpringContextAnnotation())
         .addMember("classes", "[SampleApp::class]"),
     override val autoConfigureMockMvcAnnotation: AnnotationSpec.Builder = AnnotationSpec
-        .builder(ClassName.get("org.springframework.boot.test.autoconfigure.web.servlet", "AutoConfigureMockMvc")),
+        .builder(classGenerator.autoConfigureMockMvcAnnotation()),
     override val withMockUserAnnotation: AnnotationSpec.Builder = AnnotationSpec
-        .builder(ClassName.get("org.springframework.security.test.context.support", "WithMockUser")),
+        .builder(classGenerator.withMockUserAnnotation()),
     override val extensionsAnnotation: AnnotationSpec.Builder = AnnotationSpec
-        .builder(ClassName.get("org.junit.jupiter.api.extension", "Extensions"))
+        .builder(classGenerator.extensionsAnnotation())
         .addMember("value", "ExtendWith(MockitoExtension::class)"),
     override val autowiredAnnotation: AnnotationSpec.Builder = AnnotationSpec
-        .builder(ClassName.get("org.springframework.beans.factory.annotation", "Autowired")),
+        .builder(classGenerator.autoWiredAnnotation()),
     override val beforeEachAnnotation: AnnotationSpec.Builder = AnnotationSpec
-        .builder(ClassName.get("org.junit.jupiter.api", "BeforeEach")),
+        .builder(classGenerator.beforeEachAnnotation()),
     override val transactionalAnnotation: AnnotationSpec.Builder = AnnotationSpec
-        .builder(ClassName.get("org.springframework.transaction.annotation", "Transactional")),
+        .builder(classGenerator.transactionalAnnotation()),
     override val testAnnotation: AnnotationSpec.Builder = AnnotationSpec
-        .builder(ClassName.get("org.junit.jupiter.api", "Test"))
+        .builder(classGenerator.testAnnotation())
 ) : AnnotationGenerator
