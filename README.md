@@ -7,8 +7,8 @@ This project is based on a Master's thesis in FUM(Ferdowsi University of Mashhad
 - [x] Integration Test Genration
     - [x] Java 
     - [ ] Kotlin
-- [x] Unit Test Genration
-    - [x] Java 
+- [ ] Unit Test Genration
+    - [ ] Java 
     - [ ] Kotlin
 - [x] Json mapping
     - [x] Pact
