@@ -5,7 +5,6 @@ import org.koin.core.component.inject
 import org.koin.dsl.module
 import service.generators.IntegrationTestGenerator
 import service.generators.annotations.JAnnotationGenerator
-import service.generators.classes.ClassGenerator
 import service.generators.classes.JClassGenerator
 import service.generators.fields.JFieldGenerator
 import service.generators.methods.JMethodGenerator
