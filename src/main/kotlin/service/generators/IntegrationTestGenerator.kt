@@ -10,7 +10,7 @@ class IntegrationTestGenerator(
     private val fieldGenerator: FieldGenerator,
     private val methodGenerator: MethodGenerator
 ) {
-    fun getJavaBuilder(): JTypeSpec.Builder {
+    fun buildJavaTest(): JTypeSpec.Builder {
         return JTypeSpec.classBuilder("SampleIntegrationTest")
             .addAnnotation(annotationGenerator.springBootTestAnnotation.build())
             .addAnnotation(annotationGenerator.autoConfigureMockMvcAnnotation.build())

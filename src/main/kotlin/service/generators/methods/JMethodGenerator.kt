@@ -1,15 +1,16 @@
 package service.generators.methods
 
-import com.squareup.javapoet.AnnotationSpec
 import com.squareup.javapoet.MethodSpec
 import service.generators.annotations.AnnotationGenerator
 
 class JMethodGenerator(
     private val annotationGenerator: AnnotationGenerator
 ) : MethodGenerator {
-    override fun setupTestMethod(): MethodSpec.Builder =
-        MethodSpec.methodBuilder("setup")
+    override fun setupTestMethod(): MethodSpec.Builder {
+        return MethodSpec.methodBuilder("setup")
             .addAnnotation(annotationGenerator.beforeEachAnnotation.build())
+            .addStatement("MockitoAnnotations.initMocks(this)")
+    }
 
     override fun initTestMethod(): MethodSpec.Builder =
         MethodSpec.methodBuilder("initTest")
