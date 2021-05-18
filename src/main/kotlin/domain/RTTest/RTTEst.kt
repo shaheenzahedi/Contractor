@@ -1,9 +1,9 @@
 package domain.RTTest
 
-data class RTTest(
-    val method:HTTPMethod,
-    val name:String,
-    val path:String
-){
+data class ReadyToTestModel(
+    val method: HTTPMethod,
+    val name: String,
+    val path: String
+) {
 
 }

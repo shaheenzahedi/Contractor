@@ -1,6 +1,7 @@
 package service.generators.methods
 
 import com.squareup.javapoet.MethodSpec
+import domain.RTTest.ReadyToTestModel
 import service.generators.annotations.AnnotationGenerator
 
 class JMethodGenerator(
@@ -10,6 +11,13 @@ class JMethodGenerator(
         return MethodSpec.methodBuilder("setup")
             .addAnnotation(annotationGenerator.beforeEachAnnotation.build())
             .addStatement("MockitoAnnotations.initMocks(this)")
+    }
+
+    override fun generateBasicGetMethod(rtModel: List<ReadyToTestModel>): List<MethodSpec> {
+        return rtModel.map {
+            MethodSpec.methodBuilder(it.name)
+                .build()
+        }
     }
 
     override fun initTestMethod(): MethodSpec.Builder =

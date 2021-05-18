@@ -1,14 +1,22 @@
 package service.mapper
 
-import domain.RTTest.RTTest
+import domain.RTTest.HTTPMethod
+import domain.RTTest.ReadyToTestModel
 import domain.contract.ContractModel
+import domain.contract.interactions.request.RequestDTO
 
-class ContractMapper(model: ContractModel) {
-    fun extreactRTTEst(){
-        TODO("Mapping should be more studied as it is complicated")
-//        return RTTest(
-//
-//        )
+
+class ContractMapper(private val model: ContractModel) {
+    fun extreactReadyToTestModel():List<ReadyToTestModel>{
+        return model.interactionDTOS.map { buildModelWith(it.requestDTO) }
+    }
+
+    private fun buildModelWith(dto: RequestDTO):ReadyToTestModel {
+        return ReadyToTestModel(
+            method = HTTPMethod.valueOf(dto.method),
+            path = dto.path,
+            name = "get_person_from_service_contract"
+        )
     }
 }
 

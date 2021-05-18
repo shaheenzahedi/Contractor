@@ -3,8 +3,7 @@ package presentation
 import domain.contract.ContractModel
 import org.koin.core.context.startKoin
 import service.di.CDCTestGenApplication
-import service.io.FileDialog
-import service.io.FileFilter
+import service.mapper.ContractMapper
 
 
 fun main(args: Array<String>) {
@@ -21,13 +20,13 @@ fun main(args: Array<String>) {
             ContractModel::class.java,
             "src/main/resources/contracts/sample-contract3.json"
         )
-    val pathToRoot = FileDialog().open("Please select root folder", isDir = true, null)
-    requireNotNull(pathToRoot) { throw IllegalStateException("You have to choose the root folder.") }
-    val filterFiles = FileFilter().filter(pathToRoot, "regex:*repository*.kt")
-    filterFiles?.forEach(System.out::println);
+//    val pathToRoot = FileDialog().open("Please select root folder", isDir = true, null)
+//    requireNotNull(pathToRoot) { throw IllegalStateException("You have to choose the root folder.") }
+//    val filterFiles = FileFilter().filter(pathToRoot, "regex:*repository*.kt")
+//    filterFiles?.forEach(System.out::println);
     application.fileResource.write(
         "src/main/resources/generated_tests/SampleIntegrationTest.java",
-        application.integrationTestGenerator.buildJavaTest().build().toString()
+        application.integrationTestGenerator.buildJavaTest(ContractMapper(contractModel).extreactReadyToTestModel()).build().toString()
     )
 
 }
