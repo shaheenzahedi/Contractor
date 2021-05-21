@@ -1,10 +1,10 @@
-package domain.contract.interactions
+package domain.contract.pact.interactions
 
 
 import com.google.gson.annotations.SerializedName
-import domain.contract.interactions.providerStates.ProviderStateDTO
-import domain.contract.interactions.request.RequestDTO
-import domain.contract.interactions.response.ResponsedDTO
+import domain.contract.pact.interactions.providerStates.ProviderStateDTO
+import domain.contract.pact.interactions.request.RequestDTO
+import domain.contract.pact.interactions.response.ResponsedDTO
 
 data class InteractionDTO(
     @SerializedName("description")

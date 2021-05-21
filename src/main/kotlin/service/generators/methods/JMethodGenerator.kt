@@ -16,6 +16,7 @@ class JMethodGenerator(
     override fun generateBasicGetMethod(rtModel: List<ReadyToTestModel>): List<MethodSpec> {
         return rtModel.map {
             MethodSpec.methodBuilder(it.name)
+                .addStatement("BDDAssertions.then(personResponseEntity.getValue()).isEqualTo(200)")
                 .build()
         }
     }
