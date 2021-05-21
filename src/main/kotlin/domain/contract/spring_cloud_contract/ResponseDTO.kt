@@ -1,4 +1,4 @@
-package domain.contract.scc
+package domain.contract.spring_cloud_contract
 
 import com.fasterxml.jackson.databind.ObjectMapper
 

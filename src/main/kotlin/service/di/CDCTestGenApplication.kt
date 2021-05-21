@@ -8,7 +8,7 @@ import service.generators.annotations.JAnnotationGenerator
 import service.generators.classes.JClassGenerator
 import service.generators.fields.JFieldGenerator
 import service.generators.methods.JMethodGenerator
-import service.io.FileResource
+import service.io.resource.file.FileResource
 import service.mapper.JsonMapper
 
 class CDCTestGenApplication : KoinComponent {

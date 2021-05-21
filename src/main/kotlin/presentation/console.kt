@@ -1,7 +1,7 @@
 package presentation
 
-import com.fasterxml.jackson.databind.ObjectMapper
-import domain.contract.scc.SpringCloudContractModel
+import domain.contract.pact.PactContractModel
+import domain.contract.spring_cloud_contract.SpringCloudContractModel
 import org.koin.core.context.startKoin
 import service.di.CDCTestGenApplication
 
@@ -13,11 +13,12 @@ fun main(args: Array<String>) {
         modules(application.integrationTestJavaModule)
         modules(application.fileResourceModule)
     }
-    val contractModel = application.jsonMapper
+    val contractModel1 = application.jsonMapper
         .getJson(
             SpringCloudContractModel::class.java,
-            "src/main/resources/contracts/scc/spring-cloud-sample.json"
+            "src/main/resources/contracts/spring_cloud_contract/spring-cloud-sample.json"
         )
+    val contractModel = application.jsonMapper.makeGeneralContract("src/main/resources/contracts/pact/pact-sample.json")
 //    val pathToRoot = FileDialog().open("Please select root folder", isDir = true, null)
 //    requireNotNull(pathToRoot) { throw IllegalStateException("You have to choose the root folder.") }
 //    val filterFiles = FileFilter().filter(pathToRoot, "regex:*repository*.kt")
