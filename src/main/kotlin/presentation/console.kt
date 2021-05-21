@@ -17,10 +17,10 @@ fun main(args: Array<String>) {
         modules(application.fileResourceModule)
     }
     val contractModel = application.jsonMapper.makeGeneralContract("src/main/resources/contracts/pact/pact-sample.json")
-    val pathToRoot = FileDialog().open("Please select root folder", isDir = true, null)
-    requireNotNull(pathToRoot) { throw IllegalStateException("You have to choose the root folder.") }
-    val filterFiles = FileFilter().filter(pathToRoot, "regex:*repository*.kt")
-    filterFiles?.forEach(System.out::println);
+//    val pathToRoot = FileDialog().open("Please select root folder", isDir = true, null)
+//    requireNotNull(pathToRoot) { throw IllegalStateException("You have to choose the root folder.") }
+//    val filterFiles = FileFilter().filter(pathToRoot, "regex:*repository*.kt")
+//    filterFiles?.forEach(System.out::println)
     application.fileResource.write(
         "src/main/resources/generated_tests/SampleIntegrationTest.java",
         application.integrationTestGenerator.buildJavaTest(ContractMapper(contractModel).extreactReadyToTestModel()!!).build().toString()
