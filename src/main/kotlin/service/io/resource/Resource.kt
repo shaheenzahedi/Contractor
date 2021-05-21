@@ -1,4 +1,4 @@
-package service.io
+package service.io.resource
 
 import java.nio.file.Path
 
