@@ -16,7 +16,7 @@ fun main(args: Array<String>) {
     val contractModel = application.jsonMapper
         .getJson(
             SpringCloudContractModel::class.java,
-            "src/main/resources/contracts/scc/sample-contract7.json"
+            "src/main/resources/contracts/scc/spring-cloud-sample.json"
         )
 //    val pathToRoot = FileDialog().open("Please select root folder", isDir = true, null)
 //    requireNotNull(pathToRoot) { throw IllegalStateException("You have to choose the root folder.") }
