@@ -19,10 +19,23 @@ class JMethodGenerator(
         return rtModel.map {
             val methodBody = MethodSpec.methodBuilder("SampleTest")
                 .addStatement("RestTemplate restTemplate = new RestTemplate()")
-                .addStatement("ResponseEntity entity = restTemplate.getForEntity(\"http://localhost:8000/${it.path}\", Object.class);")
-            it.body?.onEach { keyValue-> methodBody.addStatement("BDDAssertions.then(((LinkedHashMap)entity.getBody()).get(\"${keyValue.key}\")).isEqualTo(${keyValue.value});") }
+                .addStatement("ResponseEntity entity = restTemplate.getForEntity(\"http://localhost:8000${it.path}\", Object.class)")
+            it.body?.onEach { entry ->
+                methodBody.addStatement(
+                    "BDDAssertions.then(((LinkedHashMap)entity.getBody()).get(\"${entry.key}\")).isEqualTo(${
+                        putQuotationIfString(
+                            entry.value
+                        )
+                    })"
+                )
+            }
             methodBody.build()
         }
+    }
+
+    private fun putQuotationIfString(entry: Any) = when (entry) {
+        is String -> "\"$entry\""
+        else -> entry
     }
 
     override fun initTestMethod(): MethodSpec.Builder =
