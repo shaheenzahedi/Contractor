@@ -3,8 +3,10 @@ package service.generators.methods
 import com.squareup.javapoet.MethodSpec
 import domain.RTTest.ReadyToTestModel
 import service.generators.annotations.AnnotationGenerator
+import service.generators.classes.ClassGenerator
 
 class JMethodGenerator(
+    private val classGenerator: ClassGenerator,
     private val annotationGenerator: AnnotationGenerator
 ) : MethodGenerator {
     override fun setupTestMethod(): MethodSpec.Builder {
@@ -15,9 +17,11 @@ class JMethodGenerator(
 
     override fun generateBasicGetMethod(rtModel: List<ReadyToTestModel>): List<MethodSpec> {
         return rtModel.map {
-            MethodSpec.methodBuilder(it.url)
-                .addStatement("BDDAssertions.then(personResponseEntity.getValue()).isEqualTo(200)")
-                .build()
+            val methodBody = MethodSpec.methodBuilder("SampleTest")
+                .addStatement("RestTemplate restTemplate = new RestTemplate()")
+                .addStatement("ResponseEntity entity = restTemplate.getForEntity(\"http://localhost:8000/${it.path}\", Object.class);")
+            it.body?.onEach { keyValue-> methodBody.addStatement("BDDAssertions.then(((LinkedHashMap)entity.getBody()).get(\"${keyValue.key}\")).isEqualTo(${keyValue.value});") }
+            methodBody.build()
         }
     }
 

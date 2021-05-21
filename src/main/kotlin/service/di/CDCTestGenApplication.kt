@@ -5,6 +5,7 @@ import org.koin.core.component.inject
 import org.koin.dsl.module
 import service.generators.IntegrationTestGenerator
 import service.generators.annotations.JAnnotationGenerator
+import service.generators.classes.ClassGenerator
 import service.generators.classes.JClassGenerator
 import service.generators.fields.JFieldGenerator
 import service.generators.methods.JMethodGenerator
@@ -22,7 +23,7 @@ class CDCTestGenApplication : KoinComponent {
     val integrationTestJavaModule = module {
         single { JClassGenerator() }
         single { JAnnotationGenerator(get() as JClassGenerator) }
-        single { JMethodGenerator(get() as JAnnotationGenerator) }
+        single { JMethodGenerator(get() as JClassGenerator,get() as JAnnotationGenerator) }
         single { JFieldGenerator(get() as JAnnotationGenerator, get() as JClassGenerator) }
         single {
             IntegrationTestGenerator(

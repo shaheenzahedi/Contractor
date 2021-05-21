@@ -13,7 +13,7 @@ class JsonMapper(
     private val resource: Resource
 ) {
 
-    fun <T> getJson(clazz: Class<T>, path: String): T =
+    private fun <T> getJson(clazz: Class<T>, path: String): T =
         Gson().fromJson(resource.getResourceAsRawText(path), clazz)
 
     fun makeGeneralContract(path: String): GeneralContract {
