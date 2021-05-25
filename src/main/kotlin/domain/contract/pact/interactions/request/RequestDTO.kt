@@ -1,8 +1,8 @@
-package domain.contract.interactions.request
+package domain.contract.pact.interactions.request
 
 
 import com.google.gson.annotations.SerializedName
-import domain.contract.interactions.MatchingRulesDTO
+import domain.contract.pact.interactions.MatchingRulesDTO
 
 data class RequestDTO(
     @SerializedName("method")

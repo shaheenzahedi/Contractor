@@ -1,15 +1,41 @@
 package service.generators.methods
 
 import com.squareup.javapoet.MethodSpec
+import domain.RTTest.ReadyToTestModel
 import service.generators.annotations.AnnotationGenerator
+import service.generators.classes.ClassGenerator
 
 class JMethodGenerator(
+    private val classGenerator: ClassGenerator,
     private val annotationGenerator: AnnotationGenerator
 ) : MethodGenerator {
     override fun setupTestMethod(): MethodSpec.Builder {
         return MethodSpec.methodBuilder("setup")
             .addAnnotation(annotationGenerator.beforeEachAnnotation.build())
             .addStatement("MockitoAnnotations.initMocks(this)")
+    }
+
+    override fun generateBasicGetMethod(rtModel: List<ReadyToTestModel>): List<MethodSpec> {
+        return rtModel.map {
+            val methodBody = MethodSpec.methodBuilder("SampleTest")
+                .addStatement("RestTemplate restTemplate = new RestTemplate()")
+                .addStatement("ResponseEntity entity = restTemplate.getForEntity(\"http://localhost:8000${it.path}\", Object.class)")
+            it.body?.onEach { entry ->
+                methodBody.addStatement(
+                    "BDDAssertions.then(((LinkedHashMap)entity.getBody()).get(\"${entry.key}\")).isEqualTo(${
+                        putQuotationIfString(
+                            entry.value
+                        )
+                    })"
+                )
+            }
+            methodBody.build()
+        }
+    }
+
+    private fun putQuotationIfString(entry: Any) = when (entry) {
+        is String -> "\"$entry\""
+        else -> entry
     }
 
     override fun initTestMethod(): MethodSpec.Builder =

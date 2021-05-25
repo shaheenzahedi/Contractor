@@ -1,6 +1,7 @@
 package service.generators.methods
 
 import com.squareup.javapoet.MethodSpec
+import domain.RTTest.ReadyToTestModel
 
 interface MethodGenerator {
     fun setupTestMethod(): MethodSpec.Builder
@@ -10,4 +11,5 @@ interface MethodGenerator {
     fun getAllEntitiesMethod(): MethodSpec.Builder
     fun updateEntityMethod(): MethodSpec.Builder
     fun deleteEntityMethod(): MethodSpec.Builder
+    fun generateBasicGetMethod(rtModel: List<ReadyToTestModel>): List<MethodSpec>
 }

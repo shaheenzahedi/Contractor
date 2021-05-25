@@ -1,4 +1,4 @@
-package domain.contract.metadata
+package domain.contract.pact.metadata
 
 
 import com.google.gson.annotations.SerializedName
