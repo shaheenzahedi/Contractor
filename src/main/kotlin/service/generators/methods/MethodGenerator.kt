@@ -4,7 +4,7 @@ import com.squareup.javapoet.MethodSpec
 import domain.RTTest.ReadyToTestModel
 
 interface MethodGenerator {
-    fun setupTestMethod(): MethodSpec.Builder
+    fun setupTestMethod(): MethodSpec
     fun initTestMethod(): MethodSpec.Builder
     fun createEntityMethod(): MethodSpec.Builder
     fun getEntityMethod(): MethodSpec.Builder

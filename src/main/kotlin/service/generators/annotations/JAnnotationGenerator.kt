@@ -22,5 +22,7 @@ class JAnnotationGenerator(
     override val transactionalAnnotation: AnnotationSpec.Builder = AnnotationSpec
         .builder(classGenerator.transactionalAnnotation()),
     override val testAnnotation: AnnotationSpec.Builder = AnnotationSpec
-        .builder(classGenerator.testAnnotation())
+        .builder(classGenerator.testAnnotation()),
+    override val beforeAllAnnotation: AnnotationSpec.Builder = AnnotationSpec
+        .builder(classGenerator.beforeAllAnnotation())
 ) : AnnotationGenerator

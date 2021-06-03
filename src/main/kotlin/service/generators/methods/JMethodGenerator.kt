@@ -9,15 +9,17 @@ class JMethodGenerator(
     private val classGenerator: ClassGenerator,
     private val annotationGenerator: AnnotationGenerator
 ) : MethodGenerator {
-    override fun setupTestMethod(): MethodSpec.Builder {
+    override fun setupTestMethod(): MethodSpec {
         return MethodSpec.methodBuilder("setup")
-            .addAnnotation(annotationGenerator.beforeEachAnnotation.build())
+            .addAnnotation(annotationGenerator.beforeAllAnnotation.build())
             .addStatement("MockitoAnnotations.initMocks(this)")
+            .build()
     }
 
     override fun generateBasicGetMethod(rtModel: List<ReadyToTestModel>): List<MethodSpec> {
         return rtModel.flatMap { model ->
             listOf(
+                setupTestMethod(),
                 generateBodyTest(model),
                 generateHeaderTest(model),
                 generateStatusTest(model)

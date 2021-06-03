@@ -13,4 +13,5 @@ interface ClassGenerator {
     fun beforeEachAnnotation(): ClassName
     fun transactionalAnnotation(): ClassName
     fun testAnnotation(): ClassName
+    fun beforeAllAnnotation(): ClassName
 }
