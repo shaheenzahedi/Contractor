@@ -16,7 +16,7 @@ class JMethodGenerator(
     }
 
     override fun generateBasicGetMethod(rtModel: List<ReadyToTestModel>): List<MethodSpec> {
-        return rtModel.flatMap {model->
+        return rtModel.flatMap { model ->
             listOf(
                 generateBodyTest(model),
                 generateHeaderTest(model),
@@ -27,7 +27,7 @@ class JMethodGenerator(
 
     private fun generateStatusTest(model: ReadyToTestModel): MethodSpec {
         val methodBody = MethodSpec.methodBuilder("StatusTest")
-            .addStatement("assert(entity.getStatusCodeValue()==200)")
+            .addStatement("assert(entity.getStatusCodeValue()==${model.status})")
         return methodBody.build()
     }
 
@@ -35,9 +35,11 @@ class JMethodGenerator(
         val methodBody = MethodSpec.methodBuilder("HeaderTest")
             .addStatement("RestTemplate restTemplate = new RestTemplate()")
             .addStatement("ResponseEntity entity = restTemplate.getForEntity(\"http://localhost:8000${model.path}\", Object.class)")
-            .addStatement("List<String> headers = entity.getHeaders().get(\"Content-Type\")")
-            .addStatement("assert (headers != null)")
-            .addStatement("assert (headers.get(0).equals(\"application/json\"))")
+        model.headers?.onEach {
+            methodBody.addStatement("List<String> headers = entity.getHeaders().get(\"${it.key}\")")
+                .addStatement("assert (headers != null)")
+                .addStatement("assert (headers.get(0).equals(\"${it.value}\"))")
+        }
         return methodBody.build()
     }
 
