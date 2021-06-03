@@ -16,21 +16,45 @@ class JMethodGenerator(
     }
 
     override fun generateBasicGetMethod(rtModel: List<ReadyToTestModel>): List<MethodSpec> {
-        return rtModel.map {
-            val methodBody = MethodSpec.methodBuilder("SampleTest")
-                .addStatement("RestTemplate restTemplate = new RestTemplate()")
-                .addStatement("ResponseEntity entity = restTemplate.getForEntity(\"http://localhost:8000${it.path}\", Object.class)")
-            it.body?.onEach { entry ->
-                methodBody.addStatement(
-                    "BDDAssertions.then(((LinkedHashMap)entity.getBody()).get(\"${entry.key}\")).isEqualTo(${
-                        putQuotationIfString(
-                            entry.value
-                        )
-                    })"
-                )
-            }
-            methodBody.build()
+        return rtModel.flatMap {model->
+            listOf(
+                generateBodyTest(model),
+                generateHeaderTest(model),
+                generateStatusTest(model)
+            )
         }
+    }
+
+    private fun generateStatusTest(model: ReadyToTestModel): MethodSpec {
+        val methodBody = MethodSpec.methodBuilder("StatusTest")
+            .addStatement("assert(entity.getStatusCodeValue()==200)")
+        return methodBody.build()
+    }
+
+    private fun generateHeaderTest(model: ReadyToTestModel): MethodSpec {
+        val methodBody = MethodSpec.methodBuilder("HeaderTest")
+            .addStatement("RestTemplate restTemplate = new RestTemplate()")
+            .addStatement("ResponseEntity entity = restTemplate.getForEntity(\"http://localhost:8000${model.path}\", Object.class)")
+            .addStatement("List<String> headers = entity.getHeaders().get(\"Content-Type\")")
+            .addStatement("assert (headers != null)")
+            .addStatement("assert (headers.get(0).equals(\"application/json\"))")
+        return methodBody.build()
+    }
+
+    private fun generateBodyTest(readyToTestModel: ReadyToTestModel): MethodSpec {
+        val methodBody = MethodSpec.methodBuilder("BodyTest")
+            .addStatement("RestTemplate restTemplate = new RestTemplate()")
+            .addStatement("ResponseEntity entity = restTemplate.getForEntity(\"http://localhost:8000${readyToTestModel.path}\", Object.class)")
+        readyToTestModel.body?.onEach { entry ->
+            methodBody.addStatement(
+                "BDDAssertions.then(((LinkedHashMap)entity.getBody()).get(\"${entry.key}\")).isEqualTo(${
+                    putQuotationIfString(
+                        entry.value
+                    )
+                })"
+            )
+        }
+        return methodBody.build()
     }
 
     private fun putQuotationIfString(entry: Any) = when (entry) {
