@@ -23,6 +23,8 @@ class ContractMapper(private val model: GeneralContract) {
             method = dto.request?.method?.let { HTTPMethod.valueOf(it) },
             path = dto.request?.url,
             body = dto.response?.jsonBody,
+            status = dto.response?.status,
+            headers = dto.response?.headers
         )
     }
 
@@ -31,6 +33,8 @@ class ContractMapper(private val model: GeneralContract) {
             method = HTTPMethod.valueOf(dto.requestDTO.method),
             path = dto.requestDTO.path,
             body = dto.responsedDTO.body,
+            status = dto.responsedDTO.status,
+            headers = dto.responsedDTO.headers
         )
     }
 }
