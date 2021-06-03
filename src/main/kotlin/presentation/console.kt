@@ -16,7 +16,9 @@ fun main(args: Array<String>) {
         modules(application.integrationTestJavaModule)
         modules(application.fileResourceModule)
     }
-    val contractModel = application.jsonMapper.makeGeneralContract("src/main/resources/contracts/spring_cloud_contract/spring-cloud-sample.json")
+//    val path = "src/main/resources/contracts/spring_cloud_contract/spring-cloud-sample.json"
+    val path = "src/main/resources/contracts/pact/pact-sample.json"
+    val contractModel = application.jsonMapper.makeGeneralContract(path)
 //    val pathToRoot = FileDialog().open("Please select root folder", isDir = true, null)
 //    requireNotNull(pathToRoot) { throw IllegalStateException("You have to choose the root folder.") }
 //    val filterFiles = FileFilter().filter(pathToRoot, "regex:*repository*.kt")
