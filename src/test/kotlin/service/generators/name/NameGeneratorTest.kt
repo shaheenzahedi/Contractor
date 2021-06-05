@@ -9,26 +9,34 @@ import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.Assertions.*
 
 internal class NameGeneratorTest {
-
+    @Test
+    fun shouldContainHeaderInHeaderName(){
+        val nameGenerator = NameGenerator(ReadyToTestModel(HTTPMethod.GET, null, null, null, null))
+        assert(nameGenerator.getHeaderTestName().contains("Header"))
+    }
+    @Test
+    fun shouldContainStatusAndCodeInStatusName(){
+        val status = 200
+        val nameGenerator = NameGenerator(ReadyToTestModel(HTTPMethod.GET, null, null, null, status))
+        assert(nameGenerator.getStatusTestName().contains("Status"))
+        assert(nameGenerator.getStatusTestName().contains("$status"))
+    }
+    @Test
+    fun shouldContainBodyInBodyName(){
+        val nameGenerator = NameGenerator(ReadyToTestModel(HTTPMethod.GET, null, null, null, null))
+        assert(nameGenerator.getBodyTestName().contains("Body"))
+    }
 
 
     @Test
     fun shouldReturnSampleTestWhenPathIsNull() {
         val nameGenerator = NameGenerator(ReadyToTestModel(HTTPMethod.GET, null, null, null, null))
-        val desiredOutcome = "sampleTest"
-        assert(nameGenerator.getStatusTestName() == desiredOutcome)
-        assert(nameGenerator.getBodyTestName() == desiredOutcome)
-        assert(nameGenerator.getHeaderTestName() == desiredOutcome)
+        val desiredOutcome = "sample"
+        assert(nameGenerator.getStatusTestName().contains(desiredOutcome))
+        assert(nameGenerator.getBodyTestName().contains(desiredOutcome))
+        assert(nameGenerator.getHeaderTestName().contains(desiredOutcome))
     }
 
-    @Test
-    fun shouldReturnSampleTestWhenMethodIsNull() {
-        val nameGenerator = NameGenerator(ReadyToTestModel(null, "somePath", null, null, null))
-        val desiredOutcome = "sampleTest"
-        assert(nameGenerator.getStatusTestName() == desiredOutcome)
-        assert(nameGenerator.getBodyTestName() == desiredOutcome)
-        assert(nameGenerator.getHeaderTestName() == desiredOutcome)
-    }
 
     @Test
     fun generatedNameShouldContainHTTPMethod() {
@@ -42,7 +50,7 @@ internal class NameGeneratorTest {
     @Test
     fun generatedNameShouldShouldBeAbleToRemoveBackSlashes() {
         val nameGenerator = NameGenerator(ReadyToTestModel(HTTPMethod.GET, "/entity/1", null, null, null))
-        val backSlash = "/"
+        val backSlash = '/'
         assertFalse(nameGenerator.getHeaderTestName().contains(backSlash))
         assertFalse(nameGenerator.getBodyTestName().contains(backSlash))
         assertFalse(nameGenerator.getStatusTestName().contains(backSlash))
