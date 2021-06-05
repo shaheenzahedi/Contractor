@@ -6,7 +6,7 @@ import service.generators.fields.FieldGenerator
 import service.generators.methods.MethodGenerator
 import com.squareup.javapoet.TypeSpec as JTypeSpec
 
-class IntegrationTestGenerator(
+class TestGenerator(
     private val annotationGenerator: AnnotationGenerator,
     private val fieldGenerator: FieldGenerator,
     private val methodGenerator: MethodGenerator

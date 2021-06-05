@@ -4,11 +4,15 @@ import com.squareup.javapoet.MethodSpec
 import domain.RTTest.ReadyToTestModel
 import service.generators.annotations.AnnotationGenerator
 import service.generators.classes.ClassGenerator
+import service.generators.name.NameGenerator
 
 class JMethodGenerator(
     private val classGenerator: ClassGenerator,
     private val annotationGenerator: AnnotationGenerator
 ) : MethodGenerator {
+
+    private lateinit var nameGenerator: NameGenerator
+
     override fun setupTestMethod(): MethodSpec {
         return MethodSpec.methodBuilder("setup")
             .addAnnotation(annotationGenerator.beforeAllAnnotation.build())
@@ -17,7 +21,9 @@ class JMethodGenerator(
     }
 
     override fun generateBasicGetMethod(rtModel: List<ReadyToTestModel>): List<MethodSpec> {
+
         return rtModel.flatMap { model ->
+            nameGenerator = NameGenerator(model)
             listOf(
                 setupTestMethod(),
                 generateBodyTest(model),
@@ -28,13 +34,13 @@ class JMethodGenerator(
     }
 
     private fun generateStatusTest(model: ReadyToTestModel): MethodSpec {
-        val methodBody = MethodSpec.methodBuilder("StatusTest")
-            .addStatement("assert(entity.getStatusCodeValue()==${model.status})")
+        val methodBody = MethodSpec.methodBuilder(nameGenerator.getStatusTestName ())
+        .addStatement("assert(entity.getStatusCodeValue() == ${model.status})")
         return methodBody.build()
     }
 
     private fun generateHeaderTest(model: ReadyToTestModel): MethodSpec {
-        val methodBody = MethodSpec.methodBuilder("HeaderTest")
+        val methodBody = MethodSpec.methodBuilder(nameGenerator.getHeaderTestName())
             .addStatement("RestTemplate restTemplate = new RestTemplate()")
             .addStatement("ResponseEntity entity = restTemplate.getForEntity(\"http://localhost:8000${model.path}\", Object.class)")
         model.headers?.onEach {
@@ -46,7 +52,7 @@ class JMethodGenerator(
     }
 
     private fun generateBodyTest(readyToTestModel: ReadyToTestModel): MethodSpec {
-        val methodBody = MethodSpec.methodBuilder("BodyTest")
+        val methodBody = MethodSpec.methodBuilder(nameGenerator.getBodyTestName())
             .addStatement("RestTemplate restTemplate = new RestTemplate()")
             .addStatement("ResponseEntity entity = restTemplate.getForEntity(\"http://localhost:8000${readyToTestModel.path}\", Object.class)")
         readyToTestModel.body?.onEach { entry ->
