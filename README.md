@@ -12,7 +12,7 @@ This project is based on a Master's thesis in FUM(Ferdowsi University of Mashhad
     - [ ] Kotlin
 - [x] Library Support
     - [x] Pact
-    - [ ] Spring Cloud Contract
+    - [x] Spring Cloud Contract
 - [x] Input Language Support
     - [x] Json
     - [ ] YAML

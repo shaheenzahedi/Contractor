@@ -27,9 +27,6 @@
           "name": "test GET"
         }
       ]
-    },
-    {
-      "description": "POST REQUEST"
     }
   ],
   "metadata": {

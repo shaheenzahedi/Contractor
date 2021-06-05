@@ -6,7 +6,7 @@ import com.fasterxml.jackson.databind.ObjectMapper
 data class ResponseDTO(
     val status: Int?,
     val body: String?,
-    val headers: HeadersDTO?,
+    val headers: LinkedHashMap<String,Any>?,
     val transformers: List<String>?,
 ){
     val jsonBody: LinkedHashMap<String, Any>?

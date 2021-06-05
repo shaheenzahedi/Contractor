@@ -8,6 +8,10 @@ class JClassGenerator : ClassGenerator {
         return ClassName.get("com.example", "SampleRepository")
     }
 
+    override fun beforeAllAnnotation(): ClassName {
+        return ClassName.get("org.junit.jupiter.api", "BeforeAll")
+    }
+
     override fun getSpringContextAnnotation(): ClassName {
         return ClassName.get("org.springframework.boot.test.context", "SpringBootTest")
     }
