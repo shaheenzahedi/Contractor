@@ -13,11 +13,13 @@ class NameGenerator(
     }
 
     fun getHeaderTestName(): String {
-        return "HEADERTESTNAME"
+        val changedPath = extractNameFromPath(model.method,model.path)
+        return changedPath
     }
 
     fun getBodyTestName(): String {
-        return "BODYTESTNAME"
+        val changedPath = extractNameFromPath(model.method,model.path)
+        return changedPath
     }
 
 
