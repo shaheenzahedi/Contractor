@@ -10,13 +10,7 @@ import org.junit.jupiter.api.Assertions.*
 
 internal class NameGeneratorTest {
 
-    @BeforeEach
-    fun setUp() {
-    }
 
-    @AfterEach
-    fun tearDown() {
-    }
 
     @Test
     fun shouldReturnSampleTestWhenPathIsNull() {
@@ -46,10 +40,39 @@ internal class NameGeneratorTest {
     }
 
     @Test
-    fun getHeaderTestName() {
+    fun generatedNameShouldShouldBeAbleToRemoveBackSlashes() {
+        val nameGenerator = NameGenerator(ReadyToTestModel(HTTPMethod.GET, "/entity/1", null, null, null))
+        val backSlash = "/"
+        assertFalse(nameGenerator.getHeaderTestName().contains(backSlash))
+        assertFalse(nameGenerator.getBodyTestName().contains(backSlash))
+        assertFalse(nameGenerator.getStatusTestName().contains(backSlash))
     }
 
     @Test
-    fun getBodyTestName() {
+    fun generatedNameShouldConvertIdToWithIdWhenStringEndsWithNumbers() {
+        val nameGenerator = NameGenerator(ReadyToTestModel(HTTPMethod.GET, "/entity/12", null, null, null))
+        val desiredOutcome = "WithId_1"
+        assert(nameGenerator.getHeaderTestName().contains(desiredOutcome))
+        assert(nameGenerator.getBodyTestName().contains(desiredOutcome))
+        assert(nameGenerator.getStatusTestName().contains(desiredOutcome))
+    }
+
+    @Test
+    fun generatedNameShouldConvertIdToWithIdWhenStringContainsNumbers() {
+        val nameGenerator = NameGenerator(ReadyToTestModel(HTTPMethod.GET, "/entity/12/entity2/12", null, null, null))
+        val desiredOutcome = "WithId_1"
+        assert(nameGenerator.getHeaderTestName().contains(desiredOutcome))
+        assert(nameGenerator.getBodyTestName().contains(desiredOutcome))
+        assert(nameGenerator.getStatusTestName().contains(desiredOutcome))
+    }
+
+
+    @Test
+    fun generatedNameShouldConvertRootPath() {
+        val nameGenerator = NameGenerator(ReadyToTestModel(HTTPMethod.GET, "/", null, null, null))
+        val desiredOutcome = "RootPath"
+        assert(nameGenerator.getHeaderTestName().contains(desiredOutcome))
+        assert(nameGenerator.getBodyTestName().contains(desiredOutcome))
+        assert(nameGenerator.getStatusTestName().contains(desiredOutcome))
     }
 }
