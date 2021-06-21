@@ -12,6 +12,10 @@ class JClassGenerator : ClassGenerator {
         return ClassName.get("org.junit.jupiter.api", "BeforeAll")
     }
 
+    override fun getResponseEntity(): TypeName {
+        return ClassName.get("org.springframework.http", "ResponseEntity")
+    }
+
     override fun getSpringContextAnnotation(): ClassName {
         return ClassName.get("org.springframework.boot.test.context", "SpringBootTest")
     }

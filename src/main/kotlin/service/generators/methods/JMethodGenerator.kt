@@ -16,7 +16,8 @@ class JMethodGenerator(
     override fun setupTestMethod(): MethodSpec {
         return MethodSpec.methodBuilder("setup")
             .addAnnotation(annotationGenerator.beforeAllAnnotation.build())
-            .addStatement("MockitoAnnotations.initMocks(this)")
+            .addStatement("RestTemplate restTemplate = new RestTemplate()")
+            .addStatement("entity = restTemplate.getForEntity(\"http://localhost:8000/person/1\", Object.class)")
             .build()
     }
 
@@ -42,8 +43,7 @@ class JMethodGenerator(
     private fun generateHeaderTest(model: ReadyToTestModel): MethodSpec {
         val methodBody = MethodSpec.methodBuilder(nameGenerator.getHeaderTestName())
             .addAnnotation(annotationGenerator.testAnnotation.build())
-            .addStatement("RestTemplate restTemplate = new RestTemplate()")
-            .addStatement("ResponseEntity entity = restTemplate.getForEntity(\"http://localhost:8000${model.path}\", Object.class)")
+
         model.headers?.onEach {
             methodBody.addStatement("List<String> headers = entity.getHeaders().get(\"${it.key}\")")
                 .addStatement("assert (headers != null)")
@@ -55,8 +55,6 @@ class JMethodGenerator(
     private fun generateBodyTest(readyToTestModel: ReadyToTestModel): MethodSpec {
         val methodBody = MethodSpec.methodBuilder(nameGenerator.getBodyTestName())
             .addAnnotation(annotationGenerator.testAnnotation.build())
-            .addStatement("RestTemplate restTemplate = new RestTemplate()")
-            .addStatement("ResponseEntity entity = restTemplate.getForEntity(\"http://localhost:8000${readyToTestModel.path}\", Object.class)")
         readyToTestModel.body?.onEach { entry ->
             methodBody.addStatement(
                 "BDDAssertions.then(((LinkedHashMap)entity.getBody()).get(\"${entry.key}\")).isEqualTo(${
