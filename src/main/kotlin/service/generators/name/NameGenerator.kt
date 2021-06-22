@@ -18,7 +18,7 @@ class NameGenerator(
     }
 
     private fun manipulateNameWithMethod(midString: String, rawName: String) =
-        "$midString${model.method?.name}${rawName}"
+        "${model.method?.name}${rawName}${midString}Test"
 
     private val idInPathRegex = "/[0-9]+/*"
     private fun extractNameFromPath(): String {
