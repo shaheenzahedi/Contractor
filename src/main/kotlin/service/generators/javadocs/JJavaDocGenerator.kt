@@ -5,7 +5,13 @@ import com.squareup.javapoet.CodeBlock
 class JJavaDocGenerator : JavaDocGenerator {
     override fun statusTestJavaDocGenerator(code: Int?): CodeBlock {
         return CodeBlock.builder()
-            .add("Checks if the status equals to $code")
+            .add("Asserts if the status equals to $code")
+            .build()
+    }
+
+    override fun bodyTestJavaDocGenerator(): CodeBlock {
+        return CodeBlock.builder()
+            .add("Asserts if the Json is what we expect in the contract")
             .build()
     }
 

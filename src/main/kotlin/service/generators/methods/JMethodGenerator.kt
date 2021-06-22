@@ -25,13 +25,13 @@ class JMethodGenerator(
     }
 
     override fun generateBasicGetMethod(rtModel: List<ReadyToTestModel>): List<MethodSpec> {
-        return rtModel.flatMap { model ->
-            nameGenerator = NameGenerator(model)
+        return rtModel.flatMap { interaction ->
+            nameGenerator = NameGenerator(interaction)
             listOf(
                 setupTestMethod(),
-                generateBodyTest(model),
-                generateHeaderTest(model),
-                generateStatusTest(model)
+                generateBodyTest(interaction),
+                generateHeaderTest(interaction),
+                generateStatusTest(interaction)
             )
         }
     }
@@ -50,7 +50,8 @@ class JMethodGenerator(
             .addAnnotation(annotationGenerator.testAnnotation.build())
 
         model.headers?.onEach {
-            methodBody.addStatement("List<String> headers = entity.getHeaders().get(\"${it.key}\")")
+            methodBody
+                .addStatement("List<String> headers = entity.getHeaders().get(\"${it.key}\")")
                 .addStatement("assert (headers != null)")
                 .addStatement("assert (headers.get(0).equals(\"${it.value}\"))")
         }
@@ -58,7 +59,9 @@ class JMethodGenerator(
     }
 
     private fun generateBodyTest(readyToTestModel: ReadyToTestModel): MethodSpec {
-        val methodBody = MethodSpec.methodBuilder(nameGenerator.getBodyTestName())
+        val methodBody = MethodSpec
+            .methodBuilder(nameGenerator.getBodyTestName())
+            .addJavadoc(javaDocGenerator.bodyTestJavaDocGenerator())
             .addAnnotation(annotationGenerator.testAnnotation.build())
         readyToTestModel.body?.onEach { entry ->
             methodBody.addStatement(
