@@ -11,6 +11,6 @@ class JFieldGenerator(
 ) : FieldGenerator {
     override fun repositoryField(): FieldSpec.Builder = FieldSpec
         .builder(classGenerator.getResponseEntity(), "entity")
-        .addAnnotation(annotationGenerator.autowiredAnnotation.build())
-        .addModifiers(Modifier.PRIVATE, Modifier.STATIC, Modifier.FINAL)
+//        .addAnnotation(annotationGenerator.autowiredAnnotation.build())
+        .addModifiers(Modifier.PRIVATE, Modifier.FINAL)
 }
