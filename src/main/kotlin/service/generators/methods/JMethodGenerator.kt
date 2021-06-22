@@ -39,7 +39,7 @@ class JMethodGenerator(
     private fun generateStatusTest(model: ReadyToTestModel): MethodSpec {
         val methodBody = MethodSpec
             .methodBuilder(nameGenerator.getStatusTestName())
-            .addJavadoc(javaDocGenerator.statusTestJavaDocGenerator(model.status))
+            .addJavadoc(javaDocGenerator.statusTestJavaDocGenerator(model))
             .addAnnotation(annotationGenerator.testAnnotation.build())
             .addStatement("assert(entity.getStatusCodeValue() == ${model.status})")
         return methodBody.build()
@@ -47,8 +47,8 @@ class JMethodGenerator(
 
     private fun generateHeaderTest(model: ReadyToTestModel): MethodSpec {
         val methodBody = MethodSpec.methodBuilder(nameGenerator.getHeaderTestName())
+            .addJavadoc(javaDocGenerator.headerTestJavaDocGenerator(model))
             .addAnnotation(annotationGenerator.testAnnotation.build())
-
         model.headers?.onEach {
             methodBody
                 .addStatement("List<String> headers = entity.getHeaders().get(\"${it.key}\")")

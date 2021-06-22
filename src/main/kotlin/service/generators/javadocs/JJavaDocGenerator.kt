@@ -1,11 +1,21 @@
 package service.generators.javadocs
 
 import com.squareup.javapoet.CodeBlock
+import domain.RTTest.ReadyToTestModel
 
 class JJavaDocGenerator : JavaDocGenerator {
-    override fun statusTestJavaDocGenerator(code: Int?): CodeBlock {
+    override fun statusTestJavaDocGenerator(model: ReadyToTestModel): CodeBlock {
         return CodeBlock.builder()
-            .add("Asserts if the status equals to $code")
+            .add("`${model.method?.name}\t${model.path}\n\n")
+            .add("Asserts if the status equals to ${model.status}")
+            .build()
+    }
+
+    override fun headerTestJavaDocGenerator(model: ReadyToTestModel): CodeBlock {
+        return CodeBlock.builder()
+            .add("`${model.method?.name}\t${model.path}\n\n")
+            .add("Asserts that the response has the desired header\n")
+            .add("Asserts if the response header matches to what we defined in the contract\n")
             .build()
     }
 
