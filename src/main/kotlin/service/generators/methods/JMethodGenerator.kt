@@ -8,7 +8,6 @@ import service.generators.javadocs.JavaDocGenerator
 import service.generators.name.NameGenerator
 
 class JMethodGenerator(
-    private val classGenerator: ClassGenerator,
     private val annotationGenerator: AnnotationGenerator,
     private val javaDocGenerator: JavaDocGenerator
 ) : MethodGenerator {
