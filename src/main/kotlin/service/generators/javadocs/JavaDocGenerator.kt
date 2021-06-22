@@ -8,4 +8,5 @@ interface JavaDocGenerator {
     fun setupTestJavaDocGenerator(): CodeBlock
     fun bodyTestJavaDocGenerator(): CodeBlock
     fun headerTestJavaDocGenerator(model: ReadyToTestModel): CodeBlock
+    fun testClassJavaDocGenerator(): CodeBlock
 }

@@ -11,6 +11,12 @@ class JJavaDocGenerator : JavaDocGenerator {
             .build()
     }
 
+    override fun testClassJavaDocGenerator(): CodeBlock {
+        return CodeBlock.builder()
+            .add("BDD tests generated from the contracts from consumer-side\n\n")
+            .build()
+    }
+
     override fun headerTestJavaDocGenerator(model: ReadyToTestModel): CodeBlock {
         return CodeBlock.builder()
             .add("`${model.method?.name}\t${model.path}\n\n")

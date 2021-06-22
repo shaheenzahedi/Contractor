@@ -26,6 +26,6 @@ class CDCTestGenApplication : KoinComponent {
         single { JAnnotationGenerator(get() as JClassGenerator) }
         single { JMethodGenerator(get() as JClassGenerator, get() as JAnnotationGenerator, get() as JJavaDocGenerator) }
         single { JFieldGenerator(get() as JAnnotationGenerator, get() as JClassGenerator) }
-        single { TestGenerator(get() as JAnnotationGenerator, get() as JFieldGenerator, get() as JMethodGenerator) }
+        single { TestGenerator(get() as JAnnotationGenerator, get() as JFieldGenerator, get() as JMethodGenerator,get() as JJavaDocGenerator) }
     }
 }
