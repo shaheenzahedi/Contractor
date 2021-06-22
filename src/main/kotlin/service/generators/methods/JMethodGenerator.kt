@@ -4,11 +4,13 @@ import com.squareup.javapoet.MethodSpec
 import domain.RTTest.ReadyToTestModel
 import service.generators.annotations.AnnotationGenerator
 import service.generators.classes.ClassGenerator
+import service.generators.javadocs.JavaDocGenerator
 import service.generators.name.NameGenerator
 
 class JMethodGenerator(
     private val classGenerator: ClassGenerator,
-    private val annotationGenerator: AnnotationGenerator
+    private val annotationGenerator: AnnotationGenerator,
+    private val javaDocGenerator: JavaDocGenerator
 ) : MethodGenerator {
 
     private lateinit var nameGenerator: NameGenerator
@@ -34,7 +36,11 @@ class JMethodGenerator(
     }
 
     private fun generateStatusTest(model: ReadyToTestModel): MethodSpec {
-        val methodBody = MethodSpec.methodBuilder(nameGenerator.getStatusTestName())
+        val methodBody = MethodSpec
+            .methodBuilder(nameGenerator.getStatusTestName())
+            .addJavadoc(
+                javaDocGenerator.statusTestJavaDocGenerator(model.status)
+            )
             .addAnnotation(annotationGenerator.testAnnotation.build())
             .addStatement("assert(entity.getStatusCodeValue() == ${model.status})")
         return methodBody.build()
