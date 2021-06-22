@@ -8,4 +8,10 @@ class JJavaDocGenerator : JavaDocGenerator {
             .add("Checks if the status equals to $code")
             .build()
     }
+
+    override fun setupTestJavaDocGenerator(): CodeBlock {
+        return CodeBlock.builder()
+            .add("Retrieves the desired Json and put it into an entity model")
+            .build()
+    }
 }

@@ -18,6 +18,7 @@ class JMethodGenerator(
     override fun setupTestMethod(): MethodSpec {
         return MethodSpec.methodBuilder("setup")
             .addAnnotation(annotationGenerator.beforeAllAnnotation.build())
+            .addJavadoc(javaDocGenerator.setupTestJavaDocGenerator())
             .addStatement("RestTemplate restTemplate = new RestTemplate()")
             .addStatement("entity = restTemplate.getForEntity(\"http://localhost:8000/person/1\", Object.class)")
             .build()
@@ -38,9 +39,7 @@ class JMethodGenerator(
     private fun generateStatusTest(model: ReadyToTestModel): MethodSpec {
         val methodBody = MethodSpec
             .methodBuilder(nameGenerator.getStatusTestName())
-            .addJavadoc(
-                javaDocGenerator.statusTestJavaDocGenerator(model.status)
-            )
+            .addJavadoc(javaDocGenerator.statusTestJavaDocGenerator(model.status))
             .addAnnotation(annotationGenerator.testAnnotation.build())
             .addStatement("assert(entity.getStatusCodeValue() == ${model.status})")
         return methodBody.build()
