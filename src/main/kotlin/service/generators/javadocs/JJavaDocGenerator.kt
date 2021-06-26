@@ -25,8 +25,9 @@ class JJavaDocGenerator : JavaDocGenerator {
             .build()
     }
 
-    override fun bodyTestJavaDocGenerator(): CodeBlock {
+    override fun bodyTestJavaDocGenerator(model: ReadyToTestModel): CodeBlock {
         return CodeBlock.builder()
+            .add("`${model.method?.name}\t${model.path}\n\n")
             .add("Asserts if the Json is what we expect in the contract")
             .build()
     }
@@ -36,4 +37,5 @@ class JJavaDocGenerator : JavaDocGenerator {
             .add("Retrieves the desired Json and put it into an entity model")
             .build()
     }
+
 }

@@ -60,7 +60,7 @@ class JMethodGenerator(
     private fun generateBodyTest(readyToTestModel: ReadyToTestModel): MethodSpec {
         val methodBody = MethodSpec
             .methodBuilder(nameGenerator.getBodyTestName())
-            .addJavadoc(javaDocGenerator.bodyTestJavaDocGenerator())
+            .addJavadoc(javaDocGenerator.bodyTestJavaDocGenerator(readyToTestModel))
             .addAnnotation(annotationGenerator.testAnnotation.build())
         readyToTestModel.body?.onEach { entry ->
             methodBody.addStatement(
