@@ -1,0 +1,33 @@
+{
+  "id" : "f50ec42c-cb0a-4b7a-8c58-4b51113e868a",
+  "request" : {
+    "urlPath" : "/person/1",
+    "method" : "GET",
+    "queryParameters" : {
+      "limit" : {
+        "equalTo" : "100"
+      },
+      "filter" : {
+        "equalTo" : "email"
+      },
+      "gender" : {
+        "contains" : "[mf]"
+      },
+      "offset" : {
+        "matches" : "[0-9]+"
+      },
+      "loginStartsWith" : {
+        "doesNotMatch" : ".{0,2}"
+      }
+    }
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"id\":1,\"name\":\"foo\",\"surname\":\"bee\"}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    },
+    "transformers" : [ "response-template", "spring-cloud-contract" ]
+  },
+  "uuid" : "f50ec42c-cb0a-4b7a-8c58-4b51113e868a"
+}
