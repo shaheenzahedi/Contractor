@@ -1,7 +1,7 @@
 package service.generators.javadocs
 
 import com.squareup.javapoet.CodeBlock
-import domain.RTTest.ReadyToTestModel
+import domain.ready_to_generate.ReadyToTestModel
 
 class JJavaDocGenerator : JavaDocGenerator {
     private fun makeCodeBlock(commentLines: List<String>): CodeBlock {

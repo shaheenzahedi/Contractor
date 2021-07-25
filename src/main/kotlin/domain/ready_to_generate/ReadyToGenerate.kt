@@ -1,4 +1,4 @@
-package domain.RTTest
+package domain.ready_to_generate
 
 data class ReadyToTestModel(
     val method: HTTPMethod?,

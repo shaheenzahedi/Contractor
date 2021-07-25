@@ -1,6 +1,6 @@
 package service.generators.name
 
-import domain.RTTest.ReadyToTestModel
+import domain.ready_to_generate.ReadyToTestModel
 
 class NameGenerator(
     private val model: ReadyToTestModel

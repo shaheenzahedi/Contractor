@@ -1,7 +1,7 @@
 package service.mapper
 
-import domain.RTTest.HTTPMethod
-import domain.RTTest.ReadyToTestModel
+import domain.ready_to_generate.HTTPMethod
+import domain.ready_to_generate.ReadyToTestModel
 import domain.contract.GeneralContract
 import domain.contract.SupportedTypes
 import domain.contract.pact.PactContractModel

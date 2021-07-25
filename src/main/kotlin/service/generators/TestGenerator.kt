@@ -1,6 +1,6 @@
 package service.generators
 
-import domain.RTTest.ReadyToTestModel
+import domain.ready_to_generate.ReadyToTestModel
 import service.generators.annotations.AnnotationGenerator
 import service.generators.fields.FieldGenerator
 import service.generators.javadocs.JavaDocGenerator

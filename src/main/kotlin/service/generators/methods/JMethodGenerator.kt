@@ -1,9 +1,8 @@
 package service.generators.methods
 
 import com.squareup.javapoet.MethodSpec
-import domain.RTTest.ReadyToTestModel
+import domain.ready_to_generate.ReadyToTestModel
 import service.generators.annotations.AnnotationGenerator
-import service.generators.classes.ClassGenerator
 import service.generators.javadocs.JavaDocGenerator
 import service.generators.name.NameGenerator
 
