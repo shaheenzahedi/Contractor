@@ -8,6 +8,7 @@ data class RequestDTO (
     val body: String?,
     val headers: LinkedHashMap<String,Any>?,
     val method: String,
+    val queryParameters:LinkedHashMap<String,LinkedHashMap<String,Any>>?
 ){
     val jsonBody: java.util.LinkedHashMap<*, *>?
         get() {
