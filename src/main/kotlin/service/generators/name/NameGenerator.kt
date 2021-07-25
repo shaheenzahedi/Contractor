@@ -24,10 +24,10 @@ class NameGenerator(
     private fun extractNameFromPath(): String {
         var result = model.path
         requireNotNull(result) { return "sample" }
-        fun removeBackSlashFromString(inp: String) = inp.replace("/", "_")
+        fun replaceAcceptedCharacters(inp: String) = inp.replace('/', '_').replace('-','_')
         if (result.startsWith('/')) result = result.substring(1)
-        result = result.replace(Regex(idInPathRegex)) { "WithId${removeBackSlashFromString(it.value)}" }
-        result = removeBackSlashFromString(result).capitalize()
+        result = result.replace(Regex(idInPathRegex)) { "WithId${replaceAcceptedCharacters(it.value)}" }
+        result = replaceAcceptedCharacters(result).capitalize()
         if (result.isEmpty()) result = "RootPath"
         return result
     }
