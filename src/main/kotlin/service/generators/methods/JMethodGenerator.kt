@@ -47,7 +47,7 @@ class JMethodGenerator(
         val methodBody = MethodSpec.methodBuilder(nameGenerator.getHeaderTestName())
             .addJavadoc(javaDocGenerator.headerTestJavaDocGenerator(model))
             .addAnnotation(annotationGenerator.testAnnotation.build())
-        model.headers?.onEach {
+        model.response?.headers?.onEach {
             methodBody
                 .addStatement("List<String> headers = entity.getHeaders().get(\"${it.key}\")")
                 .addStatement("assert (headers != null)")
@@ -61,7 +61,7 @@ class JMethodGenerator(
             .methodBuilder(nameGenerator.getBodyTestName())
             .addJavadoc(javaDocGenerator.bodyTestJavaDocGenerator(readyToTestModel))
             .addAnnotation(annotationGenerator.testAnnotation.build())
-        readyToTestModel.body?.onEach { entry ->
+        readyToTestModel.response?.body?.onEach { entry ->
             methodBody.addStatement(
                 "BDDAssertions.then(((LinkedHashMap)entity.getBody()).get(\"${entry.key}\")).isEqualTo(${
                     putQuotationIfString(

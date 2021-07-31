@@ -10,9 +10,9 @@ data class RequestDTO (
     val method: String,
     val queryParameters:LinkedHashMap<String,LinkedHashMap<String,Any>>?
 ){
-    val jsonBody: java.util.LinkedHashMap<*, *>?
+    val jsonBody: LinkedHashMap<String, Any>?
         get() {
             if (body.isNullOrEmpty())return null
-            return ObjectMapper().readValue(body, LinkedHashMap::class.java)
+            return ObjectMapper().readValue(body, LinkedHashMap::class.java) as LinkedHashMap<String, Any>
         }
 }
