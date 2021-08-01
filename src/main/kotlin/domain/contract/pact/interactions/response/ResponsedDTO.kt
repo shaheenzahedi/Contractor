@@ -15,7 +15,7 @@ data class ResponsedDTO(
     @SerializedName("matchingRules")
     val matchingRulesDTO: MatchingRulesDTO,
     @SerializedName("responseMatchingRules")
-    val responseMatchingRules: LinkedHashMap<String,LinkedHashMap<String,Any>>?,
+    val responseMatchingRules: LinkedHashMap<String,LinkedHashMap<String,String>>?,
     @SerializedName("providerStates")
     val providerStateDTOS: List<ProviderStateDTO>
 )
