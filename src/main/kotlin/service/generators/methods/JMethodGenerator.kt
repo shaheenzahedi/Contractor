@@ -1,10 +1,13 @@
 package service.generators.methods
 
+import com.squareup.javapoet.CodeBlock
 import com.squareup.javapoet.MethodSpec
 import domain.ready_to_generate.ReadyToTestModel
 import service.generators.annotations.AnnotationGenerator
 import service.generators.javadocs.JavaDocGenerator
 import service.generators.name.NameGenerator
+import service.mapper.pact.PactPredicateModel
+import service.mapper.pact.PactPredicateType
 
 class JMethodGenerator(
     private val annotationGenerator: AnnotationGenerator,
@@ -41,15 +44,30 @@ class JMethodGenerator(
     private fun generateBodyRulesTest(interaction: ReadyToTestModel): List<MethodSpec>? {
         val predicates = interaction.response?.bodyPredicates
         if (predicates.isNullOrEmpty()) return null
-        val x = listOf(1,2,3).map { it.toString() }
+        val x = listOf(1, 2, 3).map { it.toString() }
         return predicates.map {
             val methodBody = MethodSpec
                 .methodBuilder(nameGenerator.getRuleName(it))
                 .addJavadoc(javaDocGenerator.rulesJavaDocGenerator(it))
                 .addAnnotation(annotationGenerator.testAnnotation.build())
-//                .addStatement("assert(entity.getStatusCodeValue() == ${model.status})")
+                .addStatement(
+                    generateRuleStatments(it)
+                )
             methodBody.build()
         }
+    }
+
+    private fun generateRuleStatments(model: PactPredicateModel): CodeBlock {
+        if (model.type == PactPredicateType.MATCH){
+            return CodeBlock.builder().apply {
+                add(
+                    "assert(((LinkedHashMap)entity.getBody()).get(\"${model.fieldName}\")).getClass().getSimpleName().equals(\"${model.value}\"))"
+                )
+            }.build()
+        }
+        return CodeBlock.builder().apply {
+            add("assert(Pattern.matches(\"${model.value}\",((LinkedHashMap)entity.getBody()).get(\"${model.fieldName}\")))")
+        }.build()
     }
 
     private fun generateStatusTest(model: ReadyToTestModel): MethodSpec {
