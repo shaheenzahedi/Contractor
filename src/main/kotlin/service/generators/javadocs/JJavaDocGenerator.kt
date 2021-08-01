@@ -2,10 +2,16 @@ package service.generators.javadocs
 
 import com.squareup.javapoet.CodeBlock
 import domain.ready_to_generate.ReadyToTestModel
+import service.mapper.pact.PactPredicateModel
 
 class JJavaDocGenerator : JavaDocGenerator {
-    private fun makeCodeBlock(commentLines: List<String>): CodeBlock {
-        return CodeBlock.builder().apply { commentLines.forEach { add(it) } }.build()
+
+    override fun rulesJavaDocGenerator(model: PactPredicateModel): CodeBlock {
+        return makeCodeBlock(
+            listOf(
+                "Asserts if ${model.fieldName} ${model.type} is ${model.value}"
+            )
+        )
     }
 
     override fun statusTestJavaDocGenerator(model: ReadyToTestModel): CodeBlock {
@@ -46,4 +52,7 @@ class JJavaDocGenerator : JavaDocGenerator {
         return makeCodeBlock(listOf("Retrieves the desired Json and put it into an entity model"))
     }
 
+    private fun makeCodeBlock(commentLines: List<String>): CodeBlock {
+        return CodeBlock.builder().apply { commentLines.forEach { add(it) } }.build()
+    }
 }

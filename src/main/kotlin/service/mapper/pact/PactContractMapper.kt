@@ -26,12 +26,20 @@ class PactContractMapper(
         if (rules.isNullOrEmpty()) return null
         return rules.map {
             val value = it.value.entries.first()
+            val type = PactPredicateType.valueOf(value.key.toUpperCase())
+            val name = extractName(it.key, "body")
             PactPredicateModel(
-                fieldName = extractName(it.key, "body"),
-                type = PactPredicateType.valueOf(value.key.toUpperCase()),
-                value = value.value
+                fieldName = name,
+                type = type,
+                value = if (type == PactPredicateType.MATCH) detectResponseType(name) else value.value
             )
         }
+    }
+
+    private fun detectResponseType(name: String?): String? {
+        if (name == null) return null
+        val value = checkNotNull(interaction.responsedDTO.body.get(name)) { return null }
+        return value.javaClass.simpleName
     }
 
     private fun extractName(fieldName: String, type: String): String? {

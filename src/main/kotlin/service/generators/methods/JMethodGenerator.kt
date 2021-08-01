@@ -22,15 +22,33 @@ class JMethodGenerator(
             .build()
     }
 
-    override fun generateBasicGetMethod(rtModel: List<ReadyToTestModel>): List<MethodSpec> {
+    override fun generateBasicGetMethod(rtModel: List<ReadyToTestModel>): List<MethodSpec?> {
         return rtModel.flatMap { interaction ->
             nameGenerator = NameGenerator(interaction)
-            listOf(
+            listOfNotNull(
                 setupTestMethod(),
                 generateBodyTest(interaction),
                 generateHeaderTest(interaction),
-                generateStatusTest(interaction)
-            )
+                generateStatusTest(interaction),
+            ).toMutableList().apply {
+                val generateBodyRulesTest = generateBodyRulesTest(interaction)
+                if (generateBodyRulesTest != null)
+                    addAll(generateBodyRulesTest)
+            }
+        }
+    }
+
+    private fun generateBodyRulesTest(interaction: ReadyToTestModel): List<MethodSpec>? {
+        val predicates = interaction.response?.bodyPredicates
+        if (predicates.isNullOrEmpty()) return null
+        val x = listOf(1,2,3).map { it.toString() }
+        return predicates.map {
+            val methodBody = MethodSpec
+                .methodBuilder(nameGenerator.getRuleName(it))
+                .addJavadoc(javaDocGenerator.rulesJavaDocGenerator(it))
+                .addAnnotation(annotationGenerator.testAnnotation.build())
+//                .addStatement("assert(entity.getStatusCodeValue() == ${model.status})")
+            methodBody.build()
         }
     }
 

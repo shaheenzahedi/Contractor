@@ -11,5 +11,5 @@ interface MethodGenerator {
     fun getAllEntitiesMethod(): MethodSpec.Builder
     fun updateEntityMethod(): MethodSpec.Builder
     fun deleteEntityMethod(): MethodSpec.Builder
-    fun generateBasicGetMethod(rtModel: List<ReadyToTestModel>): List<MethodSpec>
+    fun generateBasicGetMethod(rtModel: List<ReadyToTestModel>): List<MethodSpec?>
 }
