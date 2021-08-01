@@ -9,9 +9,12 @@ import domain.contract.pact.interactions.InteractionDTO
 import domain.contract.spring_cloud_contract.SpringCloudContractModel
 import domain.ready_to_generate.request.ReadyRequestModel
 import domain.ready_to_generate.response.ReadyResponseModel
+import service.mapper.pact.PactContractMapper
 
 
-class ContractMapper(private val model: GeneralContract) {
+class ContractMapper(
+    private val model: GeneralContract,
+) {
 
     fun extreactReadyToTestModel(): List<ReadyToTestModel>? {
         return when (model.type) {
@@ -27,28 +30,37 @@ class ContractMapper(private val model: GeneralContract) {
             status = dto.response?.status,
             response = ReadyResponseModel(
                 body = dto.response?.jsonBody,
-                headers = dto.response?.headers
+                headers = dto.response?.headers,
+                bodyPredicates = null,
+                headerPredicates = null
             ),
             request = ReadyRequestModel(
                 body = dto.request?.jsonBody,
-                headers = dto.request?.headers
+                headers = dto.request?.headers,
+                bodyPredicates = null,
+                headerPredicates = null
             )
 
         )
     }
 
     private fun buildModelWithPact(dto: InteractionDTO): ReadyToTestModel {
+        val pactMapper = PactContractMapper(dto)
         return ReadyToTestModel(
             method = HTTPMethod.valueOf(dto.requestDTO.method),
             path = dto.requestDTO.path,
             status = dto.responsedDTO.status,
             response = ReadyResponseModel(
                 body = dto.responsedDTO.body,
-                headers = dto.responsedDTO.headers
+                headers = dto.responsedDTO.headers,
+                bodyPredicates = pactMapper.getResponseBodyPredicates() ,
+                headerPredicates = pactMapper.getResponseHeaderPredicates() ,
             ),
             request = ReadyRequestModel(
                 body = dto.requestDTO.query,
-                headers = dto.requestDTO.headers
+                headers = dto.requestDTO.headers,
+                bodyPredicates = pactMapper.getRequestBodyPredicates() ,
+                headerPredicates = pactMapper.getRequestHeaderPredicates() ,
             )
         )
     }
