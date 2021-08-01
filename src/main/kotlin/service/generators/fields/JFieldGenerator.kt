@@ -10,7 +10,7 @@ class JFieldGenerator(
     private val classGenerator: ClassGenerator
 ) : FieldGenerator {
     override fun repositoryField(): FieldSpec.Builder = FieldSpec
-        .builder(classGenerator.getRepository(), "fooRepo")
-        .addAnnotation(annotationGenerator.autowiredAnnotation.build())
-        .addModifiers(Modifier.PRIVATE, Modifier.STATIC, Modifier.FINAL)
+        .builder(classGenerator.getResponseEntity(), "entity")
+//        .addAnnotation(annotationGenerator.autowiredAnnotation.build())
+        .addModifiers(Modifier.PRIVATE, Modifier.FINAL)
 }

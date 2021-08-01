@@ -10,7 +10,11 @@
             "description": "A request to /users/1",
             "request": {
                 "method": "GET",
-                "path": "/users/1"
+                "path": "/users/1",
+                "body": {
+                    "value1": 1,
+                    "value2": "two"
+                }
             },
             "response": {
                 "status": 200,

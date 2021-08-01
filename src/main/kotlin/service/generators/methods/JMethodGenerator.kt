@@ -1,14 +1,17 @@
 package service.generators.methods
 
+import com.squareup.javapoet.CodeBlock
 import com.squareup.javapoet.MethodSpec
-import domain.RTTest.ReadyToTestModel
+import domain.ready_to_generate.ReadyToTestModel
 import service.generators.annotations.AnnotationGenerator
-import service.generators.classes.ClassGenerator
+import service.generators.javadocs.JavaDocGenerator
 import service.generators.name.NameGenerator
+import service.mapper.pact.PactPredicateModel
+import service.mapper.pact.PactPredicateType
 
 class JMethodGenerator(
-    private val classGenerator: ClassGenerator,
-    private val annotationGenerator: AnnotationGenerator
+    private val annotationGenerator: AnnotationGenerator,
+    private val javaDocGenerator: JavaDocGenerator
 ) : MethodGenerator {
 
     private lateinit var nameGenerator: NameGenerator
@@ -16,24 +19,61 @@ class JMethodGenerator(
     override fun setupTestMethod(): MethodSpec {
         return MethodSpec.methodBuilder("setup")
             .addAnnotation(annotationGenerator.beforeAllAnnotation.build())
-            .addStatement("MockitoAnnotations.initMocks(this)")
+            .addJavadoc(javaDocGenerator.setupTestJavaDocGenerator())
+            .addStatement("RestTemplate restTemplate = new RestTemplate()")
+            .addStatement("entity = restTemplate.getForEntity(\"http://localhost:8000/person/1\", Object.class)")
             .build()
     }
 
-    override fun generateBasicGetMethod(rtModel: List<ReadyToTestModel>): List<MethodSpec> {
-        return rtModel.flatMap { model ->
-            nameGenerator = NameGenerator(model)
-            listOf(
+    override fun generateBasicGetMethod(rtModel: List<ReadyToTestModel>): List<MethodSpec?> {
+        return rtModel.flatMap { interaction ->
+            nameGenerator = NameGenerator(interaction)
+            listOfNotNull(
                 setupTestMethod(),
-                generateBodyTest(model),
-                generateHeaderTest(model),
-                generateStatusTest(model)
-            )
+                generateBodyTest(interaction),
+                generateHeaderTest(interaction),
+                generateStatusTest(interaction),
+            ).toMutableList().apply {
+                val generateBodyRulesTest = generateBodyRulesTest(interaction)
+                if (generateBodyRulesTest != null)
+                    addAll(generateBodyRulesTest)
+            }
         }
     }
 
+    private fun generateBodyRulesTest(interaction: ReadyToTestModel): List<MethodSpec>? {
+        val predicates = interaction.response?.bodyPredicates
+        if (predicates.isNullOrEmpty()) return null
+        val x = listOf(1, 2, 3).map { it.toString() }
+        return predicates.map {
+            val methodBody = MethodSpec
+                .methodBuilder(nameGenerator.getRuleName(it))
+                .addJavadoc(javaDocGenerator.rulesJavaDocGenerator(it))
+                .addAnnotation(annotationGenerator.testAnnotation.build())
+                .addStatement(
+                    generateRuleStatments(it)
+                )
+            methodBody.build()
+        }
+    }
+
+    private fun generateRuleStatments(model: PactPredicateModel): CodeBlock {
+        if (model.type == PactPredicateType.MATCH){
+            return CodeBlock.builder().apply {
+                add(
+                    "assert(((LinkedHashMap)entity.getBody()).get(\"${model.fieldName}\")).getClass().getSimpleName().equals(\"${model.value}\"))"
+                )
+            }.build()
+        }
+        return CodeBlock.builder().apply {
+            add("assert(Pattern.matches(\"${model.value}\",((LinkedHashMap)entity.getBody()).get(\"${model.fieldName}\")))")
+        }.build()
+    }
+
     private fun generateStatusTest(model: ReadyToTestModel): MethodSpec {
-        val methodBody = MethodSpec.methodBuilder(nameGenerator.getStatusTestName())
+        val methodBody = MethodSpec
+            .methodBuilder(nameGenerator.getStatusTestName())
+            .addJavadoc(javaDocGenerator.statusTestJavaDocGenerator(model))
             .addAnnotation(annotationGenerator.testAnnotation.build())
             .addStatement("assert(entity.getStatusCodeValue() == ${model.status})")
         return methodBody.build()
@@ -41,11 +81,11 @@ class JMethodGenerator(
 
     private fun generateHeaderTest(model: ReadyToTestModel): MethodSpec {
         val methodBody = MethodSpec.methodBuilder(nameGenerator.getHeaderTestName())
+            .addJavadoc(javaDocGenerator.headerTestJavaDocGenerator(model))
             .addAnnotation(annotationGenerator.testAnnotation.build())
-            .addStatement("RestTemplate restTemplate = new RestTemplate()")
-            .addStatement("ResponseEntity entity = restTemplate.getForEntity(\"http://localhost:8000${model.path}\", Object.class)")
-        model.headers?.onEach {
-            methodBody.addStatement("List<String> headers = entity.getHeaders().get(\"${it.key}\")")
+        model.response?.headers?.onEach {
+            methodBody
+                .addStatement("List<String> headers = entity.getHeaders().get(\"${it.key}\")")
                 .addStatement("assert (headers != null)")
                 .addStatement("assert (headers.get(0).equals(\"${it.value}\"))")
         }
@@ -53,11 +93,11 @@ class JMethodGenerator(
     }
 
     private fun generateBodyTest(readyToTestModel: ReadyToTestModel): MethodSpec {
-        val methodBody = MethodSpec.methodBuilder(nameGenerator.getBodyTestName())
+        val methodBody = MethodSpec
+            .methodBuilder(nameGenerator.getBodyTestName())
+            .addJavadoc(javaDocGenerator.bodyTestJavaDocGenerator(readyToTestModel))
             .addAnnotation(annotationGenerator.testAnnotation.build())
-            .addStatement("RestTemplate restTemplate = new RestTemplate()")
-            .addStatement("ResponseEntity entity = restTemplate.getForEntity(\"http://localhost:8000${readyToTestModel.path}\", Object.class)")
-        readyToTestModel.body?.onEach { entry ->
+        readyToTestModel.response?.body?.onEach { entry ->
             methodBody.addStatement(
                 "BDDAssertions.then(((LinkedHashMap)entity.getBody()).get(\"${entry.key}\")).isEqualTo(${
                     putQuotationIfString(

@@ -1,9 +1,7 @@
 package service.generators.name
 
-import domain.RTTest.HTTPMethod
-import domain.RTTest.ReadyToTestModel
-import org.junit.jupiter.api.AfterEach
-import org.junit.jupiter.api.BeforeEach
+import domain.ready_to_generate.HTTPMethod
+import domain.ready_to_generate.ReadyToTestModel
 import org.junit.jupiter.api.Test
 
 import org.junit.jupiter.api.Assertions.*

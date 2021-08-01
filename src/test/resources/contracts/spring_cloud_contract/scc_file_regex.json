@@ -1,0 +1,22 @@
+{
+  "request" : {
+    "url" : "/multipart",
+    "method" : "PUT",
+    "headers" : {
+      "Content-Type" : {
+        "matches" : "multipart/form-data;boundary=AaB03x.*"
+      }
+    },
+    "bodyPatterns" : [ {
+      "matches" : ".*--(.*)\\r\\nContent-Disposition: form-data; name=\\"formParameter\\"\\r\\n(Content-Type: .*\\r\\n)?(Content-Length: \\\\d+\\r\\n)?\\r\\n\\".+\\"\\r\\n--\\\\1.*"
+    }, {
+      "matches" : ".*--(.*)\\r\\nContent-Disposition: form-data; name=\\"someBooleanParameter\\"\\r\\n(Content-Type: .*\\r\\n)?(Content-Length: \\\\d+\\r\\n)?\\r\\n(true|false)\\r\\n--\\\\1.*"
+    }, {
+      "matches" : ".*--(.*)\\r\\nContent-Disposition: form-data; name=\\"file\\"; filename=\\"[\\\\S\\\\s]+\\"\\r\\n(Content-Type: .*\\r\\n)?(Content-Length: \\\\d+\\r\\n)?\\r\\n[\\\\S\\\\s]+\\r\\n--\\\\1.*"
+  } ]
+},
+"response" : {
+"status" : 200,
+"transformers" : [ "response-template", "foo-transformer" ]
+}
+}

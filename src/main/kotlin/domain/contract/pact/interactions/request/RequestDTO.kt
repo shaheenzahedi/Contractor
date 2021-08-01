@@ -12,5 +12,7 @@ data class RequestDTO(
     @SerializedName("query")
     val query: LinkedHashMap<String,Any>,
     @SerializedName("matchingRules")
-    val matchingRulesDTO: MatchingRulesDTO
+    val matchingRulesDTO: MatchingRulesDTO,
+    @SerializedName("headers")
+    val headers: LinkedHashMap<String,Any>,
 )

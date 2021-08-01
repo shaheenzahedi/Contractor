@@ -1,15 +1,20 @@
 package service.mapper
 
-import domain.RTTest.HTTPMethod
-import domain.RTTest.ReadyToTestModel
+import domain.ready_to_generate.HTTPMethod
+import domain.ready_to_generate.ReadyToTestModel
 import domain.contract.GeneralContract
 import domain.contract.SupportedTypes
 import domain.contract.pact.PactContractModel
 import domain.contract.pact.interactions.InteractionDTO
 import domain.contract.spring_cloud_contract.SpringCloudContractModel
+import domain.ready_to_generate.request.ReadyRequestModel
+import domain.ready_to_generate.response.ReadyResponseModel
+import service.mapper.pact.PactContractMapper
 
 
-class ContractMapper(private val model: GeneralContract) {
+class ContractMapper(
+    private val model: GeneralContract,
+) {
 
     fun extreactReadyToTestModel(): List<ReadyToTestModel>? {
         return when (model.type) {
@@ -22,19 +27,41 @@ class ContractMapper(private val model: GeneralContract) {
         return ReadyToTestModel(
             method = dto.request?.method?.let { HTTPMethod.valueOf(it) },
             path = dto.request?.url,
-            body = dto.response?.jsonBody,
             status = dto.response?.status,
-            headers = dto.response?.headers
+            response = ReadyResponseModel(
+                body = dto.response?.jsonBody,
+                headers = dto.response?.headers,
+                bodyPredicates = null,
+                headerPredicates = null
+            ),
+            request = ReadyRequestModel(
+                body = dto.request?.jsonBody,
+                headers = dto.request?.headers,
+                bodyPredicates = null,
+                headerPredicates = null
+            )
+
         )
     }
 
     private fun buildModelWithPact(dto: InteractionDTO): ReadyToTestModel {
+        val pactMapper = PactContractMapper(dto)
         return ReadyToTestModel(
             method = HTTPMethod.valueOf(dto.requestDTO.method),
             path = dto.requestDTO.path,
-            body = dto.responsedDTO.body,
             status = dto.responsedDTO.status,
-            headers = dto.responsedDTO.headers
+            response = ReadyResponseModel(
+                body = dto.responsedDTO.body,
+                headers = dto.responsedDTO.headers,
+                bodyPredicates = pactMapper.getResponseBodyPredicates() ,
+                headerPredicates = pactMapper.getResponseHeaderPredicates() ,
+            ),
+            request = ReadyRequestModel(
+                body = dto.requestDTO.query,
+                headers = dto.requestDTO.headers,
+                bodyPredicates = pactMapper.getRequestBodyPredicates() ,
+                headerPredicates = pactMapper.getRequestHeaderPredicates() ,
+            )
         )
     }
 }

@@ -1,4 +1,4 @@
-package domain.RTTest
+package domain.ready_to_generate
 
 enum class HTTPMethod {
     PUT,
