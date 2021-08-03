@@ -1,5 +1,11 @@
 /.idea/
 /target/
-/src/main/resources/generated_tests/
+/Contractor-Provider-Side/src/main/resources/generated_tests/
 /build/
 /.gradle/
+/Contractor-Provider-Side/.gradle
+/Contractor-Provider-Side/build
+/Contractor-Provider-Side/out
+/Contractor-Consumer-Side/.gradle
+/Contractor-Consumer-Side/build
+/Contractor-Consumer-Side/out
