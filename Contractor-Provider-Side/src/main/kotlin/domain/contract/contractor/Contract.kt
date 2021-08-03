@@ -3,7 +3,8 @@ package domain.contract.contractor
 
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
-import javax.annotation.processing.Generated
+import domain.contract.GeneralContract
+import domain.contract.SupportedTypes
 
 
 data class Contract(
@@ -18,4 +19,11 @@ data class Contract(
     @SerializedName("interactions")
     @Expose
     var interactions: List<Interaction>? = null
-)
+): GeneralContract {
+    override val type
+        get() = SupportedTypes.CONTRACTOR
+
+    override val isAllNull
+        get() = listOf(provider, consumer, interactions).all { it==null }
+
+}

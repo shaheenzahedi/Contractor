@@ -8,11 +8,11 @@ import com.google.gson.annotations.SerializedName
 data class Rule(
     @SerializedName("name")
     @Expose
-    private val name: String? = null,
+    val name: String? = null,
     @SerializedName("type")
     @Expose
-    private val type: String? = null,
+    val type: String? = null,
     @SerializedName("value")
     @Expose
-    private val value: String? = null
+    val value: String? = null
 )

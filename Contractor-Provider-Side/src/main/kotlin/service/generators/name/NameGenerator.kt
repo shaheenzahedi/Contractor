@@ -1,7 +1,7 @@
 package service.generators.name
 
 import domain.ready_to_generate.ReadyToTestModel
-import service.mapper.pact.PactPredicateModel
+import service.mapper.pact.PredicateModel
 
 class NameGenerator(
     private val model: ReadyToTestModel
@@ -33,7 +33,7 @@ class NameGenerator(
         return result
     }
 
-    fun getRuleName(predicates: PactPredicateModel): String {
+    fun getRuleName(predicates: PredicateModel): String {
         return "check${predicates.fieldName}${predicates.type.name}"
     }
 }

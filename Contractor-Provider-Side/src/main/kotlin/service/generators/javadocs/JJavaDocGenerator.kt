@@ -2,11 +2,11 @@ package service.generators.javadocs
 
 import com.squareup.javapoet.CodeBlock
 import domain.ready_to_generate.ReadyToTestModel
-import service.mapper.pact.PactPredicateModel
+import service.mapper.pact.PredicateModel
 
 class JJavaDocGenerator : JavaDocGenerator {
 
-    override fun rulesJavaDocGenerator(model: PactPredicateModel): CodeBlock {
+    override fun rulesJavaDocGenerator(model: PredicateModel): CodeBlock {
         return makeCodeBlock(
             listOf(
                 "Asserts if ${model.fieldName} ${model.type} is ${model.value}"

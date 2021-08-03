@@ -7,28 +7,37 @@ class PactContractMapper(
     private val interaction: InteractionDTO
 ) {
 
-    fun getRequestBodyPredicates(): PactPredicateModel? {
+    fun getRequestBodyPredicates(): PredicateModel? {
         return null
     }
 
-    fun getRequestHeaderPredicates(): PactPredicateModel? {
+    fun getRequestHeaderPredicates(): PredicateModel? {
         return null
     }
 
-    fun getResponseHeaderPredicates(): PactPredicateModel? {
-        val rules = interaction.responsedDTO.responseMatchingRules
-        if (rules.isNullOrEmpty()) return null
-        return null
-    }
-
-    fun getResponseBodyPredicates(): List<PactPredicateModel>? {
+    fun getResponseHeaderPredicates(): List<PredicateModel>?  {
         val rules = interaction.responsedDTO.responseMatchingRules
         if (rules.isNullOrEmpty()) return null
         return rules.map {
             val value = it.value.entries.first()
             val type = PactPredicateType.valueOf(value.key.toUpperCase())
             val name = extractName(it.key, "body")
-            PactPredicateModel(
+            PredicateModel(
+                fieldName = name,
+                type = type,
+                value = if (type == PactPredicateType.MATCH) detectResponseType(name) else value.value
+            )
+        }
+    }
+
+    fun getResponseBodyPredicates(): List<PredicateModel>? {
+        val rules = interaction.responsedDTO.responseMatchingRules
+        if (rules.isNullOrEmpty()) return null
+        return rules.map {
+            val value = it.value.entries.first()
+            val type = PactPredicateType.valueOf(value.key.toUpperCase())
+            val name = extractName(it.key, "body")
+            PredicateModel(
                 fieldName = name,
                 type = type,
                 value = if (type == PactPredicateType.MATCH) detectResponseType(name) else value.value

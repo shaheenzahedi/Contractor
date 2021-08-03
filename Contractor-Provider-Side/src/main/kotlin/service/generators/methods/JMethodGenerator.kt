@@ -6,7 +6,7 @@ import domain.ready_to_generate.ReadyToTestModel
 import service.generators.annotations.AnnotationGenerator
 import service.generators.javadocs.JavaDocGenerator
 import service.generators.name.NameGenerator
-import service.mapper.pact.PactPredicateModel
+import service.mapper.pact.PredicateModel
 import service.mapper.pact.PactPredicateType
 
 class JMethodGenerator(
@@ -57,7 +57,7 @@ class JMethodGenerator(
         }
     }
 
-    private fun generateRuleStatments(model: PactPredicateModel): CodeBlock {
+    private fun generateRuleStatments(model: PredicateModel): CodeBlock {
         if (model.type == PactPredicateType.MATCH){
             return CodeBlock.builder().apply {
                 add(

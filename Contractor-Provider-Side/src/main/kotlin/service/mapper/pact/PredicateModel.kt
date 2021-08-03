@@ -1,6 +1,6 @@
 package service.mapper.pact
 
-data class PactPredicateModel(
+data class PredicateModel(
     val fieldName: String?,
     val type: PactPredicateType,
     val value: String?

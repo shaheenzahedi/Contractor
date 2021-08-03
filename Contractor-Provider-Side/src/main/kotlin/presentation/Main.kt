@@ -14,17 +14,17 @@ fun main() {
     }
 //    val path = "src/test/resources/contracts/spring_cloud_contract/scc_complex_query_params.json"
     val path = "../sample-contract.json"
-    val generalContractPOJO = application.jsonMapper.getJson(Contract::class.java,path)
+    val generalContractPOJO = application.jsonMapper.makeGeneralContract(path)
 //    val pathToRoot = FileDialog().open("Please select root folder", isDir = true, null)
 //    requireNotNull(pathToRoot) { throw IllegalStateException("You have to choose the root folder.") }
 //    val filterFiles = FileFilter().filter(pathToRoot, "regex:*repository*.kt")
 //    filterFiles?.forEach(System.out::println)
-//    val model = ContractMapper(generalContractPOJO).extreactReadyToTestModel()
-//    requireNotNull(model) { throw Exception("We could not extract model from the contract") }
-//    application.fileResource.write(
-//        "src/presentation.main/resources/generated_tests/SampleIntegrationTest.java",
-//        application.testGenerator.buildJavaTest(model).build().toString()
-//    )
+    val model = ContractMapper(generalContractPOJO).extreactReadyToTestModel()
+    requireNotNull(model) { throw Exception("We could not extract model from the contract") }
+    application.fileResource.write(
+        "src/main/resources/generated_tests/SampleIntegrationTest.java",
+        application.testGenerator.buildJavaTest(model).build().toString()
+    )
 
 
 }

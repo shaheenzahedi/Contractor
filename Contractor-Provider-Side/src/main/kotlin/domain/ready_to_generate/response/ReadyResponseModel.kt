@@ -1,10 +1,10 @@
 package domain.ready_to_generate.response
 
-import service.mapper.pact.PactPredicateModel
+import service.mapper.pact.PredicateModel
 
 data class ReadyResponseModel(
     val body: LinkedHashMap<String, Any>?,
     val headers: LinkedHashMap<String, Any>?,
-    val bodyPredicates: List<PactPredicateModel>?,
-    val headerPredicates: PactPredicateModel?,
+    val bodyPredicates: List<PredicateModel>?,
+    val headerPredicates: List<PredicateModel>?,
 )

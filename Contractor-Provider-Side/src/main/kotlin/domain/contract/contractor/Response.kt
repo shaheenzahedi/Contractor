@@ -10,17 +10,17 @@ import com.google.gson.annotations.SerializedName
 class Response {
     @SerializedName("headers")
     @Expose
-    private val headers: LinkedHashMap<String,Any>? = null
+    val headers: LinkedHashMap<String,Any>? = null
 
     @SerializedName("body")
     @Expose
-    private val body: LinkedHashMap<String,Any>? = null
+    val body: LinkedHashMap<String,Any>? = null
 
     @SerializedName("bodyRules")
     @Expose
-    private val bodyRules: List<Rule>? = null
+    val bodyRules: List<Rule>? = null
 
     @SerializedName("headerRules")
     @Expose
-    private val headerRules: List<Rule>? = null
+    val headerRules: List<Rule>? = null
 }
