@@ -7,7 +7,7 @@ import com.github.tomakehurst.wiremock.stubbing.StubImport.stubImport
 import domain.contractor.Contract
 
 
-class StubGenerator(generalContractPOJO: Contract) {
+class StubGenerator(contract: Contract) {
     fun createAllStubs(): StubImport? {
         return stubImport()
             .stub(get("/one").willReturn(ok().withBody("sssssssssssssssssssssssssssss")))
