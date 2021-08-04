@@ -1,8 +1,8 @@
 import com.github.tomakehurst.wiremock.WireMockServer
-import com.github.tomakehurst.wiremock.client.WireMock
 import com.github.tomakehurst.wiremock.core.WireMockConfiguration.options
 import domain.contractor.Contract
 import service.mapper.JsonMapper
+import service.stub.StubGenerator
 import java.util.*
 
 
@@ -11,14 +11,7 @@ fun main() {
     val path = "../sample-contract.json"
     val generalContractPOJO = JsonMapper().getJson(Contract::class.java,path)
     wireMockServer.start()
-    wireMockServer.stubFor(
-        WireMock.get(WireMock.urlEqualTo("/some/thing"))
-            .willReturn(
-                WireMock.aResponse()
-                    .withHeader("Content-Type", "text/plain")
-                    .withBody("Hello world!")
-            ),
-    )
+//    wireMockServer.importStubs(StubGenerator(generalContractPOJO).createAllStubs())
     Scanner(System.`in`).next()
 }
 
