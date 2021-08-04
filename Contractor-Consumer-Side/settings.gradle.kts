@@ -1,3 +1,3 @@
 
-rootProject.name = "Contractor"
+rootProject.name = "Contractor-Consumer-Side"
 
