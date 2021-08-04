@@ -1,6 +1,3 @@
-package presentation
-
-import domain.contract.contractor.Contract
 import org.koin.core.context.startKoin
 import service.di.CDCTestGenApplication
 import service.mapper.ContractMapper
