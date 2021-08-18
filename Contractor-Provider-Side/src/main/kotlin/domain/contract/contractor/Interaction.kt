@@ -21,10 +21,4 @@ data class Interaction(
     @SerializedName("response")
     @Expose
     val response: ContractorResponse? = null,
-    @SerializedName("response")
-    @Expose
-    val baseUrl: String? = null,
-    @SerializedName("response")
-    @Expose
-    val port: Int? = null
 )

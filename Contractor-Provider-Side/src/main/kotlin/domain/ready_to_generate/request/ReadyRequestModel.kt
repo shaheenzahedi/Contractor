@@ -7,8 +7,6 @@ data class ReadyRequestModel(
     val headers: LinkedHashMap<String, String>?,
     val params: LinkedHashMap<String, String>?,
     val cookies: LinkedHashMap<String, String>?,
-    val urlEncoded: Any?,
-    val bodyPredicates: PredicateModel?,
-    val headerPredicates: PredicateModel?,
+    val data: Any?
 ) {
 }

@@ -20,7 +20,7 @@ class HTTPHandler(private val model: ReadyToTestModel) {
                 params = model.request?.params ?: mapOf(),
                 cookies = model.request?.cookies ?: mapOf(),
                 json = model.request?.body,
-                data = model.request?.urlEncoded
+                data = model.request?.data
             )
             HTTPMethod.POST -> khttp.post(
                 url = path,
@@ -28,7 +28,7 @@ class HTTPHandler(private val model: ReadyToTestModel) {
                 params = model.request?.params ?: mapOf(),
                 cookies = model.request?.cookies ?: mapOf(),
                 json = model.request?.body,
-                data = model.request?.urlEncoded
+                data = model.request?.data
             )
             HTTPMethod.GET -> khttp.get(
                 url = path,
@@ -36,7 +36,7 @@ class HTTPHandler(private val model: ReadyToTestModel) {
                 params = model.request?.params ?: mapOf(),
                 cookies = model.request?.cookies ?: mapOf(),
                 json = model.request?.body,
-                data = model.request?.urlEncoded
+                data = model.request?.data
             )
             HTTPMethod.DELETE -> khttp.delete(
                 url = path,
@@ -44,7 +44,7 @@ class HTTPHandler(private val model: ReadyToTestModel) {
                 params = model.request?.params ?: mapOf(),
                 cookies = model.request?.cookies ?: mapOf(),
                 json = model.request?.body,
-                data = model.request?.urlEncoded
+                data = model.request?.data
             )
             HTTPMethod.PATCH -> khttp.patch(
                 url = path,
@@ -52,7 +52,7 @@ class HTTPHandler(private val model: ReadyToTestModel) {
                 params = model.request?.params ?: mapOf(),
                 cookies = model.request?.cookies ?: mapOf(),
                 json = model.request?.body,
-                data = model.request?.urlEncoded
+                data = model.request?.data
             )
         }
     }
