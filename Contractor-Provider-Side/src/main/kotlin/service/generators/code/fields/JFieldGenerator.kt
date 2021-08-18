@@ -1,8 +1,8 @@
-package service.generators.fields
+package service.generators.code.fields
 
 import com.squareup.javapoet.FieldSpec
-import service.generators.annotations.AnnotationGenerator
-import service.generators.classes.ClassGenerator
+import service.generators.code.annotations.AnnotationGenerator
+import service.generators.code.classes.ClassGenerator
 import javax.lang.model.element.Modifier
 
 class JFieldGenerator(

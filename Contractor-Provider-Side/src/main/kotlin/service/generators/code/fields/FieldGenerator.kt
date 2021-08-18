@@ -1,4 +1,4 @@
-package service.generators.fields
+package service.generators.code.fields
 
 import com.squareup.javapoet.FieldSpec
 

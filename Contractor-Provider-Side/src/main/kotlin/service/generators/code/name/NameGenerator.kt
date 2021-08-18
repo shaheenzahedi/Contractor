@@ -1,4 +1,4 @@
-package service.generators.name
+package service.generators.code.name
 
 import domain.ready_to_generate.ReadyToTestModel
 import service.mapper.pact.PredicateModel

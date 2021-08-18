@@ -1,4 +1,4 @@
-package service.generators.annotations
+package service.generators.code.annotations
 
 import com.squareup.javapoet.AnnotationSpec
 

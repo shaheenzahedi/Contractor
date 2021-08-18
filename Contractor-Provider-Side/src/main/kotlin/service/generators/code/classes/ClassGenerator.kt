@@ -1,4 +1,4 @@
-package service.generators.classes
+package service.generators.code.classes
 
 import com.squareup.javapoet.ClassName
 import com.squareup.javapoet.TypeName
