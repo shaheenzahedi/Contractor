@@ -7,7 +7,6 @@ import domain.contract.contractor.Contract
 import domain.contract.pact.PactContractModel
 import domain.contract.spring_cloud_contract.SpringCloudContractModel
 import service.io.resource.Resource
-import java.lang.IllegalStateException
 
 
 class JsonMapper(

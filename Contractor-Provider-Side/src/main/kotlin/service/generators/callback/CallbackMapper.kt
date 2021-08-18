@@ -16,7 +16,7 @@ class CallbackMapper {
             generator.generateStatusTest()
         ).apply {
             addAll(generator.generateBodyRulesTest())
-            addAll(generator.generateRuleStatementTest(),)
+            addAll(generator.generateRuleStatementTest())
         }.filterNotNull()
     }
 }

@@ -27,11 +27,11 @@ data class Contract(
     @SerializedName("interactions")
     @Expose
     var interactions: List<Interaction>?
-): GeneralContract {
+) : GeneralContract {
     override val type
         get() = SupportedTypes.CONTRACTOR
 
     override val isAllNull
-        get() = listOf(provider, consumer, interactions).all { it==null }
+        get() = listOf(provider, consumer, interactions).all { it == null }
 
 }

@@ -7,6 +7,6 @@ data class ReadyToTestModel(
     val method: HTTPMethod?,
     val path: String?,
     val request: ReadyRequestModel?,
-    val response:ReadyResponseModel?,
+    val response: ReadyResponseModel?,
     val status: Int?,
 )

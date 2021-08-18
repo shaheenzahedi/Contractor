@@ -18,8 +18,10 @@ fun main() {
 //    filterFiles?.forEach(System.out::println)
     val model = ContractMapper(generalContractPOJO).extreactReadyToTestModel()
     requireNotNull(model) {
-        throw Exception("We could not extract model from the contract, " +
-                "check that you're contract is in standard format")
+        throw Exception(
+            "We could not extract model from the contract, " +
+                    "check that you're contract is in standard format"
+        )
     }
 
     application.callbackMapper.callbacks(model)

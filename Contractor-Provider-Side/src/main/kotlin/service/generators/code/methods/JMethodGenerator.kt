@@ -6,8 +6,8 @@ import domain.ready_to_generate.ReadyToTestModel
 import service.generators.code.annotations.AnnotationGenerator
 import service.generators.code.javadocs.JavaDocGenerator
 import service.generators.name.NameGenerator
-import service.mapper.pact.PredicateModel
 import service.mapper.pact.PactPredicateType
+import service.mapper.pact.PredicateModel
 
 class JMethodGenerator(
     private val annotationGenerator: AnnotationGenerator,
@@ -58,7 +58,7 @@ class JMethodGenerator(
     }
 
     private fun generateRuleStatments(model: PredicateModel): CodeBlock {
-        if (model.type == PactPredicateType.MATCH){
+        if (model.type == PactPredicateType.MATCH) {
             return CodeBlock.builder().apply {
                 add(
                     "assert(((LinkedHashMap)entity.getBody()).get(\"${model.fieldName}\")).getClass().getSimpleName().equals(\"${model.value}\"))"

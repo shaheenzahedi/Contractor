@@ -15,7 +15,7 @@ class PactContractMapper(
         return null
     }
 
-    fun getResponseHeaderPredicates(): List<PredicateModel>?  {
+    fun getResponseHeaderPredicates(): List<PredicateModel>? {
         val rules = interaction.responsedDTO.responseMatchingRules
         if (rules.isNullOrEmpty()) return null
         return rules.map {
