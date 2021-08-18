@@ -3,7 +3,7 @@ package service.di
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.inject
 import org.koin.dsl.module
-import service.generators.callback.CallbackGenerator
+import service.generators.callback.CallbackMapper
 import service.generators.code.TestGenerator
 import service.generators.code.annotations.JAnnotationGenerator
 import service.generators.code.classes.JClassGenerator
@@ -15,7 +15,7 @@ import service.mapper.JsonMapper
 
 class CDCTestGenApplication : KoinComponent {
     val testGenerator by inject<TestGenerator>()
-    val callbackGenerator by inject<CallbackGenerator>()
+    val callbackMapper by inject<CallbackMapper>()
     val jsonMapper by inject<JsonMapper>()
     val fileResource by inject<FileResource>()
     val fileResourceModule = module {
