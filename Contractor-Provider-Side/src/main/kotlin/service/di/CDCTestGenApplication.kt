@@ -23,6 +23,7 @@ class CDCTestGenApplication : KoinComponent {
         single { JsonMapper(get() as FileResource) }
     }
     val integrationTestJavaModule = module {
+        single { CallbackMapper() }
         single { JClassGenerator() }
         single { JJavaDocGenerator() }
         single { JAnnotationGenerator(get() as JClassGenerator) }

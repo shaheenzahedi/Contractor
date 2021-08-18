@@ -10,11 +10,11 @@ import domain.contract.SupportedTypes
 data class Contract(
     @SerializedName("base_url")
     @Expose
-    var baseUrl: String = "http://localhost/",
+    var baseUrl: String?,
 
     @SerializedName("port")
     @Expose
-    var port: Int = 8080,
+    var port: Int?,
 
     @SerializedName("provider")
     @Expose

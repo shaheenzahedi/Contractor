@@ -4,7 +4,11 @@ import service.mapper.pact.PredicateModel
 
 data class ReadyRequestModel(
     val body: LinkedHashMap<String, Any>?,
-    val headers: LinkedHashMap<String, Any>?,
+    val headers: LinkedHashMap<String, String>?,
+    val params: LinkedHashMap<String, String>?,
+    val cookies: LinkedHashMap<String, String>?,
+    val urlEncoded: Any?,
     val bodyPredicates: PredicateModel?,
     val headerPredicates: PredicateModel?,
-)
+) {
+}

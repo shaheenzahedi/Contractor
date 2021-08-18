@@ -14,5 +14,5 @@ data class RequestDTO(
     @SerializedName("matchingRules")
     val matchingRulesDTO: MatchingRulesDTO,
     @SerializedName("headers")
-    val headers: LinkedHashMap<String, Any>,
+    val headers: LinkedHashMap<String, String>,
 )
