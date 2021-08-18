@@ -5,7 +5,7 @@ import com.squareup.javapoet.MethodSpec
 import domain.ready_to_generate.ReadyToTestModel
 import service.generators.code.annotations.AnnotationGenerator
 import service.generators.code.javadocs.JavaDocGenerator
-import service.generators.code.name.NameGenerator
+import service.generators.name.NameGenerator
 import service.mapper.pact.PredicateModel
 import service.mapper.pact.PactPredicateType
 
