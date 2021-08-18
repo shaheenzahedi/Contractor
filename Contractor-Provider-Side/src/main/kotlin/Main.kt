@@ -21,6 +21,8 @@ fun main() {
         throw Exception("We could not extract model from the contract, " +
                 "check that you're contract is in standard format")
     }
+
+    application.callbackMapper.callbacks(model)
 //    application.fileResource.write(
 //        "src/main/resources/generated_tests/SampleIntegrationTest.java",
 //        application.testGenerator.buildJavaTest(model).build().toString()
