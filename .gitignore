@@ -11,3 +11,17 @@
 /Contractor-Consumer-Side/.idea/
 /Contractor-Consumer-Side/build/
 /Contractor-Consumer-Side/out/
+
+contractor-front-end/node_modules
+contractor-front-end/.pnp
+contractor-front-end/.pnp.js
+contractor-front-end/coverage
+contractor-front-end/build
+contractor-front-end/.DS_Store
+contractor-front-end/.env.local
+contractor-front-end/.env.development.local
+contractor-front-end/.env.test.local
+contractor-front-end/.env.production.local
+contractor-front-end/npm-debug.log*
+contractor-front-end/yarn-debug.log*
+contractor-front-end/yarn-error.log*
