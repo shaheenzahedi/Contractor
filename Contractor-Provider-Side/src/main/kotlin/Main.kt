@@ -17,7 +17,10 @@ fun main() {
 //    val filterFiles = FileFilter().filter(pathToRoot, "regex:*repository*.kt")
 //    filterFiles?.forEach(System.out::println)
     val model = ContractMapper(generalContractPOJO).extreactReadyToTestModel()
-    requireNotNull(model) { throw Exception("We could not extract model from the contract") }
+    requireNotNull(model) {
+        throw Exception("We could not extract model from the contract, " +
+                "check that you're contract is in standard format")
+    }
     application.fileResource.write(
         "src/main/resources/generated_tests/SampleIntegrationTest.java",
         application.testGenerator.buildJavaTest(model).build().toString()
