@@ -1,6 +1,7 @@
 {
   "provider": "my provider name",
   "consumer": "my consumer body",
+  "base_url": "https://api.hatchways.io/",
   "interactions": [
     {
       "method": "GET",
