@@ -1,3 +1,5 @@
+import domain.presentation.ConsoleColors
+import domain.presentation.colorPrint
 import org.koin.core.context.startKoin
 import service.di.CDCTestGenApplication
 import service.mapper.ContractMapper
@@ -25,11 +27,14 @@ fun main() {
     }
 
     application.callbackMapper.callbacks(model).forEach {
-        val result = when {
-            it.callback.invoke() -> "success"
-            else -> "failed"
+        val result = it.callback.invoke()
+        print("${it.name}\t[")
+        when {
+            result -> colorPrint("SUCCESS", ConsoleColors.GREEN_BOLD)
+            else -> colorPrint("FAILURE", ConsoleColors.RED)
         }
-        println(String.format("%s\t[%s]", it.name, result))
+        print("]\n")
+        println("----------------------------")
     }
 //    application.fileResource.write(
 //        "src/main/resources/generated_tests/SampleIntegrationTest.java",
