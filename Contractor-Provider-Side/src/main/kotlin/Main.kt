@@ -1,6 +1,6 @@
 import org.koin.core.context.startKoin
-import presentation.ConsoleColors
-import presentation.colorPrint
+import presentation.CallbackPresenter
+import presentation.SummaryPresenter
 import service.di.CDCTestGenApplication
 import service.mapper.ContractMapper
 
@@ -21,25 +21,6 @@ fun main() {
         )
     }
 
-    application.callbackMapper.callbacks(model).forEach {
-        val result = it.callback.invoke()
-        print("${it.name}\t[")
-        when {
-            result -> colorPrint("SUCCESS", ConsoleColors.GREEN_BOLD)
-            else -> colorPrint("FAILED", ConsoleColors.RED)
-        }
-        print("]\n")
-        if (!result) {
-            println("EXPECTED:")
-            println(it.expected)
-            println("RECEIVED:")
-            println(it.actual)
-        }
-        println("----------------------------")
-    }
-//    application.fileResource.write(
-//        "src/main/resources/generated_tests/SampleIntegrationTest.java",
-//        application.testGenerator.buildJavaTest(model).build().toString()
-//    )
-
+    val results = CallbackPresenter(application.callbackMapper.callbacks(model)).retrieveSummary()
+    SummaryPresenter(results).showSummary()
 }

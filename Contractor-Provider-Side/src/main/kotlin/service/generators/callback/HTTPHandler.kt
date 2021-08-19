@@ -7,9 +7,11 @@ import service.generators.callback.path.PathGenerate
 
 class HTTPHandler(private val model: ReadyToTestModel) {
     fun retrieveResponse(): Response {
-        val pathToCall = PathGenerate(model.baseUrl,model.port,model.path).retrieveFullPath()
-
-        return performCall(pathToCall)
+        val pathToCall = PathGenerate(model.baseUrl, model.port, model.path).retrieveFullPath()
+        val response = performCall(pathToCall)
+        println("------\t ${model.baseUrl} \t------")
+        Thread.sleep(1000)
+        return response
     }
 
     private fun performCall(path: String): Response {

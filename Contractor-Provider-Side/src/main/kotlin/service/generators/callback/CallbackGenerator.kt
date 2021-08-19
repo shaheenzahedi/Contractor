@@ -10,11 +10,8 @@ class CallbackGenerator(
     private val response: Response
 
     init {
-        println("attempt to make the request")
         val handler = HTTPHandler(model)
         response = handler.retrieveResponse()
-        response.toString()
-        response.jsonObject
     }
 
     fun headerTest(): CallbackCase? {
@@ -36,7 +33,8 @@ class CallbackGenerator(
     fun generateStatusTest(): CallbackCase? {
         if (model.status == null) return null
         return CallbackCase(
-            name = "Testing status code",
+            name = "`${model.method.name}\t${model.path}\n\n" +
+                    "Assert if the status equals to ${model.status}",
             callback = { response.statusCode == model.status },
             expected = model.status.toString(),
             actual = response.statusCode.toString()
