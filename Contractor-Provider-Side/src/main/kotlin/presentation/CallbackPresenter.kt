@@ -6,12 +6,13 @@ class CallbackPresenter(private val callbacks: List<CallbackCase>) {
     fun retrieveSummary(): List<Boolean> {
         return callbacks.map {
             val result = it.callback.invoke()
-            print("${it.name}\t[")
+            print("[")
             when {
                 result -> colorPrint("SUCCESS", ConsoleColors.GREEN_BOLD)
                 else -> colorPrint("FAILED", ConsoleColors.RED)
             }
-            print("]\n")
+            print("]\t")
+            println(it.name)
             if (!result) {
                 println("EXPECTED:")
                 println(it.expected)

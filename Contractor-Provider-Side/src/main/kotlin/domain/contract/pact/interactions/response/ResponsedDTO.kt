@@ -11,7 +11,7 @@ data class ResponsedDTO(
     @SerializedName("body")
     val body: LinkedHashMap<String, Any>,
     @SerializedName("headers")
-    val headers: LinkedHashMap<String, Any>,
+    val headers: LinkedHashMap<String, String>,
     @SerializedName("matchingRules")
     val matchingRulesDTO: MatchingRulesDTO,
     @SerializedName("responseMatchingRules")

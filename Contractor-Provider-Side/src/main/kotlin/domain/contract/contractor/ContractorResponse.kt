@@ -8,7 +8,7 @@ import com.google.gson.annotations.SerializedName
 class ContractorResponse {
     @SerializedName("headers")
     @Expose
-    val headers: LinkedHashMap<String, Any>? = null
+    val headers: LinkedHashMap<String, String>? = null
 
     @SerializedName("body")
     @Expose
