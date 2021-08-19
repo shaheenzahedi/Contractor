@@ -1,8 +1,8 @@
 package service.generators.callback
 
+import com.google.gson.GsonBuilder
 import domain.ready_to_generate.ReadyToTestModel
 import khttp.responses.Response
-import presentation.PrettyPrintingMap
 
 class CallbackGenerator(
     private val model: ReadyToTestModel
@@ -19,11 +19,12 @@ class CallbackGenerator(
         if (model.response?.headers == null) return null
         if (model.response.headers.isEmpty()) return null
         return CallbackCase(
-            name = "`${model.method.name}\t${model.path}\n\n" +
-                    "Asserts that the response has the desired header",
+            doc = "`${model.method.name}\t${model.path}\n\n",
+            name = "Asserts that the response has the desired header",
             callback = { matchesMap(response.headers, model.response.headers) },
-            expected = PrettyPrintingMap(map = model.response.headers).toString(),
-            actual = PrettyPrintingMap(map = response.headers).toString()
+            expected = GsonBuilder().setPrettyPrinting().create().toJson(model.response.headers),
+            actual = GsonBuilder().setPrettyPrinting().create().toJson(response.headers),
+            reason = "Response did not include those header defined in contract"
         )
     }
 
@@ -42,11 +43,12 @@ class CallbackGenerator(
     fun generateStatusTest(): CallbackCase? {
         if (model.status == null) return null
         return CallbackCase(
-            name = "`${model.method.name}\t${model.path}\n\n" +
-                    "Assert if the status equals to ${model.status}",
+            doc = "`${model.method.name}\t${model.path}\n\n",
+            name = "Assert if the status equals to ${model.status}",
             callback = { response.statusCode == model.status },
             expected = model.status.toString(),
-            actual = response.statusCode.toString()
+            actual = response.statusCode.toString(),
+            reason = "Status is not ${model.status} as defined in the contract"
         )
     }
 

@@ -9,7 +9,7 @@ class HTTPHandler(private val model: ReadyToTestModel) {
     fun retrieveResponse(): Response {
         val pathToCall = PathGenerate(model.baseUrl, model.port, model.path).retrieveFullPath()
         val response = performCall(pathToCall)
-        println("------\t ${model.baseUrl} \t------")
+        println("------\t Executing tests on ${model.baseUrl} \t------")
         Thread.sleep(1000)
         return response
     }

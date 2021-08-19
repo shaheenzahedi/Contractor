@@ -9,7 +9,9 @@ enum class ConsoleColors(
     MAGENTA_BOLD("\u001b[1;35m"),
     YELLOW_UNDERLINED("\u001b[4;33m"),
     YELLOW("\u001b[1;33m"),
-    RED("\u001B[31m");
+    RED("\u001B[31m"),
+    BACKGROUND_RED("\u001b[41m"),
+    BACKGROUND_GREEN("\u001b[42m");
 
     override fun toString(): String {
         return code
