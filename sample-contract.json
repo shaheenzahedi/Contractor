@@ -6,7 +6,7 @@
     {
       "method": "GET",
       "path": "/assessment/blog/posts",
-      "status": 0,
+      "status": 200,
       "request": {
         "params": {
           "tag": "tech"

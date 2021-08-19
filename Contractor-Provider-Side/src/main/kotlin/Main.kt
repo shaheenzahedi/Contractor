@@ -1,6 +1,6 @@
-import domain.presentation.ConsoleColors
-import domain.presentation.colorPrint
 import org.koin.core.context.startKoin
+import presentation.ConsoleColors
+import presentation.colorPrint
 import service.di.CDCTestGenApplication
 import service.mapper.ContractMapper
 
@@ -11,13 +11,8 @@ fun main() {
         modules(application.integrationTestJavaModule)
         modules(application.fileResourceModule)
     }
-//    val path = "src/test/resources/contracts/spring_cloud_contract/scc_complex_query_params.json"
     val path = "../sample-contract.json"
     val generalContractPOJO = application.jsonMapper.makeGeneralContract(path)
-//    val pathToRoot = FileDialog().open("Please select root folder", isDir = true, null)
-//    requireNotNull(pathToRoot) { throw IllegalStateException("You have to choose the root folder.") }
-//    val filterFiles = FileFilter().filter(pathToRoot, "regex:*repository*.kt")
-//    filterFiles?.forEach(System.out::println)
     val model = ContractMapper(generalContractPOJO).extreactReadyToTestModel()
     requireNotNull(model) {
         throw Exception(
@@ -31,9 +26,15 @@ fun main() {
         print("${it.name}\t[")
         when {
             result -> colorPrint("SUCCESS", ConsoleColors.GREEN_BOLD)
-            else -> colorPrint("FAILURE", ConsoleColors.RED)
+            else -> colorPrint("FAILED", ConsoleColors.RED)
         }
         print("]\n")
+        if (!result) {
+            println("EXPECTED:")
+            println(it.expected)
+            println("RECEIVED:")
+            println(it.actual)
+        }
         println("----------------------------")
     }
 //    application.fileResource.write(

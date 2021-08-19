@@ -36,8 +36,10 @@ class CallbackGenerator(
     fun generateStatusTest(): CallbackCase? {
         if (model.status == null) return null
         return CallbackCase(
-            name = "is required status ${model.status}",
-            callback = { response.statusCode == model.status }
+            name = "Testing status code",
+            callback = { response.statusCode == model.status },
+            expected = model.status.toString(),
+            actual = response.statusCode.toString()
         )
     }
 

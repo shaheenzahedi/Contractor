@@ -1,4 +1,4 @@
-package domain.presentation
+package presentation
 
 enum class ConsoleColors(
     private val code: String

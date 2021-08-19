@@ -2,6 +2,7 @@ package service.generators.callback
 
 data class CallbackCase(
     val callback: TestCaseCallback,
-    val reason: String?,
+    val expected: String?,
+    val actual: String?,
     val name: String
 )
