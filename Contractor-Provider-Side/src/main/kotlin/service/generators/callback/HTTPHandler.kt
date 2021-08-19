@@ -3,11 +3,12 @@ package service.generators.callback
 import domain.ready_to_generate.HTTPMethod
 import domain.ready_to_generate.ReadyToTestModel
 import khttp.responses.Response
+import service.generators.callback.path.PathGenerate
 
 class HTTPHandler(private val model: ReadyToTestModel) {
     fun retrieveResponse(): Response {
-        val pathToCall =
-            "${model.baseUrl}${if (model.port != null) ":${model.port}" else ""}/${model.path}"
+        val pathToCall = PathGenerate(model.baseUrl,model.port,model.path).retrieveFullPath()
+
         return performCall(pathToCall)
     }
 

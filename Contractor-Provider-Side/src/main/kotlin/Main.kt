@@ -24,7 +24,13 @@ fun main() {
         )
     }
 
-    application.callbackMapper.callbacks(model)
+    application.callbackMapper.callbacks(model).forEach {
+        val result = when {
+            it.callback.invoke() -> "success"
+            else -> "failed"
+        }
+        println(String.format("%s\t[%s]", it.name, result))
+    }
 //    application.fileResource.write(
 //        "src/main/resources/generated_tests/SampleIntegrationTest.java",
 //        application.testGenerator.buildJavaTest(model).build().toString()

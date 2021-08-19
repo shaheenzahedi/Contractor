@@ -5,38 +5,12 @@
   "interactions": [
     {
       "method": "GET",
-      "path": "/users/1",
+      "path": "/assessment/blog/posts",
       "status": 0,
       "request": {
-        "headers": {
-          "Content-Type": "application/json;charset=UTF-8"
-        },
-        "body": {
-          "value1": 1,
-          "value2": "two"
-        },
-        "queryParamRules": [
-          {
-            "name": "limit",
-            "type": "equalTo",
-            "value": "100"
-          },
-          {
-            "name": "gender",
-            "type": "contains",
-            "value": "[mf]"
-          },
-          {
-            "name": "offset",
-            "type": "matches",
-            "value": "[0-9]+"
-          },
-          {
-            "name": "loginStartsWith",
-            "type": "doesNotMatch",
-            "value": ".{0,2}"
-          }
-        ]
+        "params": {
+          "tag": "tech"
+        }
       },
       "response": {
         "headers": {

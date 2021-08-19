@@ -13,34 +13,40 @@ class CallbackGenerator(
         println("attempt to make the request")
         val handler = HTTPHandler(model)
         response = handler.retrieveResponse()
+        response.toString()
+        response.jsonObject
     }
 
-    fun headerTest(): CallbackCase {
-        TODO()
+    fun headerTest(): CallbackCase? {
+        return null
     }
 
     fun bodyTest(): CallbackCase? {
-        TODO()
+        return null
     }
 
     fun generateBodyRulesTest(): List<CallbackCase?> {
-        TODO()
+        return emptyList()
     }
 
     fun generateRuleStatementTest(): List<CallbackCase?> {
-        TODO()
+        return emptyList()
     }
 
     fun generateStatusTest(): CallbackCase? {
-        TODO()
+        if (model.status == null) return null
+        return CallbackCase(
+            name = "is required status ${model.status}",
+            callback = { response.statusCode == model.status }
+        )
     }
 
     fun generateHeaderTest(): CallbackCase? {
-        TODO()
+        return null
     }
 
     fun generateBodyTest(): CallbackCase? {
-        TODO()
+        return null
     }
 
 
