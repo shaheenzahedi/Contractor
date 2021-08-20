@@ -1,4 +1,3 @@
-
 plugins {
     kotlin("jvm") version "1.5.10"
     application
@@ -17,8 +16,10 @@ repositories {
 //}
 dependencies {
     implementation("com.google.code.gson:gson:2.8.6")
-    implementation("com.github.tomakehurst:wiremock-jre8:2.29.1")
+//    implementation("com.github.tomakehurst:wiremock-jre8:2.29.1")
 //    implementation("org.slf4j:slf4j-simple:1.6.1")
+// https://mvnrepository.com/artifact/com.github.tomakehurst/wiremock
+    implementation("com.github.tomakehurst:wiremock:2.27.2")
 
     implementation(kotlin("stdlib-jdk8"))
 }
