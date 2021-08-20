@@ -14,5 +14,5 @@ data class Rule(
     val type: String? = null,
     @SerializedName("value")
     @Expose
-    val value: String? = null
+    val value: String
 )

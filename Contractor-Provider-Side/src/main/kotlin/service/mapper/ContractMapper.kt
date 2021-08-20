@@ -100,8 +100,8 @@ class ContractMapper(
             response = ReadyResponseModel(
                 body = dto.responsedDTO.body,
                 headers = dto.responsedDTO.headers,
-                bodyPredicates = pactMapper.getResponseBodyPredicates(),
-                headerPredicates = pactMapper.getResponseHeaderPredicates(),
+                bodyPredicates = null, /*pactMapper.getResponseBodyPredicates()*/
+                headerPredicates = null,/*pactMapper.getResponseHeaderPredicates()*/
             ),
             request = ReadyRequestModel(
                 body = dto.requestDTO.query,

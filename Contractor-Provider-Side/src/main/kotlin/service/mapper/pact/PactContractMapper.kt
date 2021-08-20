@@ -15,35 +15,35 @@ class PactContractMapper(
         return null
     }
 
-    fun getResponseHeaderPredicates(): List<PredicateModel>? {
-        val rules = interaction.responsedDTO.responseMatchingRules
-        if (rules.isNullOrEmpty()) return null
-        return rules.map {
-            val value = it.value.entries.first()
-            val type = PactPredicateType.valueOf(value.key.toUpperCase())
-            val name = extractName(it.key, "body")
-            PredicateModel(
-                fieldName = name,
-                type = type,
-                value = if (type == PactPredicateType.MATCH) detectResponseType(name) else value.value
-            )
-        }
-    }
-
-    fun getResponseBodyPredicates(): List<PredicateModel>? {
-        val rules = interaction.responsedDTO.responseMatchingRules
-        if (rules.isNullOrEmpty()) return null
-        return rules.map {
-            val value = it.value.entries.first()
-            val type = PactPredicateType.valueOf(value.key.toUpperCase())
-            val name = extractName(it.key, "body")
-            PredicateModel(
-                fieldName = name,
-                type = type,
-                value = if (type == PactPredicateType.MATCH) detectResponseType(name) else value.value
-            )
-        }
-    }
+//    fun getResponseHeaderPredicates(): List<PredicateModel>? {
+//        val rules = interaction.responsedDTO.responseMatchingRules
+//        if (rules.isNullOrEmpty()) return null
+//        return rules.map {
+//            val value = it.value.entries.first()
+//            val type = PactPredicateType.valueOf(value.key.toUpperCase())
+//            val name = extractName(it.key, "body")
+//            PredicateModel(
+//                fieldName = name,
+//                type = type,
+//                value = if (type == PactPredicateType.MATCH) detectResponseType(name) else value.value
+//            )
+//        }
+//    }
+//
+//    fun getResponseBodyPredicates(): List<PredicateModel>? {
+//        val rules = interaction.responsedDTO.responseMatchingRules
+//        if (rules.isNullOrEmpty()) return null
+//        return rules.map {
+//            val value = it.value.entries.first()
+//            val type = PactPredicateType.valueOf(value.key.toUpperCase())
+//            val name = extractName(it.key, "body")
+//            PredicateModel(
+//                fieldName = name,
+//                type = type,
+//                value = if (type == PactPredicateType.MATCH) detectResponseType(name) else value.value
+//            )
+//        }
+//    }
 
     private fun detectResponseType(name: String?): String? {
         if (name == null) return null

@@ -2,11 +2,13 @@ package service.generators.callback
 
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
+import com.google.gson.JsonElement
 import com.google.gson.JsonParser
 import domain.ready_to_generate.ReadyToTestModel
 import khttp.responses.Response
 import service.mapper.pact.PactPredicateType
 import service.mapper.pact.PredicateModel
+import service.mapper.pact.ValueType
 
 
 class CallbackGenerator(
@@ -59,35 +61,181 @@ class CallbackGenerator(
             when (it.type) {
                 PactPredicateType.MATCH -> buildBodyPredicateWithMatch(it, doc)
                 PactPredicateType.REGEX -> buildBodyPredicateWithRegex(it, doc)
+                PactPredicateType.TYPE -> buildBodyPredicateWithType(it, doc)
             }
         }
     }
 
+    private fun buildBodyPredicateWithType(model: PredicateModel, doc: String): CallbackCase {
+        val type = model.getValueAsType() ?: return CallbackCase(
+            doc = doc,
+            tagName = "BodyRuleTypeTest",
+            name = "Asserts that `${model.fieldName}` validates with the pattern ${model.value}",
+            callback = { false },
+            expected = null,
+            actual = null,
+            reason = "Type `${model.value}` is not one of the predefined types"
+        )
+        val parser = JsonParser()
+        val response = parser.parse(response.text).asJsonObject.get(model.fieldName)
+            ?: return CallbackCase(
+                doc = doc,
+                tagName = "BodyRuleTypeTest",
+                name = "Asserts that `${model.fieldName}` validates with the pattern ${model.value}",
+                callback = { false },
+                expected = null,
+                actual = null,
+                reason = "The field with name ${model.fieldName} does not exist in response"
+            )
+
+        return CallbackCase(
+            doc = doc,
+            tagName = "BodyRuleTest",
+            name = "Asserts that `${model.fieldName}` is type of ${model.value}",
+            callback = { typeCheck(response, type) },
+            expected = null,
+            actual = null,
+            reason = "Specified `${model.fieldName}` field does not match the `${model.value}` type"
+        )
+    }
+
+    private fun typeCheck(response: JsonElement, type: ValueType): Boolean {
+        return try {
+            when (type) {
+                ValueType.SHORT -> response.asShort
+                ValueType.JSONOBJECT -> response.asJsonObject
+                ValueType.BIGDECIMAL -> response.asBigDecimal
+                ValueType.BYTE -> response.asByte
+                ValueType.BOOLEAN -> response.asBoolean
+                ValueType.BIGINTEGER -> response.asBigInteger
+                ValueType.DOUBLE -> response.asDouble
+                ValueType.FLOAT -> response.asFloat
+                ValueType.INT -> response.asInt
+                ValueType.JSONARRAY -> response.asJsonArray
+                ValueType.JSONNULL -> response.asJsonNull
+                ValueType.LONG -> response.asLong
+                ValueType.NUMBER -> response.asNumber
+                ValueType.STRING -> response.asString
+            }
+            true
+        } catch (e: Exception) {
+            false
+        }
+    }
+
     private fun buildBodyPredicateWithRegex(model: PredicateModel, doc: String): CallbackCase {
+        val parser = JsonParser()
+        val response = parser.parse(response.text).asJsonObject.get(model.fieldName)
+            ?: return CallbackCase(
+                doc = doc,
+                tagName = "BodyRuleRegexTest",
+                name = "Asserts that `${model.fieldName}` validates with the pattern ${model.value}",
+                callback = { false },
+                expected = null,
+                actual = null,
+                reason = "The field with name ${model.fieldName} is not present in the response body"
+            )
         return CallbackCase(
             doc = doc,
             tagName = "BodyRuleTest",
             name = "Asserts that `${model.fieldName}` validates with the pattern ${model.value}",
-            callback = { false },
+            callback = { regexCheck(response, model.value) },
             expected = null,
             actual = null,
             reason = "Specified `${model.fieldName}` field does not match the regex"
         )
     }
 
-    private fun buildBodyPredicateWithMatch(model: PredicateModel, doc: String): CallbackCase? {
-        return null
+    private fun regexCheck(response: JsonElement, regex: Any): Boolean {
+        if (regex !is String) return false
+        val responseAssured = try {
+            response.asString
+        } catch (e: Exception) {
+            return false
+        }
+        return responseAssured.matches(Regex(regex))
+    }
+
+    private fun buildBodyPredicateWithMatch(model: PredicateModel, doc: String): CallbackCase {
+        val parser = JsonParser()
+        val response = parser.parse(response.text).asJsonObject.get(model.fieldName)
+            ?: return CallbackCase(
+                doc = doc,
+                tagName = "BodyRuleRegexTest",
+                name = "Asserts that `${model.fieldName}` is equal to ${model.value}",
+                callback = { false },
+                expected = null,
+                actual = null,
+                reason = "The field with name ${model.fieldName} is not present in the response body"
+            )
+        return CallbackCase(
+            doc = doc,
+            tagName = "BodyRuleTest",
+            name = "Asserts that `${model.fieldName}` is equal to `${model.value}`",
+            callback = { matchCheck(response, model.value) },
+            expected = model.value.toString(),
+            actual = response.toString(),
+            reason = "Specified `${model.fieldName}` field does not match the value `${model.value}`"
+        )
+    }
+
+    private fun matchCheck(response: JsonElement, value: Any): Boolean {
+        if (value !is String && value !is Number && value !is Boolean) return false
+        if (!response.isJsonPrimitive) return false
+        val jsonPrimitive = response.asJsonPrimitive
+        return when {
+            jsonPrimitive.isNumber -> jsonPrimitive.asNumber == value
+            jsonPrimitive.isBoolean -> jsonPrimitive.asBoolean == value
+            jsonPrimitive.isString -> jsonPrimitive.asString.equals(value)
+            else -> false
+        }
     }
 
     fun generateHeaderRulesTest(): List<CallbackCase?> {
         if (model.response?.headerPredicates == null || model.response.headerPredicates.isEmpty())
             return emptyList()
+        val doc = "`${model.method.name}\t${model.path}\n\n"
         return model.response.headerPredicates.map {
             when (it.type) {
                 PactPredicateType.MATCH -> buildHeaderPredicateWithMatch(it)
                 PactPredicateType.REGEX -> buildHeaderPredicateWithRegex(it)
+                PactPredicateType.TYPE -> buildHeaderPredicateWithType(it,doc)
             }
         }
+    }
+
+    private fun buildHeaderPredicateWithType(model: PredicateModel, doc: String): CallbackCase? {
+        return null
+//        val type = model.getValueAsType() ?: return CallbackCase(
+//            doc = doc,
+//            tagName = "HeaderRuleTypeTest",
+//            name = "Asserts that `${model.fieldName}` has the type ${model.value}",
+//            callback = { false },
+//            expected = null,
+//            actual = null,
+//            reason = "Type `${model.value}` is not one of the predefined types"
+//        )
+//        val parser = JsonParser()
+//        val response = parser.parse(response.text).asJsonObject.get(model.fieldName)
+//            ?: return CallbackCase(
+//                doc = doc,
+//                tagName = "HeaderRuleTypeTest",
+//                name = "Asserts that `${model.fieldName}` validates with the pattern ${model.value}",
+//                callback = { false },
+//                expected = null,
+//                actual = null,
+//                reason = "The field with name ${model.fieldName} does not exist in response"
+//            )
+//
+//        return CallbackCase(
+//            doc = doc,
+//            tagName = "BodyRuleTest",
+//            name = "Asserts that `${model.fieldName}` is type of ${model.value}",
+//            callback = { typeCheck(response, type) },
+//            expected = null,
+//            actual = null,
+//            reason = "Specified `${model.fieldName}` field does not match the `${model.value}` type"
+//        )
     }
 
     private fun buildHeaderPredicateWithRegex(model: PredicateModel): CallbackCase? {
