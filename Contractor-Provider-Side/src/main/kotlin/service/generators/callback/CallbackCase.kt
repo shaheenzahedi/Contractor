@@ -6,6 +6,6 @@ data class CallbackCase(
     val actual: String?,
     val name: String,
     val doc: String,
-    val reason: String,
+    val reason: String?,
     val tagName:String
 )

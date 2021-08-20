@@ -6,7 +6,7 @@
     {
       "method": "GET",
       "path": "/assessment/blog/posts",
-      "status": 200,
+      "status": 201,
       "request": {
         "params": {
           "tag": "tech"
@@ -108,10 +108,10 @@
             {
               "author": "Jaden Bryant",
               "authorId": 3,
-              "id": 18,
               "likes": 983,
               "popularity": 0.09,
               "reads": 33952,
+              "id": 18,
               "tags": [
                 "tech",
                 "history"

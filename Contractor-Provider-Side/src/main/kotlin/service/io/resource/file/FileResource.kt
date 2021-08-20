@@ -8,5 +8,5 @@ import java.nio.file.Paths
 
 class FileResource : Resource {
     override fun getResourceAsRawText(path: String) = File(path).readText()
-    override fun write(path: String, content: String): Path? = Files.writeString(Paths.get(path), content)
+//    override fun write(path: String, content: String): Path? = Files.writeString(Paths.get(path), content)
 }

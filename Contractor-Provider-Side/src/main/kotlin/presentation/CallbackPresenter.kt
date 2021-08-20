@@ -16,12 +16,18 @@ class CallbackPresenter(private val callbacks: List<CallbackCase>) {
             print("]\t")
             println(it.name)
             if (!result) {
-                print("REASON:\t")
-                colorPrint(it.reason + "\n", ConsoleColors.RED)
-                println("EXPECTED:")
-                println(it.expected)
-                println("RECEIVED:")
-                println(it.actual)
+                if (it.reason != null) {
+                    print("REASON:\t")
+                    colorPrint(it.reason + "\n", ConsoleColors.RED)
+                }
+                if (it.expected != null) {
+                    println("EXPECTED:")
+                    println(it.expected)
+                }
+                if (it.actual != null) {
+                    println("RECEIVED:")
+                    println(it.actual)
+                }
             }
             println("----------------------\t<${it.tagName} />\t----------------------")
             Thread.sleep(500)

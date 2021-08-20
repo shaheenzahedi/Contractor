@@ -22,6 +22,7 @@ class ContractMapper(
 ) {
 
     fun extreactReadyToTestModel(): List<ReadyToTestModel>? {
+
         return when (model.type) {
             SupportedTypes.CONTRACTOR -> (model as Contract).interactions?.map {
                 buildModelWithContractor(

@@ -2,12 +2,11 @@ package service.generators.callback
 
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
-import com.google.gson.JsonObject
 import com.google.gson.JsonParser
 import domain.ready_to_generate.ReadyToTestModel
-import khttp.responses.GenericResponse
 import khttp.responses.Response
-import org.json.JSONObject
+import service.mapper.pact.PactPredicateType
+import service.mapper.pact.PredicateModel
 
 
 class CallbackGenerator(
@@ -43,7 +42,7 @@ class CallbackGenerator(
         val actual = parser.parse(Gson().toJson(model.response.body)).asJsonObject
         return CallbackCase(
             doc = "`${model.method.name}\t${model.path}\n\n",
-            tagName="BodyTest",
+            tagName = "BodyTest",
             name = "Asserts that the response has the desired body",
             callback = { response.equals(actual) },
             expected = GsonBuilder().setPrettyPrinting().create().toJson(response),
@@ -53,11 +52,50 @@ class CallbackGenerator(
     }
 
     fun generateBodyRulesTest(): List<CallbackCase?> {
-        return emptyList()
+        if (model.response?.bodyPredicates == null || model.response.bodyPredicates.isEmpty())
+            return emptyList()
+        val doc = "`${model.method.name}\t${model.path}\n\n"
+        return model.response.bodyPredicates.map {
+            when (it.type) {
+                PactPredicateType.MATCH -> buildBodyPredicateWithMatch(it, doc)
+                PactPredicateType.REGEX -> buildBodyPredicateWithRegex(it, doc)
+            }
+        }
     }
 
-    fun generateRuleStatementTest(): List<CallbackCase?> {
-        return emptyList()
+    private fun buildBodyPredicateWithRegex(model: PredicateModel, doc: String): CallbackCase {
+        return CallbackCase(
+            doc = doc,
+            tagName = "BodyRuleTest",
+            name = "Asserts that `${model.fieldName}` validates with the pattern ${model.value}",
+            callback = { false },
+            expected = null,
+            actual = null,
+            reason = "Specified `${model.fieldName}` field does not match the regex"
+        )
+    }
+
+    private fun buildBodyPredicateWithMatch(model: PredicateModel, doc: String): CallbackCase? {
+        return null
+    }
+
+    fun generateHeaderRulesTest(): List<CallbackCase?> {
+        if (model.response?.headerPredicates == null || model.response.headerPredicates.isEmpty())
+            return emptyList()
+        return model.response.headerPredicates.map {
+            when (it.type) {
+                PactPredicateType.MATCH -> buildHeaderPredicateWithMatch(it)
+                PactPredicateType.REGEX -> buildHeaderPredicateWithRegex(it)
+            }
+        }
+    }
+
+    private fun buildHeaderPredicateWithRegex(model: PredicateModel): CallbackCase? {
+        return null
+    }
+
+    private fun buildHeaderPredicateWithMatch(model: PredicateModel): CallbackCase? {
+        return null
     }
 
     fun generateStatusTest(): CallbackCase? {
@@ -77,10 +115,4 @@ class CallbackGenerator(
     private fun matchesMap(map1: Map<String, Any>, reference: Map<String, Any>): Boolean {
         return reference.all { (k, v) -> map1[k] == v }
     }
-
-    fun generateBodyTest(): CallbackCase? {
-        return null
-    }
-
-
 }
