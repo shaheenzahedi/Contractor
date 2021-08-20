@@ -1,0 +1,43 @@
+{
+  "provider": "my provider name",
+  "consumer": "my consumer body",
+  "base_url": "https://api.hatchways.io/",
+  "interactions": [
+    {
+      "method": "GET",
+      "path": "/assessment/blog/posts",
+      "status": 201,
+      "request": {
+
+      },
+      "response": {
+        "headers": {
+          "Content-Type": "application/json",
+          "Vary": "Accept-Encoding"
+        },
+        "body": {
+          "error": "The tag parameter is required"
+        },
+        "bodyRules": [
+          {
+            "name": "error",
+            "type": "type",
+            "value": "String"
+          },
+          {
+            "name": "error",
+            "type": "match",
+            "value": "The tag parameter is required"
+          }
+        ],
+        "headerRules": [
+          {
+            "name": "Content-Type",
+            "type": "regex",
+            "value": "application/json(;\\s?charset=[\\w\\-]+)?"
+          }
+        ]
+      }
+    }
+  ]
+}
