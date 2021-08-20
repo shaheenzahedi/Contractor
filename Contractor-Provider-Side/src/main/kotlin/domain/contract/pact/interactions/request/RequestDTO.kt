@@ -10,9 +10,9 @@ data class RequestDTO(
     @SerializedName("path")
     val path: String,
     @SerializedName("query")
-    val query: LinkedHashMap<String,Any>,
+    val query: LinkedHashMap<String, Any>,
     @SerializedName("matchingRules")
     val matchingRulesDTO: MatchingRulesDTO,
     @SerializedName("headers")
-    val headers: LinkedHashMap<String,Any>,
+    val headers: LinkedHashMap<String, String>,
 )

@@ -10,7 +10,7 @@ data class SpringCloudContractModel(
     val response: ResponseDTO?,
     val uuid: String?,
 
-) : GeneralContract {
+    ) : GeneralContract {
     override val type
         get() = SupportedTypes.SCC
 
@@ -20,5 +20,5 @@ data class SpringCloudContractModel(
             request,
             response,
             uuid
-        ).all { it==null }
+        ).all { it == null }
 }

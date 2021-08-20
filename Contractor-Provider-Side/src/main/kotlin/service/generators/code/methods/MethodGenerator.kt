@@ -1,4 +1,4 @@
-package service.generators.methods
+package service.generators.code.methods
 
 import com.squareup.javapoet.MethodSpec
 import domain.ready_to_generate.ReadyToTestModel

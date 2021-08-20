@@ -21,11 +21,11 @@ data class PactContractModel(
     val providerDTO: ProviderDTO?,
     @SerializedName("providerStates")
     val providerStateDTOS: List<ProviderStateDTO>?,
-):GeneralContract{
+) : GeneralContract {
     override val type
         get() = SupportedTypes.PACT
 
     override val isAllNull
-        get() = listOf(consumerDTO, interactionDTOS, metadataDTO, providerDTO).all { it==null }
+        get() = listOf(consumerDTO, interactionDTOS, metadataDTO, providerDTO).all { it == null }
 
 }

@@ -1,4 +1,4 @@
-package service.generators.javadocs
+package service.generators.code.javadocs
 
 import com.squareup.javapoet.CodeBlock
 import domain.ready_to_generate.ReadyToTestModel

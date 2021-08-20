@@ -1,10 +1,10 @@
-package service.generators
+package service.generators.code
 
 import domain.ready_to_generate.ReadyToTestModel
-import service.generators.annotations.AnnotationGenerator
-import service.generators.fields.FieldGenerator
-import service.generators.javadocs.JavaDocGenerator
-import service.generators.methods.MethodGenerator
+import service.generators.code.annotations.AnnotationGenerator
+import service.generators.code.fields.FieldGenerator
+import service.generators.code.javadocs.JavaDocGenerator
+import service.generators.code.methods.MethodGenerator
 import com.squareup.javapoet.TypeSpec as JTypeSpec
 
 class TestGenerator(

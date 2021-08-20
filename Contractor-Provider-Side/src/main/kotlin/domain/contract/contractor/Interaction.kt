@@ -17,8 +17,8 @@ data class Interaction(
     val status: Int? = null,
     @SerializedName("request")
     @Expose
-    val request: Request? = null,
+    val request: ContractorRequest? = null,
     @SerializedName("response")
     @Expose
-    val response: Response? = null
+    val response: ContractorResponse? = null,
 )

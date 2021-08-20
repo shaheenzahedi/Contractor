@@ -8,22 +8,30 @@ import domain.contract.SupportedTypes
 
 
 data class Contract(
+    @SerializedName("base_url")
+    @Expose
+    var baseUrl: String?,
+
+    @SerializedName("port")
+    @Expose
+    var port: Int?,
+
     @SerializedName("provider")
     @Expose
-    var provider: String? = null,
+    var provider: String?,
 
     @SerializedName("consumer")
     @Expose
-    var consumer: String? = null,
+    var consumer: String?,
 
     @SerializedName("interactions")
     @Expose
-    var interactions: List<Interaction>? = null
-): GeneralContract {
+    var interactions: List<Interaction>?
+) : GeneralContract {
     override val type
         get() = SupportedTypes.CONTRACTOR
 
     override val isAllNull
-        get() = listOf(provider, consumer, interactions).all { it==null }
+        get() = listOf(provider, consumer, interactions).all { it == null }
 
 }

@@ -1,7 +1,7 @@
-package service.generators.annotations
+package service.generators.code.annotations
 
 import com.squareup.javapoet.AnnotationSpec
-import service.generators.classes.ClassGenerator
+import service.generators.code.classes.ClassGenerator
 
 class JAnnotationGenerator(
     private val classGenerator: ClassGenerator,
