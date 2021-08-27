@@ -11,6 +11,7 @@ import javax.swing.filechooser.FileNameExtensionFilter
 fun main() {
     val port = 8080
     val wireMockServer = WireMockServer(options().port(port)) //No-args constructor will start on port 8080, no HTTPS
+    println("Could not find the contract, select contract file?")
     val path = FileDialog().open("Contract JSON file", false, FileNameExtensionFilter("Contract JSON", "json"))
     requireNotNull(path) { throw Exception("You need to select a contract in order to continue, closing...") }
     val generalContractPOJO = JsonMapper().getJson(Contract::class.java,path)
