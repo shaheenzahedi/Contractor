@@ -6,9 +6,8 @@
     {
       "method": "GET",
       "path": "/assessment/blog/posts",
-      "status": 201,
+      "status": 400,
       "request": {
-
       },
       "response": {
         "headers": {
@@ -37,6 +36,23 @@
             "value": "application/json(;\\s?charset=[\\w\\-]+)?"
           }
         ]
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/assessment/blog/posts",
+      "status": 200,
+      "request": {
+        "params": {
+          "tag": "tech"
+        }
+      },
+      "response": {
+        "body": {
+          "id": 2908005593,
+          "login": "user name",
+          "content": "rIljtwdclWaGQfJNMBtm"
+        }
       }
     }
   ]

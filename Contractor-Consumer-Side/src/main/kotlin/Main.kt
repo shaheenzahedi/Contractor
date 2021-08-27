@@ -3,6 +3,7 @@ import com.github.tomakehurst.wiremock.common.ConsoleNotifier
 import com.github.tomakehurst.wiremock.core.WireMockConfiguration.options
 import com.github.tomakehurst.wiremock.extension.responsetemplating.ResponseTemplateTransformer
 import domain.contractor.Contract
+import org.apache.log4j.*
 import service.io.FileDialog
 import service.mapper.JsonMapper
 import service.stub.StubGenerator
@@ -11,6 +12,9 @@ import javax.swing.filechooser.FileNameExtensionFilter
 
 
 fun main() {
+    Logger.getRootLogger().level = Level.ERROR
+    val layout: Layout = PatternLayout("%d [%t] %-5p %c %x - %m%n")
+    Logger.getRootLogger().addAppender(ConsoleAppender(layout))
     println("Could not find the contract, select contract file?")
     val path = FileDialog().open("Contract JSON file", false, FileNameExtensionFilter("Contract JSON", "json"))
     requireNotNull(path) { throw Exception("You need to select a contract in order to continue, closing...") }

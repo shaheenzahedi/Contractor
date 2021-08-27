@@ -10,7 +10,7 @@ repositories {
 dependencies {
     implementation("com.google.code.gson:gson:2.8.6")
     implementation("com.github.tomakehurst:wiremock-jre8:2.30.1")
-
+    implementation("org.slf4j:slf4j-log4j12:2.0.0-alpha4")
     implementation(kotlin("stdlib-jdk8"))
 }
 
