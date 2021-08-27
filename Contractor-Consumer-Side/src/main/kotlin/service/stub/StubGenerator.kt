@@ -9,7 +9,6 @@ import com.github.tomakehurst.wiremock.http.HttpHeaders
 import com.github.tomakehurst.wiremock.matching.StringValuePattern
 import com.github.tomakehurst.wiremock.stubbing.StubImport
 import com.github.tomakehurst.wiremock.stubbing.StubImport.stubImport
-import com.github.tomakehurst.wiremock.stubbing.StubMapping
 import com.google.gson.Gson
 import domain.contractor.Contract
 import domain.contractor.Interaction
@@ -28,16 +27,6 @@ class StubGenerator(private val contract: Contract) {
         return builder.build()
     }
 
-    private fun makeStubWithInteraction(interaction: Interaction): StubMapping {
-        return decideMappingBuilder(interaction)
-            .willReturn(
-                ResponseDefinitionBuilder()
-                    .withBody(Gson().toJson(interaction.response?.body))
-                    .withHeaders(addHeaders(interaction.response?.headers))
-                    .withStatus(interaction.status ?: 200)
-            ).withQueryParams(buildQueryParams(interaction.request?.params, interaction.request?.queryParamRules))
-            .build()
-    }
 
     private fun buildQueryParams(
         params: LinkedHashMap<String, String>?,
@@ -54,24 +43,10 @@ class StubGenerator(private val contract: Contract) {
         return res
     }
 
-    private fun decideType(rule: Rule): StringValuePattern {
-        return when (rule.getEnumType()) {
-            RuleType.EQUALTO -> equalTo(rule.value)
-            RuleType.CONTAINS -> containing(rule.value)
-            RuleType.MATCHES -> matching(rule.value)
-            RuleType.DOESNOTMATCH -> notMatching(rule.value)
-        }
-    }
-
-    private fun addHeaders(headers: LinkedHashMap<String, String>?): HttpHeaders {
-        return HttpHeaders(
-            headers?.map { HttpHeader(it.key, it.value) }
-        )
-    }
-
 
     private fun decideMappingBuilder(interaction: Interaction): MappingBuilder {
-        val useExactPath = interaction.request?.params.isNullOrEmpty() && interaction.request?.queryParamRules.isNullOrEmpty()
+        val useExactPath =
+            interaction.request?.params.isNullOrEmpty() && interaction.request?.queryParamRules.isNullOrEmpty()
         val path = interaction.path
         val pathPattern = urlPathEqualTo(path)
         return when (HTTPMethods.valueOf(interaction.method!!.uppercase())) {
@@ -81,4 +56,25 @@ class StubGenerator(private val contract: Contract) {
             HTTPMethods.PUT -> if (useExactPath) put(path) else put(pathPattern)
         }
     }
+
+    private fun makeStubWithInteraction(interaction: Interaction) =
+        decideMappingBuilder(interaction)
+            .willReturn(
+                ResponseDefinitionBuilder()
+                    .withBody(Gson().toJson(interaction.response?.body))
+                    .withHeaders(addHeaders(interaction.response?.headers))
+                    .withStatus(interaction.status ?: 200)
+            ).withQueryParams(buildQueryParams(interaction.request?.params, interaction.request?.queryParamRules))
+            .build()
+
+    private fun decideType(rule: Rule) =
+        when (rule.getEnumType()) {
+            RuleType.EQUALTO -> equalTo(rule.value)
+            RuleType.CONTAINS -> containing(rule.value)
+            RuleType.MATCHES -> matching(rule.value)
+            RuleType.DOESNOTMATCH -> notMatching(rule.value)
+        }
+
+    private fun addHeaders(headers: LinkedHashMap<String, String>?) =
+        HttpHeaders(headers?.map { HttpHeader(it.key, it.value) })
 }
