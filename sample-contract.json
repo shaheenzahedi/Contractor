@@ -10,9 +10,9 @@
       "request": {
         "queryParamRules": [
           {
-            "name": "limit",
-            "type": "equalTo",
-            "value": "100"
+            "name": "loginStartsWith",
+            "type": "doesNotMatch",
+            "value": ".{0,2}"
           }
         ]
       },

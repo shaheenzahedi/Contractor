@@ -46,7 +46,7 @@ class StubGenerator(private val contract: Contract) {
 
     private fun decideMappingBuilder(interaction: Interaction): MappingBuilder {
         val useExactPath =
-            interaction.request?.params.isNullOrEmpty() && interaction.request?.queryParamRules.isNullOrEmpty()
+            interaction.request?.params.isNullOrEmpty() && interaction.request?.paramRules.isNullOrEmpty()
         val path = interaction.path
         val pathPattern = urlPathEqualTo(path)
         return when (HTTPMethods.valueOf(interaction.method!!.uppercase())) {
@@ -64,7 +64,7 @@ class StubGenerator(private val contract: Contract) {
                     .withBody(Gson().toJson(interaction.response?.body))
                     .withHeaders(addHeaders(interaction.response?.headers))
                     .withStatus(interaction.status ?: 200)
-            ).withQueryParams(buildQueryParams(interaction.request?.params, interaction.request?.queryParamRules))
+            ).withQueryParams(buildQueryParams(interaction.request?.params, interaction.request?.paramRules))
             .build()
 
     private fun decideType(rule: Rule) =

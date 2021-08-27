@@ -21,7 +21,13 @@ data class ContractorRequest(
     @SerializedName("data")
     @Expose
     val data: Any?,
-    @SerializedName("queryParamRules")
+    @SerializedName("paramRules")
     @Expose
-    val queryParamRules: List<Rule>? = null
+    val paramRules: List<Rule>? = null,
+    @SerializedName("cookieParams")
+    @Expose
+    val cookieParams: List<Rule>? = null,
+    @SerializedName("headerParams")
+    @Expose
+    val headerParams: List<Rule>? = null,
 )

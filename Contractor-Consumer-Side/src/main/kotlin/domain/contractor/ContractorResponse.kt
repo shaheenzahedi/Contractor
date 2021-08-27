@@ -13,12 +13,4 @@ class ContractorResponse {
     @SerializedName("body")
     @Expose
     val body: LinkedHashMap<String, Any>? = null
-
-    @SerializedName("bodyRules")
-    @Expose
-    val bodyRules: List<Rule>? = null
-
-    @SerializedName("headerRules")
-    @Expose
-    val headerRules: List<Rule>? = null
 }
