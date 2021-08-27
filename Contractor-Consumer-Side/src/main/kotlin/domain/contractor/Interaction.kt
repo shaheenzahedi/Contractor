@@ -3,6 +3,8 @@ package domain.contractor
 import com.google.gson.annotations.Expose
 
 import com.google.gson.annotations.SerializedName
+import domain.contractor.ContractorRequest
+import domain.contractor.ContractorResponse
 
 
 data class Interaction(
@@ -17,8 +19,8 @@ data class Interaction(
     val status: Int? = null,
     @SerializedName("request")
     @Expose
-    val request: Request? = null,
+    val request: ContractorRequest? = null,
     @SerializedName("response")
     @Expose
-    val response: Response? = null
+    val response: ContractorResponse? = null,
 )

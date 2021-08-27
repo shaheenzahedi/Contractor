@@ -9,7 +9,7 @@ repositories {
 }
 dependencies {
     implementation("com.google.code.gson:gson:2.8.6")
-    implementation("com.github.tomakehurst:wiremock:2.27.2")
+    implementation("com.github.tomakehurst:wiremock-jre8:2.30.1")
 
     implementation(kotlin("stdlib-jdk8"))
 }
@@ -19,10 +19,7 @@ configurations {
         resolutionStrategy.failOnVersionConflict()
     }
 }
-tasks.withType<org.gradle.jvm.tasks.Jar>() {
-    exclude("META-INF/BC1024KE.RSA", "META-INF/BC1024KE.SF", "META-INF/BC1024KE.DSA")
-    exclude("META-INF/BC2048KE.RSA", "META-INF/BC2048KE.SF", "META-INF/BC2048KE.DSA")
-}
+
 tasks.test {
     useJUnitPlatform()
 }
