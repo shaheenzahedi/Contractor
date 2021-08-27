@@ -6,15 +6,23 @@ import com.google.gson.annotations.SerializedName
 
 
 data class Contract(
+    @SerializedName("base_url")
+    @Expose
+    var baseUrl: String?,
+
+    @SerializedName("port")
+    @Expose
+    var port: Int?,
+
     @SerializedName("provider")
     @Expose
-    var provider: String? = null,
+    var provider: String?,
 
     @SerializedName("consumer")
     @Expose
-    var consumer: String? = null,
+    var consumer: String?,
 
     @SerializedName("interactions")
     @Expose
-    var interactions: List<Interaction>? = null
+    var interactions: List<Interaction>?
 )
