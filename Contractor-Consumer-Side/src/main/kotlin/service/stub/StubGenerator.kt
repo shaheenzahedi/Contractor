@@ -2,7 +2,6 @@ package service.stub
 
 
 import com.github.tomakehurst.wiremock.client.MappingBuilder
-import com.github.tomakehurst.wiremock.client.ResponseDefinitionBuilder
 import com.github.tomakehurst.wiremock.client.WireMock.*
 import com.github.tomakehurst.wiremock.http.HttpHeader
 import com.github.tomakehurst.wiremock.http.HttpHeaders
@@ -12,7 +11,7 @@ import com.github.tomakehurst.wiremock.stubbing.StubMapping
 import com.google.gson.Gson
 import domain.contractor.Contract
 import domain.contractor.Interaction
-import java.util.LinkedHashMap
+import kotlin.collections.LinkedHashMap
 
 
 class StubGenerator(private val contract: Contract) {
@@ -36,9 +35,9 @@ class StubGenerator(private val contract: Contract) {
             .build()
     }
 
-    private fun addHeaders(headers: LinkedHashMap<String, Any>?): HttpHeaders {
+    private fun addHeaders(headers: LinkedHashMap<String, String>?): HttpHeaders {
         return HttpHeaders(
-            headers?.map { HttpHeader(it.key,it.value.toString()) }
+            headers?.map { HttpHeader(it.key,it.value) }
         )
     }
 
