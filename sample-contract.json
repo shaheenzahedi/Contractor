@@ -4,18 +4,36 @@
   "base_url": "https://api.hatchways.io/",
   "interactions": [
     {
-      "method": "GET",
+      "method": "DELETE",
       "path": "/assessment/blog/posts",
-      "status": 400,
+      "status": 405,
       "request": {
+        "queryParamRules": [
+          {
+            "name": "limit",
+            "type": "equalTo",
+            "value": "100"
+          },
+          {
+            "name": "gender",
+            "type": "contains",
+            "value": "[mf]"
+          },
+          {
+            "name": "offset",
+            "type": "matches",
+            "value": "[0-9]+"
+          },
+          {
+            "name": "loginStartsWith",
+            "type": "doesNotMatch",
+            "value": ".{0,2}"
+          }
+        ]
       },
       "response": {
-        "headers": {
-          "Content-Type": "application/json",
-          "Vary": "Accept-Encoding"
-        },
         "body": {
-          "error": "The tag parameter is required"
+          "wow": "This is perfect"
         },
         "bodyRules": [
           {
@@ -52,6 +70,18 @@
           "id": 2908005593,
           "login": "user name",
           "content": "rIljtwdclWaGQfJNMBtm"
+        }
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/assessment/blog/posts",
+      "status": 200,
+      "request": {
+      },
+      "response": {
+        "body": {
+          "login": "user name"
         }
       }
     }
