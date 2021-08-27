@@ -13,21 +13,6 @@
             "name": "limit",
             "type": "equalTo",
             "value": "100"
-          },
-          {
-            "name": "gender",
-            "type": "contains",
-            "value": "[mf]"
-          },
-          {
-            "name": "offset",
-            "type": "matches",
-            "value": "[0-9]+"
-          },
-          {
-            "name": "loginStartsWith",
-            "type": "doesNotMatch",
-            "value": ".{0,2}"
           }
         ]
       },

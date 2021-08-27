@@ -71,14 +71,14 @@ class StubGenerator(private val contract: Contract) {
 
 
     private fun decideMappingBuilder(interaction: Interaction): MappingBuilder {
-        val isParamExist = interaction.request?.params == null || interaction.request.params.isEmpty()
+        val useExactPath = interaction.request?.params.isNullOrEmpty() && interaction.request?.queryParamRules.isNullOrEmpty()
         val path = interaction.path
         val pathPattern = urlPathEqualTo(path)
         return when (HTTPMethods.valueOf(interaction.method!!.uppercase())) {
-            HTTPMethods.DELETE -> if (isParamExist) delete(path) else delete(pathPattern)
-            HTTPMethods.GET -> if (isParamExist) get(path) else get(pathPattern)
-            HTTPMethods.POST -> if (isParamExist) post(path) else post(pathPattern)
-            HTTPMethods.PUT -> if (isParamExist) put(path) else put(pathPattern)
+            HTTPMethods.DELETE -> if (useExactPath) delete(path) else delete(pathPattern)
+            HTTPMethods.GET -> if (useExactPath) get(path) else get(pathPattern)
+            HTTPMethods.POST -> if (useExactPath) post(path) else post(pathPattern)
+            HTTPMethods.PUT -> if (useExactPath) put(path) else put(pathPattern)
         }
     }
 }
