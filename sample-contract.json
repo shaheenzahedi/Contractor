@@ -4,6 +4,25 @@
   "base_url": "https://api.hatchways.io/",
   "interactions": [
     {
+      "method": "GET",
+      "path": "/test/header",
+      "status": 200,
+      "request": {
+        "headerRules": [
+          {
+            "name": "we",
+            "type": "match",
+            "value": "23"
+          }
+        ]
+      },
+      "response": {
+        "body": {
+          "header": "This is perfect"
+        }
+      }
+    },
+    {
       "method": "DELETE",
       "path": "/assessment/blog/posts",
       "status": 405,

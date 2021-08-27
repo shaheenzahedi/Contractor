@@ -43,6 +43,23 @@ class StubGenerator(private val contract: Contract) {
         return res
     }
 
+    private fun addHeaders(headers: LinkedHashMap<String, String>?): HttpHeaders {
+        return HttpHeaders(headers?.map { HttpHeader(it.key, it.value) })
+    }
+
+
+    private fun makeStubWithInteraction(interaction: Interaction) =
+        decideMappingBuilder(interaction)
+            .willReturn(
+                ResponseDefinitionBuilder()
+                    .withBody(Gson().toJson(interaction.response?.body))
+                    .withHeaders(addHeaders(interaction.response?.headers))
+                    .withStatus(interaction.status ?: 200)
+            ).withQueryParams(buildQueryParams(interaction.request?.params, interaction.request?.paramRules))
+            .withHeaders(interaction.request?.headers, interaction.request?.headerParams)
+            .withCookies(interaction.request?.cookies, interaction.request?.cookieParams)
+            .build()
+
 
     private fun decideMappingBuilder(interaction: Interaction): MappingBuilder {
         val useExactPath =
@@ -57,24 +74,40 @@ class StubGenerator(private val contract: Contract) {
         }
     }
 
-    private fun makeStubWithInteraction(interaction: Interaction) =
-        decideMappingBuilder(interaction)
-            .willReturn(
-                ResponseDefinitionBuilder()
-                    .withBody(Gson().toJson(interaction.response?.body))
-                    .withHeaders(addHeaders(interaction.response?.headers))
-                    .withStatus(interaction.status ?: 200)
-            ).withQueryParams(buildQueryParams(interaction.request?.params, interaction.request?.paramRules))
-            .build()
-
-    private fun decideType(rule: Rule) =
-        when (rule.getEnumType()) {
-            RuleType.EQUALTO -> equalTo(rule.value)
-            RuleType.CONTAINS -> containing(rule.value)
-            RuleType.MATCHES -> matching(rule.value)
-            RuleType.DOESNOTMATCH -> notMatching(rule.value)
-        }
-
-    private fun addHeaders(headers: LinkedHashMap<String, String>?) =
-        HttpHeaders(headers?.map { HttpHeader(it.key, it.value) })
 }
+
+private fun MappingBuilder.withCookies(
+    cookies: java.util.LinkedHashMap<String, String>?,
+    cookieParams: List<Rule>?
+): MappingBuilder {
+    if (cookies.isNullOrEmpty() && cookieParams.isNullOrEmpty()) return this
+    cookies?.forEach {
+        withCookie(it.key, equalTo(it.value))
+    }
+    cookieParams?.forEach {
+        withCookie(it.name, decideType(it))
+    }
+    return this
+}
+
+private fun MappingBuilder.withHeaders(
+    headers: LinkedHashMap<String, String>?,
+    headerParams: List<Rule>?
+): MappingBuilder {
+    if (headers.isNullOrEmpty() && headerParams.isNullOrEmpty()) return this
+    headers?.forEach {
+        withHeader(it.key, equalTo(it.value))
+    }
+    headerParams?.forEach {
+        withHeader(it.name, decideType(it))
+    }
+    return this
+}
+
+private fun decideType(rule: Rule) =
+    when (rule.getEnumType()) {
+        RuleType.EQUALTO -> equalTo(rule.value)
+        RuleType.CONTAINS -> containing(rule.value)
+        RuleType.MATCHES -> matching(rule.value)
+        RuleType.DOESNOTMATCH -> notMatching(rule.value)
+    }
