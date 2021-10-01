@@ -4,12 +4,11 @@ import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import com.google.gson.JsonElement
 import com.google.gson.JsonParser
-import domain.ready_to_generate.ReadyToTestModel
+import core.domain.ready_to_generate.ReadyToTestModel
 import khttp.responses.Response
-import service.mapper.pact.PactPredicateType
-import service.mapper.pact.PredicateModel
-import service.mapper.pact.ValueType
-
+import core.service.mapper.pact.PactPredicateType
+import core.service.mapper.pact.PredicateModel
+import core.service.mapper.pact.ValueType
 
 class CallbackGenerator(
     private val model: ReadyToTestModel
@@ -23,13 +22,12 @@ class CallbackGenerator(
     }
 
     fun headerTest(): CallbackCase? {
-        if (model.response?.headers == null) return null
-        if (model.response.headers.isEmpty()) return null
+        if (model.response?.headers.isNullOrEmpty()) return null
         return CallbackCase(
             doc = "`${model.method.name}\t${model.path}\n\n",
             name = "Asserts that the response has the desired header",
-            callback = { matchesMap(response.headers, model.response.headers) },
-            expected = GsonBuilder().setPrettyPrinting().create().toJson(model.response.headers),
+            callback = { matchesMap(response.headers, model.response?.headers!!) },
+            expected = GsonBuilder().setPrettyPrinting().create().toJson(model.response!!.headers),
             actual = GsonBuilder().setPrettyPrinting().create().toJson(response.headers),
             reason = "Response did not include those header defined in contract",
             tagName = "HeaderTest"
@@ -37,11 +35,10 @@ class CallbackGenerator(
     }
 
     fun bodyTest(): CallbackCase? {
-        if (model.response?.body == null) return null
-        if (model.response.body.isEmpty()) return null
+        if (model.response?.body.isNullOrEmpty()) return null
         val parser = JsonParser()
         val response = parser.parse(response.text).asJsonObject
-        val actual = parser.parse(Gson().toJson(model.response.body)).asJsonObject
+        val actual = parser.parse(Gson().toJson(model.response?.body)).asJsonObject
         return CallbackCase(
             doc = "`${model.method.name}\t${model.path}\n\n",
             tagName = "BodyTest",
@@ -54,10 +51,10 @@ class CallbackGenerator(
     }
 
     fun generateBodyRulesTest(): List<CallbackCase?> {
-        if (model.response?.bodyPredicates == null || model.response.bodyPredicates.isEmpty())
+        if (model.response?.bodyPredicates.isNullOrEmpty())
             return emptyList()
         val doc = "`${model.method.name}\t${model.path}\n\n"
-        return model.response.bodyPredicates.map {
+        return model.response?.bodyPredicates!!.map {
             when (it.type) {
                 PactPredicateType.MATCH -> buildBodyPredicateWithMatch(it, doc)
                 PactPredicateType.REGEX -> buildBodyPredicateWithRegex(it, doc)
@@ -192,10 +189,10 @@ class CallbackGenerator(
     }
 
     fun generateHeaderRulesTest(): List<CallbackCase?> {
-        if (model.response?.headerPredicates == null || model.response.headerPredicates.isEmpty())
+        if (model.response?.headerPredicates.isNullOrEmpty())
             return emptyList()
         val doc = "`${model.method.name}\t${model.path}\n\n"
-        return model.response.headerPredicates.map {
+        return model.response?.headerPredicates!!.map {
             when (it.type) {
                 PactPredicateType.MATCH -> buildHeaderPredicateWithMatch(it)
                 PactPredicateType.REGEX -> buildHeaderPredicateWithRegex(it)

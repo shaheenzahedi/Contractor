@@ -2,10 +2,10 @@ package service.mapper
 
 
 import com.google.gson.Gson
-import domain.contract.GeneralContract
-import domain.contract.contractor.Contract
-import domain.contract.pact.PactContractModel
-import domain.contract.spring_cloud_contract.SpringCloudContractModel
+import core.domain.contract.GeneralContract
+import core.domain.contract.contractor.Contract
+import core.domain.contract.pact.PactContractModel
+import core.domain.contract.spring_cloud_contract.SpringCloudContractModel
 import service.io.resource.Resource
 
 
@@ -21,7 +21,7 @@ class JsonMapper(
         if (!contractorModel.isAllNull) return contractorModel
         val springCloudContractModel = getJson(SpringCloudContractModel::class.java, path)
         if (!springCloudContractModel.isAllNull) return springCloudContractModel
-        val pactModel = getJson(PactContractModel::class.java, path)
+        val pactModel = getJson(core.domain.contract.pact.PactContractModel::class.java, path)
         if (!pactModel.isAllNull) return pactModel
         throw IllegalStateException("Couldn't recognize the contract")
     }

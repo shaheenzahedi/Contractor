@@ -1,7 +1,7 @@
 package service.generators.name
 
-import domain.ready_to_generate.ReadyToTestModel
-import service.mapper.pact.PredicateModel
+import core.domain.ready_to_generate.ReadyToTestModel
+import core.service.mapper.pact.PredicateModel
 
 class NameGenerator(
     private val model: ReadyToTestModel

@@ -1,7 +1,7 @@
 package service.generators.code.methods
 
 import com.squareup.javapoet.MethodSpec
-import domain.ready_to_generate.ReadyToTestModel
+import core.domain.ready_to_generate.ReadyToTestModel
 
 interface MethodGenerator {
     fun setupTestMethod(): MethodSpec

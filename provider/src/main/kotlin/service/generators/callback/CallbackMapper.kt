@@ -1,6 +1,6 @@
 package service.generators.callback
 
-import domain.ready_to_generate.ReadyToTestModel
+import core.domain.ready_to_generate.ReadyToTestModel
 
 class CallbackMapper {
 

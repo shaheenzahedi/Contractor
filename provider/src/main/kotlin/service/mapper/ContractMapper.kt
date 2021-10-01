@@ -1,20 +1,20 @@
 package service.mapper
 
-import domain.contract.GeneralContract
-import domain.contract.SupportedTypes
-import domain.contract.contractor.Contract
-import domain.contract.contractor.Interaction
-import domain.contract.contractor.Rule
-import domain.contract.pact.PactContractModel
-import domain.contract.pact.interactions.InteractionDTO
-import domain.contract.spring_cloud_contract.SpringCloudContractModel
-import domain.ready_to_generate.HTTPMethod
-import domain.ready_to_generate.ReadyToTestModel
-import domain.ready_to_generate.request.ReadyRequestModel
-import domain.ready_to_generate.response.ReadyResponseModel
-import service.mapper.pact.PactContractMapper
-import service.mapper.pact.PactPredicateType
-import service.mapper.pact.PredicateModel
+import core.domain.contract.GeneralContract
+import core.domain.contract.SupportedTypes
+import core.domain.contract.contractor.Contract
+import core.domain.contract.contractor.Interaction
+import core.domain.contract.contractor.Rule
+import core.domain.contract.pact.PactContractModel
+import core.domain.contract.pact.interactions.InteractionDTO
+import core.domain.contract.spring_cloud_contract.SpringCloudContractModel
+import core.domain.ready_to_generate.HTTPMethod
+import core.domain.ready_to_generate.ReadyToTestModel
+import core.domain.ready_to_generate.request.ReadyRequestModel
+import core.domain.ready_to_generate.response.ReadyResponseModel
+import core.service.mapper.pact.PactContractMapper
+import core.service.mapper.pact.PactPredicateType
+import core.service.mapper.pact.PredicateModel
 
 
 class ContractMapper(
@@ -31,7 +31,7 @@ class ContractMapper(
                     it
                 )
             }
-            SupportedTypes.PACT -> (model as PactContractModel).interactionDTOS?.map { buildModelWithPact(it) }
+            SupportedTypes.PACT -> (model as core.domain.contract.pact.PactContractModel).interactionDTOS?.map { buildModelWithPact(it) }
             SupportedTypes.SCC -> listOf(buildModelWithSpringCloudContract((model as SpringCloudContractModel)))
         }
     }

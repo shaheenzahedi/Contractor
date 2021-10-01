@@ -1,6 +1,6 @@
 package service.generators.code
 
-import domain.ready_to_generate.ReadyToTestModel
+import core.domain.ready_to_generate.ReadyToTestModel
 import service.generators.code.annotations.AnnotationGenerator
 import service.generators.code.fields.FieldGenerator
 import service.generators.code.javadocs.JavaDocGenerator

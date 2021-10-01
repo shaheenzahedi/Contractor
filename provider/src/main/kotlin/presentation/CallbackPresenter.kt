@@ -4,7 +4,7 @@ import service.generators.callback.CallbackCase
 
 class CallbackPresenter(private val callbacks: List<CallbackCase>) {
     fun retrieveSummary(): List<Boolean> {
-        return callbacks.mapIndexed { index, it ->
+        return callbacks.map {
             println("\n----------------------\t<${it.tagName}>\t----------------------")
             colorPrint(it.doc, ConsoleColors.YELLOW)
             val result = it.callback.invoke()

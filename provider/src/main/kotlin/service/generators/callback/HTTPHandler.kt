@@ -1,7 +1,7 @@
 package service.generators.callback
 
-import domain.ready_to_generate.HTTPMethod
-import domain.ready_to_generate.ReadyToTestModel
+import core.domain.ready_to_generate.HTTPMethod
+import core.domain.ready_to_generate.ReadyToTestModel
 import khttp.responses.Response
 import service.generators.callback.path.PathGenerate
 

@@ -2,12 +2,12 @@ package service.generators.code.methods
 
 import com.squareup.javapoet.CodeBlock
 import com.squareup.javapoet.MethodSpec
-import domain.ready_to_generate.ReadyToTestModel
+import core.domain.ready_to_generate.ReadyToTestModel
 import service.generators.code.annotations.AnnotationGenerator
 import service.generators.code.javadocs.JavaDocGenerator
 import service.generators.name.NameGenerator
-import service.mapper.pact.PactPredicateType
-import service.mapper.pact.PredicateModel
+import core.service.mapper.pact.PactPredicateType
+import core.service.mapper.pact.PredicateModel
 
 class JMethodGenerator(
     private val annotationGenerator: AnnotationGenerator,

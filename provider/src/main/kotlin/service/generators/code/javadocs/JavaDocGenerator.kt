@@ -1,8 +1,8 @@
 package service.generators.code.javadocs
 
 import com.squareup.javapoet.CodeBlock
-import domain.ready_to_generate.ReadyToTestModel
-import service.mapper.pact.PredicateModel
+import core.domain.ready_to_generate.ReadyToTestModel
+import core.service.mapper.pact.PredicateModel
 
 interface JavaDocGenerator {
     fun statusTestJavaDocGenerator(model: ReadyToTestModel): CodeBlock
