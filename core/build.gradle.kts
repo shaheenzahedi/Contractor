@@ -13,6 +13,9 @@ repositories {
 }
 
 dependencies {
+    implementation("com.google.code.gson:gson:2.8.8")
+    implementation("com.fasterxml.jackson.core:jackson-databind:2.11.3")
+
     testImplementation(kotlin("test"))
 }
 
