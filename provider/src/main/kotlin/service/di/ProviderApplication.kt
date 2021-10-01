@@ -7,7 +7,7 @@ import service.generators.callback.CallbackMapper
 import core.service.io.resource.file.FileResource
 import core.service.mapper.JsonMapper
 
-class CDCTestGenApplication : KoinComponent {
+class ProviderApplication : KoinComponent {
 //    val testGenerator by inject<TestGenerator>()
     val callbackMapper by inject<CallbackMapper>()
     val jsonMapper by inject<JsonMapper>()

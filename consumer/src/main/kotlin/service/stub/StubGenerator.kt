@@ -10,10 +10,10 @@ import com.github.tomakehurst.wiremock.matching.StringValuePattern
 import com.github.tomakehurst.wiremock.stubbing.StubImport
 import com.github.tomakehurst.wiremock.stubbing.StubImport.stubImport
 import com.google.gson.Gson
-import domain.contractor.Contract
-import domain.contractor.Interaction
-import domain.contractor.Rule
-import domain.contractor.RuleType
+import core.domain.contract.contractor.Contract
+import core.domain.contract.contractor.Interaction
+import core.domain.contract.contractor.Rule
+import core.domain.contract.contractor.RuleType
 
 
 class StubGenerator(private val contract: Contract) {

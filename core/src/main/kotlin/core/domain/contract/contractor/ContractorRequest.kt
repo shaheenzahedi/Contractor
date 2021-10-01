@@ -1,9 +1,7 @@
 package core.domain.contract.contractor
 
 import com.google.gson.annotations.Expose
-
 import com.google.gson.annotations.SerializedName
-import core.domain.contract.contractor.Rule
 
 
 data class ContractorRequest(
@@ -24,5 +22,14 @@ data class ContractorRequest(
     val data: Any?,
     @SerializedName("queryParamRules")
     @Expose
-    val queryParamRules: List<Rule>? = null
+    val queryParamRules: List<Rule>? = null,
+    @SerializedName("paramRules")
+    @Expose
+    val paramRules: List<Rule>? = null,
+    @SerializedName("cookieParams")
+    @Expose
+    val cookieParams: List<Rule>? = null,
+    @SerializedName("headerParams")
+    @Expose
+    val headerParams: List<Rule>? = null,
 )

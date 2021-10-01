@@ -3,13 +3,13 @@ import presentation.CallbackPresenter
 import presentation.ConsoleColors
 import presentation.SummaryPresenter
 import presentation.colorPrint
-import service.di.CDCTestGenApplication
+import service.di.ProviderApplication
 import core.service.io.FileDialog
 import core.service.mapper.ContractMapper
 import javax.swing.filechooser.FileNameExtensionFilter
 
 fun main() {
-    val application = CDCTestGenApplication()
+    val application = ProviderApplication()
     startKoin {
         modules(application.integrationTestJavaModule)
         modules(application.fileResourceModule)

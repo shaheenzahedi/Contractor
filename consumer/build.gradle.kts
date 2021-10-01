@@ -10,6 +10,7 @@ repositories {
 dependencies {
     implementation("com.google.code.gson:gson:2.8.6")
     implementation("com.github.tomakehurst:wiremock-jre8:2.30.1")
+    implementation(project(":core"))
     implementation(kotlin("stdlib-jdk8"))
 }
 
