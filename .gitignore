@@ -12,19 +12,19 @@
 /consumer/build/
 /consumer/out/
 
-contractor-front-end/node_modules
-contractor-front-end/.pnp
-contractor-front-end/.pnp.js
-contractor-front-end/coverage
-contractor-front-end/build
-contractor-front-end/.DS_Store
-contractor-front-end/.env.local
-contractor-front-end/.env.development.local
-contractor-front-end/.env.test.local
-contractor-front-end/.env.production.local
-contractor-front-end/npm-debug.log*
-contractor-front-end/yarn-debug.log*
-contractor-front-end/yarn-error.log*
+front/node_modules
+front/.pnp
+front/.pnp.js
+front/coverage
+front/build
+front/.DS_Store
+front/.env.local
+front/.env.development.local
+front/.env.test.local
+front/.env.production.local
+front/npm-debug.log*
+front/yarn-debug.log*
+front/yarn-error.log*
 
 # Ignore Gradle project-specific cache directory
 .gradle
