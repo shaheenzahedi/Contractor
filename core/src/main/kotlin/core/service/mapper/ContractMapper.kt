@@ -1,11 +1,10 @@
-package service.mapper
+package core.service.mapper
 
 import core.domain.contract.GeneralContract
 import core.domain.contract.SupportedTypes
 import core.domain.contract.contractor.Contract
 import core.domain.contract.contractor.Interaction
 import core.domain.contract.contractor.Rule
-import core.domain.contract.pact.PactContractModel
 import core.domain.contract.pact.interactions.InteractionDTO
 import core.domain.contract.spring_cloud_contract.SpringCloudContractModel
 import core.domain.ready_to_generate.HTTPMethod

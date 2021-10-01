@@ -4,14 +4,8 @@ import org.koin.core.component.KoinComponent
 import org.koin.core.component.inject
 import org.koin.dsl.module
 import service.generators.callback.CallbackMapper
-import service.generators.code.TestGenerator
-import service.generators.code.annotations.JAnnotationGenerator
-import service.generators.code.classes.JClassGenerator
-import service.generators.code.fields.JFieldGenerator
-import service.generators.code.javadocs.JJavaDocGenerator
-import service.generators.code.methods.JMethodGenerator
-import service.io.resource.file.FileResource
-import service.mapper.JsonMapper
+import core.service.io.resource.file.FileResource
+import core.service.mapper.JsonMapper
 
 class CDCTestGenApplication : KoinComponent {
 //    val testGenerator by inject<TestGenerator>()

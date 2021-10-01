@@ -1,6 +1,6 @@
-package service.io.resource.file
+package core.service.io.resource.file
 
-import service.io.resource.Resource
+import core.service.io.resource.Resource
 import java.io.File
 import java.nio.file.Files
 import java.nio.file.Path

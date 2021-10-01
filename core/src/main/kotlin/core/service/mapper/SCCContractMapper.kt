@@ -1,4 +1,4 @@
-package service.mapper.scc
+package core.service.mapper
 
 class SCCContractMapper {
 }
