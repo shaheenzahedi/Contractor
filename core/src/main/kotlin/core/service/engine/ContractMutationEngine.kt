@@ -1,5 +1,6 @@
 package core.service.engine
 
+import core.domain.ready_to_generate.HTTPMethod
 import core.domain.ready_to_generate.ReadyToTestModel
 
 class ContractMutationEngine(private val contracts: List<ReadyToTestModel>?) {
@@ -21,5 +22,13 @@ class ContractMutationEngine(private val contracts: List<ReadyToTestModel>?) {
         return mutableListOf<Int>()
             .apply { for (i in 1..mutationCount) add(generateNotSameNumber(status)) }
     }
+
+    fun generateMethodMutations(position: Int): List<HTTPMethod>? {
+        val method = contracts?.get(position)?.method
+        requireNotNull(method) { return null }
+        return HTTPMethod.values().toMutableList().apply { removeIf { it == method } }
+    }
+
+
 
 }
