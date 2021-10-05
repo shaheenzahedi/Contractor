@@ -8,7 +8,6 @@ import core.service.mapper.JsonMapper
 import org.junit.jupiter.api.AfterEach
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
-import org.junit.jupiter.api.assertAll
 import kotlin.test.assertNotEquals
 import kotlin.test.assertNotNull
 import kotlin.test.assertNotSame
@@ -31,7 +30,7 @@ internal class ContractMutationEngineTest {
     }
 
     @Test
-    fun `Check list of status mutation is not empty`(){
+    fun `Check list of status mutation is not empty`() {
         assert(!contracts.isNullOrEmpty())
         val statusMutations = mutateContract.generateStatusMutation(0)
         assert(!statusMutations.isNullOrEmpty())
@@ -47,7 +46,7 @@ internal class ContractMutationEngineTest {
     }
 
     @Test
-    fun `Check list of method mutation is not empty`(){
+    fun `Check list of method mutation is not empty`() {
         assert(!contracts.isNullOrEmpty())
         val methodMutations = mutateContract.generateMethodMutations(0)
         assert(!methodMutations.isNullOrEmpty())
@@ -61,4 +60,26 @@ internal class ContractMutationEngineTest {
         assertNotNull(method)
         methodMutations?.forEach { assertNotSame(it, method) }
     }
+
+    @Test
+    fun `Check body response mutation is not empty`() {
+        assert(!contracts.isNullOrEmpty())
+        val bodyMutations = mutateContract.generateResponseBodyMutations(0)
+        assert(!bodyMutations.isNullOrEmpty())
+        val body = contracts?.get(0)?.response?.body
+        assert(!body.isNullOrEmpty())
+        bodyMutations?.forEach { assertNotEquals(it, body) }
+    }
+
+    @Test
+    fun `Check header mutation is not empty`(){
+        assert(!contracts.isNullOrEmpty())
+        val headerMutations = mutateContract.generateHeaderMutations(0)
+        assert(!headerMutations.isNullOrEmpty())
+        val headers = contracts?.get(0)?.response?.headers
+        assert(!headers.isNullOrEmpty())
+        headerMutations?.forEach { assertNotEquals(it, headers) }
+    }
+
+
 }

@@ -1,7 +1,12 @@
 package core.service.engine
 
+import com.google.gson.Gson
+import com.natpryce.snodge.json.defaultJsonMutagens
+import com.natpryce.snodge.json.forStrings
+import com.natpryce.snodge.mutants
 import core.domain.ready_to_generate.HTTPMethod
 import core.domain.ready_to_generate.ReadyToTestModel
+import kotlin.random.Random
 
 class ContractMutationEngine(private val contracts: List<ReadyToTestModel>?) {
     private val mutationCount = 5
@@ -29,6 +34,22 @@ class ContractMutationEngine(private val contracts: List<ReadyToTestModel>?) {
         return HTTPMethod.values().toMutableList().apply { removeIf { it == method } }
     }
 
+    fun generateResponseBodyMutations(position: Int): List<LinkedHashMap<String, Any>>? {
+        val body = contracts?.get(position)?.response?.body
+        requireNotNull(body) { return null }
+        return generateMutatedBody(body).map { it as LinkedHashMap<String, Any> }
+    }
+
+    private fun generateMutatedBody(body: LinkedHashMap<*,*>): List<LinkedHashMap<*, *>> =
+        Random
+            .mutants(defaultJsonMutagens().forStrings(), mutationCount, Gson().toJson(body))
+            .map { Gson().fromJson(it, LinkedHashMap::class.java) }
+
+    fun generateHeaderMutations(position: Int): List<LinkedHashMap<String, String>>? {
+        val headers = contracts?.get(position)?.request?.headers
+        requireNotNull(headers){return null}
+        return generateMutatedBody(headers).map { it as LinkedHashMap<String, String> }
+    }
 
 
 }
