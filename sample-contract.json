@@ -42,11 +42,6 @@
         "bodyRules": [
           {
             "name": "error",
-            "type": "type",
-            "value": "String"
-          },
-          {
-            "name": "error",
             "type": "match",
             "value": "The tag parameter is required"
           }
