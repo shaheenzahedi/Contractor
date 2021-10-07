@@ -4,11 +4,12 @@ import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import com.google.gson.JsonElement
 import com.google.gson.JsonParser
+import com.google.gson.stream.MalformedJsonException
 import core.domain.ready_to_generate.ReadyToTestModel
-import khttp.responses.Response
 import core.service.mapper.pact.PactPredicateType
 import core.service.mapper.pact.PredicateModel
 import core.service.mapper.pact.ValueType
+import khttp.responses.Response
 
 class CallbackGenerator(
     private val model: ReadyToTestModel
@@ -32,7 +33,29 @@ class CallbackGenerator(
     fun bodyTest(): CallbackCase? {
         if (model.response?.body.isNullOrEmpty()) return null
         val parser = JsonParser()
-        val response = parser.parse(response.text).asJsonObject
+        val response = try {
+            parser.parse(response.text).asJsonObject
+        } catch (ex: MalformedJsonException) {
+            return CallbackCase(
+                doc = "`${model.method.name}\t${model.path}\n\n",
+                tagName = "BodyTest",
+                name = "Asserts that the response has the desired body",
+                callback = { false },
+                expected = "A valid Json response",
+                actual = ex.message,
+                reason = "The response is not present in the packet"
+            )
+        } catch (e: Exception) {
+            return CallbackCase(
+                doc = "`${model.method.name}\t${model.path}\n\n",
+                tagName = "BodyTest",
+                name = "Asserts that the response has the desired body",
+                callback = { false },
+                expected = "A valid Json response",
+                actual = "An unexpected error happened ${e.message}",
+                reason = "The response is not present in the packet"
+            )
+        }
         val actual = parser.parse(Gson().toJson(model.response?.body)).asJsonObject
         return CallbackCase(
             doc = "`${model.method.name}\t${model.path}\n\n",
@@ -191,7 +214,7 @@ class CallbackGenerator(
             when (it.type) {
                 PactPredicateType.MATCH -> buildHeaderPredicateWithMatch(it)
                 PactPredicateType.REGEX -> buildHeaderPredicateWithRegex(it)
-                PactPredicateType.TYPE -> buildHeaderPredicateWithType(it,doc)
+                PactPredicateType.TYPE -> buildHeaderPredicateWithType(it, doc)
             }
         }
     }

@@ -1,11 +1,8 @@
 import org.koin.core.context.startKoin
-import presentation.TestPresenter
-import presentation.ConsoleColors
-import presentation.SummaryPresenter
-import presentation.colorPrint
 import service.di.ProviderApplication
 import core.service.io.FileDialog
 import core.service.mapper.ContractMapper
+import presentation.*
 import service.generators.callback.CallbackMapper
 import javax.swing.filechooser.FileNameExtensionFilter
 
@@ -27,6 +24,6 @@ fun main() {
 //    val input = Scanner(System.`in`).next()
     val mapper = CallbackMapper(model)
     val testResults = TestPresenter(mapper.callbacks()).retrieveSummary()
-    mapper.mutations()
-    SummaryPresenter(testResults).showSummary()
+    val mutationResults = MutationPresenter(mapper.mutations()).retrieveSummary()
+    SummaryPresenter(testResults, mutationResults).showSummary()
 }

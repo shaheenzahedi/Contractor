@@ -9,8 +9,8 @@ class CallbackMapper(private val model: List<ReadyToTestModel>) {
         return model.toMutableList().map(::buildCallbacks).flatten()
     }
 
-    fun mutations(): List<ReadyToTestModel>? {
-        return ContractMutationEngine(model).generateContractMutants()
+    fun mutations(): List<CallbackCase>? {
+        return ContractMutationEngine(model).generateContractMutants()?.toMutableList()?.map(::buildCallbacks)?.flatten()
     }
 
     private fun buildCallbacks(model: ReadyToTestModel): List<CallbackCase> =
