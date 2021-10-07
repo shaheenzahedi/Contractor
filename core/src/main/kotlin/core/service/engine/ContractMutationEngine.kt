@@ -10,29 +10,9 @@ import kotlin.random.Random
 
 class ContractMutationEngine(private val contracts: List<ReadyToTestModel>?) {
     private val mutationCount = 5
-    fun generateStatusMutation(position: Int): List<Int>? {
-        val status = contracts?.get(position)?.status
-        requireNotNull(status) { return null }
-        return getGeneratedStatus(status)
-    }
+    fun generateStatusMutation() = (1..mutationCount).map { (100..999).random() }
 
-    private fun getGeneratedStatus(status: Int): List<Int> {
-        fun generateNotSameNumber(number: Int): Int {
-            var result = (100..999).random()
-            while (result == number) {
-                result = (100..999).random()
-            }
-            return result
-        }
-        return mutableListOf<Int>()
-            .apply { for (i in 1..mutationCount) add(generateNotSameNumber(status)) }
-    }
-
-    fun generateMethodMutations(position: Int): List<HTTPMethod>? {
-        val method = contracts?.get(position)?.method
-        requireNotNull(method) { return null }
-        return HTTPMethod.values().toMutableList().apply { removeIf { it == method } }
-    }
+    fun generateMethodMutations() = HTTPMethod.values().toMutableList()
 
     fun generateResponseBodyMutations(position: Int) =
         generateAnyMutatedPairs(contracts?.get(position)?.response?.body)
