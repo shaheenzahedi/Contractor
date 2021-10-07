@@ -62,7 +62,7 @@ class ContractMapper(
 
     private fun mapToBodyPredicate(rule: Rule) = PredicateModel(
         rule.name,
-        PactPredicateType.valueOf(rule.type!!.uppercase()),
+        PactPredicateType.valueOf(rule.type.uppercase()),
         rule.value
     )
 

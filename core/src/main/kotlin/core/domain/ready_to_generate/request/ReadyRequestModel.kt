@@ -7,5 +7,4 @@ data class ReadyRequestModel(
     val params: LinkedHashMap<String, String>?,
     val cookies: LinkedHashMap<String, String>?,
     val data: Any?
-) {
-}
+)
