@@ -37,25 +37,31 @@ class ContractMutationEngine(private val contracts: List<ReadyToTestModel>?) {
     fun generateResponseBodyMutations(position: Int): List<LinkedHashMap<String, Any>>? {
         val body = contracts?.get(position)?.response?.body
         requireNotNull(body) { return null }
-        return generateMutatedBody(body).map { it as LinkedHashMap<String, Any> }
+        return generateMutatedPairs(body).map { it as LinkedHashMap<String, Any> }
     }
 
     fun generateRequestBodyMutations(position: Int): List<LinkedHashMap<String, Any>>? {
         val body = contracts?.get(position)?.request?.body
         requireNotNull(body) { return null }
-        return generateMutatedBody(body).map { it as LinkedHashMap<String, Any> }
+        return generateMutatedPairs(body).map { it as LinkedHashMap<String, Any> }
     }
 
 
-    private fun generateMutatedBody(body: LinkedHashMap<*,*>): List<LinkedHashMap<*, *>> =
+    private fun generateMutatedPairs(body: LinkedHashMap<*, *>): List<LinkedHashMap<*, *>> =
         Random
             .mutants(defaultJsonMutagens().forStrings(), mutationCount, Gson().toJson(body))
             .map { Gson().fromJson(it, LinkedHashMap::class.java) }
 
     fun generateRequestHeaderMutations(position: Int): List<LinkedHashMap<String, String>>? {
         val headers = contracts?.get(position)?.request?.headers
-        requireNotNull(headers){return null}
-        return generateMutatedBody(headers).map { it as LinkedHashMap<String, String> }
+        requireNotNull(headers) { return null }
+        return generateMutatedPairs(headers).map { it as LinkedHashMap<String, String> }
+    }
+
+    fun generateParamsMutations(position: Int): List<LinkedHashMap<String, String>>? {
+        val params = contracts?.get(position)?.request?.params
+        requireNotNull(params) { return null }
+        return generateMutatedPairs(params).map { it as LinkedHashMap<String, String> }
     }
 
 

@@ -8,6 +8,9 @@
       "path": "/test/header",
       "status": 200,
       "request": {
+        "params": {
+          "tag": "tech"
+        },
         "headers": {
           "Content-Accepted": "Application/Json"
         },
