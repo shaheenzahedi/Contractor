@@ -46,12 +46,6 @@ class ContractMutationEngine(private val contracts: List<ReadyToTestModel>?) {
         return generateMutatedPairs(body).map { it as LinkedHashMap<String, Any> }
     }
 
-
-    private fun generateMutatedPairs(body: LinkedHashMap<*, *>): List<LinkedHashMap<*, *>> =
-        Random
-            .mutants(defaultJsonMutagens().forStrings(), mutationCount, Gson().toJson(body))
-            .map { Gson().fromJson(it, LinkedHashMap::class.java) }
-
     fun generateRequestHeaderMutations(position: Int): List<LinkedHashMap<String, String>>? {
         val headers = contracts?.get(position)?.request?.headers
         requireNotNull(headers) { return null }
@@ -64,5 +58,14 @@ class ContractMutationEngine(private val contracts: List<ReadyToTestModel>?) {
         return generateMutatedPairs(params).map { it as LinkedHashMap<String, String> }
     }
 
+    fun generateCookiesMutations(position: Int): List<LinkedHashMap<String, String>>? {
+        val cookies = contracts?.get(position)?.request?.cookies
+        requireNotNull(cookies) { return null }
+        return generateMutatedPairs(cookies).map { it as LinkedHashMap<String, String> }
+    }
 
+    private fun generateMutatedPairs(body: LinkedHashMap<*, *>): List<LinkedHashMap<*, *>> =
+        Random
+            .mutants(defaultJsonMutagens().forStrings(), mutationCount, Gson().toJson(body))
+            .map { Gson().fromJson(it, LinkedHashMap::class.java) }
 }
