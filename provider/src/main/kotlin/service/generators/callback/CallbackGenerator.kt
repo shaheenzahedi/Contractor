@@ -14,12 +14,7 @@ class CallbackGenerator(
     private val model: ReadyToTestModel
 ) {
 
-    private val response: Response
-
-    init {
-        val handler = HTTPHandler(model)
-        response = handler.retrieveResponse()
-    }
+    private val response: Response = HTTPHandler(model).retrieveResponse()
 
     fun headerTest(): CallbackCase? {
         if (model.response?.headers.isNullOrEmpty()) return null

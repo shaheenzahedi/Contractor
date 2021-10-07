@@ -9,7 +9,7 @@ import core.service.mapper.JsonMapper
 
 class ProviderApplication : KoinComponent {
 //    val testGenerator by inject<TestGenerator>()
-    val callbackMapper by inject<CallbackMapper>()
+//    val callbackMapper by inject<CallbackMapper>()
     val jsonMapper by inject<JsonMapper>()
 //    val fileResource by inject<FileResource>()
     val fileResourceModule = module {
@@ -17,7 +17,7 @@ class ProviderApplication : KoinComponent {
         single { JsonMapper(get() as FileResource) }
     }
     val integrationTestJavaModule = module {
-        single { CallbackMapper() }
+//        single { CallbackMapper() }
 //        single { JClassGenerator() }
 //        single { JJavaDocGenerator() }
 //        single { JAnnotationGenerator(get() as JClassGenerator) }

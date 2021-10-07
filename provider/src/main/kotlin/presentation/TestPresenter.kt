@@ -2,7 +2,7 @@ package presentation
 
 import service.generators.callback.CallbackCase
 
-class CallbackPresenter(private val callbacks: List<CallbackCase>) {
+class TestPresenter(private val callbacks: List<CallbackCase>) {
     fun retrieveSummary(): List<Boolean> {
         return callbacks.map {
             println("\n----------------------\t<${it.tagName}>\t----------------------")

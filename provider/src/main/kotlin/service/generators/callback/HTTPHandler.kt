@@ -16,7 +16,6 @@ class HTTPHandler(private val model: ReadyToTestModel) {
     }
 
     private fun performCall(path: String): Response {
-
         return when (model.method) {
             HTTPMethod.PUT -> put(
                 url = path,

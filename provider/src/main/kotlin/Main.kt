@@ -1,11 +1,12 @@
 import org.koin.core.context.startKoin
-import presentation.CallbackPresenter
+import presentation.TestPresenter
 import presentation.ConsoleColors
 import presentation.SummaryPresenter
 import presentation.colorPrint
 import service.di.ProviderApplication
 import core.service.io.FileDialog
 import core.service.mapper.ContractMapper
+import service.generators.callback.CallbackMapper
 import javax.swing.filechooser.FileNameExtensionFilter
 
 fun main() {
@@ -22,7 +23,10 @@ fun main() {
     requireNotNull(model) {
         throw Exception("We could not extract model from the contract, check that you're contract is in standard format")
     }
-
-    val results = CallbackPresenter(application.callbackMapper.callbacks(model)).retrieveSummary()
-    SummaryPresenter(results).showSummary()
+//    println("Do you want to perform mutation testing?(Y/N)")
+//    val input = Scanner(System.`in`).next()
+    val mapper = CallbackMapper(model)
+    val testResults = TestPresenter(mapper.callbacks()).retrieveSummary()
+    mapper.mutations()
+    SummaryPresenter(testResults).showSummary()
 }

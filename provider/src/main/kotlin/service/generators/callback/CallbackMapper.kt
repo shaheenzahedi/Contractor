@@ -1,11 +1,16 @@
 package service.generators.callback
 
 import core.domain.ready_to_generate.ReadyToTestModel
+import core.service.engine.ContractMutationEngine
 
-class CallbackMapper {
+class CallbackMapper(private val model: List<ReadyToTestModel>) {
 
-    fun callbacks(model: List<ReadyToTestModel>): List<CallbackCase> {
+    fun callbacks(): List<CallbackCase> {
         return model.toMutableList().map(::buildCallbacks).flatten()
+    }
+
+    fun mutations(): List<ReadyToTestModel>? {
+        return ContractMutationEngine(model).generateContractMutants()
     }
 
     private fun buildCallbacks(model: ReadyToTestModel): List<CallbackCase> =
