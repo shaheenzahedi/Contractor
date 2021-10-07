@@ -12,10 +12,11 @@ import core.service.mapper.pact.ValueType
 import khttp.responses.Response
 
 class CallbackGenerator(
-    private val model: ReadyToTestModel
+    private val model: ReadyToTestModel,
+    isMutation: Boolean
 ) {
 
-    private val response: Response = HTTPHandler(model).retrieveResponse()
+    private val response: Response = HTTPHandler(model).retrieveResponse(isMutation)
 
     fun headerTest(): CallbackCase? {
         if (model.response?.headers.isNullOrEmpty()) return null
