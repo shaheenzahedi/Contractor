@@ -34,35 +34,26 @@ class ContractMutationEngine(private val contracts: List<ReadyToTestModel>?) {
         return HTTPMethod.values().toMutableList().apply { removeIf { it == method } }
     }
 
-    fun generateResponseBodyMutations(position: Int): List<LinkedHashMap<String, Any>>? {
-        val body = contracts?.get(position)?.response?.body
-        requireNotNull(body) { return null }
-        return generateMutatedPairs(body).map { it as LinkedHashMap<String, Any> }
-    }
+    fun generateResponseBodyMutations(position: Int) =
+        generateAnyMutatedPairs(contracts?.get(position)?.response?.body)
 
-    fun generateRequestBodyMutations(position: Int): List<LinkedHashMap<String, Any>>? {
-        val body = contracts?.get(position)?.request?.body
-        requireNotNull(body) { return null }
-        return generateMutatedPairs(body).map { it as LinkedHashMap<String, Any> }
-    }
+    fun generateRequestBodyMutations(position: Int) =
+        generateAnyMutatedPairs(contracts?.get(position)?.request?.body)
 
-    fun generateRequestHeaderMutations(position: Int): List<LinkedHashMap<String, String>>? {
-        val headers = contracts?.get(position)?.request?.headers
-        requireNotNull(headers) { return null }
-        return generateMutatedPairs(headers).map { it as LinkedHashMap<String, String> }
-    }
+    fun generateRequestHeaderMutations(position: Int) =
+        generateStringMutatedPairs(contracts?.get(position)?.request?.headers)
 
-    fun generateParamsMutations(position: Int): List<LinkedHashMap<String, String>>? {
-        val params = contracts?.get(position)?.request?.params
-        requireNotNull(params) { return null }
-        return generateMutatedPairs(params).map { it as LinkedHashMap<String, String> }
-    }
+    fun generateParamsMutations(position: Int) =
+        generateStringMutatedPairs(contracts?.get(position)?.request?.params)
 
-    fun generateCookiesMutations(position: Int): List<LinkedHashMap<String, String>>? {
-        val cookies = contracts?.get(position)?.request?.cookies
-        requireNotNull(cookies) { return null }
-        return generateMutatedPairs(cookies).map { it as LinkedHashMap<String, String> }
-    }
+    fun generateCookiesMutations(position: Int) =
+        generateStringMutatedPairs(contracts?.get(position)?.request?.cookies)
+
+    private fun generateStringMutatedPairs(body: LinkedHashMap<String, String>?) =
+        body?.let { generateMutatedPairs(it).map { mutant -> mutant as LinkedHashMap<String, String> } }
+
+    private fun generateAnyMutatedPairs(body: LinkedHashMap<String, Any>?) =
+        body?.let { generateMutatedPairs(it).map { mutant -> mutant as LinkedHashMap<String, Any> } }
 
     private fun generateMutatedPairs(body: LinkedHashMap<*, *>): List<LinkedHashMap<*, *>> =
         Random
