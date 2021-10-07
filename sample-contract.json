@@ -8,6 +8,12 @@
       "path": "/test/header",
       "status": 200,
       "request": {
+        "headers": {
+          "Content-Accepted": "Application/Json"
+        },
+        "body": {
+          "login": "sample body login"
+        },
         "headerRules": [
           {
             "name": "we",
@@ -18,7 +24,10 @@
       },
       "response": {
         "body": {
-          "header": "This is perfect"
+          "login": "sample body login"
+        },
+        "headers": {
+          "Content-Accepted": "Application/Json"
         }
       }
     },

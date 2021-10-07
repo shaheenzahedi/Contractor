@@ -40,12 +40,19 @@ class ContractMutationEngine(private val contracts: List<ReadyToTestModel>?) {
         return generateMutatedBody(body).map { it as LinkedHashMap<String, Any> }
     }
 
+    fun generateRequestBodyMutations(position: Int): List<LinkedHashMap<String, Any>>? {
+        val body = contracts?.get(position)?.request?.body
+        requireNotNull(body) { return null }
+        return generateMutatedBody(body).map { it as LinkedHashMap<String, Any> }
+    }
+
+
     private fun generateMutatedBody(body: LinkedHashMap<*,*>): List<LinkedHashMap<*, *>> =
         Random
             .mutants(defaultJsonMutagens().forStrings(), mutationCount, Gson().toJson(body))
             .map { Gson().fromJson(it, LinkedHashMap::class.java) }
 
-    fun generateHeaderMutations(position: Int): List<LinkedHashMap<String, String>>? {
+    fun generateRequestHeaderMutations(position: Int): List<LinkedHashMap<String, String>>? {
         val headers = contracts?.get(position)?.request?.headers
         requireNotNull(headers){return null}
         return generateMutatedBody(headers).map { it as LinkedHashMap<String, String> }
