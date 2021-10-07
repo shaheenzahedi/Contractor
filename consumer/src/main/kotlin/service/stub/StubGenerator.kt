@@ -7,6 +7,7 @@ import com.github.tomakehurst.wiremock.client.WireMock.*
 import com.github.tomakehurst.wiremock.http.HttpHeader
 import com.github.tomakehurst.wiremock.http.HttpHeaders
 import com.github.tomakehurst.wiremock.matching.StringValuePattern
+import com.github.tomakehurst.wiremock.matching.UrlPattern
 import com.github.tomakehurst.wiremock.stubbing.StubImport
 import com.github.tomakehurst.wiremock.stubbing.StubImport.stubImport
 import com.google.gson.Gson
@@ -14,7 +15,7 @@ import core.domain.contract.contractor.Contract
 import core.domain.contract.contractor.Interaction
 import core.domain.contract.contractor.Rule
 import core.domain.contract.contractor.RuleType
-
+import core.domain.ready_to_generate.HTTPMethod
 
 class StubGenerator(private val contract: Contract) {
     fun createAllStubs(): StubImport {
@@ -66,11 +67,13 @@ class StubGenerator(private val contract: Contract) {
             interaction.request?.params.isNullOrEmpty() && interaction.request?.paramRules.isNullOrEmpty()
         val path = interaction.path
         val pathPattern = urlPathEqualTo(path)
-        return when (HTTPMethods.valueOf(interaction.method!!.uppercase())) {
-            HTTPMethods.DELETE -> if (useExactPath) delete(path) else delete(pathPattern)
-            HTTPMethods.GET -> if (useExactPath) get(path) else get(pathPattern)
-            HTTPMethods.POST -> if (useExactPath) post(path) else post(pathPattern)
-            HTTPMethods.PUT -> if (useExactPath) put(path) else put(pathPattern)
+        return when (HTTPMethod.valueOf(interaction.method!!.uppercase())) {
+            HTTPMethod.DELETE -> if (useExactPath) delete(path) else delete(pathPattern)
+            HTTPMethod.GET -> if (useExactPath) get(path) else get(pathPattern)
+            HTTPMethod.POST -> if (useExactPath) post(path) else post(pathPattern)
+            HTTPMethod.PUT -> if (useExactPath) put(path) else put(pathPattern)
+            HTTPMethod.PATCH -> if (useExactPath) patch(UrlPattern(equalTo(path), false)) else patch(pathPattern)
+            HTTPMethod.OPTIONS -> if (useExactPath) options(UrlPattern(equalTo(path), false)) else options(pathPattern)
         }
     }
 

@@ -4,22 +4,19 @@ import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import com.google.gson.JsonElement
 import com.google.gson.JsonParser
+import com.google.gson.stream.MalformedJsonException
 import core.domain.ready_to_generate.ReadyToTestModel
-import khttp.responses.Response
 import core.service.mapper.pact.PactPredicateType
 import core.service.mapper.pact.PredicateModel
 import core.service.mapper.pact.ValueType
+import khttp.responses.Response
 
 class CallbackGenerator(
-    private val model: ReadyToTestModel
+    private val model: ReadyToTestModel,
+    isMutation: Boolean
 ) {
 
-    private val response: Response
-
-    init {
-        val handler = HTTPHandler(model)
-        response = handler.retrieveResponse()
-    }
+    private val response: Response = HTTPHandler(model).retrieveResponse(isMutation)
 
     fun headerTest(): CallbackCase? {
         if (model.response?.headers.isNullOrEmpty()) return null
@@ -37,7 +34,19 @@ class CallbackGenerator(
     fun bodyTest(): CallbackCase? {
         if (model.response?.body.isNullOrEmpty()) return null
         val parser = JsonParser()
-        val response = parser.parse(response.text).asJsonObject
+        val response = try {
+            parser.parse(response.text).asJsonObject
+        } catch (ex: Exception) {
+            return CallbackCase(
+                doc = "`${model.method.name}\t${model.path}\n\n",
+                tagName = "BodyTest",
+                name = "Asserts that the response has the desired body",
+                callback = { false },
+                expected = GsonBuilder().setPrettyPrinting().create().toJson(model.response?.body),
+                actual = response.text,
+                reason = "The response is not present in the packet"
+            )
+        }
         val actual = parser.parse(Gson().toJson(model.response?.body)).asJsonObject
         return CallbackCase(
             doc = "`${model.method.name}\t${model.path}\n\n",
@@ -196,7 +205,7 @@ class CallbackGenerator(
             when (it.type) {
                 PactPredicateType.MATCH -> buildHeaderPredicateWithMatch(it)
                 PactPredicateType.REGEX -> buildHeaderPredicateWithRegex(it)
-                PactPredicateType.TYPE -> buildHeaderPredicateWithType(it,doc)
+                PactPredicateType.TYPE -> buildHeaderPredicateWithType(it, doc)
             }
         }
     }
@@ -243,7 +252,7 @@ class CallbackGenerator(
         return null
     }
 
-    fun generateStatusTest(): CallbackCase? {
+    fun statusTest(): CallbackCase? {
         if (model.status == null) return null
         return CallbackCase(
             doc = "`${model.method.name}\t${model.path}\n\n",
@@ -257,7 +266,7 @@ class CallbackGenerator(
     }
 
 
-    private fun matchesMap(map1: Map<String, Any>, reference: Map<String, Any>): Boolean {
-        return reference.all { (k, v) -> map1[k] == v }
+    private fun matchesMap(map: Map<String, Any>, reference: Map<String, Any>): Boolean {
+        return reference.all { (k, v) -> map[k] == v }
     }
 }

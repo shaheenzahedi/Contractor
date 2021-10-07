@@ -1,10 +1,10 @@
 {
   "provider": "my provider name",
   "consumer": "my consumer body",
-  "base_url": "https://api.hatchways.io/",
+  "port": "8080",
   "interactions": [
     {
-      "method": "GET",
+      "method": "POST",
       "path": "/test/header",
       "status": 200,
       "request": {
@@ -34,68 +34,6 @@
         },
         "headers": {
           "Content-Accepted": "Application/Json"
-        }
-      }
-    },
-    {
-      "method": "DELETE",
-      "path": "/assessment/blog/posts",
-      "status": 405,
-      "request": {
-        "queryParamRules": [
-          {
-            "name": "loginStartsWith",
-            "type": "doesNotMatch",
-            "value": ".{0,2}"
-          }
-        ]
-      },
-      "response": {
-        "body": {
-          "wow": "This is perfect"
-        },
-        "bodyRules": [
-          {
-            "name": "error",
-            "type": "match",
-            "value": "The tag parameter is required"
-          }
-        ],
-        "headerRules": [
-          {
-            "name": "Content-Type",
-            "type": "regex",
-            "value": "application/json(;\\s?charset=[\\w\\-]+)?"
-          }
-        ]
-      }
-    },
-    {
-      "method": "GET",
-      "path": "/assessment/blog/posts",
-      "status": 200,
-      "request": {
-        "params": {
-          "tag": "tech"
-        }
-      },
-      "response": {
-        "body": {
-          "id": 2908005593,
-          "login": "user name",
-          "content": "rIljtwdclWaGQfJNMBtm"
-        }
-      }
-    },
-    {
-      "method": "POST",
-      "path": "/assessment/blog/posts",
-      "status": 200,
-      "request": {
-      },
-      "response": {
-        "body": {
-          "login": "user name"
         }
       }
     }
