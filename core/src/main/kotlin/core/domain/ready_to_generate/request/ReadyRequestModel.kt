@@ -9,7 +9,21 @@ data class ReadyRequestModel(
     val data: Any?
 ) {
     fun safeGetHeaders(): Map<String, String>? {
-        return headers?.entries?.associate { it.key to if (it.value !is String) "${it.value}" else it.value }
+        return safeMapGetter(headers)
     }
+
+    fun safeParamsGetter(): Map<String, String>? {
+        return safeMapGetter(params)
+    }
+
+    fun safeCookiesGetter(): Map<String, String>? {
+        return safeMapGetter(cookies)
+    }
+
+
+    private fun safeMapGetter(inputMap: java.util.LinkedHashMap<String, String>?): Map<String, String>? {
+        return inputMap?.entries?.associate { it.key to if (it.value !is String) "${it.value}" else it.value }
+    }
+
 
 }

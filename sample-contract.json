@@ -8,6 +8,12 @@
       "path": "/test/header",
       "status": 200,
       "request": {
+        "params": {
+          "tag": "tech"
+        },
+        "cookies": {
+          "security": "er1q4561ger16g54q16e45"
+        },
         "headers": {
           "Content-Accepted": "Application/Json"
         },

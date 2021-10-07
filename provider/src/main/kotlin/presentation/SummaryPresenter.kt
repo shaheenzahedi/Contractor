@@ -8,7 +8,8 @@ class SummaryPresenter(private val results: List<Boolean>,private val mutationRe
         colorPrint("${results.count { !it }} tests failed\n",ConsoleColors.RED)
         colorPrint("${((results.count { it }.toDouble() / results.count()) * 100).toInt()}% of tests were passed\n\n\n",ConsoleColors.BLUE_BOLD)
         println("Mutations Executed: ${mutationResults.count()}")
-        println("Mutations Succeeded: ${mutationResults.count { it }}")
-        println("Mutations Failed: ${mutationResults.filterNot { it }.count()}")
+        println("Mutations survived: ${mutationResults.count { it }}")
+        println("Mutations killed: ${mutationResults.filterNot { it }.count()}")
+        println("Mutation score: ${((mutationResults.filterNot { it }.count().toDouble() / mutationResults.count()) * 100).toInt()}")
     }
 }

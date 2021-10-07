@@ -35,24 +35,14 @@ class CallbackGenerator(
         val parser = JsonParser()
         val response = try {
             parser.parse(response.text).asJsonObject
-        } catch (ex: MalformedJsonException) {
+        } catch (ex: Exception) {
             return CallbackCase(
                 doc = "`${model.method.name}\t${model.path}\n\n",
                 tagName = "BodyTest",
                 name = "Asserts that the response has the desired body",
                 callback = { false },
-                expected = "A valid Json response",
-                actual = ex.message,
-                reason = "The response is not present in the packet"
-            )
-        } catch (e: Exception) {
-            return CallbackCase(
-                doc = "`${model.method.name}\t${model.path}\n\n",
-                tagName = "BodyTest",
-                name = "Asserts that the response has the desired body",
-                callback = { false },
-                expected = "A valid Json response",
-                actual = "An unexpected error happened ${e.message}",
+                expected = GsonBuilder().setPrettyPrinting().create().toJson(model.response?.body),
+                actual = response.text,
                 reason = "The response is not present in the packet"
             )
         }

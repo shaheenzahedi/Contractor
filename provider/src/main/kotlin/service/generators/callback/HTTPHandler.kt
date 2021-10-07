@@ -20,48 +20,48 @@ class HTTPHandler(private val model: ReadyToTestModel) {
             HTTPMethod.PUT -> put(
                 url = path,
                 headers = model.request?.safeGetHeaders() ?: mapOf(),
-                params = /*model.request?.params ?:*/ mapOf(),
-                cookies = /*model.request?.cookies ?:*/ mapOf(),
+                params = model.request?.safeParamsGetter() ?: mapOf(),
+                cookies = model.request?.safeCookiesGetter() ?: mapOf(),
                 json = model.request?.body,
                 data = model.request?.data
             )
             HTTPMethod.POST -> post(
                 url = path,
                 headers = model.request?.safeGetHeaders() ?: mapOf(),
-                params = /*model.request?.params ?:*/ mapOf(),
-                cookies = /*model.request?.cookies ?:*/ mapOf(),
+                params = model.request?.safeParamsGetter() ?: mapOf(),
+                cookies = model.request?.safeCookiesGetter() ?: mapOf(),
                 json = model.request?.body,
                 data = model.request?.data
             )
             HTTPMethod.GET -> get(
                 url = path,
                 headers = model.request?.safeGetHeaders() ?: mapOf(),
-                params = /*model.request?.params ?:*/ mapOf(),
-                cookies = /*model.request?.cookies ?:*/ mapOf(),
+                params = model.request?.safeParamsGetter() ?: mapOf(),
+                cookies = model.request?.safeCookiesGetter() ?: mapOf(),
                 json = model.request?.body,
                 data = model.request?.data
             )
             HTTPMethod.DELETE -> delete(
                 url = path,
                 headers = model.request?.safeGetHeaders() ?: mapOf(),
-                params = /*model.request?.params ?:*/ mapOf(),
-                cookies = /*model.request?.cookies ?:*/ mapOf(),
+                params = model.request?.safeParamsGetter() ?: mapOf(),
+                cookies = model.request?.safeCookiesGetter() ?: mapOf(),
                 json = model.request?.body,
                 data = model.request?.data
             )
             HTTPMethod.PATCH -> patch(
                 url = path,
                 headers = model.request?.safeGetHeaders() ?: mapOf(),
-                params = /*model.request?.params ?:*/ mapOf(),
-                cookies = /*model.request?.cookies ?:*/ mapOf(),
+                params = model.request?.safeParamsGetter() ?: mapOf(),
+                cookies = model.request?.safeCookiesGetter() ?: mapOf(),
                 json = model.request?.body,
                 data = model.request?.data
             )
             HTTPMethod.OPTIONS -> options(
                 url = path,
                 headers = model.request?.safeGetHeaders() ?: mapOf(),
-                params = /*model.request?.params ?:*/ mapOf(),
-                cookies = /*model.request?.cookies ?:*/ mapOf(),
+                params = model.request?.safeParamsGetter() ?: mapOf(),
+                cookies = model.request?.safeCookiesGetter() ?: mapOf(),
                 json = model.request?.body,
                 data = model.request?.data
             )
