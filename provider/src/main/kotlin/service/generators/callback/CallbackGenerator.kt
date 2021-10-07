@@ -243,7 +243,7 @@ class CallbackGenerator(
         return null
     }
 
-    fun generateStatusTest(): CallbackCase? {
+    fun statusTest(): CallbackCase? {
         if (model.status == null) return null
         return CallbackCase(
             doc = "`${model.method.name}\t${model.path}\n\n",
@@ -257,7 +257,7 @@ class CallbackGenerator(
     }
 
 
-    private fun matchesMap(map1: Map<String, Any>, reference: Map<String, Any>): Boolean {
-        return reference.all { (k, v) -> map1[k] == v }
+    private fun matchesMap(map: Map<String, Any>, reference: Map<String, Any>): Boolean {
+        return reference.all { (k, v) -> map[k] == v }
     }
 }

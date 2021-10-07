@@ -8,15 +8,12 @@ class CallbackMapper {
         return model.toMutableList().map(::buildCallbacks).flatten()
     }
 
-    private fun buildCallbacks(model: ReadyToTestModel): List<CallbackCase> {
-        val generator = CallbackGenerator(model)
-        return mutableListOf(
-            generator.bodyTest(),
-            generator.headerTest(),
-            generator.generateStatusTest()
-        ).apply {
-            addAll(generator.generateBodyRulesTest())
-            addAll(generator.generateHeaderRulesTest())
-        }.filterNotNull()
-    }
+    private fun buildCallbacks(model: ReadyToTestModel): List<CallbackCase> =
+        with(CallbackGenerator(model)) {
+            mutableListOf(bodyTest(), headerTest(), statusTest())
+                .apply {
+                    addAll(generateBodyRulesTest())
+                    addAll(generateHeaderRulesTest())
+                }.filterNotNull()
+        }
 }
