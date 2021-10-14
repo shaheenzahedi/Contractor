@@ -8,17 +8,15 @@ import service.generators.callback.path.PathGenerate
 import kotlin.system.exitProcess
 
 class HTTPHandler(private val model: ReadyToTestModel) {
-    fun retrieveResponse(isMutation:Boolean): Response {
+    fun retrieveResponse(isMutation: Boolean): Response {
         val pathToCall = PathGenerate(model.baseUrl, model.port, model.path).retrieveFullPath()
         val response = try {
             performCall(pathToCall)
-        }catch (e:Exception){
+        } catch (e: Exception) {
             println("There was an error making the request {${e.message}}")
             exitProcess(0)
         }
-        if (isMutation){
-            println("------\t Executing mutations on $pathToCall \t------")
-        }else println("------\t Executing tests on $pathToCall \t------")
+        if (!isMutation) println("------\t Executing tests on $pathToCall \t------")
         return response
     }
 

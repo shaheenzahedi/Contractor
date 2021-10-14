@@ -14,24 +14,36 @@ class ContractMutationEngine(private val contracts: List<ReadyToTestModel>?) {
     fun generateContractMutants(): List<ReadyToTestModel>? {
         return contracts?.flatMapIndexed { index, contract ->
             val statusMutations =
-                generateStatusMutation(contract.status!!).map { contract.copy(name = "Trying mutation with $it status code", status = it) }
-            val methodMutations = generateMethodMutations(contract.method).map { contract.copy(method = it) }
+                generateStatusMutation(contract.status!!).map {
+                    contract.copy(
+                        name = "Mutating status code with $it",
+                        status = it
+                    )
+                }
+            val methodMutations = generateMethodMutations(contract.method).map {
+                contract.copy(
+                    name = "Mutating HTTP method code with $it",
+                    method = it
+                )
+            }
             val bodyResponseMutations = generateResponseBodyMutations(index, contract.response?.body)?.map {
-                contract.copy(response = contract.response?.copy(body = it))
+                contract.copy(name = "Mutating response body with $it", response = contract.response?.copy(body = it))
             }
             val requestBodyMutations = generateRequestBodyMutations(index, contract.request?.body)?.map {
-                contract.copy(request = contract.request?.copy(body = it))
+                contract.copy(name = "Mutating request body with $it", request = contract.request?.copy(body = it))
             }
             val requestHeaderMutations = generateRequestHeaderMutations(index, contract.request?.headers)?.map {
-                contract.copy(request = contract.request?.copy(headers = it))
+                contract.copy( name = "Mutating request header with $it",request = contract.request?.copy(headers = it))
             }
             val paramsMutations = generateParamsMutations(index, contract.request?.params)?.map {
                 contract.copy(
+                    name = "Mutating request params with $it",
                     request = contract.request?.copy(params = it)
                 )
             }
             val cookiesMutations = generateCookiesMutations(index, contract.request?.cookies)?.map {
                 contract.copy(
+                    name = "Mutating cookies with $it",
                     request = contract.request?.copy(cookies = it)
                 )
             }
