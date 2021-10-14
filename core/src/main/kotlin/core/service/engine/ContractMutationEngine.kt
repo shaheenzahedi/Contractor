@@ -13,7 +13,8 @@ class ContractMutationEngine(private val contracts: List<ReadyToTestModel>?) {
 
     fun generateContractMutants(): List<ReadyToTestModel>? {
         return contracts?.flatMapIndexed { index, contract ->
-            val statusMutations = generateStatusMutation(contract.status!!).map { contract.copy(status = it) }
+            val statusMutations =
+                generateStatusMutation(contract.status!!).map { contract.copy(name = "Trying mutation with $it status code", status = it) }
             val methodMutations = generateMethodMutations(contract.method).map { contract.copy(method = it) }
             val bodyResponseMutations = generateResponseBodyMutations(index, contract.response?.body)?.map {
                 contract.copy(response = contract.response?.copy(body = it))

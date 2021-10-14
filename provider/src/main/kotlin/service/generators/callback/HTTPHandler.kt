@@ -17,9 +17,8 @@ class HTTPHandler(private val model: ReadyToTestModel) {
             exitProcess(0)
         }
         if (isMutation){
-            println("------\t Executing mutations on ${pathToCall} \t------")
-        }else println("------\t Executing tests on ${pathToCall} \t------")
-        Thread.sleep(500)
+            println("------\t Executing mutations on $pathToCall \t------")
+        }else println("------\t Executing tests on $pathToCall \t------")
         return response
     }
 

@@ -12,17 +12,20 @@ class CallbackMapper(private val model: List<ReadyToTestModel>) {
     fun mutations(): List<CallbackCase>? {
         return ContractMutationEngine(model)
             .generateContractMutants()
-            ?.toMutableList()
-            ?.map { buildCallbacks(it, true) }
-            ?.flatten()
+            ?.flatMap { buildCallbacks(it, true) }
     }
 
     private fun buildCallbacks(model: ReadyToTestModel, isMutation: Boolean): List<CallbackCase> =
         with(CallbackGenerator(model, isMutation)) {
-            mutableListOf(bodyTest(), headerTest(), statusTest())
+            val result = mutableListOf(bodyTest(), headerTest(), statusTest())
                 .apply {
                     addAll(generateBodyRulesTest())
                     addAll(generateHeaderRulesTest())
                 }.filterNotNull()
+            if (isMutation && model.name != null) {
+                result.map { it.copy(mutationName = model.name!!) }
+            } else {
+                result
+            }
         }
 }
