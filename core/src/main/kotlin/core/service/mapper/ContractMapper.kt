@@ -41,7 +41,7 @@ class ContractMapper(
 
     private fun buildModelWithContractor(baseUrl: String?, port: Int?, dto: Interaction): ReadyToTestModel {
         return ReadyToTestModel(
-            name = null,
+            mutationMetaData = null,
             port = null,
             method = dto.method?.let { HTTPMethod.valueOf(it) } ?: HTTPMethod.GET,
             path = dto.path ?: "/",
@@ -73,7 +73,7 @@ class ContractMapper(
 
     private fun buildModelWithSpringCloudContract(dto: SpringCloudContractModel): ReadyToTestModel {
         return ReadyToTestModel(
-            name = null,
+            mutationMetaData = null,
             method = dto.request?.method?.let { HTTPMethod.valueOf(it) } ?: HTTPMethod.GET,
             path = dto.request?.url ?: "/",
             status = dto.response?.status,
@@ -97,7 +97,7 @@ class ContractMapper(
     private fun buildModelWithPact(dto: InteractionDTO): ReadyToTestModel {
         val pactMapper = PactContractMapper(dto)
         return ReadyToTestModel(
-            name = null,
+            mutationMetaData = null,
             method = HTTPMethod.valueOf(dto.requestDTO.method),
             path = dto.requestDTO.path,
             status = dto.responsedDTO.status,
