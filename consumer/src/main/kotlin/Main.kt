@@ -3,11 +3,11 @@ import com.github.tomakehurst.wiremock.common.ConsoleNotifier
 import com.github.tomakehurst.wiremock.core.WireMockConfiguration.options
 import com.github.tomakehurst.wiremock.extension.responsetemplating.ResponseTemplateTransformer
 import core.domain.contract.contractor.Contract
+import core.service.callback.CallbackMapper
 import core.service.io.FileDialog
 import core.service.io.resource.file.FileResource
 import core.service.mapper.ContractMapper
 import core.service.mapper.JsonMapper
-import core.service.callback.CallbackMapper
 import service.stub.StubGenerator
 import java.util.*
 import javax.swing.filechooser.FileNameExtensionFilter
@@ -37,7 +37,10 @@ fun main() {
         throw Exception("We could not extract model from the contract, check that you're contract is in standard format")
     }
     val mapper = CallbackMapper(model)
-mapper.callbacks().forEach { println(it.callback.invoke()) }
+    mapper.callbacks().forEach {
+        val result = if (it.callback.invoke())"OK" else "Not Working... Please Consider reporting this to the maintainers"
+        println("${it.tagName}\t$result")
+    }
     Scanner(System.`in`).next()
 }
 
