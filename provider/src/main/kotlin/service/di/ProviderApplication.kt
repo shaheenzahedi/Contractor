@@ -3,7 +3,6 @@ package service.di
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.inject
 import org.koin.dsl.module
-import service.generators.callback.CallbackMapper
 import core.service.io.resource.file.FileResource
 import core.service.mapper.JsonMapper
 

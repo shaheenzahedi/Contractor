@@ -1,4 +1,4 @@
-package service.generators.callback
+package core.service.callback
 
 import core.domain.ready_to_generate.HTTPMethod
 import core.domain.ready_to_generate.ReadyToTestModel

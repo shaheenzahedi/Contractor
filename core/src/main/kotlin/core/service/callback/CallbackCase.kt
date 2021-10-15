@@ -1,4 +1,4 @@
-package service.generators.callback
+package core.service.callback
 
 data class CallbackCase(
     val callback: TestCaseCallback,

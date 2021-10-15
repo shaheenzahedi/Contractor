@@ -1,4 +1,4 @@
-package service.generators.callback
+package core.service.callback
 
 import core.domain.ready_to_generate.MutationType
 import core.domain.ready_to_generate.ReadyToTestModel
