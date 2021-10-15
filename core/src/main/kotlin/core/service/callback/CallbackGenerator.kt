@@ -1,10 +1,9 @@
-package service.generators.callback
+package core.service.callback
 
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import com.google.gson.JsonElement
 import com.google.gson.JsonParser
-import com.google.gson.stream.MalformedJsonException
 import core.domain.ready_to_generate.ReadyToTestModel
 import core.service.mapper.pact.PactPredicateType
 import core.service.mapper.pact.PredicateModel
@@ -27,7 +26,8 @@ class CallbackGenerator(
             expected = GsonBuilder().setPrettyPrinting().create().toJson(model.response!!.headers),
             actual = GsonBuilder().setPrettyPrinting().create().toJson(response.headers),
             reason = "Response did not include those header defined in contract",
-            tagName = "HeaderTest"
+            tagName = "HeaderTest",
+            mutationName = null
         )
     }
 
@@ -44,7 +44,8 @@ class CallbackGenerator(
                 callback = { false },
                 expected = GsonBuilder().setPrettyPrinting().create().toJson(model.response?.body),
                 actual = response.text,
-                reason = "The response is not present in the packet"
+                reason = "The response is not present in the packet",
+                mutationName = null
             )
         }
         val actual = parser.parse(Gson().toJson(model.response?.body)).asJsonObject
@@ -55,7 +56,8 @@ class CallbackGenerator(
             callback = { response.equals(actual) },
             expected = GsonBuilder().setPrettyPrinting().create().toJson(response),
             actual = GsonBuilder().setPrettyPrinting().create().toJson(actual),
-            reason = "Response did not match the body defined in the contract"
+            reason = "Response did not match the body defined in the contract",
+            mutationName = null
         )
     }
 
@@ -80,7 +82,8 @@ class CallbackGenerator(
             callback = { false },
             expected = null,
             actual = null,
-            reason = "Type `${model.value}` is not one of the predefined types"
+            reason = "Type `${model.value}` is not one of the predefined types",
+            mutationName = null
         )
         val parser = JsonParser()
         val response = parser.parse(response.text).asJsonObject.get(model.fieldName)
@@ -91,7 +94,8 @@ class CallbackGenerator(
                 callback = { false },
                 expected = null,
                 actual = null,
-                reason = "The field with name ${model.fieldName} does not exist in response"
+                reason = "The field with name ${model.fieldName} does not exist in response",
+                mutationName = null
             )
 
         return CallbackCase(
@@ -101,7 +105,8 @@ class CallbackGenerator(
             callback = { typeCheck(response, type) },
             expected = null,
             actual = null,
-            reason = "Specified `${model.fieldName}` field does not match the `${model.value}` type"
+            reason = "Specified `${model.fieldName}` field does not match the `${model.value}` type",
+            mutationName = null
         )
     }
 
@@ -139,7 +144,8 @@ class CallbackGenerator(
                 callback = { false },
                 expected = null,
                 actual = null,
-                reason = "The field with name ${model.fieldName} is not present in the response body"
+                reason = "The field with name ${model.fieldName} is not present in the response body",
+                mutationName = null
             )
         return CallbackCase(
             doc = doc,
@@ -148,7 +154,8 @@ class CallbackGenerator(
             callback = { regexCheck(response, model.value) },
             expected = null,
             actual = null,
-            reason = "Specified `${model.fieldName}` field does not match the regex"
+            reason = "Specified `${model.fieldName}` field does not match the regex",
+            mutationName = null
         )
     }
 
@@ -172,7 +179,8 @@ class CallbackGenerator(
                 callback = { false },
                 expected = null,
                 actual = null,
-                reason = "The field with name ${model.fieldName} is not present in the response body"
+                reason = "The field with name ${model.fieldName} is not present in the response body",
+                mutationName = null
             )
         return CallbackCase(
             doc = doc,
@@ -181,7 +189,8 @@ class CallbackGenerator(
             callback = { matchCheck(response, model.value) },
             expected = model.value.toString(),
             actual = response.toString(),
-            reason = "Specified `${model.fieldName}` field does not match the value `${model.value}`"
+            reason = "Specified `${model.fieldName}` field does not match the value `${model.value}`",
+            mutationName = null
         )
     }
 
@@ -261,7 +270,8 @@ class CallbackGenerator(
             expected = model.status.toString(),
             actual = response.statusCode.toString(),
             reason = "Status is not ${model.status} as defined in the contract",
-            tagName = "StatusTest"
+            tagName = "StatusTest",
+            mutationName = null
         )
     }
 
