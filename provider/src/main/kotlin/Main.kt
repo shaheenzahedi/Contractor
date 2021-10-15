@@ -3,7 +3,7 @@ import service.di.ProviderApplication
 import core.service.io.FileDialog
 import core.service.mapper.ContractMapper
 import presentation.*
-import service.generators.callback.CallbackMapper
+import core.service.callback.CallbackMapper
 import javax.swing.filechooser.FileNameExtensionFilter
 
 fun main() {

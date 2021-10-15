@@ -1,6 +1,6 @@
 package presentation
 
-import service.generators.callback.CallbackCase
+import core.service.callback.CallbackCase
 
 class TestPresenter(private val callbacks: List<CallbackCase>) {
     fun retrieveSummary(): List<Boolean> {

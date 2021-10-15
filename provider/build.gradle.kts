@@ -19,7 +19,6 @@ dependencies {
     implementation("com.squareup:kotlinpoet:1.8.0")
     implementation("com.fasterxml.jackson.core:jackson-databind:2.11.3")
 
-    implementation("com.github.jkcclemens:khttp:0.1.0")
     implementation("io.insert-koin:koin-core:$koinVersion")
     implementation("io.insert-koin:koin-core-ext:$koinVersion")
     testImplementation("io.insert-koin:koin-test-junit5:$koinVersion")

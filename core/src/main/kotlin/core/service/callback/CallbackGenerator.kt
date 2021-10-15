@@ -1,10 +1,9 @@
-package service.generators.callback
+package core.service.callback
 
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import com.google.gson.JsonElement
 import com.google.gson.JsonParser
-import com.google.gson.stream.MalformedJsonException
 import core.domain.ready_to_generate.ReadyToTestModel
 import core.service.mapper.pact.PactPredicateType
 import core.service.mapper.pact.PredicateModel

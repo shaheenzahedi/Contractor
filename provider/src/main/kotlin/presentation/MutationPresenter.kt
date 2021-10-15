@@ -1,6 +1,6 @@
 package presentation
 
-import service.generators.callback.CallbackCase
+import core.service.callback.CallbackCase
 
 class MutationPresenter(private val mutations: List<CallbackCase>?) {
     fun retrieveSummary(): List<Boolean> {
