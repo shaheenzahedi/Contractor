@@ -34,7 +34,7 @@ class ContractMutationEngine(private val contracts: List<ReadyToTestModel>?) {
                     method = it
                 )
             }
-            val bodyResponseMutations = generateResponseBodyMutations(index, contract.response?.body)?.map {
+            val bodyResponseMutations = generateResponseBodyMutations(index, contract.response?.body).map {
                 contract.copy(
                     mutationMetaData = MutationMetaData(
                         name = "Mutating response body with $it",
@@ -42,7 +42,7 @@ class ContractMutationEngine(private val contracts: List<ReadyToTestModel>?) {
                     ), response = contract.response?.copy(body = it)
                 )
             }
-            val requestBodyMutations = generateRequestBodyMutations(index, contract.request?.body)?.map {
+            val requestBodyMutations = generateRequestBodyMutations(index, contract.request?.body).map {
                 contract.copy(
                     mutationMetaData = MutationMetaData(
                         name = "Mutating request body with $it",
@@ -50,7 +50,7 @@ class ContractMutationEngine(private val contracts: List<ReadyToTestModel>?) {
                     ), request = contract.request?.copy(body = it)
                 )
             }
-            val requestHeaderMutations = generateRequestHeaderMutations(index, contract.request?.headers)?.map {
+            val requestHeaderMutations = generateRequestHeaderMutations(index, contract.request?.headers).map {
                 contract.copy(
                     mutationMetaData = MutationMetaData(
                         name = "Mutating request header with $it",
@@ -58,7 +58,7 @@ class ContractMutationEngine(private val contracts: List<ReadyToTestModel>?) {
                     ), request = contract.request?.copy(headers = it)
                 )
             }
-            val paramsMutations = generateParamsMutations(index, contract.request?.params)?.map {
+            val paramsMutations = generateParamsMutations(index, contract.request?.params).map {
                 contract.copy(
                     mutationMetaData = MutationMetaData(
                         name = "Mutating request params with $it",
@@ -67,7 +67,7 @@ class ContractMutationEngine(private val contracts: List<ReadyToTestModel>?) {
                     request = contract.request?.copy(params = it)
                 )
             }
-            val cookiesMutations = generateCookiesMutations(index, contract.request?.cookies)?.map {
+            val cookiesMutations = generateCookiesMutations(index, contract.request?.cookies).map {
                 contract.copy(
                     mutationMetaData = MutationMetaData(
                         name = "Mutating cookies with $it",
@@ -79,13 +79,51 @@ class ContractMutationEngine(private val contracts: List<ReadyToTestModel>?) {
             mutableListOf<ReadyToTestModel>().apply {
                 addAll(statusMutations)
                 addAll(methodMutations)
-                if (bodyResponseMutations != null) addAll(bodyResponseMutations)
-                if (requestBodyMutations != null) addAll(requestBodyMutations)
-                if (requestHeaderMutations != null) addAll(requestHeaderMutations)
-                if (paramsMutations != null) addAll(paramsMutations)
-                if (cookiesMutations != null) addAll(cookiesMutations)
+                addAll(bodyResponseMutations)
+                addAll(requestBodyMutations)
+                addAll(requestHeaderMutations)
+                addAll(paramsMutations)
+                addAll(cookiesMutations)
             }
         }
+    }
+
+    fun generateMethodMutations(method: HTTPMethod) =
+        HTTPMethod.values().toMutableList().apply { removeIf { it == method } }
+
+    fun generateResponseBodyMutations(
+        position: Int,
+        body: LinkedHashMap<String, Any>?
+    ): List<LinkedHashMap<String, Any>> {
+        return generateAnyMutatedPairs(contracts?.get(position)?.response?.body).filter { it != body && it.isNotEmpty() }
+    }
+
+    fun generateRequestBodyMutations(
+        position: Int,
+        body: LinkedHashMap<String, Any>?
+    ): List<LinkedHashMap<String, Any>> {
+        return generateAnyMutatedPairs(contracts?.get(position)?.request?.body).filter { it != body && it.isNotEmpty() }
+    }
+
+    fun generateRequestHeaderMutations(
+        position: Int,
+        headers: LinkedHashMap<String, String>?
+    ): List<LinkedHashMap<String, String>> {
+        return generateStringMutatedPairs(contracts?.get(position)?.request?.headers).filter { it != headers && it.isNotEmpty() }
+    }
+
+    fun generateParamsMutations(
+        position: Int,
+        params: LinkedHashMap<String, String>?
+    ): List<LinkedHashMap<String, String>> {
+        return generateStringMutatedPairs(contracts?.get(position)?.request?.params).filter { it != params && it.isNotEmpty() }
+    }
+
+    fun generateCookiesMutations(
+        position: Int,
+        cookies: LinkedHashMap<String, String>?
+    ): List<LinkedHashMap<String, String>> {
+        return generateStringMutatedPairs(contracts?.get(position)?.request?.cookies).filter { it != cookies && it.isNotEmpty() }
     }
 
     fun generateStatusMutation(status: Int) = mutableMapOf(
@@ -143,44 +181,6 @@ class ContractMutationEngine(private val contracts: List<ReadyToTestModel>?) {
         510 to "Not Extended",
         511 to "Network Authentication Required",
     ).apply { remove(status) }
-
-    fun generateMethodMutations(method: HTTPMethod) =
-        HTTPMethod.values().toMutableList().apply { removeIf { it == method } }
-
-    fun generateResponseBodyMutations(
-        position: Int,
-        body: LinkedHashMap<String, Any>?
-    ): List<LinkedHashMap<String, Any>> {
-        return generateAnyMutatedPairs(contracts?.get(position)?.response?.body).filter { it != body && it.isNotEmpty() }
-    }
-
-    fun generateRequestBodyMutations(
-        position: Int,
-        body: LinkedHashMap<String, Any>?
-    ): List<LinkedHashMap<String, Any>> {
-        return generateAnyMutatedPairs(contracts?.get(position)?.request?.body).filter { it != body && it.isNotEmpty() }
-    }
-
-    fun generateRequestHeaderMutations(
-        position: Int,
-        headers: LinkedHashMap<String, String>?
-    ): List<LinkedHashMap<String, String>> {
-        return generateStringMutatedPairs(contracts?.get(position)?.request?.headers).filter { it != headers && it.isNotEmpty() }
-    }
-
-    fun generateParamsMutations(
-        position: Int,
-        params: LinkedHashMap<String, String>?
-    ): List<LinkedHashMap<String, String>> {
-        return generateStringMutatedPairs(contracts?.get(position)?.request?.params).filter { it != params && it.isNotEmpty() }
-    }
-
-    fun generateCookiesMutations(
-        position: Int,
-        cookies: LinkedHashMap<String, String>?
-    ): List<LinkedHashMap<String, String>> {
-        return generateStringMutatedPairs(contracts?.get(position)?.request?.cookies).filter { it != cookies && it.isNotEmpty() }
-    }
 
     private fun generateStringMutatedPairs(body: LinkedHashMap<String, String>?): List<LinkedHashMap<String, String>> {
         return (body ?: linkedMapOf<String, Any>("something" to "another"))
