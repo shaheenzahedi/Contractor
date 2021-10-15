@@ -38,7 +38,7 @@ class CallbackMapper(private val model: List<ReadyToTestModel>) {
                 MutationType.STATUS -> add(statusTest()!!)
                 MutationType.HTTP_METHOD -> null
                 MutationType.REQUEST_HEADER -> add(headerTest()!!)
-                MutationType.RESPONSE_HEADER -> null
+                MutationType.RESPONSE_HEADER -> add(headerTest()!!)
                 MutationType.REQUEST_BODY -> null
                 MutationType.RESPONSE_BODY -> add(bodyTest()!!)
                 MutationType.REQUEST_PARAMS -> null
