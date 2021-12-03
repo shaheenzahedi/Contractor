@@ -22,6 +22,8 @@ dependencies {
     implementation("org.glassfish:javax.json:1.1")
     implementation("com.github.jkcclemens:khttp:0.1.0")
     runtimeOnly("org.jetbrains.kotlin:kotlin-reflect:1.6.0-M1")
+    implementation ("org.codehaus.groovy:groovy-json:3.0.9")
+    implementation ("org.springframework.cloud:spring-cloud-contract-spec:3.1.0")
     testImplementation(kotlin("test"))
 }
 

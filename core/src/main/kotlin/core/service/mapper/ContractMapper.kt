@@ -79,13 +79,13 @@ class ContractMapper(
             status = dto.response?.status,
             port = 8080,
             response = ReadyResponseModel(
-                body = dto.response?.jsonBody,
+                body = dto.response?.body,
                 headers = dto.response?.headers,
                 bodyPredicates = null,
                 headerPredicates = null
             ),
             request = ReadyRequestModel(
-                body = dto.request?.jsonBody,
+                body = dto.request?.body,
                 headers = dto.request?.headers,
                 params = null,
                 cookies = null,

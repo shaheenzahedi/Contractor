@@ -5,14 +5,8 @@ import com.fasterxml.jackson.databind.ObjectMapper
 
 data class RequestDTO(
     val url: String,
-    val body: String?,
+    val body: LinkedHashMap<String, Any>?,
     val headers: LinkedHashMap<String, String>?,
     val method: String,
     val queryParameters: LinkedHashMap<String, LinkedHashMap<String, Any>>?
-) {
-    val jsonBody: LinkedHashMap<String, Any>?
-        get() {
-            if (body.isNullOrEmpty()) return null
-            return ObjectMapper().readValue(body, LinkedHashMap::class.java) as LinkedHashMap<String, Any>
-        }
-}
+)
