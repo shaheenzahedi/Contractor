@@ -11,18 +11,17 @@ import com.github.tomakehurst.wiremock.matching.UrlPattern
 import com.github.tomakehurst.wiremock.stubbing.StubImport
 import com.github.tomakehurst.wiremock.stubbing.StubImport.stubImport
 import com.google.gson.Gson
-import core.domain.contract.contractor.Contract
-import core.domain.contract.contractor.Interaction
 import core.domain.contract.contractor.Rule
 import core.domain.contract.contractor.RuleType
 import core.domain.ready_to_generate.HTTPMethod
+import core.domain.ready_to_generate.ReadyToTestModel
 
-class StubGenerator(private val contract: Contract) {
+class StubGenerator(private val contract: List<ReadyToTestModel>?) {
     fun createAllStubs(): StubImport {
         val builder = stubImport()
             .ignoreExisting()
             .deleteAllExistingStubsNotInImport()
-        contract.interactions?.forEach {
+        contract?.forEach {
             builder.stub(makeStubWithInteraction(it))
         }
         return builder.build()
@@ -49,7 +48,7 @@ class StubGenerator(private val contract: Contract) {
     }
 
 
-    private fun makeStubWithInteraction(interaction: Interaction) =
+    private fun makeStubWithInteraction(interaction: ReadyToTestModel) =
         decideMappingBuilder(interaction)
             .willReturn(
                 ResponseDefinitionBuilder()
@@ -62,12 +61,12 @@ class StubGenerator(private val contract: Contract) {
             .build()
 
 
-    private fun decideMappingBuilder(interaction: Interaction): MappingBuilder {
+    private fun decideMappingBuilder(interaction: ReadyToTestModel): MappingBuilder {
         val useExactPath =
             interaction.request?.params.isNullOrEmpty() && interaction.request?.paramRules.isNullOrEmpty()
         val path = interaction.path
         val pathPattern = urlPathEqualTo(path)
-        return when (HTTPMethod.valueOf(interaction.method!!.uppercase())) {
+        return when (HTTPMethod.valueOf(interaction.method.name.uppercase())) {
             HTTPMethod.DELETE -> if (useExactPath) delete(path) else delete(pathPattern)
             HTTPMethod.GET -> if (useExactPath) get(path) else get(pathPattern)
             HTTPMethod.POST -> if (useExactPath) post(path) else post(pathPattern)

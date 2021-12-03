@@ -4,16 +4,16 @@ import org.koin.core.component.KoinComponent
 import org.koin.core.component.inject
 import org.koin.dsl.module
 import core.service.io.resource.file.FileResource
-import core.service.mapper.JsonMapper
+import core.service.mapper.GeneralMapper
 
 class ProviderApplication : KoinComponent {
 //    val testGenerator by inject<TestGenerator>()
 //    val callbackMapper by inject<CallbackMapper>()
-    val jsonMapper by inject<JsonMapper>()
+    val contractMapper by inject<GeneralMapper>()
 //    val fileResource by inject<FileResource>()
     val fileResourceModule = module {
         single { FileResource() }
-        single { JsonMapper(get() as FileResource) }
+        single { GeneralMapper(get() as FileResource) }
     }
     val integrationTestJavaModule = module {
 //        single { CallbackMapper() }

@@ -1,17 +1,5 @@
 package core.service.engine
 
-import core.domain.contract.contractor.Contract
-import core.domain.ready_to_generate.ReadyToTestModel
-import core.service.io.resource.file.FileResource
-import core.service.mapper.ContractMapper
-import core.service.mapper.JsonMapper
-import org.junit.jupiter.api.AfterEach
-import org.junit.jupiter.api.BeforeEach
-import org.junit.jupiter.api.Test
-import kotlin.test.assertNotEquals
-import kotlin.test.assertNotNull
-import kotlin.test.assertNotSame
-
 internal class ContractMutationEngineTest {
 //
 //    private var contracts: List<ReadyToTestModel>? = null
