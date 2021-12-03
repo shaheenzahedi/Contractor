@@ -32,7 +32,7 @@ class SCCContractMapper {
         return null
     }
 
-    private fun getHeaders(entries: MutableSet<Header>?): LinkedHashMap<String, String> {
-        return entries?.toList()?.associate { it.name to it.clientValue.toString() } as LinkedHashMap<String, String>
+    private fun getHeaders(entries: MutableSet<Header>?): LinkedHashMap<String, String>? {
+        return entries?.toList()?.associate { it.name to it.clientValue.toString() } as LinkedHashMap<String, String>?
     }
 }

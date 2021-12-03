@@ -1,23 +1,15 @@
 org.springframework.cloud.contract.spec.Contract.make {
     request { // (1)
-        method 'PUT' // (2)
-        url '/fraudcheck' // (3)
-        body([ // (4)
-               clientId  : $(regex('[0-9]{10}')),
-               loanAmount: 99999
-        ])
-        headers { // (5)
-            contentType('application/vnd.fraud.v1+json')
-        }
+        method 'POST' // (2)
+        url '/test/header' // (3)
     }
     response { // (6)
         status OK() // (7)
         body([ // (8)
-               fraudCheckStatus: "FRAUD",
-               rejectionReason : "Amount too high"
+               login: "sample body login"
         ])
         headers { // (9)
-            contentType('application/vnd.fraud.v1+json')
+            header('Content-Accepted' : 'Application/Json')
         }
     }
 }

@@ -6,6 +6,7 @@ import core.domain.contract.contractor.Contract
 import core.service.callback.CallbackMapper
 import core.service.io.FileDialog
 import core.service.io.resource.file.FileResource
+import core.service.mapper.ContractMapper
 import core.service.mapper.GeneralMapper
 import service.stub.StubGenerator
 import java.util.*
@@ -14,7 +15,7 @@ import javax.swing.filechooser.FileNameExtensionFilter
 
 fun main() {
     println("Could not find the contract, select contract file?")
-    val path = FileDialog().open("Contract JSON file", false, FileNameExtensionFilter("Contract JSON", "json"))
+    val path = FileDialog().open("Contract JSON file", false, FileNameExtensionFilter("Contract JSON or groovy", "json","groovy"))
     requireNotNull(path) { throw Exception("You need to select a contract in order to continue, closing...") }
     val contract = GeneralMapper(FileResource()).getJson(Contract::class.java, path)
     val port = contract.port ?: 8080
@@ -31,7 +32,7 @@ fun main() {
         Press CTRL+C to stop
     """.trimIndent()
     )
-    val model = GeneralMapper(contract).extreactReadyToTestModel()
+    val model = ContractMapper(contract).extreactReadyToTestModel()
     requireNotNull(model) {
         throw Exception("We could not extract model from the contract, check that you're contract is in standard format")
     }
