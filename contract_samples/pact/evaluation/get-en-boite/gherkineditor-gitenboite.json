@@ -1,0 +1,125 @@
+{
+  "consumer": {
+    "name": "GherkinEditor"
+  },
+  "provider": {
+    "name": "GitEnBoite"
+  },
+  "interactions": [
+    {
+      "description": "a request for the file at path path/to/features/ServeCoffee.feature at ref a/branch",
+      "providerState": "a repo with a commit with a file",
+      "request": {
+        "method": "GET",
+        "path": "/repos/a-repo-id/commits/a%2Fbranch/files/path/to/features/ServeCoffee.feature",
+        "headers": {
+          "Accept": "application/octet-stream"
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/octet-stream"
+        },
+        "body": "Feature: Serve Coffee"
+      }
+    },
+    {
+      "description": "a request for a file in an unknown repo",
+      "providerState": "an unknown repo",
+      "request": {
+        "method": "GET",
+        "path": "/repos/a-repo-id/commits/a%2Fbranch/files/path/to/inexisting.feature",
+        "headers": {
+          "Accept": "application/octet-stream"
+        }
+      },
+      "response": {
+        "status": 404,
+        "headers": {}
+      }
+    },
+    {
+      "description": "a request for a file that does not exist",
+      "providerState": "a repo with a commit with a different file",
+      "request": {
+        "method": "GET",
+        "path": "/repos/a-repo-id/commits/a%2Fbranch/files/path/to/inexisting.feature",
+        "headers": {
+          "Accept": "application/octet-stream"
+        }
+      },
+      "response": {
+        "status": 404,
+        "headers": {}
+      }
+    },
+    {
+      "description": "a new file to commit to the branch",
+      "providerState": "a repo with a branch",
+      "request": {
+        "method": "POST",
+        "path": "/repos/a-repo-id/branches/a%2Fbranch/commits",
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "files": [
+            {
+              "path": "path/to/features/ServeCoffee.feature",
+              "content": "Feature: Serve Coffee"
+            }
+          ],
+          "author": {
+            "name": "An Author",
+            "email": "author@example.com"
+          },
+          "message": "Create serve coffee feature"
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": {}
+      }
+    },
+    {
+      "description": "a new file to commit to the branch",
+      "providerState": "a repo with expired credentials, with a branch",
+      "request": {
+        "method": "POST",
+        "path": "/repos/a-repo-id/branches/a%2Fbranch/commits",
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "files": [
+            {
+              "path": "path/to/features/ServeCoffee.feature",
+              "content": "Feature: Serve Coffee"
+            }
+          ],
+          "author": {
+            "name": "An Author",
+            "email": "author@example.com"
+          },
+          "message": "Create serve coffee feature"
+        }
+      },
+      "response": {
+        "status": 401,
+        "headers": {
+          "Content-Type": "text/plain; charset=utf-8"
+        },
+        "body": "Unauthorized"
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}
