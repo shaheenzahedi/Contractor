@@ -10,6 +10,89 @@ import {
   mockedUpdatedBlogpost,
 } from "../ui/pages/BlogPage/consumer-contract.spec";
 
+export const mockedBlogpost = {
+  id: 1,
+  title: "Mocked Blogpost",
+  categorydisplayvalue: "Test",
+  categoryslug: "test",
+  slug: "Test",
+  date: "2021-05-28T09:04:55.343Z",
+  image: "",
+  email: null,
+  instagram: null,
+  twitter: null,
+  github: null,
+  facebook: null,
+  blogpostcontent: {
+    blocks: [
+      {
+        key: "csc33",
+        data: {},
+        text: "This is a dummy post",
+        type: "unstyled",
+        depth: 0,
+        entityRanges: [],
+        inlineStyleRanges: [],
+      },
+    ],
+    entityMap: {},
+  },
+  isarchived: 0,
+};
+
+export const mockedUpdatedBlogpost = {
+  id: 1,
+  title: "Updated Mocked Blogpost",
+  categorydisplayvalue: "Test",
+  categoryslug: "test",
+  slug: "updated-mocked-blogpost",
+  blogpostcontent: {
+    blocks: [
+      {
+        key: "csc33",
+        data: {},
+        text: "This text was updated",
+        type: "unstyled",
+        depth: 0,
+        entityRanges: [],
+        inlineStyleRanges: [],
+      },
+    ],
+    entityMap: {},
+  },
+};
+
+export const mockedArchivedBlogpost = {
+  id: 1,
+  title: "Mocked Blogpost",
+  categorydisplayvalue: "Test",
+  categoryslug: "test",
+  slug: "mocked-blogpost",
+  date: "2021-05-28T09:04:55.343Z",
+  image: "",
+  email: null,
+  instagram: null,
+  twitter: null,
+  github: null,
+  facebook: null,
+  blogpostcontent: {
+    blocks: [
+      {
+        key: "csc33",
+        data: {},
+        text: "This is a dummy post",
+        type: "unstyled",
+        depth: 0,
+        entityRanges: [],
+        inlineStyleRanges: [],
+      },
+    ],
+    entityMap: {},
+  },
+  isarchived: 1,
+};
+
+
 jest.mock("./models/Blog", () => {
   return {
     Blog: {

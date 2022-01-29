@@ -1,0 +1,27 @@
+{
+  "provider": "my provider name",
+  "consumer": "my consumer body",
+  "port": "8080",
+  "interactions": [
+    {
+      "method": "POST",
+      "path": "/test/header",
+      "status": 200,
+      "request": {
+        "body": {
+          "id": 1,
+          "name": "rover",
+          "type": "bulldog"
+        }
+      },
+      "response": {
+        "body": {
+          "login": "sample body login"
+        },
+        "headers": {
+          "Content-Accepted": "Application/Json"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "provider": "my provider name",
+  "consumer": "my consumer body",
+  "port": "8080",
+  "interactions": [
+    {
+      "method": "POST",
+      "path": "/upload",
+      "status": 201,
+      "request": {
+        "headers": {
+          "Content-Type": "multipart/form-data; boundary=--------------------------560782525175769486914756",
+          "Content-Length": "299",
+          "Authorization": "Bearer eyJhbGciOiJIUzI1NiIXVCJ9"
+        },
+        "body": {
+          "test": "test"
+        }
+      },
+      "response": {
+        "body": {
+          "login": "sample body login"
+        },
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      }
+    }
+  ]
+}

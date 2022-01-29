@@ -1,0 +1,171 @@
+{
+  "provider": "my provider name",
+  "consumer": "my consumer body",
+  "port": "8080",
+  "interactions": [
+    {
+      "method": "GET",
+      "path": "/user",
+      "status": 200,
+      "request": {
+        "headers": {
+          "Accept": "application/vnd.github.v3+json",
+          "Authorization": "token THIS_IS_MY_TOKEN"
+        }
+      },
+      "response": {
+        "body": {
+          "name": "Tim Jones"
+        },
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/user",
+      "status": 400,
+      "request": {
+        "headers": {
+          "Accept": "application/vnd.github.v3+json",
+          "Authorization": "token THIS_IS_MY_TOKEN"
+        }
+      },
+      "response": {
+        "body": {
+          "error": "This is an error",
+          "error_description": "This is a description"
+        },
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/user/emails",
+      "status": 200,
+      "request": {
+        "headers": {
+          "Accept": "application/vnd.github.v3+json",
+          "Authorization": "token THIS_IS_MY_TOKEN"
+        }
+      },
+      "response": {
+        "body": {
+          "email": "ben@example.com",
+          "primary": true
+        },
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/user/emails",
+      "status": 400,
+      "request": {
+        "headers": {
+          "Accept": "application/vnd.github.v3+json",
+          "Authorization": "token THIS_IS_MY_TOKEN"
+        }
+      },
+      "response": {
+        "body": {
+          "error": "his is an error",
+          "error_description": "This is a description"
+        },
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/login/oauth/access_token",
+      "status": 200,
+      "request": {
+        "body": {
+          "grant_type": "authorization_code",
+          "redirect_uri": "COGNITO_REDIRECT_URI",
+          "client_id": "GITHUB_CLIENT_ID",
+          "response_type": "code",
+          "client_secret": "GITHUB_CLIENT_SECRET",
+          "code": "SOME_CODE"
+        },
+        "headers": {
+          "Accept": "application/json",
+          "Authorization": "token THIS_IS_MY_TOKEN"
+        }
+      },
+      "response": {
+        "body": {
+          "access_token": "xxxx",
+          "refresh_token": "yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy",
+          "expires_in": 21600
+        },
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/login/oauth/access_token",
+      "status": 400,
+      "request": {
+        "body": {
+          "grant_type": "authorization_code",
+          "redirect_uri": "COGNITO_REDIRECT_URI",
+          "client_id": "GITHUB_CLIENT_ID",
+          "response_type": "code",
+          "client_secret": "GITHUB_CLIENT_SECRET",
+          "code": "SOME_CODE"
+        },
+        "headers": {
+          "Accept": "application/json",
+          "Authorization": "token THIS_IS_MY_TOKEN"
+        }
+      },
+      "response": {
+        "body": {
+          "error": "This is an error",
+          "error_description": "This is a description"
+        },
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/login/oauth/access_token",
+      "status": 200,
+      "request": {
+        "body": {
+          "grant_type": "authorization_code",
+          "redirect_uri": "COGNITO_REDIRECT_URI",
+          "client_id": "GITHUB_CLIENT_ID",
+          "response_type": "code",
+          "client_secret": "GITHUB_CLIENT_SECRET",
+          "code": "SOME_CODE"
+        },
+        "headers": {
+          "Accept": "application/json",
+          "Authorization": "token THIS_IS_MY_TOKEN"
+        }
+      },
+      "response": {
+        "body": {
+          "error": "This is an error",
+          "error_description": "This is a description"
+        },
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      }
+    }
+  ]
+}
