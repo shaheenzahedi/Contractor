@@ -1,0 +1,148 @@
+{
+  "provider": "my provider name",
+  "consumer": "my consumer body",
+  "port": "8080",
+  "interactions": [
+    {
+      "method": "GET",
+      "path": "/api/courses/v2/blocks/",
+      "status": 200,
+      "request": {
+        "query": {
+          "course_id": 1,
+          "username": 2,
+          "depth": "3",
+          "requested_fields": "children,effort_activities,effort_time,show_gated_sections,graded,special_exam_info,has_scheduled_content"
+        }
+      },
+      "response": {
+        "body": {
+          "root": "block-v1:edX+DemoX+Demo_Course+type@course+block@course",
+          "id": "block-v1:edX+DemoX+Demo_Course+type@course+block@course",
+          "block_id": "course"
+        },
+        "headers": {
+          "Content-Accepted": "Application/Json"
+        }
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/api/learning_sequences/v1/course_outline/1",
+      "status": 200,
+      "request": {
+      },
+      "response": {
+        "body": {
+          "course_key": "block-v1:edX+DemoX+Demo_Course",
+          "title": "Demo Course",
+          "outline": {
+            "sections": [],
+            "sequences": {}
+          }
+        },
+        "headers": {
+          "Content-Accepted": "Application/Json"
+        }
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/api/courseware/course/3",
+      "status": 200,
+      "request": {
+        "query": {
+          "browser_timezone": "12:22:33:123"
+        }
+      },
+      "response": {
+        "body": {
+          "access_expiration": {
+            "expiration_date": "2013-02-05T05:00:00Z",
+            "masquerading_expired_course": false,
+            "upgrade_deadline": "2013-02-05T05:00:00Z",
+            "upgrade_url": "link"
+          },
+          "can_show_upgrade_sock": false,
+          "content_type_gating_enabled": false,
+          "end": "2013-02-05T05:00:00Z",
+          "enrollment": {
+            "mode": "audit",
+            "is_active": true
+          },
+          "enrollment_start": "2013-02-05T05:00:00Z",
+          "enrollment_end": "2013-02-05T05:00:00Z",
+          "id": 10,
+          "license": "all-rights-reserved",
+          "name": "Demonstration Course",
+          "number": "DemoX",
+          "offer": {
+            "code": "code",
+            "expiration_date": "2013-02-05T05:00:00Z",
+            "original_price": "$99",
+            "discounted_price": 99,
+            "percentage": 50,
+            "upgrade_url": "url"
+          },
+          "org": "edX",
+          "related_programs": null,
+          "short_description": "",
+          "start": "2013-02-05T05:00:00Z",
+          "tabs": {
+            "title": "Course",
+            "slug": "courseware",
+            "priority": 0,
+            "type": "courseware",
+            "url": "/course/course-v1:edX+DemoX+Demo_Course/home"
+          },
+          "user_timezone": null,
+          "verified_mode": {
+            "access_expiration_date": "2013-02-05T05:00:00Z",
+            "currency": "USD",
+            "currency_symbol": "$",
+            "price": 149,
+            "sku": "8CF08E5",
+            "upgrade_url": "/basket/add/?sku=8CF08E5"
+          },
+          "show_calculator": false,
+          "original_user_is_staff": true,
+          "can_view_legacy_courseware": true,
+          "is_staff": true,
+          "course_access": {
+            "has_access": true,
+            "error_code": null,
+            "developer_message": null,
+            "user_message": null,
+            "additional_context_user_message": null,
+            "user_fragment": null
+          },
+          "notes": {
+            "enabled": false,
+            "visible": true
+          },
+          "marketing_url": null,
+          "celebrations": {
+            "first_section": false,
+            "streak_length_to_celebrate": null,
+            "streak_discount_enabled": false
+          },
+          "user_has_passing_grade": false,
+          "course_exit_page_is_active": false,
+          "certificate_data": {
+            "cert_status": "audit_passing",
+            "cert_web_view_url": null,
+            "download_url": null,
+            "certificate_available_date": null
+          },
+          "verify_identity_url": null,
+          "verification_status": "none",
+          "linkedin_add_to_profile_url": null,
+          "user_needs_integrity_signature": false
+        },
+        "headers": {
+          "Content-Accepted": "Application/Json"
+        }
+      }
+    }
+  ]
+}

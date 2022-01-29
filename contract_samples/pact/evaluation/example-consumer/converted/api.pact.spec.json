@@ -1,0 +1,49 @@
+{
+  "provider": "my provider name",
+  "consumer": "my consumer body",
+  "port": "8080",
+  "interactions": [
+    {
+      "method": "GET",
+      "path": "/product/10",
+      "status": 200,
+      "request": {
+        "headers": {
+          "Authorization": "Bearer 2019-01-14T11:34:18.045Z"
+        }
+      },
+      "response": {
+        "headers": {
+          "Content-Accepted": "Application/Json"
+        },
+        "body": {
+          "id": "10",
+          "type": "CREDIT_CARD",
+          "name": "28 Degrees"
+        }
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/product/11",
+      "status": 404,
+      "request": {
+        "headers": {
+          "Authorization": "Bearer 2019-01-14T11:34:18.045Z"
+        }
+      },
+      "response": {
+        "body": {
+          "body": {
+            "id": "10",
+            "type": "CREDIT_CARD",
+            "name": "28 Degrees"
+          }
+        },
+        "headers": {
+          "Content-Accepted": "Application/Json"
+        }
+      }
+    }
+  ]
+}

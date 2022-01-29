@@ -1,0 +1,24 @@
+{
+  "provider": "my provider name",
+  "consumer": "my consumer body",
+  "port": "8080",
+  "interactions": [
+    {
+      "method": "POST",
+      "path": "/cypress",
+      "status": 200,
+      "request": {
+      },
+      "response": {
+        "body": {
+          "name": "Using fixtures to represent data",
+          "email": "hello@cypress.io",
+          "body": "Fixtures are a great way to mock data for responses to routes"
+        },
+        "headers": {
+          "Content-Accepted": "Application/Json"
+        }
+      }
+    }
+  ]
+}

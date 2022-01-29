@@ -1,0 +1,30 @@
+{
+  "provider": "my provider name",
+  "consumer": "there is a subject with id 5",
+  "port": "8080",
+  "interactions": [
+    {
+      "method": "POST",
+      "path": "/mathe",
+      "status": 200,
+      "request": {
+        "body": {
+          "type": "SubjectsQuery",
+          "payload": {
+          }
+        }
+      },
+      "response": {
+        "body": {
+          "subjects": {
+            "instance": "de",
+            "taxonomyTermId": 5
+          }
+        },
+        "headers": {
+          "Content-Type": "Application/Json"
+        }
+      }
+    }
+  ]
+}

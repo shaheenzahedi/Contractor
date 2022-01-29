@@ -1,0 +1,64 @@
+{
+  "provider": "my provider name",
+  "consumer": "users with ids 1 and 10 are active authors",
+  "port": "8080",
+  "interactions": [
+    {
+      "method": "POST",
+      "path": "/mathe",
+      "status": 200,
+      "request": {
+        "body": {
+          "type": "ActiveAuthorsQuery"
+        }
+      },
+      "response": {
+        "body": {
+          "response": 1
+        },
+        "headers": {
+          "Content-Type": "Application/Json"
+        }
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mathe",
+      "status": 200,
+      "request": {
+        "body": {
+          "type": "ActiveReviewersQuery"
+        }
+      },
+      "response": {
+        "body": {
+          "response": 1
+        },
+        "headers": {
+          "Content-Type": "Application/Json"
+        }
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mathe",
+      "status": 200,
+      "request": {
+        "body": {
+          "type": "ActivityByTypeQuery"
+        }
+      },
+      "response": {
+        "body": {
+          "edits": 10,
+          "comments": 11,
+          "reviews": 0,
+          "taxonomy": 3
+        },
+        "headers": {
+          "Content-Type": "Application/Json"
+        }
+      }
+    }
+  ]
+}

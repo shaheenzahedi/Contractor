@@ -1,0 +1,59 @@
+{
+  "provider": "my provider name",
+  "consumer": "there exists a subscription for user with id 10",
+  "port": "8080",
+  "interactions": [
+    {
+      "method": "POST",
+      "path": "/mathe",
+      "status": 200,
+      "request": {
+        "body": {
+          "type": "SubscriptionsQuery",
+          "payload": {
+            "userId": 10
+          }
+        }
+      },
+      "response": {
+        "body": {
+          "subscriptions": {
+            "objectId": 1,
+            "sendEmail": false
+          }
+        },
+        "headers": {
+          "Content-Type": "Application/Json"
+        }
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mathe",
+      "status": 200,
+      "request": {
+        "body": {
+          "type": "SubscriptionSetMutation",
+          "payload": {
+            "userId": 10
+          }
+        }
+      },
+      "response": {
+        "body": {
+          "subscriptions": {
+            "ids": [
+              10
+            ],
+            "userId": 10,
+            "subscribe": true,
+            "sendEmail": false
+          }
+        },
+        "headers": {
+          "Content-Type": "Application/Json"
+        }
+      }
+    }
+  ]
+}

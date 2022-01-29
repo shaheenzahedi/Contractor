@@ -1,0 +1,28 @@
+{
+  "provider": "my provider name",
+  "consumer": "my consumer body",
+  "port": "8080",
+  "interactions": [
+    {
+      "method": "POST",
+      "path": "/product",
+      "status": 200,
+      "request": {
+      },
+      "response": {
+        "body": {
+          "id":"10",
+          "Product": {
+            "id":"10",
+            "type": "CREDIT_CARD",
+            "location": "28 Degrees",
+            "version": "v1"
+          }
+        },
+        "headers": {
+          "Content-Accepted": "Application/Json"
+        }
+      }
+    }
+  ]
+}

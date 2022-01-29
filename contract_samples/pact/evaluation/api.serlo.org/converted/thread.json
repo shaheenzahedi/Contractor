@@ -1,0 +1,63 @@
+{
+  "provider": "my provider name",
+  "consumer": "article 10 has threads",
+  "port": "8080",
+  "interactions": [
+    {
+      "method": "POST",
+      "path": "/mathe",
+      "status": 200,
+      "request": {
+        "body": {
+          "type": "ThreadsQuery",
+          "payload": {
+            "id": 10
+          }
+        }
+      },
+      "response": {
+        "body": {
+          "firstCommentIds": 1
+        },
+        "headers": {
+          "Content-Type": "Application/Json"
+        }
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mathe",
+      "status": 200,
+      "request": {
+        "body": {
+          "type": "ThreadCreateThreadMutation",
+          "payload": {
+            "title": "My new thread",
+            "content": "🔥 brand new",
+            "objectId": 10,
+            "userId": 10,
+            "subscribe": true,
+            "sendEmail": false
+          }
+        }
+      },
+      "response": {
+        "body": {
+          "id": 1000,
+          "title": "My new thread",
+          "trashed": false,
+          "alias": "/mathe/1000/first",
+          "authorId": 20,
+          "date": "2020/10/20",
+          "archived": false,
+          "content": "🔥 brand new!",
+          "parentId": 10,
+          "childrenIds": []
+        },
+        "headers": {
+          "Content-Type": "Application/Json"
+        }
+      }
+    }
+  ]
+}
