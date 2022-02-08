@@ -5,40 +5,37 @@
   "interactions": [
     {
       "method": "GET",
-      "path": "/product/10",
+      "path": "/foo/1/bar",
       "status": 200,
       "request": {
-        "headers": {
-          "Authorization": "Bearer 2019-01-14T11:34:18.045Z"
-        }
       },
       "response": {
+        "body": {
+          "foo": 123
+        },
         "headers": {
           "Content-Accepted": "Application/Json"
-        },
-        "body": {
-          "id": "10",
-          "type": "CREDIT_CARD",
-          "name": "28 Degrees"
         }
       }
     },
     {
       "method": "GET",
-      "path": "/product/11",
-      "status": 404,
+      "path": "/login",
+      "status": 200,
       "request": {
-        "headers": {
-          "Authorization": "Bearer 2019-01-14T11:34:18.045Z"
+        "body": {
+          "id": "123",
+          "email": "kyle@bla.com",
+          "password": "secret",
+          "name": "Kyle"
         }
       },
       "response": {
         "body": {
-          "body": {
-            "id": "10",
-            "type": "CREDIT_CARD",
-            "name": "28 Degrees"
-          }
+          "email": "kyle@bla.com",
+          "name": "Kyle",
+          "hasConfirmedEmail": false,
+          "token": "secret"
         },
         "headers": {
           "Content-Accepted": "Application/Json"
