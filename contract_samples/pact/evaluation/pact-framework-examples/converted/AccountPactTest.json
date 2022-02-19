@@ -1,0 +1,36 @@
+{
+  "provider": "my provider name",
+  "consumer": "my consumer body",
+  "port": "8080",
+  "interactions": [
+    {
+      "method": "GET",
+      "path": "/v1/accounts/1/balance/",
+      "status": 200,
+      "request": {
+      },
+      "response": {
+        "body": {
+          "accountId": 1,
+          "balance": 12,
+          "accountType": "COMMON"
+        },
+        "headers": {
+          "Content-Accepted": "Application/Json"
+        }
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/v1/accounts/1000/balance/",
+      "status": 404,
+      "request": {
+      },
+      "response": {
+        "headers": {
+          "Content-Accepted": "Application/Json"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "provider": "my provider name",
+  "consumer": "my consumer body",
+  "port": "8080",
+  "interactions": [
+    {
+      "method": "GET",
+      "path": "/products",
+      "status": 200,
+      "request": {
+        "headers": {
+          "Authorization": "Bearer 2019-01-14T11:34:18.045Z"
+        }
+      },
+      "response": {
+        "body": {
+          "id": "09",
+          "type": "CREDIT_CARD",
+          "name": "Gem Visa"
+        },
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        }
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/products",
+      "status": 401,
+      "request": {
+        "headers": {
+          "Authorization": "Bearer 2019-01-14T11:34:18.045Z"
+        }
+      },
+      "response": {
+        "body": {
+        },
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        }
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/product",
+      "status": 401,
+      "request": {
+      },
+      "response": {
+        "body": {
+        },
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        }
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/product/10",
+      "status": 200,
+      "request": {
+        "headers": {
+          "Authorization": "Bearer 2019-01-14T11:34:18.045Z"
+        }
+      },
+      "response": {
+        "body": {
+          "id": "10",
+          "type": "CREDIT_CARD",
+          "name": "28 Degrees"
+        },
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        }
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/product/11",
+      "status": 404,
+      "request": {
+        "headers": {
+          "Authorization": "Bearer 2019-01-14T11:34:18.045Z"
+        }
+      },
+      "response": {
+        "body": {
+        },
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        }
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/product/10",
+      "status": 401,
+      "request": {
+      },
+      "response": {
+        "body": {
+        },
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        }
+      }
+    }
+  ]
+}
