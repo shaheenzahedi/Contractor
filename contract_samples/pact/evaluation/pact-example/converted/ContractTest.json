@@ -1,0 +1,25 @@
+{
+  "provider": "my provider name",
+  "consumer": "my consumer body",
+  "port": "8080",
+  "interactions": [
+    {
+      "method": "GET",
+      "path": "/user",
+      "status": 200,
+      "request": {
+      },
+      "response": {
+        "body": {
+          "firstName": "string",
+          "lastName": "string",
+          "age": 10,
+          "ids": "string"
+        },
+        "headers": {
+          "Content-Accepted": "Application/Json"
+        }
+      }
+    }
+  ]
+}

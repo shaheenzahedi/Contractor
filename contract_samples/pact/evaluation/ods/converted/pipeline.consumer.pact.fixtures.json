@@ -1,0 +1,89 @@
+{
+  "provider": "my provider name",
+  "consumer": "my consumer body",
+  "port": "8080",
+  "interactions": [
+    {
+      "method": "GET",
+      "path": "/configs/",
+      "status": 200,
+      "request": {
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": {
+          "author": "some author",
+          "description": "some description",
+          "displayName": "some display name",
+          "license": "some license"
+        }
+      },
+      "response": {
+        "headers": {
+          "Content-Accepted": "Application/Json"
+        }
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/configs/",
+      "status": 200,
+      "request": {
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": {
+          "author": "some author",
+          "description": "some description",
+          "displayName": "some display name",
+          "license": "some license",
+          "schema": {}
+        }
+      },
+      "response": {
+        "headers": {
+          "Content-Accepted": "Application/Json"
+        }
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/configs/12",
+      "status": 200,
+      "request": {
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "durationInMilliSeconds": 3.14,
+          "startTimestamp": 123,
+          "endTimestamp": 456
+        }
+      },
+      "response": {
+        "headers": {
+          "Content-Accepted": "Application/Json"
+        }
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/configs/12",
+      "status": 200,
+      "request": {
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "func": "n0t v4l1d j4v4$(r1pt",
+          "data": {}
+        }
+      },
+      "response": {
+        "headers": {
+          "Content-Accepted": "Application/Json"
+        }
+      }
+    }
+  ]
+}

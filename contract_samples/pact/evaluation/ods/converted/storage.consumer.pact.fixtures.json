@@ -1,0 +1,24 @@
+{
+  "provider": "my provider name",
+  "consumer": "my consumer body",
+  "port": "8080",
+  "interactions": [
+    {
+      "method": "GET",
+      "path": "/123",
+      "status": 200,
+      "request": {
+      },
+      "response": {
+        "body": {
+          "id": 2,
+          "timestamp": "some date",
+          "pipelineId": 1
+        },
+        "headers": {
+          "Content-Accepted": "Application/Json"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "provider": "my provider name",
+  "consumer": "my consumer body",
+  "port": "8080",
+  "interactions": [
+    {
+      "method": "GET",
+      "path": "/clients",
+      "status": 200,
+      "request": {
+        "headers": {
+          "Content-Accepted": "application/json, text/plain, */*"
+        }
+      },
+      "response": {
+        "body": {
+          "firstName": "Lisa",
+          "lastName": "Simpson",
+          "age": 8,
+          "id": 1
+        },
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        }
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/clients/123",
+      "status": 200,
+      "request": {
+        "headers": {
+          "Content-Accepted": "application/json, text/plain, */*"
+        }
+      },
+      "response": {
+        "body": {
+          "firstName": "Paulo",
+          "lastName": "Gonçalves",
+          "age": 25,
+          "id": 123
+        },
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        }
+      }
+    }
+  ]
+}
