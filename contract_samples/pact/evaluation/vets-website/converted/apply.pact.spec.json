@@ -1,0 +1,97 @@
+{
+  "provider": "my provider name",
+  "consumer": "my consumer body",
+  "port": "8080",
+  "interactions": [
+    {
+      "method": "GET",
+      "path": "/covid_vaccine/v0/registration",
+      "status": 200,
+      "request": {
+        "headers": {
+          "X-Key-Inflection": "camel"
+        },
+        "body": {
+          "key": "value"
+        }
+      },
+      "response": {
+        "headerRules": [
+          {
+            "name": "Content-Type",
+            "type": "MATCHES",
+            "value": "^application/json"
+          }
+        ],
+        "body": {
+          "id": "BC79619E54A14BFF0D1607952232618112202",
+          "type": "covid_vaccine_v0_registration_submissions",
+          "attributes": {
+            "createdAt": "2020-12-14T13:23:52.929Z",
+            "vaccineInterest": "INTERESTED",
+            "zipCode": "10001",
+            "zipCodeDetails": "Yes",
+            "phone": "1112223333",
+            "email": "test@example.com",
+            "firstName": "JAMES",
+            "lastName": "BECK",
+            "birthDate": "1989-11-11"
+          }
+        }
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/covid_vaccine/v0/registration",
+      "status": 404,
+      "request": {
+        "headers": {
+          "X-Key-Inflection": "camel"
+        }
+      },
+      "response": {
+        "headerRules": [
+          {
+            "name": "Content-Type",
+            "type": "MATCHES",
+            "value": "^application/json"
+          }
+        ],
+        "body": {
+          "errors": [
+            {
+              "title": "Record not found",
+              "detail": "The record identified by  could not be found",
+              "code": "404",
+              "status": "404"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/covid_vaccine/v0/registration",
+      "status": 201,
+      "request": {
+        "headers": {
+          "X-Key-Inflection": "camel",
+          "Content-Type": "application/json"
+        }
+      },
+      "response": {
+        "body": {
+          "data": {
+            "id": "",
+            "type": "covid_vaccine_v0_registration_submissions",
+            "attributes": {
+              "createdAt": "2020-12-14T13:23:52.929Z",
+              "vaccineInterest": "INTERESTED",
+              "zipCode": "10001"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

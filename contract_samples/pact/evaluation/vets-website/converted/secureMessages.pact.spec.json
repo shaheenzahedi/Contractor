@@ -1,0 +1,79 @@
+{
+  "provider": "my provider name",
+  "consumer": "logged in user with messages",
+  "port": "8080",
+  "interactions": [
+    {
+      "method": "GET",
+      "path": "/v0/contact_us/inquiries",
+      "status": 200,
+      "request": {
+        "headers": {
+          "X-Key-Inflection": "camel"
+        },
+        "query": {
+          "query": "benefits"
+        },
+        "body": {
+        }
+      },
+      "response": {
+        "headers": {
+          "X-Key-Inflection": "camel",
+          "Content-Type": "application/json"
+        },
+        "headerRules": [
+          {
+            "name": "Content-Type",
+            "type": "MATCHES",
+            "value": "^application/json"
+          }
+        ],
+        "body": {
+          "inquiries": {
+            "subject": "Eyeglasses",
+            "confirmationNumber": "000-011",
+            "status": "RESOLVED",
+            "creationTimestamp": "000-011",
+            "lastActiveTimestamp": "000-011",
+            "links": {
+              "thread": {
+                "href": "/v1/user/{:user-id}/inquiry/000-011"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/v0/contact_us/inquiries",
+      "status": 401,
+      "request": {
+        "headers": {
+          "X-Key-Inflection": "camel"
+        },
+        "query": {
+          "query": "benefits"
+        },
+        "body": {
+        }
+      },
+      "response": {
+        "headers": {
+          "X-Key-Inflection": "camel",
+          "Content-Type": "application/json"
+        },
+        "headerRules": [
+          {
+            "name": "Content-Type",
+            "type": "MATCHES",
+            "value": "^application/json"
+          }
+        ],
+        "body": {
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "provider": "my provider name",
+  "consumer": "logged in user with messages",
+  "port": "8080",
+  "interactions": [
+    {
+      "method": "GET",
+      "path": "/v0/profile/service_history",
+      "status": 200,
+      "request": {
+        "headers": {
+          "X-Key-Inflection": "camel"
+        },
+        "query": {
+          "query": "benefits"
+        },
+        "body": {
+        }
+      },
+      "response": {
+        "headerRules": [
+          {
+            "name": "Content-Type",
+            "type": "MATCHES",
+            "value": "^application/json"
+          }
+        ],
+        "body": {
+          "data": {
+            "attributes": {
+              "serviceHistory": {
+                "branchOfService": "Air Force",
+                "beginDate": "1900-01-31",
+                "endDate": "2000-12-25"
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}
