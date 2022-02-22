@@ -1,0 +1,66 @@
+{
+  "provider": "my provider name",
+  "consumer": "my consumer body",
+  "port": "8080",
+  "interactions": [
+    {
+      "method": "GET",
+      "path": "/v1/webhook",
+      "status": 200,
+      "request": {
+        "query": {
+          "service_id": "an-external-service-id",
+          "live": "true"
+        }
+      },
+      "response": {
+        "headers": {
+          "key": "value"
+        },
+        "body": {
+          "external_id": "valid-webhooks-external-id",
+          "service_id": "valid-service-id",
+          "live": true,
+          "callback_url": "https://some-callback-url.com",
+          "description": "a valid webhook description",
+          "status": "ACTIVE",
+          "created_date": "2021-08-20T14:00:00.000Z",
+          "subscriptions": [
+            "card_payment_captured"
+          ]
+        }
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/v1/webhook",
+      "status": 200,
+      "request": {
+        "body": {
+          "service_id": "an-external-service-id",
+          "callback_url": "https://a-callback-url.com",
+          "live": true,
+          "description": "A valid Webhook description",
+          "subscriptions": [ "card_payment_captured" ]
+        }
+      },
+      "response": {
+        "headers": {
+          "key": "value"
+        },
+        "body": {
+          "external_id": "valid-webhooks-external-id",
+          "service_id": "valid-service-id",
+          "live": true,
+          "callback_url": "https://some-callback-url.com",
+          "description": "a valid webhook description",
+          "status": "ACTIVE",
+          "created_date": "2021-08-20T14:00:00.000Z",
+          "subscriptions": [
+            "card_payment_captured"
+          ]
+        }
+      }
+    }
+  ]
+}

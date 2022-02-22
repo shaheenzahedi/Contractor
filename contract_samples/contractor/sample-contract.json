@@ -72,6 +72,27 @@
           }
         ]
       }
+    },
+    {
+      "method": "POST",
+      "path": "/test/header",
+      "status": 200,
+      "request": {
+        "headers": {
+          "key": "value"
+        },
+        "body": {
+          "key": "value"
+        }
+      },
+      "response": {
+        "headers": {
+          "key": "value"
+        },
+        "body": {
+          "key": "value"
+        }
+      }
     }
   ]
 }

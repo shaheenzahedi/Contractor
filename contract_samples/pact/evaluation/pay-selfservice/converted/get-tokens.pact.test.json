@@ -1,0 +1,28 @@
+{
+  "provider": "my provider name",
+  "consumer": "my consumer body",
+  "port": "8080",
+  "interactions": [
+    {
+      "method": "POST",
+      "path": "TOKENS_PATH/1",
+      "status": 200,
+      "request": {
+      },
+      "response": {
+        "body": {
+          "tokens": [
+            {
+              "issued_date": "03 Sep 2018 - 10:05",
+              "last_used": null,
+              "token_link": "32fa3cdd-23c8-4602-a415-b48ede66b5e4",
+              "description": "Created from command line",
+              "token_type": "CARD",
+              "created_by": "System generated"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

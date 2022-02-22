@@ -1,0 +1,23 @@
+{
+  "provider": "my provider name",
+  "consumer": "my consumer body",
+  "port": "8080",
+  "interactions": [
+    {
+      "method": "GET",
+      "path": "ACCOUNTS_RESOURCE/1/charges/2",
+      "status": 200,
+      "request": {
+      },
+      "response": {
+        "body": {
+          "state": {
+            "status": "started",
+            "finished": false
+          },
+          "charge_id": "ht439nfg2l1e303k0dmifrn4fc"
+        }
+      }
+    }
+  ]
+}
