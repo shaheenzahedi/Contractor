@@ -17,22 +17,21 @@
 package binary
 
 import org.springframework.cloud.contract.spec.ContractDsl.Companion.contract
-import org.springframework.cloud.contract.spec.internal.HttpMethods
 
 contract {
-	request {
-		url = url("/1")
-		method = PUT
-		headers {
-			contentType = APPLICATION_OCTET_STREAM
-		}
-		body = bodyFromFileAsBytes("request.pdf")
-	}
-	response {
-		status = OK
-		body = bodyFromFileAsBytes("response.pdf")
-		headers {
-			contentType = APPLICATION_OCTET_STREAM
-		}
-	}
+    request {
+        url = url("/1")
+        method = PUT
+        headers {
+            contentType = APPLICATION_OCTET_STREAM
+        }
+        body = bodyFromFileAsBytes("request.pdf")
+    }
+    response {
+        status = OK
+        body = bodyFromFileAsBytes("response.pdf")
+        headers {
+            contentType = APPLICATION_OCTET_STREAM
+        }
+    }
 }

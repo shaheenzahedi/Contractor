@@ -3,7 +3,7 @@ package contracts.beer.rest
 import org.springframework.cloud.contract.spec.Contract
 
 Contract.make {
-	description("""
+    description("""
 Represents a successful scenario of getting a beer
 
 ```
@@ -16,21 +16,21 @@ then:
 ```
 
 """)
-	request {
-		method 'POST'
-		url '/check'
-		body(
-				age: value(consumer(regex('[2-9][0-9]')))
-		)
-		headers {
-			contentType(applicationJson())
-		}
-	}
-	response {
-		status 200
-		body(file('response.json'))
-		headers {
-			contentType(applicationJson())
-		}
-	}
+    request {
+        method 'POST'
+        url '/check'
+        body(
+                age: value(consumer(regex('[2-9][0-9]')))
+        )
+        headers {
+            contentType(applicationJson())
+        }
+    }
+    response {
+        status 200
+        body(file('response.json'))
+        headers {
+            contentType(applicationJson())
+        }
+    }
 }

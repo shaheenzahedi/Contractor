@@ -24,39 +24,40 @@ import org.springframework.test.web.reactive.server.WebTestClient
 )
 @AutoConfigureJsonTesters
 class ContactConsumerTest {
-  lateinit var webTestClient: WebTestClient
+    lateinit var webTestClient: WebTestClient
 
-  @StubRunnerPort("secured-producer-webflux") lateinit var port: Integer
+    @StubRunnerPort("secured-producer-webflux")
+    lateinit var port: Integer
 
-  @BeforeEach
-  fun before() {
-    webTestClient = WebTestClient
-        .bindToServer()
-        .baseUrl("http://localhost:" + this.port)
-        .build()
-  }
+    @BeforeEach
+    fun before() {
+        webTestClient = WebTestClient
+            .bindToServer()
+            .baseUrl("http://localhost:" + this.port)
+            .build()
+    }
 
-  @Test
-  fun givenUnauthorizedUser_whenSearchContacts_shouldRespond401() {
-    webTestClient
-        .get()
-        .uri("/contact/search")
-        .accept(MediaType.APPLICATION_JSON)
-        .exchange()
-        .expectStatus()
-        .isEqualTo(HttpStatus.UNAUTHORIZED)
-  }
+    @Test
+    fun givenUnauthorizedUser_whenSearchContacts_shouldRespond401() {
+        webTestClient
+            .get()
+            .uri("/contact/search")
+            .accept(MediaType.APPLICATION_JSON)
+            .exchange()
+            .expectStatus()
+            .isEqualTo(HttpStatus.UNAUTHORIZED)
+    }
 
-  @Test
-  fun givenAuthorizedUser_whenSearchContacts_shouldRespondOK() {
-    webTestClient
-        .get()
-        .uri("/contact/search?query=existing")
-        .accept(MediaType.APPLICATION_JSON)
-        .header(HttpHeaders.AUTHORIZATION, "FAKE_AUTH")
-        .exchange()
-        .expectStatus()
-        .isEqualTo(HttpStatus.OK)
-    //TODO: validate body here!
-  }
+    @Test
+    fun givenAuthorizedUser_whenSearchContacts_shouldRespondOK() {
+        webTestClient
+            .get()
+            .uri("/contact/search?query=existing")
+            .accept(MediaType.APPLICATION_JSON)
+            .header(HttpHeaders.AUTHORIZATION, "FAKE_AUTH")
+            .exchange()
+            .expectStatus()
+            .isEqualTo(HttpStatus.OK)
+        //TODO: validate body here!
+    }
 }

@@ -30,30 +30,29 @@ import org.springframework.cloud.contract.verifier.http.Response;
  */
 public class GrpcStubHttpVerifier implements HttpVerifier {
 
-	private final ManagedChannel channel;
+    private final ManagedChannel channel;
 
-	public GrpcStubHttpVerifier(ManagedChannel channel) {
-		this.channel = channel;
-	}
+    public GrpcStubHttpVerifier(ManagedChannel channel) {
+        this.channel = channel;
+    }
 
-	@Override
-	public Response exchange(Request request) {
-		if (request.path().contains("beer.BeerService/check")) {
-			try {
-				com.example.Response response = BeerServiceGrpc.newBlockingStub(channel).check(PersonToCheck.parseFrom(request.body().asByteArray()));
-				ByteArrayOutputStream stream = new ByteArrayOutputStream();
-				response.writeTo(stream);
-				return Response
-						.builder()
-						.body(stream.toByteArray())
-						.header("Content-Type", "application/grpc")
-						.statusCode(200)
-						.build();
-			}
-			catch (IOException e) {
-				throw new IllegalStateException(e);
-			}
-		}
-		throw new UnsupportedOperationException("Request with path [" + request.path() + "] is unsupported");
-	}
+    @Override
+    public Response exchange(Request request) {
+        if (request.path().contains("beer.BeerService/check")) {
+            try {
+                comkingStub(channel).check(PersonToCheck.parseFrom(request.body().asByteArray()));
+                ByteA.example.Response response = BeerServiceGrpc.newBlocrrayOutputStream stream = new ByteArrayOutputStream();
+                response.writeTo(stream);
+                return Response
+                        .builder()
+                        .body(stream.toByteArray())
+                        .header("Content-Type", "application/grpc")
+                        .statusCode(200)
+                        .build();
+            } catch (IOException e) {
+                throw new IllegalStateException(e);
+            }
+        }
+        throw new UnsupportedOperationException("Request with path [" + request.path() + "] is unsupported");
+    }
 }

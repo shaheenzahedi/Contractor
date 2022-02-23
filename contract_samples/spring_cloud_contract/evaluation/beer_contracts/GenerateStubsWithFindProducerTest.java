@@ -23,67 +23,65 @@ import org.springframework.web.client.RestTemplate;
 // @org.junit.Ignore
 public class GenerateStubsWithFindProducerTest {
 
-	
-	static Map<String, String> contractProperties() {
-		Map<String, String> map = new HashMap<>();
-		map.put("stubs.find-producer", "true");
-		return map;
-	}
 
-	@RegisterExtension
-	static StubRunnerExtension rule = new StubRunnerExtension()
-			.downloadStub("com.example:some-artifact-id:0.0.1")
-			.downloadStub("com.example:some-other-artifact-id")
-			.repoRoot("stubs://file://" + System.getenv("ROOT")
-					+ "/producer_with_latest_2_2_features/src/test/resources/contracts")
-			.withProperties(contractProperties())
-			.stubsMode(StubRunnerProperties.StubsMode.REMOTE).withGenerateStubs(true);
+    @RegisterExtension
+    static StubRunnerExtension rule = new StubRunnerExtension()
+            .downloadStub("com.example:some-artifact-id:0.0.1")
+            .downloadStub("com.example:some-other-artifact-id")
+            .repoRoot("stubs://file://" + System.getenv("ROOT")
+                    + "/producer_with_latest_2_2_features/src/test/resources/contracts")
+            .withProperties(contractProperties())
+            .stubsMode(StubRunnerProperties.StubsMode.REMOTE).withGenerateStubs(true);
+
+    static Map<String, String> contractProperties() {
+        Map<String, String> map = new HashMap<>();
+        map.put("stubs.find-producer", "true");
+        return map;
+    }
+
+    @BeforeAll
+    public static void beforeClass() {
+        Assumptions.assumeTrue(atLeast220(), "Spring Cloud Contract must be in version at least 2.2.0");
+        Assumptions.assumeTrue(StringUtils.isEmpty(System.getenv("OLD_PRODUCER_TRAIN")),
+                "Env var OLD_PRODUCER_TRAIN must not be set");
+    }
+
+    private static boolean atLeast220() {
+        try {
+            Class.forName(
+                    "org.springframework.cloud.contract.spec.internal.DslPropertyConverter");
+        } catch (Exception ex) {
+            return false;
+        }
+        return true;
+    }
 
 
-	@BeforeAll
-	public static void beforeClass() {
-		Assumptions.assumeTrue(atLeast220(), "Spring Cloud Contract must be in version at least 2.2.0");
-		Assumptions.assumeTrue(StringUtils.isEmpty(System.getenv("OLD_PRODUCER_TRAIN")),
-				"Env var OLD_PRODUCER_TRAIN must not be set");
-	}
+    @Test
+    public void should_generate_a_stub_at_runtime_for_some_artifact_id()
+            throws Exception {
 
-	private static boolean atLeast220() {
-		try {
-			Class.forName(
-					"org.springframework.cloud.contract.spec.internal.DslPropertyConverter");
-		}
-		catch (Exception ex) {
-			return false;
-		}
-		return true;
-	}
+        int port = rule.findStubUrl("some-artifact-id").getPort();
 
-	
-	@Test
-	public void should_generate_a_stub_at_runtime_for_some_artifact_id()
-			throws Exception {
-		
-		int port = rule.findStubUrl("some-artifact-id").getPort();
+        String object = new RestTemplate()
+                .getForObject("http://localhost:" + port + "/stuff", String.class);
 
-		String object = new RestTemplate()
-				.getForObject("http://localhost:" + port + "/stuff", String.class);
+        BDDAssertions.then(object).isEqualTo("artifactId");
 
-		BDDAssertions.then(object).isEqualTo("artifactId");
-		
-	}
+    }
 
-	@Test
-	public void should_generate_a_stub_at_runtime_for_some_other_artifact_id()
-			throws Exception {
-		
-		int port = rule.findStubUrl("some-other-artifact-id").getPort();
+    @Test
+    public void should_generate_a_stub_at_runtime_for_some_other_artifact_id()
+            throws Exception {
 
-		String object = new RestTemplate()
-				.getForObject("http://localhost:" + port + "/stuff2", String.class);
+        int port = rule.findStubUrl("some-other-artifact-id").getPort();
 
-		BDDAssertions.then(object).isEqualTo("artifactId2");
-		
-	}
-	
+        String object = new RestTemplate()
+                .getForObject("http://localhost:" + port + "/stuff2", String.class);
+
+        BDDAssertions.then(object).isEqualTo("artifactId2");
+
+    }
+
 
 }

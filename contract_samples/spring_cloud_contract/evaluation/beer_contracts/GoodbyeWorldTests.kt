@@ -31,25 +31,25 @@ import org.springframework.web.client.RestTemplate
 import org.springframework.web.client.getForObject
 
 
-
 @ExtendWith(SpringExtension::class)
 @SpringBootTest(webEnvironment = WebEnvironment.NONE)
-@AutoConfigureStubRunner(ids = ["com.example:producer-kotlin-ftw"],
-		repositoryRoot = "stubs://classpath:contractsAtRuntime/",
-		stubsMode = StubRunnerProperties.StubsMode.LOCAL,
-		generateStubs = true)
+@AutoConfigureStubRunner(
+    ids = ["com.example:producer-kotlin-ftw"],
+    repositoryRoot = "stubs://classpath:contractsAtRuntime/",
+    stubsMode = StubRunnerProperties.StubsMode.LOCAL,
+    generateStubs = true
+)
 class GoodbyeWorldTests {
 
 
+    @StubRunnerPort("producer-kotlin-ftw")
+    var port: Int? = null
 
-	@StubRunnerPort("producer-kotlin-ftw")
-	var port: Int? = null
-
-	@Test
-	fun shouldGenerateStubsAtRuntime() {
-		// when:
-		val response: String = RestTemplate().getForObject("http://localhost:" + this.port + "/goodbye", String::class)
-		// then:
-		assertThat(response).isEqualTo("Goodbye World!")
-	}
+    @Test
+    fun shouldGenerateStubsAtRuntime() {
+        // when:
+        val response: String = RestTemplate().getForObject("http://localhost:" + this.port + "/goodbye", String::class)
+        // then:
+        assertThat(response).isEqualTo("Goodbye World!")
+    }
 }

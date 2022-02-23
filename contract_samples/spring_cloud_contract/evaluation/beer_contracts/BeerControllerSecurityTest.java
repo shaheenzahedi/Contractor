@@ -32,42 +32,42 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @DirtiesContext
 public class BeerControllerSecurityTest extends AbstractTest {
 
-	@Autowired
-	MockMvc mockMvc;
+    @Autowired
+    MockMvc mockMvc;
 
-	@Autowired
-	BeerController beerController;
+    @Autowired
+    BeerController beerController;
 
-	@StubRunnerPort("beer-api-producer-security")
-	int producerPort;
+    @StubRunnerPort("beer-api-producer-security")
+    int producerPort;
 
-	@BeforeEach
-	public void setupPort() {
-		this.beerController.port = this.producerPort;
-	}
+    @BeforeEach
+    public void setupPort() {
+        this.beerController.port = this.producerPort;
+    }
 
-	
-	@Test
-	public void should_give_me_a_beer_when_im_old_enough() throws Exception {
-		
-		this.mockMvc
-				.perform(MockMvcRequestBuilders.post("/beer")
-						.contentType(MediaType.APPLICATION_JSON)
-						.content(this.json.write(new Person("Old Enough", 42)).getJson()))
-				.andExpect(status().isOk()).andExpect(content().string("THERE YOU GO"));
-		
-	}
 
-	@Test
-	public void should_reject_a_beer_when_im_too_young() throws Exception {
-		
-		this.mockMvc
-				.perform(MockMvcRequestBuilders.post("/beer")
-						.contentType(MediaType.APPLICATION_JSON)
-						.content(this.json.write(new Person("Too Young", 16)).getJson()))
-				.andExpect(status().isOk()).andExpect(content().string("GET LOST"));
-		
-	}
-	
+    @Test
+    public void should_give_me_a_beer_when_im_old_enough() throws Exception {
+
+        this.mockMvc
+                .perform(MockMvcRequestBuilders.post("/beer")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(this.json.write(new Person("Old Enough", 42)).getJson()))
+                .andExpect(status().isOk()).andExpect(content().string("THERE YOU GO"));
+
+    }
+
+    @Test
+    public void should_reject_a_beer_when_im_too_young() throws Exception {
+
+        this.mockMvc
+                .perform(MockMvcRequestBuilders.post("/beer")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(this.json.write(new Person("Too Young", 16)).getJson()))
+                .andExpect(status().isOk()).andExpect(content().string("GET LOST"));
+
+    }
+
 
 }

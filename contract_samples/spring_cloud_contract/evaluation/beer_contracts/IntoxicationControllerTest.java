@@ -34,36 +34,40 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @DirtiesContext
 public class IntoxicationControllerTest extends AbstractTest {
 
-	@Autowired MockMvc mockMvc;
-	@Autowired IntoxicationController intoxicationController;
+    @Autowired
+    MockMvc mockMvc;
+    @Autowired
+    IntoxicationController intoxicationController;
 
-	@StubRunnerPort("beer-api-producer-java") int producerPort;
+    @StubRunnerPort("beer-api-producer-java")
+    int producerPort;
 
-	@BeforeEach
-	public void setupPort() {
-		this.intoxicationController.port = this.producerPort;
-	}
+    @BeforeEach
+    public void setupPort() {
+        this.intoxicationController.port = this.producerPort;
+    }
 
-	@Test public void should_eventually_get_completely_wasted() throws Exception {
-		
-		sendARequestAndExpectStatuses(SOBER, TIPSY);
-		sendARequestAndExpectStatuses(TIPSY, DRUNK);
-		sendARequestAndExpectStatuses(DRUNK, WASTED);
-		
-	}
+    @Test
+    public void should_eventually_get_completely_wasted() throws Exception {
 
-	private void sendARequestAndExpectStatuses(DrunkLevel previousStatus, DrunkLevel currentStatus) throws Exception {
-		
-		
-		this.mockMvc.perform(MockMvcRequestBuilders.post("/wasted")
-				.contentType(MediaType.APPLICATION_JSON)
-				.content(this.json.write(new Person("marcin")).getJson()))
-				.andExpect(status().isOk())
-				.andExpect(content().json("{\"previousStatus\":\"" + previousStatus.name() +
-						"\",\"currentStatus\":\"" + currentStatus.name() + "\"}"));
-		
-		
-	}
+        sendARequestAndExpectStatuses(SOBER, TIPSY);
+        sendARequestAndExpectStatuses(TIPSY, DRUNK);
+        sendARequestAndExpectStatuses(DRUNK, WASTED);
+
+    }
+
+    private void sendARequestAndExpectStatuses(DrunkLevel previousStatus, DrunkLevel currentStatus) throws Exception {
+
+
+        this.mockMvc.perform(MockMvcRequestBuilders.post("/wasted")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(this.json.write(new Person("marcin")).getJson()))
+                .andExpect(status().isOk())
+                .andExpect(content().json("{\"previousStatus\":\"" + previousStatus.name() +
+                        "\",\"currentStatus\":\"" + currentStatus.name() + "\"}"));
+
+
+    }
 }
 
 

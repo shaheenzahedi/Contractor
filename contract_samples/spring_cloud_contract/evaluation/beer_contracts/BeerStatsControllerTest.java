@@ -31,25 +31,29 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @DirtiesContext
 public class BeerStatsControllerTest extends AbstractTest {
 
-	@Autowired MockMvc mockMvc;
-	@Autowired BeerStatsController beerStatsController;
+    @Autowired
+    MockMvc mockMvc;
+    @Autowired
+    BeerStatsController beerStatsController;
 
-	@StubRunnerPort("beer-api-producer-java") int producerPort;
+    @StubRunnerPort("beer-api-producer-java")
+    int producerPort;
 
-	@BeforeEach
-	public void setupPort() {
-		
-		this.beerStatsController.port = this.producerPort;
-		
-	}
+    @BeforeEach
+    public void setupPort() {
 
-	@Test public void should_return_a_personalized_text_with_amount_of_beers() throws Exception {
-		
-		this.mockMvc.perform(MockMvcRequestBuilders.post("/stats")
-				.contentType(MediaType.APPLICATION_JSON)
-				.content(this.statsJson.write(new StatsRequest("marcin")).getJson()))
-				.andExpect(status().isOk())
-				.andExpect(content().string("Dear marcin thanks for your interested in drinking beer. You've drank <5> beers"));
-		
-	}
+        this.beerStatsController.port = this.producerPort;
+
+    }
+
+    @Test
+    public void should_return_a_personalized_text_with_amount_of_beers() throws Exception {
+
+        this.mockMvc.perform(MockMvcRequestBuilders.post("/stats")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(this.statsJson.write(new StatsRequest("marcin")).getJson()))
+                .andExpect(status().isOk())
+                .andExpect(content().string("Dear marcin thanks for your interested in drinking beer. You've drank <5> beers"));
+
+    }
 }

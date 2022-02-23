@@ -19,19 +19,19 @@ package fraudname
 import org.springframework.cloud.contract.spec.ContractDsl.Companion.contract
 
 contract {
-	request {
-		method = PUT
-		url = url("/frauds/name")
-		body = body("name" to value(anyAlphaUnicode))
-		headers {
-			contentType = "application/json"
-		}
-	}
-	response {
-		status = OK
-		body = body("result" to "Don't worry ${fromRequest().body("$.name")} you're not a fraud")
-		headers {
-			contentType = fromRequest().header(CONTENT_TYPE)
-		}
-	}
+    request {
+        method = PUT
+        url = url("/frauds/name")
+        body = body("name" to value(anyAlphaUnicode))
+        headers {
+            contentType = "application/json"
+        }
+    }
+    response {
+        status = OK
+        body = body("result" to "Don't worry ${fromRequest().body("$.name")} you're not a fraud")
+        headers {
+            contentType = fromRequest().header(CONTENT_TYPE)
+        }
+    }
 }
