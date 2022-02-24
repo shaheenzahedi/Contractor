@@ -1,0 +1,25 @@
+{
+    "provider": "my provider name",
+    "consumer": "my consumer body",
+    "port": "8080",
+    "interactions": [
+        {
+            "method": "PUT",
+            "path": "/frauds/name",
+            "status": 200,
+            "request": {
+                "body": {
+                    "name": "anything"
+                }
+            },
+            "response": {
+                "body": {
+                    "result": "Don't worry you're not a fraud"
+                },
+                "headers": {
+                    "Content-Accepted": "Application/Json"
+                }
+            }
+        }
+    ]
+}

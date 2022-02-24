@@ -1,0 +1,19 @@
+{
+    "provider": "my provider name",
+    "consumer": "my consumer body",
+    "port": "8080",
+    "interactions": [
+        {
+            "method": "GET",
+            "path": "/goodbye",
+            "status": 200,
+            "request": {
+            },
+            "response": {
+                "body": {
+                    "content": "Goodbye World!"
+                }
+            }
+        }
+    ]
+}

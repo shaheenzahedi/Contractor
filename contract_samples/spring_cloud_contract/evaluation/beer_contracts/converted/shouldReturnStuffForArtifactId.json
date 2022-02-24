@@ -1,0 +1,22 @@
+{
+    "provider": "my provider name",
+    "consumer": "my consumer body",
+    "port": "8080",
+    "interactions": [
+        {
+            "method": "GET",
+            "path": "/stuff",
+            "status": 200,
+            "request": {
+            },
+            "response": {
+                "body": {
+                    "result": "artifactId"
+                },
+                "headers": {
+                    "Content-Accepted": "Application/Json"
+                }
+            }
+        }
+    ]
+}

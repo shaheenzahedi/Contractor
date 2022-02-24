@@ -1,0 +1,39 @@
+{
+  "provider": "my provider name",
+  "consumer": "my consumer body",
+  "port": "8080",
+  "interactions": [
+    {
+      "method": "POST",
+      "path": "/check",
+      "status": 200,
+      "request": {
+        "age": 34
+      },
+      "response": {
+        "body": {
+          "message": "HERE YOU ARE"
+        },
+        "headers": {
+          "Content-Accepted": "Application/Json"
+        }
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/check",
+      "status": 406,
+      "request": {
+        "age": 10
+      },
+      "response": {
+        "body": {
+          "message": "GET LOST"
+        },
+        "headers": {
+          "Content-Accepted": "application/json"
+        }
+      }
+    }
+  ]
+}

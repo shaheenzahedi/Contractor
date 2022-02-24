@@ -1,0 +1,26 @@
+{
+    "provider": "my provider name",
+    "consumer": "my consumer body",
+    "port": "8080",
+    "interactions": [
+        {
+            "method": "POST",
+            "path": "/stats",
+            "status": 200,
+            "request": {
+                "body": {
+                    "name": "anything"
+                }
+            },
+            "response": {
+                "body": {
+                    "text": "Dear thanks for your interested in drinking beer",
+                    "quantity": 5
+                },
+                "headers": {
+                    "Content-Accepted": "Application/Json"
+                }
+            }
+        }
+    ]
+}

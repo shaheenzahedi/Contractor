@@ -1,0 +1,34 @@
+{
+  "provider": "my provider name",
+  "consumer": "my consumer body",
+  "port": "8080",
+  "interactions": [
+    {
+      "method": "PUT",
+      "path": "/fraudcheck",
+      "status": 200,
+      "request": {
+      },
+      "response": {
+        "bodyRules": [
+          {
+            "key": "client.id",
+            "type": "MATCHES",
+            "value": "[0-9]{10}"
+          },
+          {
+            "key": "loanAmount",
+            "type": "MATCHES",
+            "value": "123.123"
+          }
+        ],
+        "body": {
+          "login": "sample body login"
+        },
+        "headers": {
+          "Content-Accepted": "Application/Json"
+        }
+      }
+    }
+  ]
+}

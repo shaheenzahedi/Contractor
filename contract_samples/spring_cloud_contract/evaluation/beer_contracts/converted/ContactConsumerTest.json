@@ -1,0 +1,32 @@
+{
+    "provider": "my provider name",
+    "consumer": "my consumer body",
+    "port": "8080",
+    "interactions": [
+        {
+            "method": "POST",
+            "path": "/contact/search",
+            "status": 401,
+            "request": {
+                "headers": {
+                    "Content-Accepted": "Application/Json"
+                }
+            },
+            "response": {
+            }
+        },
+        {
+            "method": "POST",
+            "path": "/contact/search?query=existing",
+            "status": 200,
+            "request": {
+                "headers": {
+                    "Content-Accepted": "Application/Json",
+                    "Authorization": "FAKE_AUTH"
+                }
+            },
+            "response": {
+            }
+        }
+    ]
+}

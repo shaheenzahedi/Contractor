@@ -1,0 +1,34 @@
+{
+  "provider": "my provider name",
+  "consumer": "my consumer body",
+  "port": "8080",
+  "interactions": [
+    {
+      "method": "POST",
+      "path": "/graphql",
+      "status": 200,
+      "request": {
+        "body": {
+          "query": "query queryName($personName: String!) {\n  personToCheck(name: $personName) {\n    name\n    age\n  }\n}\n\n\n\n",
+          "variables": {
+            "personName": "Old Enough"
+          },
+          "operationName": "queryName"
+        }
+      },
+      "response": {
+        "body": {
+          "data": {
+            "personToCheck": {
+              "name": "Old Enough",
+              "age": "40"
+            }
+          }
+        },
+        "headers": {
+          "Content-Accepted": "application/json"
+        }
+      }
+    }
+  ]
+}

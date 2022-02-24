@@ -14,3 +14,6 @@ Desciption per each
 State management
 File
 Multipart
+XML body
+anyAlphaUnicode
+multipart

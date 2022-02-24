@@ -1,0 +1,37 @@
+{
+    "provider": "my provider name",
+    "consumer": "my consumer body",
+    "port": "8080",
+    "interactions": [
+        {
+            "method": "POST",
+            "path": "/buy",
+            "status": 200,
+            "request": {
+                "body": {
+                    "name": "starbuxman",
+                    "age": 25
+                },
+                "headers": {
+                    "Content-Type": "Application/Json"
+                }
+            },
+            "response": {
+                "body": {
+                    "message": "There you go Josh!",
+                    "status": "OK"
+                },
+                "bodyRules": [
+                    {
+                        "name": "age",
+                        "type": "MATCHES",
+                        "value": "[2-9][0-9]"
+                    }
+                ],
+                "headers": {
+                    "Content-Accepted": "Application/Json"
+                }
+            }
+        }
+    ]
+}
