@@ -1,0 +1,27 @@
+{
+  "provider": "my provider name",
+  "consumer": "my consumer body",
+  "port": "8080",
+  "interactions": [
+    {
+      "method": "POST",
+      "path": "/user-service/users/42",
+      "status": 201,
+      "request": {
+
+        "body": {
+          "firstName": "Arthur",
+          "lastName": "Dent"
+        }
+      },
+      "response": {
+        "body": {
+          "id": 42
+        },
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      }
+    }
+  ]
+}
