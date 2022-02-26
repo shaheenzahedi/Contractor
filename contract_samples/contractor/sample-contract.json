@@ -8,13 +8,89 @@
       "path": "/test/header",
       "status": 200,
       "request": {
+        "headers": {
+          "key": "value"
+        },
+        "body": {
+          "key": "value"
+        },
+        "params": {
+          "key": "value"
+        },
+        "cookies": {
+          "key": "value"
+        },
+        "data": "anything",
+        "queryParamRules": [
+          {
+            "name": "key",
+            "type": "MATCHES",
+            "value": "regex"
+          }
+        ],
+        "paramRules": [
+          {
+            "name": "key",
+            "type": "MATCHES",
+            "value": "regex"
+          }
+        ],
+        "cookieParams": [
+          {
+            "name": "key",
+            "type": "MATCHES",
+            "value": "regex"
+          }
+        ],
+        "headerParams": [
+          {
+            "name": "key",
+            "type": "MATCHES",
+            "value": "regex"
+          }
+        ]
       },
       "response": {
-        "body": {
-          "login": "sample body login"
-        },
         "headers": {
-          "Content-Accepted": "Application/Json"
+          "key": "value"
+        },
+        "body": {
+          "key": "value"
+        },
+        "bodyRules": [
+          {
+            "name": "key",
+            "type": "MATCHES",
+            "value": "regex"
+          }
+        ],
+        "headerRules": [
+          {
+            "name": "key",
+            "type": "MATCHES",
+            "value": "regex"
+          }
+        ]
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/test/header",
+      "status": 200,
+      "request": {
+        "headers": {
+          "key": "value"
+        },
+        "body": {
+          "key": "value"
+        }
+      },
+      "response": {
+        "headers": {
+          "key": "value"
+        },
+        "body": {
+          "key": "value"
         }
       }
     }

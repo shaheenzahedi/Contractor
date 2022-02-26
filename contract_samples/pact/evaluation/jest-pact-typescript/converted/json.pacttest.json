@@ -1,0 +1,42 @@
+{
+  "provider": "my provider name",
+  "consumer": "my consumer body",
+  "port": "8080",
+  "interactions": [
+    {
+      "method": "POST",
+      "path": "/v2/pet/1845563262948980200",
+      "status": 200,
+      "request": {
+      },
+      "response": {
+        "body": {
+          "id": 10,
+          "status": "LOOSE_MATCH"
+        },
+        "headers": {
+          "Content-Accepted": "Application/Json"
+        }
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/request/path/1",
+      "status": 200,
+      "request": {
+        "headers": {
+          "Content-Type": "text/xml;charset=UTF-8"
+        }
+      },
+      "response": {
+        "body": {
+          "id": 10,
+          "status": "RIGID_MATCH"
+        },
+        "headers": {
+          "Content-Type": "text/xml;charset=UTF-8"
+        }
+      }
+    }
+  ]
+}

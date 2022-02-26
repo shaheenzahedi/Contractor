@@ -3,7 +3,7 @@ package contracts.beer.rest
 import org.springframework.cloud.contract.spec.Contract
 
 Contract.make {
-	description("""
+    description("""
 Represents a scenario in which a user asks for his drinking stats.
 
 ```
@@ -18,24 +18,24 @@ and:
 ```
 
 """)
-	request {
-		method 'POST'
-		url '/stats'
-		body(
-				name: anyAlphaUnicode()
-		)
-		headers {
-			contentType(applicationJson())
-		}
-	}
-	response {
-		status 200
-		body(
-				text: "Dear ${fromRequest().body('$.name')} thanks for your interested in drinking beer",
-				quantity: $(c(5), p(anyNumber()))
-		)
-		headers {
-			contentType(applicationJson())
-		}
-	}
+    request {
+        method 'POST'
+        url '/stats'
+        body(
+                name: anyAlphaUnicode()
+        )
+        headers {
+            contentType(applicationJson())
+        }
+    }
+    response {
+        status 200
+        body(
+                text: "Dear ${fromRequest().body('$.name')} thanks for your interested in drinking beer",
+                quantity: $(c(5), p(anyNumber()))
+        )
+        headers {
+            contentType(applicationJson())
+        }
+    }
 }

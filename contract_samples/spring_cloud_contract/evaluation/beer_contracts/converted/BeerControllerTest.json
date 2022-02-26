@@ -1,0 +1,95 @@
+{
+  "provider": "my provider name",
+  "consumer": "my consumer body",
+  "port": "8080",
+  "interactions": [
+    {
+      "method": "POST",
+      "path": "/check",
+      "status": 200,
+      "request": {
+        "headers": {
+          "Content-Type": "application/json;charset=UTF-8"
+        },
+        "body": {
+          "name": "marcin",
+          "age": 25
+        }
+      },
+      "response": {
+        "body": {
+          "status": "OK"
+        },
+        "headers": {
+          "Content-Accepted": "Application/Json"
+        }
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/beer",
+      "status": 200,
+      "request": {
+        "headers": {
+          "Content-Type": "application/json;charset=UTF-8"
+        },
+        "body": {
+          "name": "marcin",
+          "age": 22
+        }
+      },
+      "response": {
+        "body": {
+          "content": "THERE YOU GO"
+        },
+        "headers": {
+          "Content-Accepted": "Application/Json"
+        }
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/beer",
+      "status": 200,
+      "request": {
+        "headers": {
+          "Content-Type": "application/json;charset=UTF-8"
+        },
+        "body": {
+          "name": "marcin",
+          "age": 17
+        }
+      },
+      "response": {
+        "body": {
+          "content": "GET LOST"
+        },
+        "headers": {
+          "Content-Accepted": "Application/Json"
+        }
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/check",
+      "status": 200,
+      "request": {
+        "headers": {
+          "Content-Type": "application/json;charset=UTF-8"
+        },
+        "body": {
+          "name": "marcin",
+          "age": 10
+        }
+      },
+      "response": {
+        "body": {
+          "status": "NOT_OK"
+        },
+        "headers": {
+          "Content-Accepted": "Application/Json"
+        }
+      }
+    }
+  ]
+}

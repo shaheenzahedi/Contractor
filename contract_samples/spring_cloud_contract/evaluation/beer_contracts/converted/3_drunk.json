@@ -1,0 +1,29 @@
+{
+    "provider": "my provider name",
+    "consumer": "my consumer body",
+    "port": "8080",
+    "interactions": [
+        {
+            "method": "POST",
+            "path": "/beer",
+            "status": 200,
+            "request": {
+                "body": {
+                    "name": "marcin"
+                },
+                "headers": {
+                    "Content-Accepted": "Application/Json"
+                }
+            },
+            "response": {
+                "body": {
+                    "previousStatus": "DRUNK",
+                    "currentStatus": "WASTED"
+                },
+                "headers": {
+                    "Content-Accepted": "Application/Json"
+                }
+            }
+        }
+    ]
+}

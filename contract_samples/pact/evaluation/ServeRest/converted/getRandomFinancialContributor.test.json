@@ -1,0 +1,40 @@
+{
+  "provider": "my provider name",
+  "consumer": "my consumer body",
+  "port": "8080",
+  "interactions": [
+    {
+      "method": "POST",
+      "path": "/",
+      "status": 200,
+      "request": {
+      },
+      "response": {
+        "body": {
+          "all": [
+            {
+              "role": "ADMIN",
+              "name": "Jose"
+            },
+            {
+              "role": "HOST",
+              "name": "Maria"
+            },
+            {
+              "role": "BACKER",
+              "name": "Paulo Gonçalves"
+            },
+            {
+              "role": "BACKER",
+              "name": "Sarah"
+            },
+            {
+              "role": "BACKER",
+              "name": "Sarah"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

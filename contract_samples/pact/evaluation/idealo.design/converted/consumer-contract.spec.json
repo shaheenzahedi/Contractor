@@ -1,0 +1,179 @@
+{
+  "provider": "my provider name",
+  "consumer": "my consumer body",
+  "port": "8080",
+  "interactions": [
+    {
+      "method": "GET",
+      "path": "/api/blogposts",
+      "status": 200,
+      "request": {
+      },
+      "response": {
+        "body": {
+          "id": 1,
+          "title": "Mocked Blogpost",
+          "categorydisplayvalue": "Test",
+          "categoryslug": "test",
+          "slug": "Test",
+          "date": "2021-05-28T09:04:55.343Z",
+          "image": "",
+          "email": null,
+          "instagram": null,
+          "twitter": null,
+          "github": null,
+          "facebook": null,
+          "blogpostcontent": {
+            "blocks": [
+              {
+                "key": "csc33",
+                "data": {},
+                "text": "This is a dummy post",
+                "type": "unstyled",
+                "depth": 0,
+                "entityRanges": [],
+                "inlineStyleRanges": []
+              }
+            ],
+            "entityMap": {}
+          },
+          "isarchived": 0
+        },
+        "headers": {
+          "Content-Accepted": "Application/Json"
+        }
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/api/blogposts",
+      "status": 200,
+      "request": {
+        "headers": {
+          "Accept": "application/json",
+          "Content-Type": "application/json"
+        }
+      },
+      "response": {
+        "body": {
+          "id": 1,
+          "title": "Mocked Blogpost",
+          "categorydisplayvalue": "Test",
+          "categoryslug": "test",
+          "slug": "Test",
+          "date": "2021-05-28T09:04:55.343Z",
+          "image": "",
+          "email": null,
+          "instagram": null,
+          "twitter": null,
+          "github": null,
+          "facebook": null,
+          "blogpostcontent": {
+            "blocks": [
+              {
+                "key": "csc33",
+                "data": {},
+                "text": "This is a dummy post",
+                "type": "unstyled",
+                "depth": 0,
+                "entityRanges": [],
+                "inlineStyleRanges": []
+              }
+            ],
+            "entityMap": {}
+          },
+          "isarchived": 0
+        },
+        "headers": {
+          "Content-Accepted": "Application/Json"
+        }
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/api/categories",
+      "status": 200,
+      "request": {
+        "headers": {
+          "Accept": "application/json",
+          "Content-Type": "application/json"
+        }
+      },
+      "response": {
+        "body": {
+          "categorydisplayvalue": "Testing Category",
+          "categoryslug": "testing-category"
+        },
+        "headers": {
+          "Content-Accepted": "Application/Json"
+        }
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/api/me",
+      "status": 200,
+      "request": {
+        "headers": {
+          "Accept": "application/json",
+          "Content-Type": "application/json"
+        }
+      },
+      "response": {
+        "body": {
+          "status": "LOGGED_IN",
+          "user": null
+        },
+        "headers": {
+          "Content-Accepted": "Application/Json"
+        }
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/api/blogposts/delete",
+      "status": 200,
+      "request": {
+        "body": {
+          "id": 1,
+          "title": "Mocked Blogpost",
+          "categorydisplayvalue": "Test",
+          "categoryslug": "test",
+          "slug": "Test",
+          "date": "2021-05-28T09:04:55.343Z",
+          "image": "",
+          "email": null,
+          "instagram": null,
+          "twitter": null,
+          "github": null,
+          "facebook": null,
+          "blogpostcontent": {
+            "blocks": [
+              {
+                "key": "csc33",
+                "data": {},
+                "text": "This is a dummy post",
+                "type": "unstyled",
+                "depth": 0,
+                "entityRanges": [],
+                "inlineStyleRanges": []
+              }
+            ],
+            "entityMap": {}
+          },
+          "isarchived": 0
+        },
+        "headers": {
+          "Accept": "application/json",
+          "Content-Type": "application/json"
+        }
+      },
+      "response": {
+        "body": "successfully deleted blogpost",
+        "headers": {
+          "Content-Accepted": "Application/Json"
+        }
+      }
+    }
+  ]
+}

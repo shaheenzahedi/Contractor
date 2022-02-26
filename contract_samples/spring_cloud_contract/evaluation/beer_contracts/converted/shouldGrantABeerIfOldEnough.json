@@ -1,0 +1,32 @@
+{
+  "provider": "my provider name",
+  "consumer": "my consumer body",
+  "port": "8080",
+  "interactions": [
+    {
+      "method": "POST",
+      "path": "/test/header",
+      "status": 200,
+      "request": {
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "response": {
+        "bodyRules": [
+          {
+            "name": "age",
+            "type": "MATCHES",
+            "value": "[2-9][0-9]"
+          }
+        ],
+        "body": {
+          "status": "OK"
+        },
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      }
+    }
+  ]
+}

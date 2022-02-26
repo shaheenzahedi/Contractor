@@ -1,0 +1,58 @@
+{
+  "provider": "my provider name",
+  "consumer": "my consumer body",
+  "port": "8080",
+  "interactions": [
+    {
+      "method": "GET",
+      "path": "/v1/api/services",
+      "status": 200,
+      "request": {
+        "params": {
+          "gatewayAccountId": 101
+        }
+      },
+      "response": {
+        "body": {
+        },
+        "headers": {
+          "Content-Accepted": "Application/Json"
+        }
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/v1/api/services",
+      "status": 400,
+      "request": {
+        "params": {
+          "gatewayAccountId": "not-a-number"
+        }
+      },
+      "response": {
+        "body": {
+        },
+        "headers": {
+          "Content-Accepted": "Application/Json"
+        }
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/v1/api/services",
+      "status": 404,
+      "request": {
+        "params": {
+          "gatewayAccountId": 999
+        }
+      },
+      "response": {
+        "body": {
+        },
+        "headers": {
+          "Content-Accepted": "Application/Json"
+        }
+      }
+    }
+  ]
+}

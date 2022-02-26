@@ -1,0 +1,86 @@
+{
+  "provider": "my provider name",
+  "consumer": "my consumer body",
+  "port": "8080",
+  "interactions": [
+    {
+      "method": "POST",
+      "path": "/mathe",
+      "status": 200,
+      "request": {
+        "body": {
+          "first": 500
+        }
+      },
+      "response": {
+        "headers": {
+          "Content-Type": "Application/Json"
+        }
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mathe",
+      "status": 200,
+      "request": {
+        "body": {
+          "first": 500,
+          "after": 100
+        }
+      },
+      "response": {
+        "headers": {
+          "Content-Type": "Application/Json"
+        }
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mathe",
+      "status": 200,
+      "request": {
+        "body": {
+          "first": 500,
+          "objectId": 1565
+        }
+      },
+      "response": {
+        "headers": {
+          "Content-Type": "Application/Json"
+        }
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mathe",
+      "status": 200,
+      "request": {
+        "body": {
+          "first": 500,
+          "actorId": 1
+        }
+      },
+      "response": {
+        "headers": {
+          "Content-Type": "Application/Json"
+        }
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mathe",
+      "status": 200,
+      "request": {
+        "body": {
+          "first": 500,
+          "instance": "de"
+        }
+      },
+      "response": {
+        "headers": {
+          "Content-Type": "Application/Json"
+        }
+      }
+    }
+  ]
+}

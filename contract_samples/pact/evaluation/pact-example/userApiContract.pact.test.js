@@ -2,8 +2,8 @@
  * @jest-environment node
  */
 
-import { Matchers, Pact } from "@pact-foundation/pact";
-import { Publisher } from "@pact-foundation/pact-node";
+import {Matchers, Pact} from "@pact-foundation/pact";
+import {Publisher} from "@pact-foundation/pact-node";
 import path from "path";
 import {fetchUserData} from "./client/userDataClient";
 import packageJson from '../package.json';
@@ -28,41 +28,41 @@ describe("fetch user data", () => {
     // define contract
     describe("can fetch User Data", () => {
         beforeEach((done) => pact
-                .setup()
-                .then(() => {
-                    // define expected response
-                    const expectedResponse = {
-                        firstName: Matchers.like("aValidFirstName"),
-                        lastName: Matchers.like("aValidLastName"),
-                        age: Matchers.integer(100)
-                    };
+            .setup()
+            .then(() => {
+                // define expected response
+                const expectedResponse = {
+                    firstName: Matchers.like("aValidFirstName"),
+                    lastName: Matchers.like("aValidLastName"),
+                    age: Matchers.integer(100)
+                };
 
-                    // define request
-                    return pact.addInteraction({
-                        state: "some user available",
+                // define request
+                return pact.addInteraction({
+                    state: "some user available",
 
-                        uponReceiving: "a user request",
+                    uponReceiving: "a user request",
 
-                        withRequest: {
-                            method: "GET",
-                            path: "/user",
+                    withRequest: {
+                        method: "GET",
+                        path: "/user",
 
-                            headers: {
-                                Accept: Matchers.term({
-                                    matcher: "application/json",
-                                    generate: "application/json"
-                                })
-                            },
+                        headers: {
+                            Accept: Matchers.term({
+                                matcher: "application/json",
+                                generate: "application/json"
+                            })
                         },
+                    },
 
-                        willRespondWith: {
-                            status: 200,
-                            headers: {"Content-Type": "application/json;charset=UTF-8"},
-                            body: expectedResponse
-                        }
-                    });
-                })
-                .then(() => done())
+                    willRespondWith: {
+                        status: 200,
+                        headers: {"Content-Type": "application/json;charset=UTF-8"},
+                        body: expectedResponse
+                    }
+                });
+            })
+            .then(() => done())
         );
 
         // validate contract definition

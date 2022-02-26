@@ -1,0 +1,46 @@
+{
+  "provider": "my provider name",
+  "consumer": "my consumer body",
+  "port": "8080",
+  "interactions": [
+    {
+      "method": "GET",
+      "path": "/foo/1/bar",
+      "status": 200,
+      "request": {
+      },
+      "response": {
+        "body": {
+          "foo": 123
+        },
+        "headers": {
+          "Content-Accepted": "Application/Json"
+        }
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/login",
+      "status": 200,
+      "request": {
+        "body": {
+          "id": "123",
+          "email": "kyle@bla.com",
+          "password": "secret",
+          "name": "Kyle"
+        }
+      },
+      "response": {
+        "body": {
+          "email": "kyle@bla.com",
+          "name": "Kyle",
+          "hasConfirmedEmail": false,
+          "token": "secret"
+        },
+        "headers": {
+          "Content-Accepted": "Application/Json"
+        }
+      }
+    }
+  ]
+}

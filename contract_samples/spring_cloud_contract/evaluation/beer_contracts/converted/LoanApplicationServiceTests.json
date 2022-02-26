@@ -1,0 +1,72 @@
+{
+  "provider": "my provider name",
+  "consumer": "my consumer body",
+  "port": "8080",
+  "interactions": [
+    {
+      "method": "POST",
+      "path": "/test/header",
+      "status": 200,
+      "request": {
+        "body": {
+          "client": {
+            "pesel": 1234567890
+          },
+          "amount": 123.123
+        }
+      },
+      "response": {
+        "body": {
+          "loanApplicationStatus": "LOAN_APPLIED",
+          "rejectionReason": null
+        },
+        "headers": {
+          "Content-Accepted": "Application/Json"
+        }
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/test/header",
+      "status": 200,
+      "request": {
+        "body": {
+          "client": {
+            "pesel": 1234567890
+          },
+          "amount": 99999.0
+        }
+      },
+      "response": {
+        "body": {
+          "loanApplicationStatus": "LOAN_APPLICATION_REJECTED",
+          "rejectionReason": "Amount too high"
+        },
+        "headers": {
+          "Content-Accepted": "Application/Json"
+        }
+      }
+    },
+    {
+      "method": "POST",
+      "path": "frauds/name",
+      "status": 200,
+      "request": {
+        "body": {
+          "name": "Tim"
+        },
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "response": {
+        "body": {
+          "message": "Don't worry Tim you're not a fraud"
+        },
+        "headers": {
+          "Content-Accepted": "Application/Json"
+        }
+      }
+    }
+  ]
+}

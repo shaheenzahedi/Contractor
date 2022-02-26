@@ -1,0 +1,42 @@
+{
+  "provider": "my provider name",
+  "consumer": "my consumer body",
+  "port": "8080",
+  "interactions": [
+    {
+      "method": "GET",
+      "path": "/contact/search",
+      "status": 200,
+      "request": {
+        "headers": {
+          "header": "FAKE_AUTH",
+          "accept": "Application/Json"
+        },
+        "query": {
+          "query": "existing"
+        }
+      },
+      "response": {
+        "body": {
+          "respone": [
+            {
+              "id": "1",
+              "name": "name 1",
+              "email": "existing1@email.com",
+              "invited": true
+            },
+            {
+              "id": "2",
+              "name": "name 2",
+              "email": "existing2@email.com",
+              "invited": false
+            }
+          ]
+        },
+        "headers": {
+          "Content-Accepted": "Application/Json"
+        }
+      }
+    }
+  ]
+}

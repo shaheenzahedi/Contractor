@@ -1,0 +1,49 @@
+{
+  "provider": "damage-service",
+  "consumer": "vehicle-service",
+  "port": "8080",
+  "interactions": [
+    {
+      "method": "GET",
+      "path": "/damage/vehicle/10",
+      "status": 200,
+      "request": {
+        "headers": {
+          "Authorization": "Basic token"
+        }
+      },
+      "response": {
+        "body": {
+          "damaged": true
+        }
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/damage/vehicle/11",
+      "status": 200,
+      "request": {
+        "headers": {
+          "Authorization": "Basic token"
+        }
+      },
+      "response": {
+        "body": {
+          "damaged": false
+        }
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/damage/vehicle/12",
+      "status": 404,
+      "request": {
+        "headers": {
+          "Authorization": "Basic token"
+        }
+      },
+      "response": {
+      }
+    }
+  ]
+}

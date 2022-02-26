@@ -1,0 +1,37 @@
+{
+  "provider": "my provider name",
+  "consumer": "my consumer body",
+  "port": "8080",
+  "interactions": [
+    {
+      "method": "GET",
+      "path": "/mathe",
+      "status": 200,
+      "request": {
+        "body": {
+          "instance": "DE"
+        }
+      },
+      "response": {
+        "body": {
+          "id": 19767
+        }
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/user/1/admin",
+      "status": 200,
+      "request": {
+        "body": {
+          "instance": "DE"
+        }
+      },
+      "response": {
+        "body": {
+          "id": 1
+        }
+      }
+    }
+  ]
+}

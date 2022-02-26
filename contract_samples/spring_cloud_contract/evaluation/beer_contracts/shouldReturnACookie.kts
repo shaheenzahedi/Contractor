@@ -17,19 +17,18 @@
 package fraudname
 
 import org.springframework.cloud.contract.spec.ContractDsl.Companion.contract
-import org.springframework.cloud.contract.spec.internal.HttpMethods
 
 contract {
-	request {
-		method = GET
-		url = url("/frauds/name")
-		cookies {
-			cookie("name", "foo")
-			cookie("name2", "bar")
-		}
-	}
-	response {
-		status = OK
-		body = body("foo bar")
-	}
+    request {
+        method = GET
+        url = url("/frauds/name")
+        cookies {
+            cookie("name", "foo")
+            cookie("name2", "bar")
+        }
+    }
+    response {
+        status = OK
+        body = body("foo bar")
+    }
 }

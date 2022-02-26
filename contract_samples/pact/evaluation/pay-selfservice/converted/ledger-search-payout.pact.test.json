@@ -1,0 +1,34 @@
+{
+  "provider": "my provider name",
+  "consumer": "my consumer body",
+  "port": "8080",
+  "interactions": [
+    {
+      "method": "GET",
+      "path": "v1/payout",
+      "status": 200,
+      "request": {
+      },
+      "response": {
+        "body": {
+          "tokens": [
+            {
+              "gatewayAccountId": 654321,
+              "gatewayPayoutId": "payout-id-2",
+              "createdDate": "2020-05-22T12:22:16.067Z",
+              "paidoutDate": "2020-05-23T14:22:16.067Z",
+              "amount": 2345
+            },
+            {
+              "gatewayAccountId": 654321,
+              "gatewayPayoutId": "payout-id-1",
+              "createdDate": "2020-05-21T12:22:16.067Z",
+              "paidoutDate": "2020-05-22T14:22:16.067Z",
+              "amount": 1250
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

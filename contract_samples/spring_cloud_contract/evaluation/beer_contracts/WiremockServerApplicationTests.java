@@ -35,31 +35,30 @@ import static org.assertj.core.api.Assertions.assertThat;
 @SpringBootTest(properties = "app.baseUrl=http://localhost:6063", webEnvironment = WebEnvironment.NONE)
 public class WiremockServerApplicationTests {
 
-	public static WireMockServer wiremock = new WireMockServer(6063);
+    public static WireMockServer wiremock = new WireMockServer(6063);
+    @Autowired
+    private Service service;
 
-	@BeforeAll
-	static void setup() {
-		wiremock.start();
-	}
+    @BeforeAll
+    static void setup() {
+        wiremock.start();
+    }
 
-	@AfterEach
-	void after() {
-		wiremock.resetAll();
-	}
+    @AfterAll
+    static void clean() {
+        wiremock.shutdown();
+    }
 
-	@AfterAll
-	static void clean() {
-		wiremock.shutdown();
-	}
+    @AfterEach
+    void after() {
+        wiremock.resetAll();
+    }
 
-	@Autowired
-	private Service service;
-
-	@Test
-	public void contextLoads() throws Exception {
-		wiremock.stubFor(get(urlEqualTo("/resource")).willReturn(aResponse()
-				.withHeader("Content-Type", "text/plain").withBody("Hello World!")));
-		assertThat(this.service.go()).isEqualTo("Hello World!");
-	}
+    @Test
+    public void contextLoads() throws Exception {
+        wiremock.stubFor(get(urlEqualTo("/resource")).willReturn(aResponse()
+                .withHeader("Content-Type", "text/plain").withBody("Hello World!")));
+        assertThat(this.service.go()).isEqualTo("Hello World!");
+    }
 
 }

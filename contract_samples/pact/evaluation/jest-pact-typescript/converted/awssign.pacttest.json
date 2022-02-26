@@ -1,0 +1,37 @@
+{
+  "provider": "my provider name",
+  "consumer": "my consumer body",
+  "port": "8080",
+  "interactions": [
+    {
+      "method": "GET",
+      "path": "/helloworld",
+      "status": 200,
+      "request": {
+      },
+      "response": {
+        "body": {
+          "message": "Hello from Lambda!"
+        },
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/helloworld",
+      "status": 403,
+      "request": {
+      },
+      "response": {
+        "body": {
+          "message": "Missing Authentication Token"
+        },
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      }
+    }
+  ]
+}

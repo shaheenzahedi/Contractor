@@ -1,0 +1,22 @@
+{
+  "provider": "my provider name",
+  "consumer": "my consumer body",
+  "port": "8080",
+  "interactions": [
+    {
+      "method": "GET",
+      "path": "/v2/pet/1845563262948980200",
+      "status": 200,
+      "request": {
+        "headers": {
+          "api_key": "[]"
+        }
+      },
+      "response": {
+        "headers": {
+          "Content-Accepted": "Application/Json"
+        }
+      }
+    }
+  ]
+}

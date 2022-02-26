@@ -1,0 +1,84 @@
+{
+  "provider": "my provider name",
+  "consumer": "my consumer body",
+  "port": "8080",
+  "interactions": [
+    {
+      "method": "POST",
+      "path": "/v1/frontend/charges/1/cards",
+      "status": 200,
+      "request": {
+        "headers": {
+          "key": "value"
+        },
+        "body": {
+          "email": "name@email.test",
+          "lastDigitsCardNumber": "0002"
+        }
+      },
+      "response": {
+        "body": {
+          "status": "AUTHORISATION SUCCESS"
+        }
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/v1/frontend/charges/1/cards",
+      "status": 200,
+      "request": {
+        "headers": {
+          "key": "value"
+        },
+        "body": {
+          "card_number": "371449635398431",
+          "cvc": "1234",
+          "expiry_date": "11/99",
+          "card_brand": "american-express",
+          "card_type": "CREDIT",
+          "corporate_card": false,
+          "cardholder_name": "Scrooge McDuck",
+          "accept_header": "text/html",
+          "user_agent_header": "Mozilla/5.0",
+          "prepaid": "NOT_PREPAID",
+          "ip_address": "127.0.0.1",
+          "address": {
+            "line1": "The Money Pool",
+            "city": "London",
+            "postcode": "DO11 4RS",
+            "country": "GB"
+          }
+        }
+      },
+      "response": {
+        "body": {
+          "status": "AUTHORISATION SUCCESS"
+        }
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/v1/frontend/charges/1/cards",
+      "status": 400,
+      "request": {
+        "headers": {
+          "key": "value"
+        },
+        "body": {
+          "email": "name@email.test",
+          "lastDigitsCardNumber": "0002"
+        }
+      },
+      "response": {
+        "body": {
+          "chargeId": "TEST_CHARGE_ID",
+          "cardTypes": [
+            {
+              "brand": "visa"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

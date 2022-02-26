@@ -1,0 +1,33 @@
+{
+  "provider": "my provider name",
+  "consumer": "my consumer body",
+  "port": "8080",
+  "interactions": [
+    {
+      "method": "POST",
+      "path": "/clients",
+      "status": 200,
+      "request": {
+        "body": {
+          "firstName": "Paulo",
+          "lastName": "Gonçalves",
+          "age": 29
+        },
+        "headers": {
+          "Content-Accepted": "application/json, text/plain, */*"
+        }
+      },
+      "response": {
+        "body": {
+          "firstName": "Paulo",
+          "lastName": "Gonçalves",
+          "age": 29,
+          "id": 3
+        },
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        }
+      }
+    }
+  ]
+}

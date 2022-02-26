@@ -1,0 +1,38 @@
+{
+    "provider": "my provider name",
+    "consumer": "my consumer body",
+    "port": "8080",
+    "interactions": [
+        {
+            "method": "POST",
+            "path": "/fraudcheck",
+            "status": 200,
+            "request": {
+                "headers": {
+                    "Content-Type": "Application/Json"
+                }
+            },
+            "response": {
+                "bodyRules": [
+                    {
+                        "key": "client.id",
+                        "type": "MATCHES",
+                        "value": "[0-9]{10}"
+                    },
+                    {
+                        "key": "age",
+                        "type": "MATCHES",
+                        "value": "99999"
+                    }
+                ],
+                "body": {
+                    "fraudCheckStatus": "FRAUD",
+                    "rejection.reason": "Amount too high"
+                },
+                "headers": {
+                    "Content-Accepted": "Application/Json"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,82 @@
+{
+  "provider": "my provider name",
+  "consumer": "my consumer body",
+  "port": "8080",
+  "interactions": [
+    {
+      "method": "GET",
+      "path": "/api/tags",
+      "status": 200,
+      "request": {
+      },
+      "response": {
+        "headers": {
+          "Content-Accepted": "Application/Json"
+        }
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/api/components",
+      "status": 200,
+      "request": {
+      },
+      "response": {
+        "body": {
+          "component_id": 3,
+          "title": "@motif/checkbox"
+        },
+        "headers": {
+          "Content-Accepted": "Application/Json"
+        }
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/api/components/motifbutton",
+      "status": 200,
+      "request": {
+      },
+      "response": {
+        "body": {
+          "component_id": 1,
+          "title": "@motif/button",
+          "slug": "motifbutton",
+          "screenshots": [
+            1,
+            2,
+            3
+          ],
+          "tags": [
+            "motif",
+            "button"
+          ],
+          "readme": {
+            "order": [
+              "Motif UI `button`",
+              "Installation",
+              "Usage"
+            ],
+            "content": {
+              "Usage": {
+                "body": "```js\nimport { Button } from @motif/button;\n```",
+                "head": "## Usage"
+              },
+              "Installation": {
+                "body": "```bash\nyarn add @motif/button\n```",
+                "head": "## Installation"
+              },
+              "Motif UI `button`": {
+                "body": "",
+                "head": "# Motif UI `button`"
+              }
+            }
+          }
+        },
+        "headers": {
+          "Content-Accepted": "Application/Json"
+        }
+      }
+    }
+  ]
+}

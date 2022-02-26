@@ -1,0 +1,26 @@
+{
+    "provider": "my provider name",
+    "consumer": "my consumer body",
+    "port": "8080",
+    "interactions": [
+        {
+            "method": "GET",
+            "path": "/frauds/name",
+            "status": 200,
+            "request": {
+                "body": {
+                    "name": "foo",
+                    "name2": "bar"
+                }
+            },
+            "response": {
+                "body": {
+                   "content": "foo bar"
+                },
+                "headers": {
+                    "Content-Accepted": "Application/Json"
+                }
+            }
+        }
+    ]
+}

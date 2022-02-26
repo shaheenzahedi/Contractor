@@ -1,0 +1,19 @@
+{
+  "provider": "my provider name",
+  "consumer": "my consumer body",
+  "port": "8080",
+  "interactions": [
+    {
+      "method": "GET",
+      "path": "ACCOUNTS_RESOURCE/1/stripe-account",
+      "status": 200,
+      "request": {
+      },
+      "response": {
+        "body": {
+          "stripe_account_id": 1
+        }
+      }
+    }
+  ]
+}

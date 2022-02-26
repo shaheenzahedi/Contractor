@@ -1,0 +1,43 @@
+{
+  "provider": "my provider name",
+  "consumer": "my consumer body",
+  "port": "8080",
+  "interactions": [
+    {
+      "method": "GET",
+      "path": "remote/webdav/1",
+      "status": 200,
+      "request": {
+        "headers": {
+          "Authorization": "Basic YWRtaW46bm90QVZhbGlkUGFzc3dvcmQ="
+        }
+      },
+      "response": {
+        "body": {
+          "testContent": "123456"
+        },
+        "headers": {
+          "Content-Type": "text/plain; charset=utf-8"
+        }
+      }
+    },
+    {
+      "method": "GET",
+      "path": "remote/webdav/2",
+      "status": 404,
+      "request": {
+        "headers": {
+          "Authorization": "Basic YWRtaW46bm90QVZhbGlkUGFzc3dvcmQ="
+        }
+      },
+      "response": {
+        "body": {
+          "testContent": "NotFound"
+        },
+        "headers": {
+          "Content-Type": "application/xml; charset=utf-8"
+        }
+      }
+    }
+  ]
+}

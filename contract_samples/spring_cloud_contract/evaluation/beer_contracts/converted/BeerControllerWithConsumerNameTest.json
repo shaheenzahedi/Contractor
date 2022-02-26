@@ -1,0 +1,51 @@
+{
+  "provider": "my provider name",
+  "consumer": "my consumer body",
+  "port": "8080",
+  "interactions": [
+    {
+      "method": "POST",
+      "path": "/beer",
+      "status": 200,
+      "request": {
+        "headers": {
+          "Content-Accepted": "Application/Json"
+        },
+        "body": {
+          "name": "marcin",
+          "age": 22
+        }
+      },
+      "response": {
+        "body": {
+          "content": "THERE YOU GO MY DEAR FRIEND [marcin]"
+        },
+        "headers": {
+          "Content-Accepted": "Application/Json"
+        }
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/beer",
+      "status": 200,
+      "request": {
+        "headers": {
+          "Content-Accepted": "Application/Json"
+        },
+        "body": {
+          "name": "marcin",
+          "age": 17
+        }
+      },
+      "response": {
+        "body": {
+          "content": "GET LOST MY DEAR FRIEND [marcin]"
+        },
+        "headers": {
+          "Content-Accepted": "Application/Json"
+        }
+      }
+    }
+  ]
+}

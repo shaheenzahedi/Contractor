@@ -1,0 +1,26 @@
+{
+  "provider": "my provider name",
+  "consumer": "my consumer body",
+  "port": "8080",
+  "interactions": [
+    {
+      "method": "GET",
+      "path": "/user",
+      "status": 200,
+      "request": {
+      },
+      "response": {
+        "body": {
+          "firstName": "Christian",
+          "lastName": "Draeger",
+          "age": 30,
+          "active": true,
+          "timestamp": 1544260650
+        },
+        "headers": {
+          "content-type": "application/json;charset=UTF-8"
+        }
+      }
+    }
+  ]
+}

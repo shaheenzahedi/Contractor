@@ -1,0 +1,23 @@
+{
+    "provider": "my provider name",
+    "consumer": "my consumer body",
+    "port": "8080",
+    "interactions": [
+        {
+            "method": "POST",
+            "path": "seda/person",
+            "status": 200,
+            "request": {
+                "age": 25
+            },
+            "response": {
+                "body": {
+                    "eligible": true
+                },
+                "headers": {
+                    "Content-Accepted": "Application/Json"
+                }
+            }
+        }
+    ]
+}

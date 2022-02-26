@@ -1,0 +1,19 @@
+{
+  "provider": "my provider name",
+  "consumer": "my consumer body",
+  "port": "8080",
+  "interactions": [
+    {
+      "method": "POST",
+      "path": "beer/beerService/check",
+      "status": 200,
+      "request": {
+      },
+      "response": {
+        "headers": {
+          "Content-Type": "application/grpc"
+        }
+      }
+    }
+  ]
+}

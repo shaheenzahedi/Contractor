@@ -1,0 +1,49 @@
+{
+  "provider": "there are budgets for 3/2020",
+  "consumer": "a request for budgets",
+  "port": "8080",
+  "interactions": [
+    {
+      "method": "GET",
+      "path": "/budgets/",
+      "status": 200,
+      "request": {
+        "params": {
+          "month": "3",
+          "year": "2020"
+        }
+      },
+      "response": {
+        "body": {
+          "id": 1,
+          "accountId": 1,
+          "period": {
+            "month": 3,
+            "year": 2020
+          }
+        },
+        "headers": {
+          "Content-Accepted": "Application/Json"
+        }
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/budgets/",
+      "status": 200,
+      "request": {
+        "params": {
+          "month": "12",
+          "year": "1900"
+        }
+      },
+      "response": {
+        "body": {
+        },
+        "headers": {
+          "Content-Accepted": "Application/Json"
+        }
+      }
+    }
+  ]
+}

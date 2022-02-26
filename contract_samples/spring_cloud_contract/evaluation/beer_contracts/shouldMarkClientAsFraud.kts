@@ -17,15 +17,15 @@
 package fraud
 
 import org.springframework.cloud.contract.spec.ContractDsl.Companion.contract
-import org.springframework.cloud.contract.spec.internal.HttpStatus
 
 contract {
     request { // (1)
         method = PUT // (2)
         url = url("/fraudcheck") // (3)
         body = body(// (4)
-                "client.id" to value(regex("[0-9]{10}")),
-                "loanAmount" to 99999)
+            "client.id" to value(regex("[0-9]{10}")),
+            "loanAmount" to 99999
+        )
         headers { // (5)
             contentType = "application/json"
         }
@@ -33,8 +33,9 @@ contract {
     response { // (6)
         status = OK // (7)
         body = body( // (8)
-                "fraudCheckStatus" to "FRAUD",
-                "rejection.reason" to "Amount too high")
+            "fraudCheckStatus" to "FRAUD",
+            "rejection.reason" to "Amount too high"
+        )
         headers { // (9)
             contentType = "application/json"
         }

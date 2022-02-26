@@ -1,0 +1,53 @@
+{
+  "provider": "my provider name",
+  "consumer": "my consumer body",
+  "port": "8080",
+  "interactions": [
+    {
+      "method": "GET",
+      "path": "/v0/search",
+      "status": 201,
+      "request": {
+        "headers": {
+          "X-Key-Inflection": "camel"
+        },
+        "query": {
+          "query": "benefits"
+        },
+        "body": {
+        }
+      },
+      "response": {
+        "headers": {
+          "X-Key-Inflection": "camel",
+          "Content-Type": "application/json"
+        },
+        "headerRules": [
+          {
+            "name": "Content-Type",
+            "type": "MATCHES",
+            "value": "^application/json"
+          }
+        ],
+        "body": {
+          "query": "benefits",
+          "web": {
+            "results": {
+              "title": "string",
+              "url": "url",
+              "snippet": "a short paragraph blurb"
+            }
+          },
+          "meta": {
+            "pagination": {
+              "currentPage": 1,
+              "perPage": 10,
+              "totalPages": 1,
+              "totalEntries": 1
+            }
+          }
+        }
+      }
+    }
+  ]
+}

@@ -17,8 +17,6 @@
 package fraud
 
 import org.springframework.cloud.contract.spec.ContractDsl.Companion.contract
-import org.springframework.cloud.contract.spec.internal.HttpMethods
-import org.springframework.cloud.contract.spec.internal.HttpStatus
 
 listOf(
     contract {
@@ -30,7 +28,7 @@ listOf(
         response {
             status = OK
             body = body(
-                    "count" to value(regex("[2-9][0-9][0-9]"))
+                "count" to value(regex("[2-9][0-9][0-9]"))
             )
             headers {
                 contentType = "application/json"
@@ -45,7 +43,7 @@ listOf(
         response {
             status = OK
             body = body(
-                    "count" to 100
+                "count" to 100
             )
             headers {
                 contentType = "application/json"

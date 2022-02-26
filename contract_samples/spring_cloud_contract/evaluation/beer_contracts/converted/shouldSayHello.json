@@ -1,0 +1,16 @@
+{
+    "provider": "my provider name",
+    "consumer": "my consumer body",
+    "port": "8080",
+    "interactions": [
+        {
+            "method": "GET",
+            "path": "/hello",
+            "status": 200,
+            "request": {
+            },
+            "response": {
+            }
+        }
+    ]
+}

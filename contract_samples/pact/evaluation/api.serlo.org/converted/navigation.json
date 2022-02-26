@@ -1,0 +1,42 @@
+{
+  "provider": "my provider name",
+  "consumer": "my consumer body",
+  "port": "8080",
+  "interactions": [
+    {
+      "method": "POST",
+      "path": "/mathe",
+      "status": 200,
+      "request": {
+        "body": {
+          "type": "NavigationQuery",
+          "payload":{
+            "instance": "de"
+          }
+        }
+      },
+      "response": {
+        "headers": {
+          "Content-Type": "Application/Json"
+        }
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mathe",
+      "status": 200,
+      "request": {
+        "body": {
+          "type": "NavigationQuery",
+          "instance": "de",
+          "label": "Alle Themen"
+        }
+      },
+      "response": {
+        "headers": {
+          "Content-Type": "Application/Json"
+        }
+      }
+    }
+  ]
+}

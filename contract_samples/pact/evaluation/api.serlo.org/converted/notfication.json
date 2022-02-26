@@ -1,0 +1,34 @@
+{
+  "provider": "my provider name",
+  "consumer": "my consumer body",
+  "port": "8080",
+  "interactions": [
+    {
+      "method": "POST",
+      "path": "/mathe",
+      "status": 200,
+      "request": {
+        "body": {
+          "type": "NotificationsQuery",
+          "payload": {
+            "userId": 10
+          }
+        }
+      },
+      "response": {
+        "body": {
+          "userId": 10,
+          "notifications": {
+            "id": 1,
+            "unread": true,
+            "eventId": 10
+          },
+          "totalCount": 1
+        },
+        "headers": {
+          "Content-Type": "Application/Json"
+        }
+      }
+    }
+  ]
+}
