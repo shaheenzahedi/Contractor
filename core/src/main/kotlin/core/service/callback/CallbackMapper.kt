@@ -33,19 +33,19 @@ class CallbackMapper(private val model: List<ReadyToTestModel>) {
                     addAll(generateBodyRulesTest())
                     addAll(generateHeaderRulesTest())
                 }.filterNotNull()
-        return mutableListOf<CallbackCase>().apply {
+        return mutableListOf<CallbackCase?>().apply {
             when (rttModel.mutationMetaData?.type) {
-                MutationType.STATUS -> add(statusTest()!!)
+                MutationType.STATUS -> add(statusTest())
                 MutationType.HTTP_METHOD -> null
-                MutationType.REQUEST_HEADER -> add(headerTest()!!)
-                MutationType.RESPONSE_HEADER -> add(headerTest()!!)
+                MutationType.REQUEST_HEADER -> add(headerTest())
+                MutationType.RESPONSE_HEADER -> add(headerTest())
                 MutationType.REQUEST_BODY -> null
-                MutationType.RESPONSE_BODY -> add(bodyTest()!!)
+                MutationType.RESPONSE_BODY -> add(bodyTest())
                 MutationType.REQUEST_PARAMS -> null
                 MutationType.RESPONSE_PARAMS -> null
                 MutationType.REQUEST_COOKIES -> null
                 null -> null
             }
-        }
+        }.filterNotNull()
     }
 }
