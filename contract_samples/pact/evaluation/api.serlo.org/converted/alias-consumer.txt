@@ -1,0 +1,58 @@
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2022-02-26 19:36:33.806 Request received:
+127.0.0.1 - POST /mathe
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [17]
+Content-Type: [application/json]
+{"instance":"DE"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":19767.0}"
+}
+
+Response:
+HTTP/1.1 200
+Matched-Stub-Id: [93d2d757-3061-4153-82cc-9f81965735fa]
+
+
+------	 Executing tests on http://localhost:8080/mathe 	------
+2022-02-26 19:36:33.833 Request received:
+127.0.0.1 - POST /user/1/admin
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [17]
+Content-Type: [application/json]
+{"instance":"DE"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":1.0}"
+}
+
+Response:
+HTTP/1.1 200
+Matched-Stub-Id: [947593a9-fb92-4c82-93bf-e55508145e02]
+
+
+------	 Executing tests on http://localhost:8080/user/1/admin 	------
+BodyTest	OK
+StatusTest	OK
+BodyTest	OK
+StatusTest	OK

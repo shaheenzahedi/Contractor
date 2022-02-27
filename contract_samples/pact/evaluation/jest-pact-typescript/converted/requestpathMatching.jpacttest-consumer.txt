@@ -1,0 +1,4702 @@
+/usr/lib/jvm/java-1.13.0-openjdk-amd64/bin/java -agentlib:jdwp=transport=dt_socket,address=127.0.0.1:54047,suspend=y,server=n -javaagent:/opt/idea-IU-211.6693.111/plugins/Groovy/lib/agent/gragent.jar -javaagent:/opt/idea-IU-211.6693.111/plugins/java/lib/rt/debugger-agent.jar -Dfile.encoding=UTF-8 -classpath /home/shaheen/Documents/Projects/Contractor/consumer/build/classes/kotlin/main:/home/shaheen/Documents/Projects/Contractor/consumer/build/resources/main:/home/shaheen/.gradle/caches/modules-2/files-2.1/com.github.tomakehurst/wiremock-jre8/2.30.1/d85107161bb2719a4938200728e81451eeee51f8/wiremock-jre8-2.30.1.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/com.github.jkcclemens/khttp/0.1.0/b53478881ce329afce653bc34d156f833011dd48/khttp-0.1.0.jar:/home/shaheen/Documents/Projects/Contractor/core/build/classes/kotlin/main:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.6.10/e80fe6ac3c3573a80305f5ec43f86b829e8ab53d/kotlin-stdlib-jdk8-1.6.10.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.http2/http2-server/9.4.43.v20210629/e7139feb001739d4fe5049b3fc1f84aa415ce4c/http2-server-9.4.43.v20210629.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-alpn-conscrypt-server/9.4.43.v20210629/6e3142399ba6f489638929f327df15742d840fc/jetty-alpn-conscrypt-server-9.4.43.v20210629.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-alpn-server/9.4.43.v20210629/72fa0736b0e7b049d28c90eaececa1d5d5bd5bb4/jetty-alpn-server-9.4.43.v20210629.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-webapp/9.4.43.v20210629/a7d28284c66fb6ca71e98a82142b2debd6eeb454/jetty-webapp-9.4.43.v20210629.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-servlet/9.4.43.v20210629/ee000c7dcdbe7b4ef94e3fa67be8f56a46915944/jetty-servlet-9.4.43.v20210629.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-server/9.4.43.v20210629/8ba04f6b5d00223983684a563a3edaa12282bcf0/jetty-server-9.4.43.v20210629.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-servlets/9.4.43.v20210629/6ad0bf8c07f73d6c7a4c8d822127045b8c7983b6/jetty-servlets-9.4.43.v20210629.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-proxy/9.4.43.v20210629/66cfbd2103904a9f13312730240bf2df9fad5a1a/jetty-proxy-9.4.43.v20210629.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-alpn-conscrypt-client/9.4.43.v20210629/d2a3a28733de450e29f0dd948d739c169e4062f8/jetty-alpn-conscrypt-client-9.4.43.v20210629.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.conscrypt/conscrypt-openjdk-uber/2.5.2/d858f142ea189c62771c505a6548d8606ac098fe/conscrypt-openjdk-uber-2.5.2.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/30.1.1-jre/87e0fd1df874ea3cbe577702fe6f17068b790fd8/guava-30.1.1-jre.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.12.4/752cf9a2562ac2c012e48057e3a4c17dad66c66e/jackson-annotations-2.12.4.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.12.4/69206e02e6a696034f06a59d3ddbfbba5a4cd81/jackson-databind-2.12.4.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.12.4/6a1bd259b6c4e3f9219ec8ec0be55ed11eed0c/jackson-core-2.12.4.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.5.13/e5f6cae5ca7ecaac1ec2827a9e2d65ae2869cada/httpclient-4.5.13.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.xmlunit/xmlunit-legacy/2.8.2/794fbc13d53af74ba414c6c50def0b3e25e08830/xmlunit-legacy-2.8.2.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.xmlunit/xmlunit-placeholders/2.8.2/865b4a7f3c1c3ea2d4be1d0ba3fa25e6dc62bb1/xmlunit-placeholders-2.8.2.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.xmlunit/xmlunit-core/2.8.2/8e4e46b87afaaf9b6cfb8de778e473cf7aeb087f/xmlunit-core-2.8.2.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/net.javacrumbs.json-unit/json-unit-core/2.27.0/655b6bf534500c169257c1c619da543d1587abef/json-unit-core-2.27.0.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/com.jayway.jsonpath/json-path/2.6.0/67f565b424f7903a12d4f5b9361b11462ecacdac/json-path-2.6.0.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/net.minidev/json-smart/2.4.7/8d7f4c1530c07c54930935f3da85f48b83b3c109/json-smart-2.4.7.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/9.2/81a03f76019c67362299c40e0ba13405f5467bff/asm-9.2.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/com.github.jknack/handlebars-helpers/4.2.0/634db133c08b5298c8603532823d450829998857/handlebars-helpers-4.2.0.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/com.github.jknack/handlebars/4.2.0/116306614fd4d250af27fe1ef48665e7830fc10b/handlebars-4.2.0.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.32/cdcff33940d9f2de763bc41ea05a0be5941176c3/slf4j-api-1.7.32.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/net.sf.jopt-simple/jopt-simple/5.0.4/4fdac2fbe92dfad86aa6e9301736f6b4342a3f5c/jopt-simple-5.0.4.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.12.0/c6842c86792ff03b9f1d1fe2aab8dc23aa6c6f0e/commons-lang3-3.12.0.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/commons-fileupload/commons-fileupload/1.4/f95188e3d372e20e7328706c37ef366e5d7859b0/commons-fileupload-1.4.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.11.0/a2503f302b11ebde7ebc3df41daebe0e4eea3689/commons-io-2.11.0.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.6.10/b8af3fe6f1ca88526914929add63cf5e7c5049af/kotlin-stdlib-1.6.10.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.6.10/e1c380673654a089c4f0c9f83d0ddfdc1efdb498/kotlin-stdlib-jdk7-1.6.10.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.http2/http2-common/9.4.43.v20210629/6fd8c588c2f660a35dd0a6050c79611ba0760555/http2-common-9.4.43.v20210629.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-io/9.4.43.v20210629/acf672c64ac21851069c5b5b789e5c185a25933f/jetty-io-9.4.43.v20210629.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-xml/9.4.43.v20210629/f06c27f4855785847c299d94591a7ac324fb32f1/jetty-xml-9.4.43.v20210629.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-security/9.4.43.v20210629/ae1958da077c46bac61be9b8de2b45a3aa112353/jetty-security-9.4.43.v20210629.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-util-ajax/9.4.43.v20210629/2500d180c6e8e28eb3b75372b6ea9d457cf37658/jetty-util-ajax-9.4.43.v20210629.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/javax.servlet/javax.servlet-api/3.1.0/3cd63d075497751784b2fa84be59432f4905bf7c/javax.servlet-api-3.1.0.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-http/9.4.43.v20210629/5171466337a6da7efbf317490b9c4574c0b4b640/jetty-http-9.4.43.v20210629.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-continuation/9.4.43.v20210629/2af3c0ae5de750facbb16ec62b78c58e01364eec/jetty-continuation-9.4.43.v20210629.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-util/9.4.43.v20210629/97306fd3c76171602caad2acc54ca779c9240d5f/jetty-util-9.4.43.v20210629.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-client/9.4.43.v20210629/71ba996ac96ab9791127928c828bfc3e9fa2aa5e/jetty-client-9.4.43.v20210629.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-alpn-client/9.4.43.v20210629/14965390a28c67159bb14d44142f47a24aad1180/jetty-alpn-client-9.4.43.v20210629.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/com.google.guava/failureaccess/1.0.1/1dcf1de382a0bf95a3d8b0849546c88bac1292c9/failureaccess-1.0.1.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/com.google.guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/b421526c5f297295adef1c886e5246c39d4ac629/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/25ea2e8b0c338a877313bd4672d3fe056ea78f0d/jsr305-3.0.2.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-qual/3.8.0/6b83e4a33220272c3a08991498ba9dc09519f190/checker-qual-3.8.0.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.5.1/562d366678b89ce5d6b6b82c1a073880341e3fba/error_prone_annotations-2.5.1.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/com.google.j2objc/j2objc-annotations/1.3/ba035118bc8bac37d7eff77700720999acd9986d/j2objc-annotations-1.3.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.4.13/853b96d3afbb7bf8cc303fe27ee96836a10c1834/httpcore-4.4.13.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/4bfc12adfe4842bf07b657f0369c4cb522955686/commons-logging-1.2.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.11/3acb4705652e16236558f0f4f2192cc33c3bd189/commons-codec-1.11.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/2.2/3f2bd07716a31c395e2837254f37f21f0f0ab24b/hamcrest-core-2.2.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/net.minidev/accessors-smart/2.4.7/3970cfc505e6657ca60f3aa57c849f6043000d7a/accessors-smart-2.4.7.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.6.10/c118700e3a33c8a0d9adc920e9dec0831171925/kotlin-stdlib-common-1.6.10.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.http2/http2-hpack/9.4.43.v20210629/ae3d44710ccbec84463c9cc718d0c8c51617bac2/http2-hpack-9.4.43.v20210629.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest/2.2/1820c0968dba3a11a1b30669bb1f01978a91dedc/hamcrest-2.2.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.8/431fc3cbc0ff81abdbfde070062741089c3ba874/gson-2.8.8.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-contract-spec/3.1.0/97239aabd7604b34adb34e1fee3cffdbaba4c101/spring-cloud-contract-spec-3.1.0.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.json/json/20210307/528c8df3757e8bcf151817b1d7b9b434f6aa08d5/json-20210307.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter/5.7.0/3152d152da916ccbb0715f89f7f873f45362ad7f/junit-jupiter-5.7.0.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/com.natpryce/snodge/3.7.0.0/d91005515e0f985b3fdd0f51c37e4e8abb0af7d4/snodge-3.7.0.0.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.glassfish/javax.json/1.1/6f8ce9246049c7af84926758aeea7bc24f5dd160/javax.json-1.1.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy-json/3.0.9/b99a364b9f2231b6829b12e10f6c4c69d47add87/groovy-json-3.0.9.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-contract-spec-groovy/3.1.0/5061521652064c65512731831ca6a7fc760000e0/spring-cloud-contract-spec-groovy-3.1.0.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-contract-spec-java/3.1.0/2f819eac0aa85f0c4fdbf443bd354561b98a44f/spring-cloud-contract-spec-java-3.1.0.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-params/5.7.0/521dbecace93d5d7ef13a74aab231befd7954424/junit-jupiter-params-5.7.0.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.7.0/b25f3815c4c1860a73041e733a14a0379d00c4d5/junit-jupiter-api-5.7.0.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/javax.json/javax.json-api/1.1/e708aaf715872f220cc932fd4350189559628c66/javax.json-api-1.1.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy/3.0.9/bd159803bedc434e7af0f714693fb5578a719e95/groovy-3.0.9.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-text/1.9/ba6ac8c2807490944a0a27f6f8e68fb5ed2e80e2/commons-text-1.9.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy-nio/3.0.9/bf53959629f875d773e5190360af531b4679ba02/groovy-nio-3.0.9.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy-xml/3.0.9/dae68f2e9f5e12dc5cc0a27ee7003f18702a2bcd/groovy-xml-3.0.9.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jcl/5.3.13/3aa15be194887fbda3912ecbb4ab6ec8dfdebdb0/spring-jcl-5.3.13.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/5.3.13/d2a6c3372dd337e08144f9f49f386b8ec7a8080d/spring-core-5.3.13.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/dk.brics.automaton/automaton/1.11-8/6ebfa65eb431ff4b715a23be7a750cbc4cc96d0f/automaton-1.11-8.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.apiguardian/apiguardian-api/1.1.0/fc9dff4bb36d627bdc553de77e1f17efd790876c/apiguardian-api-1.1.0.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.7.0/84e309fbf21d857aac079a3c1fffd84284e1114d/junit-platform-commons-1.7.0.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.2.0/28c11eb91f9b6d8e200631d46e20a7f407f2a046/opentest4j-1.2.0.jar:/opt/idea-IU-211.6693.111/lib/idea_rt.jar MainKt
+Connected to the target VM, address: '127.0.0.1:54047', transport: 'socket'
+Could not find the contract, select contract file?
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2022-02-27 05:51:25.309 Verbose logging enabled
+Mock server is running! Access URLs:
+Local:      http://localhost:8080/
+External:   http://127.0.1.1:8080/
+Press CTRL+C to stop
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by khttp.requests.GenericRequest (file:/home/shaheen/.gradle/caches/modules-2/files-2.1/com.github.jkcclemens/khttp/0.1.0/b53478881ce329afce653bc34d156f833011dd48/khttp-0.1.0.jar) to field java.net.URL.host
+WARNING: Please consider reporting this to the maintainers of khttp.requests.GenericRequest
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2022-02-27 05:51:26.448 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+------	 Executing tests on http://localhost:8080/v2/pet/1845563262948980200 	------
+BodyTest	OK
+HeaderTest	OK
+StatusTest	OK
+2022-02-27 05:52:07.755 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.365 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.369 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.375 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.380 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.384 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.388 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.392 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.397 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.401 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.405 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.409 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.412 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.416 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.424 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.427 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.431 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.434 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.438 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.443 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.447 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.451 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.455 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.459 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.463 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.467 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.471 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.475 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.478 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.482 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.486 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.489 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.493 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.496 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.499 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.502 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.506 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.510 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.514 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.517 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.520 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.524 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.527 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.530 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.533 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.536 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.539 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.542 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.546 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.549 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.553 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.556 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.559 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.563 Request received:
+127.0.0.1 - PUT /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-02-27 05:52:09.567 Admin request received:
+127.0.0.1 - PUT /not-matched
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+2022-02-27 05:52:09.590
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+POST                                                       | PUT                                                 <<<<< HTTP method does not match
+/v2/pet/1845563262948980200                                | /v2/pet/1845563262948980200
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-02-27 05:52:09.594 Request received:
+127.0.0.1 - GET /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-02-27 05:52:09.611 Admin request received:
+127.0.0.1 - GET /not-matched
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+2022-02-27 05:52:09.615 Request received:
+127.0.0.1 - DELETE /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-02-27 05:52:09.616 Admin request received:
+127.0.0.1 - DELETE /not-matched
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+2022-02-27 05:52:09.620 Request received:
+127.0.0.1 - PATCH /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-02-27 05:52:09.620 Admin request received:
+127.0.0.1 - PATCH /not-matched
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+2022-02-27 05:52:09.624 Request received:
+127.0.0.1 - OPTIONS /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-02-27 05:52:09.625 Admin request received:
+127.0.0.1 - OPTIONS /not-matched
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+2022-02-27 05:52:09.629 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.612
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+POST                                                       | GET                                                 <<<<< HTTP method does not match
+/v2/pet/1845563262948980200                                | /v2/pet/1845563262948980200
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-02-27 05:52:09.616
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+POST                                                       | DELETE                                              <<<<< HTTP method does not match
+/v2/pet/1845563262948980200                                | /v2/pet/1845563262948980200
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-02-27 05:52:09.621
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+POST                                                       | PATCH                                               <<<<< HTTP method does not match
+/v2/pet/1845563262948980200                                | /v2/pet/1845563262948980200
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-02-27 05:52:09.625
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+POST                                                       | OPTIONS                                             <<<<< HTTP method does not match
+/v2/pet/1845563262948980200                                | /v2/pet/1845563262948980200
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-02-27 05:52:09.633 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.637 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.640 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.644 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.648 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.652 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.656 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.661 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.665 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.668 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.672 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.676 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.680 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.684 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.688 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.691 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.695 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.699 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.704 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.713 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [2]
+Content-Type: [application/json]
+{}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.717 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [23]
+Content-Type: [application/json]
+{"something":"another"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.721 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [18]
+Content-Type: [application/json]
+{"something":true}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.724 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [32]
+Content-Type: [application/json]
+{"x":true,"something":"another"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.728 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [23]
+Content-Type: [application/json]
+{"something":"another"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.732 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [33]
+Content-Type: [application/json]
+{"x":false,"something":"another"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.736 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [16]
+Content-Type: [application/json]
+{"something":99}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.741 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [30]
+Content-Type: [application/json]
+{"x":99,"something":"another"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.744 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [17]
+Content-Type: [application/json]
+{"something":-99}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.747 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [31]
+Content-Type: [application/json]
+{"x":-99,"something":"another"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.750 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [15]
+Content-Type: [application/json]
+{"something":0}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.753 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [29]
+Content-Type: [application/json]
+{"x":0,"something":"another"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.756 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [15]
+Content-Type: [application/json]
+{"something":1}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.760 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [16]
+Content-Type: [application/json]
+{"something":{}}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.763 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [30]
+Content-Type: [application/json]
+{"x":{},"something":"another"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.767 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [30]
+Content-Type: [application/json]
+{"x":-1,"something":"another"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.770 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [24]
+Content-Type: [application/json]
+{"something":"a string"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.774 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [38]
+Content-Type: [application/json]
+{"x":"a string","something":"another"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.778 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [16]
+Content-Type: [application/json]
+{"something":[]}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.782 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+something: [null]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.785 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+x: [null]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+something: [another]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.789 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+something: [{}]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.792 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+x: [true]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+something: [another]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.796 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+something: [false]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.799 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+something: [99.0]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.802 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+x: [99.0]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+something: [another]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.806 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+something: [-99.0]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.809 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+x: [{}]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+something: [another]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.812 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+something: [0.0]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.815 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+x: [0.0]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+something: [another]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.819 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+something: [1.0]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.823 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+x: [1.0]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+something: [another]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.826 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+something: [-1.0]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.832 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+x: [-1.0]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+something: [another]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.835 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+something: [a string]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.838 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+x: [a string]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+something: [another]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.841 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+something: [[]]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.845 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+something: [another]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.859 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200?something=null
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-02-27 05:52:09.861 Admin request received:
+127.0.0.1 - POST /not-matched?something=null
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+2022-02-27 05:52:09.864 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200?something=another&x=null
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-02-27 05:52:09.865 Admin request received:
+127.0.0.1 - POST /not-matched?something=another&x=null
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+2022-02-27 05:52:09.868 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200?something=true
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-02-27 05:52:09.869 Admin request received:
+127.0.0.1 - POST /not-matched?something=true
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+2022-02-27 05:52:09.873 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200?something=another&x=true
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-02-27 05:52:09.873 Admin request received:
+127.0.0.1 - POST /not-matched?something=another&x=true
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+2022-02-27 05:52:09.877 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200?something=another&x=%7B%7D
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-02-27 05:52:09.877 Admin request received:
+127.0.0.1 - POST /not-matched?something=another&x=%7B%7D
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+2022-02-27 05:52:09.861
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+POST                                                       | POST
+/v2/pet/1845563262948980200                                | /v2/pet/1845563262948980200?something=null          <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-02-27 05:52:09.865
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+POST                                                       | POST
+/v2/pet/1845563262948980200                                | /v2/pet/1845563262948980200?something=another&x=null<<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-02-27 05:52:09.869
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+POST                                                       | POST
+/v2/pet/1845563262948980200                                | /v2/pet/1845563262948980200?something=true          <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-02-27 05:52:09.874
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+POST                                                       | POST
+/v2/pet/1845563262948980200                                | /v2/pet/1845563262948980200?something=another&x=true<<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-02-27 05:52:09.878
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+POST                                                       | POST
+/v2/pet/1845563262948980200                                | /v2/pet/1845563262948980200?something=another&x=%7B%7D<<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-02-27 05:52:09.882
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+POST                                                       | POST
+/v2/pet/1845563262948980200                                | /v2/pet/1845563262948980200?something=another&x=false<<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-02-27 05:52:09.885
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+POST                                                       | POST
+/v2/pet/1845563262948980200                                | /v2/pet/1845563262948980200?something=99.0          <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-02-27 05:52:09.889
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+POST                                                       | POST
+/v2/pet/1845563262948980200                                | /v2/pet/1845563262948980200?something=another&x=99.0<<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-02-27 05:52:09.892
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+POST                                                       | POST
+/v2/pet/1845563262948980200                                | /v2/pet/1845563262948980200?something=-99.0         <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-02-27 05:52:09.896
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+POST                                                       | POST
+/v2/pet/1845563262948980200                                | /v2/pet/1845563262948980200?something=another&x=-99.0<<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-02-27 05:52:09.881 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200?something=another&x=false
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-02-27 05:52:09.881 Admin request received:
+127.0.0.1 - POST /not-matched?something=another&x=false
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+2022-02-27 05:52:09.885 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200?something=99.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-02-27 05:52:09.885 Admin request received:
+127.0.0.1 - POST /not-matched?something=99.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+2022-02-27 05:52:09.888 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200?something=another&x=99.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-02-27 05:52:09.888 Admin request received:
+127.0.0.1 - POST /not-matched?something=another&x=99.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+2022-02-27 05:52:09.891 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200?something=-99.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-02-27 05:52:09.892 Admin request received:
+127.0.0.1 - POST /not-matched?something=-99.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+2022-02-27 05:52:09.895 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200?something=another&x=-99.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-02-27 05:52:09.896 Admin request received:
+127.0.0.1 - POST /not-matched?something=another&x=-99.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+2022-02-27 05:52:09.899 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200?something=another&x=0.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-02-27 05:52:09.900 Admin request received:
+127.0.0.1 - POST /not-matched?something=another&x=0.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+2022-02-27 05:52:09.904 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200?something=another
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-02-27 05:52:09.904 Admin request received:
+127.0.0.1 - POST /not-matched?something=another
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+2022-02-27 05:52:09.907 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200?something=another&x=1.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-02-27 05:52:09.908 Admin request received:
+127.0.0.1 - POST /not-matched?something=another&x=1.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+2022-02-27 05:52:09.910 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200?something=-1.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-02-27 05:52:09.911 Admin request received:
+127.0.0.1 - POST /not-matched?something=-1.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+2022-02-27 05:52:09.914 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200?something=%7B%7D
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-02-27 05:52:09.914 Admin request received:
+127.0.0.1 - POST /not-matched?something=%7B%7D
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+2022-02-27 05:52:09.917 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200?something=a+string
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-02-27 05:52:09.918 Admin request received:
+127.0.0.1 - POST /not-matched?something=a+string
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+2022-02-27 05:52:09.901
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+POST                                                       | POST
+/v2/pet/1845563262948980200                                | /v2/pet/1845563262948980200?something=another&x=0.0 <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-02-27 05:52:09.905
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+POST                                                       | POST
+/v2/pet/1845563262948980200                                | /v2/pet/1845563262948980200?something=another       <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-02-27 05:52:09.908
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+POST                                                       | POST
+/v2/pet/1845563262948980200                                | /v2/pet/1845563262948980200?something=another&x=1.0 <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-02-27 05:52:09.911
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+POST                                                       | POST
+/v2/pet/1845563262948980200                                | /v2/pet/1845563262948980200?something=-1.0          <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-02-27 05:52:09.914
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+POST                                                       | POST
+/v2/pet/1845563262948980200                                | /v2/pet/1845563262948980200?something=%7B%7D        <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-02-27 05:52:09.918
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+POST                                                       | POST
+/v2/pet/1845563262948980200                                | /v2/pet/1845563262948980200?something=a+string      <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-02-27 05:52:09.922
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+POST                                                       | POST
+/v2/pet/1845563262948980200                                | /v2/pet/1845563262948980200?something=another&x=a+string<<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-02-27 05:52:09.925
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+POST                                                       | POST
+/v2/pet/1845563262948980200                                | /v2/pet/1845563262948980200?something=%5B%5D        <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-02-27 05:52:09.929
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+POST                                                       | POST
+/v2/pet/1845563262948980200                                | /v2/pet/1845563262948980200?something=another&x=%5B%5D<<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-02-27 05:52:09.921 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200?something=another&x=a+string
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-02-27 05:52:09.921 Admin request received:
+127.0.0.1 - POST /not-matched?something=another&x=a+string
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+2022-02-27 05:52:09.924 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200?something=%5B%5D
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-02-27 05:52:09.925 Admin request received:
+127.0.0.1 - POST /not-matched?something=%5B%5D
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+2022-02-27 05:52:09.928 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200?something=another&x=%5B%5D
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-02-27 05:52:09.928 Admin request received:
+127.0.0.1 - POST /not-matched?something=another&x=%5B%5D
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+2022-02-27 05:52:09.933 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: [something=null]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.936 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: [something=another; x=null]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.939 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: [something=true]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.942 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: [something=another; x={}]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.944 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: [something=false]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.947 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: [something=another; x=false]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.950 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: [something=99.0]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.953 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: [something=another]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.956 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: [something=-99.0]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.959 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: [something=another; x=-99.0]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.962 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: [something=0.0]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.965 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: [something=another; x=0.0]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.967 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: [something=1.0]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.971 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: [something=another; x=1.0]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.974 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: [something=-1.0]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.977 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: [something=another; x=-1.0]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.980 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: [something=a string]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.983 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: [something=another; x=a string]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
+2022-02-27 05:52:09.985 Request received:
+127.0.0.1 - POST /v2/pet/1845563262948980200
+
+Cookie: [something=[]]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"id\":10.0,\"status\":\"LOOSE_MATCH\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [98e120c4-55f9-4f6b-9110-4e73c3faded2]
+
+
