@@ -5,7 +5,7 @@
   "interactions": [
     {
       "method": "GET",
-      "path": "ACCOUNTS_RESOURCE/1/charges/2",
+      "path": "/ACCOUNTS_RESOURCE/1/charges/2",
       "status": 200,
       "request": {
       },

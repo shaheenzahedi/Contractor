@@ -5,7 +5,7 @@
   "interactions": [
     {
       "method": "POST",
-      "path": "TOKENS_PATH/1",
+      "path": "/TOKENS_PATH/1",
       "status": 200,
       "request": {
       },

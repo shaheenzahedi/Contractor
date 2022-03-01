@@ -17,7 +17,7 @@ data class PredicateModel(
 }
 
 enum class PactPredicateType {
-    MATCH,
+    MATCHES,
     REGEX,
     TYPE
 }

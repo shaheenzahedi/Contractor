@@ -67,7 +67,7 @@ class CallbackGenerator(
         val doc = "`${model.method.name}\t${model.path}\n\n"
         return model.response?.bodyPredicates!!.map {
             when (it.type) {
-                PactPredicateType.MATCH -> buildBodyPredicateWithMatch(it, doc)
+                PactPredicateType.MATCHES -> buildBodyPredicateWithMatch(it, doc)
                 PactPredicateType.REGEX -> buildBodyPredicateWithRegex(it, doc)
                 PactPredicateType.TYPE -> buildBodyPredicateWithType(it, doc)
             }
@@ -212,7 +212,7 @@ class CallbackGenerator(
         val doc = "`${model.method.name}\t${model.path}\n\n"
         return model.response?.headerPredicates!!.map {
             when (it.type) {
-                PactPredicateType.MATCH -> buildHeaderPredicateWithMatch(it)
+                PactPredicateType.MATCHES -> buildHeaderPredicateWithMatch(it)
                 PactPredicateType.REGEX -> buildHeaderPredicateWithRegex(it)
                 PactPredicateType.TYPE -> buildHeaderPredicateWithType(it, doc)
             }
