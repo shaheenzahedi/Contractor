@@ -5,7 +5,7 @@
   "interactions": [
     {
       "method": "GET",
-      "path": "ACCOUNTS_RESOURCE/1/stripe-account",
+      "path": "/ACCOUNTS_RESOURCE/1/stripe-account",
       "status": 200,
       "request": {
       },

@@ -58,7 +58,7 @@ class JMethodGenerator(
     }
 
     private fun generateRuleStatments(model: PredicateModel): CodeBlock {
-        if (model.type == PactPredicateType.MATCH) {
+        if (model.type == PactPredicateType.MATCHES) {
             return CodeBlock.builder().apply {
                 add(
                     "assert(((LinkedHashMap)entity.getBody()).get(\"${model.fieldName}\")).getClass().getSimpleName().equals(\"${model.value}\"))"

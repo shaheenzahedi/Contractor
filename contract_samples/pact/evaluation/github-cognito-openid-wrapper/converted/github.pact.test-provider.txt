@@ -1,0 +1,852 @@
+/usr/lib/jvm/java-1.11.0-openjdk-amd64/bin/java -agentlib:jdwp=transport=dt_socket,address=127.0.0.1:44055,suspend=y,server=n -javaagent:/opt/idea-IU-211.6693.111/plugins/Groovy/lib/agent/gragent.jar -javaagent:/opt/idea-IU-211.6693.111/plugins/java/lib/rt/debugger-agent.jar -Dfile.encoding=UTF-8 -classpath /opt/idea-IU-211.6693.111/lib/idea_rt.jar -jar /home/shaheen/Documents/Projects/Contractor/provider.jar
+Connected to the target VM, address: '127.0.0.1:44055', transport: 'socket'
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+Could not find the contract, select contract file?
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by khttp.requests.GenericRequest (file:/home/shaheen/Documents/Projects/Contractor/provider.jar) to field java.net.URL.host
+WARNING: Please consider reporting this to the maintainers of khttp.requests.GenericRequest
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+------	 Executing tests on http://localhost:8080/user 	------
+------	 Executing tests on http://localhost:8080/user 	------
+------	 Executing tests on http://localhost:8080/user/emails 	------
+------	 Executing tests on http://localhost:8080/user/emails 	------
+------	 Executing tests on http://localhost:8080/login/oauth/access_token 	------
+------	 Executing tests on http://localhost:8080/login/oauth/access_token 	------
+------	 Executing tests on http://localhost:8080/login/oauth/access_token 	------
+
+----------------------	<BodyTest>	----------------------
+`GET	/user
+
+[SUCCESS]	Asserts that the response has the desired body
+----------------------	<BodyTest />	----------------------
+
+----------------------	<HeaderTest>	----------------------
+`GET	/user
+
+[SUCCESS]	Asserts that the response has the desired header
+----------------------	<HeaderTest />	----------------------
+
+----------------------	<StatusTest>	----------------------
+`GET	/user
+
+[SUCCESS]	Assert if the status equals to 200
+----------------------	<StatusTest />	----------------------
+
+----------------------	<BodyTest>	----------------------
+`GET	/user
+
+[FAILED]	Asserts that the response has the desired body
+REASON:	Response did not match the body defined in the contract
+EXPECTED:
+{
+  "name": "Tim Jones"
+}
+RECEIVED:
+{
+  "error": "This is an error",
+  "error_description": "This is a description"
+}
+----------------------	<BodyTest />	----------------------
+
+----------------------	<HeaderTest>	----------------------
+`GET	/user
+
+[SUCCESS]	Asserts that the response has the desired header
+----------------------	<HeaderTest />	----------------------
+
+----------------------	<StatusTest>	----------------------
+`GET	/user
+
+[FAILED]	Assert if the status equals to 400
+REASON:	Status is not 400 as defined in the contract
+EXPECTED:
+400
+RECEIVED:
+200
+----------------------	<StatusTest />	----------------------
+
+----------------------	<BodyTest>	----------------------
+`GET	/user/emails
+
+[SUCCESS]	Asserts that the response has the desired body
+----------------------	<BodyTest />	----------------------
+
+----------------------	<HeaderTest>	----------------------
+`GET	/user/emails
+
+[SUCCESS]	Asserts that the response has the desired header
+----------------------	<HeaderTest />	----------------------
+
+----------------------	<StatusTest>	----------------------
+`GET	/user/emails
+
+[SUCCESS]	Assert if the status equals to 200
+----------------------	<StatusTest />	----------------------
+
+----------------------	<BodyTest>	----------------------
+`GET	/user/emails
+
+[FAILED]	Asserts that the response has the desired body
+REASON:	Response did not match the body defined in the contract
+EXPECTED:
+{
+  "email": "ben@example.com",
+  "primary": true
+}
+RECEIVED:
+{
+  "error": "his is an error",
+  "error_description": "This is a description"
+}
+----------------------	<BodyTest />	----------------------
+
+----------------------	<HeaderTest>	----------------------
+`GET	/user/emails
+
+[SUCCESS]	Asserts that the response has the desired header
+----------------------	<HeaderTest />	----------------------
+
+----------------------	<StatusTest>	----------------------
+`GET	/user/emails
+
+[FAILED]	Assert if the status equals to 400
+REASON:	Status is not 400 as defined in the contract
+EXPECTED:
+400
+RECEIVED:
+200
+----------------------	<StatusTest />	----------------------
+
+----------------------	<BodyTest>	----------------------
+`POST	/login/oauth/access_token
+
+[SUCCESS]	Asserts that the response has the desired body
+----------------------	<BodyTest />	----------------------
+
+----------------------	<HeaderTest>	----------------------
+`POST	/login/oauth/access_token
+
+[SUCCESS]	Asserts that the response has the desired header
+----------------------	<HeaderTest />	----------------------
+
+----------------------	<StatusTest>	----------------------
+`POST	/login/oauth/access_token
+
+[SUCCESS]	Assert if the status equals to 200
+----------------------	<StatusTest />	----------------------
+
+----------------------	<BodyTest>	----------------------
+`POST	/login/oauth/access_token
+
+[FAILED]	Asserts that the response has the desired body
+REASON:	Response did not match the body defined in the contract
+EXPECTED:
+{
+  "access_token": "xxxx",
+  "refresh_token": "yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy",
+  "expires_in": 21600.0
+}
+RECEIVED:
+{
+  "error": "This is an error",
+  "error_description": "This is a description"
+}
+----------------------	<BodyTest />	----------------------
+
+----------------------	<HeaderTest>	----------------------
+`POST	/login/oauth/access_token
+
+[SUCCESS]	Asserts that the response has the desired header
+----------------------	<HeaderTest />	----------------------
+
+----------------------	<StatusTest>	----------------------
+`POST	/login/oauth/access_token
+
+[FAILED]	Assert if the status equals to 400
+REASON:	Status is not 400 as defined in the contract
+EXPECTED:
+400
+RECEIVED:
+200
+----------------------	<StatusTest />	----------------------
+
+----------------------	<BodyTest>	----------------------
+`POST	/login/oauth/access_token
+
+[FAILED]	Asserts that the response has the desired body
+REASON:	Response did not match the body defined in the contract
+EXPECTED:
+{
+  "access_token": "xxxx",
+  "refresh_token": "yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy",
+  "expires_in": 21600.0
+}
+RECEIVED:
+{
+  "error": "This is an error",
+  "error_description": "This is a description"
+}
+----------------------	<BodyTest />	----------------------
+
+----------------------	<HeaderTest>	----------------------
+`POST	/login/oauth/access_token
+
+[SUCCESS]	Asserts that the response has the desired header
+----------------------	<HeaderTest />	----------------------
+
+----------------------	<StatusTest>	----------------------
+`POST	/login/oauth/access_token
+
+[SUCCESS]	Assert if the status equals to 200
+----------------------	<StatusTest />	----------------------
+[KILLED]	StatusTest		Mutating status code with 100(Continue)
+[KILLED]	StatusTest		Mutating status code with 101(Switching Protocol)
+[KILLED]	StatusTest		Mutating status code with 201(Created)
+[KILLED]	StatusTest		Mutating status code with 202(Accepted)
+[KILLED]	StatusTest		Mutating status code with 203(Non-Authoritive Information)
+[KILLED]	StatusTest		Mutating status code with 204(No Content)
+[KILLED]	StatusTest		Mutating status code with 205(Reset Content)
+[KILLED]	StatusTest		Mutating status code with 206(Partial Content)
+[KILLED]	StatusTest		Mutating status code with 226(IM Used)
+[KILLED]	StatusTest		Mutating status code with 300(Multiple Choices)
+[KILLED]	StatusTest		Mutating status code with 301(Moved Permanently)
+[KILLED]	StatusTest		Mutating status code with 302(Found)
+[KILLED]	StatusTest		Mutating status code with 303(See Other)
+[KILLED]	StatusTest		Mutating status code with 304(Not Modified)
+[KILLED]	StatusTest		Mutating status code with 305(Use Proxy)
+[KILLED]	StatusTest		Mutating status code with 306(Switch Proxy)
+[KILLED]	StatusTest		Mutating status code with 307(Temporary Redirect)
+[KILLED]	StatusTest		Mutating status code with 308(Permanent Redirect)
+[KILLED]	StatusTest		Mutating status code with 400(Bad Request)
+[KILLED]	StatusTest		Mutating status code with 401(Unauthorized)
+[KILLED]	StatusTest		Mutating status code with 402(Payment Required)
+[KILLED]	StatusTest		Mutating status code with 403(Forbidden)
+[KILLED]	StatusTest		Mutating status code with 404(Not Found)
+[KILLED]	StatusTest		Mutating status code with 405(Method Not Allowed)
+[KILLED]	StatusTest		Mutating status code with 406(Not Acceptable)
+[KILLED]	StatusTest		Mutating status code with 407(Proxy Authentication Required)
+[KILLED]	StatusTest		Mutating status code with 408(Request Timeout)
+[KILLED]	StatusTest		Mutating status code with 409(Conflict)
+[KILLED]	StatusTest		Mutating status code with 410(Gone)
+[KILLED]	StatusTest		Mutating status code with 411(Length Required)
+[KILLED]	StatusTest		Mutating status code with 412(Precondition Failed)
+[KILLED]	StatusTest		Mutating status code with 413(Payload Too Large)
+[KILLED]	StatusTest		Mutating status code with 414(URI Too Long)
+[KILLED]	StatusTest		Mutating status code with 415(Unsupported Media Type)
+[KILLED]	StatusTest		Mutating status code with 416(Range Not Satisfiable)
+[KILLED]	StatusTest		Mutating status code with 417(Expectation Failed)
+[KILLED]	StatusTest		Mutating status code with 418(I’m a teapot)
+[KILLED]	StatusTest		Mutating status code with 421(Misdirected Request)
+[KILLED]	StatusTest		Mutating status code with 426(Upgrade Required)
+[KILLED]	StatusTest		Mutating status code with 428(Precondition Required)
+[KILLED]	StatusTest		Mutating status code with 429(Too Many Requests)
+[KILLED]	StatusTest		Mutating status code with 431(Request Header Fields Too Large)
+[KILLED]	StatusTest		Mutating status code with 451(Unavailable For Legal Reasons)
+[KILLED]	StatusTest		Mutating status code with 500(Internal Server Error)
+[KILLED]	StatusTest		Mutating status code with 501(Not Implemented)
+[KILLED]	StatusTest		Mutating status code with 502(Bad Gateway)
+[KILLED]	StatusTest		Mutating status code with 503(Service Unavailable)
+[KILLED]	StatusTest		Mutating status code with 504(Gateway Timeout)
+[KILLED]	StatusTest		Mutating status code with 505(HTTP Version Not Supported)
+[KILLED]	StatusTest		Mutating status code with 506(Variant Also Negotiates)
+[KILLED]	StatusTest		Mutating status code with 510(Not Extended)
+[KILLED]	StatusTest		Mutating status code with 511(Network Authentication Required)
+[KILLED]	BodyTest		Mutating response body with {name=null}
+[SURVIVED]	BodyTest		Mutating response body with {name=Tim Jones, x=null}
+[KILLED]	BodyTest		Mutating response body with {name=true}
+[KILLED]	BodyTest		Mutating response body with {name=Tim Jones, x=true}
+[KILLED]	BodyTest		Mutating response body with {name=false}
+[KILLED]	BodyTest		Mutating response body with {name=Tim Jones, x=false}
+[KILLED]	BodyTest		Mutating response body with {name=99.0}
+[KILLED]	BodyTest		Mutating response body with {name=Tim Jones, x=99.0}
+[KILLED]	BodyTest		Mutating response body with {name=-99.0}
+[KILLED]	BodyTest		Mutating response body with {name=0.0}
+[KILLED]	BodyTest		Mutating response body with {name=Tim Jones, x=0.0}
+[KILLED]	BodyTest		Mutating response body with {name=Tim Jones, x={}}
+[KILLED]	BodyTest		Mutating response body with {name=Tim Jones, x=1.0}
+[KILLED]	BodyTest		Mutating response body with {name=-1.0}
+[KILLED]	BodyTest		Mutating response body with {name=Tim Jones, x=-1.0}
+[KILLED]	BodyTest		Mutating response body with {name=Tim Jones, x=a string}
+[KILLED]	BodyTest		Mutating response body with {name=[]}
+[KILLED]	BodyTest		Mutating response body with {name=Tim Jones, x=[]}
+[SURVIVED]	HeaderTest		Mutating request header with {Accept=application/vnd.github.v3+json, Authorization=token THIS_IS_MY_TOKEN, x=[]}
+[KILLED]	HeaderTest		Mutating request header with {Authorization=token THIS_IS_MY_TOKEN}
+[SURVIVED]	HeaderTest		Mutating request header with {Accept=application/vnd.github.v3+json, Authorization=token THIS_IS_MY_TOKEN, x=null}
+[KILLED]	HeaderTest		Mutating request header with {Accept=true, Authorization=token THIS_IS_MY_TOKEN}
+[KILLED]	HeaderTest		Mutating request header with {Accept=application/vnd.github.v3+json, Authorization=true}
+[KILLED]	HeaderTest		Mutating request header with {Accept=[], Authorization=token THIS_IS_MY_TOKEN}
+[KILLED]	HeaderTest		Mutating request header with {Accept=false, Authorization=token THIS_IS_MY_TOKEN}
+[KILLED]	HeaderTest		Mutating request header with {Accept=application/vnd.github.v3+json, Authorization=false}
+[SURVIVED]	HeaderTest		Mutating request header with {Accept=application/vnd.github.v3+json, Authorization=token THIS_IS_MY_TOKEN, x=false}
+[KILLED]	HeaderTest		Mutating request header with {Accept=99.0, Authorization=token THIS_IS_MY_TOKEN}
+[KILLED]	HeaderTest		Mutating request header with {Accept=application/vnd.github.v3+json, Authorization=99.0}
+[SURVIVED]	HeaderTest		Mutating request header with {Accept=application/vnd.github.v3+json, Authorization=token THIS_IS_MY_TOKEN, x=99.0}
+[KILLED]	HeaderTest		Mutating request header with {Accept=-99.0, Authorization=token THIS_IS_MY_TOKEN}
+[KILLED]	HeaderTest		Mutating request header with {Accept=application/vnd.github.v3+json, Authorization=-99.0}
+[KILLED]	HeaderTest		Mutating request header with {Accept=application/vnd.github.v3+json, Authorization={}}
+[SURVIVED]	HeaderTest		Mutating request header with {Accept=application/vnd.github.v3+json, Authorization=token THIS_IS_MY_TOKEN, x=a string}
+[KILLED]	HeaderTest		Mutating request header with {Accept=application/vnd.github.v3+json}
+[KILLED]	HeaderTest		Mutating request header with {Accept=-1.0, Authorization=token THIS_IS_MY_TOKEN}
+[KILLED]	HeaderTest		Mutating request header with {Accept=1.0, Authorization=token THIS_IS_MY_TOKEN}
+[KILLED]	HeaderTest		Mutating request header with {Accept=application/vnd.github.v3+json, Authorization=a string}
+[KILLED]	StatusTest		Mutating status code with 100(Continue)
+[KILLED]	StatusTest		Mutating status code with 101(Switching Protocol)
+[SURVIVED]	StatusTest		Mutating status code with 200(OK)
+[KILLED]	StatusTest		Mutating status code with 201(Created)
+[KILLED]	StatusTest		Mutating status code with 202(Accepted)
+[KILLED]	StatusTest		Mutating status code with 203(Non-Authoritive Information)
+[KILLED]	StatusTest		Mutating status code with 204(No Content)
+[KILLED]	StatusTest		Mutating status code with 205(Reset Content)
+[KILLED]	StatusTest		Mutating status code with 206(Partial Content)
+[KILLED]	StatusTest		Mutating status code with 226(IM Used)
+[KILLED]	StatusTest		Mutating status code with 300(Multiple Choices)
+[KILLED]	StatusTest		Mutating status code with 301(Moved Permanently)
+[KILLED]	StatusTest		Mutating status code with 302(Found)
+[KILLED]	StatusTest		Mutating status code with 303(See Other)
+[KILLED]	StatusTest		Mutating status code with 304(Not Modified)
+[KILLED]	StatusTest		Mutating status code with 305(Use Proxy)
+[KILLED]	StatusTest		Mutating status code with 306(Switch Proxy)
+[KILLED]	StatusTest		Mutating status code with 307(Temporary Redirect)
+[KILLED]	StatusTest		Mutating status code with 308(Permanent Redirect)
+[KILLED]	StatusTest		Mutating status code with 401(Unauthorized)
+[KILLED]	StatusTest		Mutating status code with 402(Payment Required)
+[KILLED]	StatusTest		Mutating status code with 403(Forbidden)
+[KILLED]	StatusTest		Mutating status code with 404(Not Found)
+[KILLED]	StatusTest		Mutating status code with 405(Method Not Allowed)
+[KILLED]	StatusTest		Mutating status code with 406(Not Acceptable)
+[KILLED]	StatusTest		Mutating status code with 407(Proxy Authentication Required)
+[KILLED]	StatusTest		Mutating status code with 408(Request Timeout)
+[KILLED]	StatusTest		Mutating status code with 409(Conflict)
+[KILLED]	StatusTest		Mutating status code with 410(Gone)
+[KILLED]	StatusTest		Mutating status code with 411(Length Required)
+[KILLED]	StatusTest		Mutating status code with 412(Precondition Failed)
+[KILLED]	StatusTest		Mutating status code with 413(Payload Too Large)
+[KILLED]	StatusTest		Mutating status code with 414(URI Too Long)
+[KILLED]	StatusTest		Mutating status code with 415(Unsupported Media Type)
+[KILLED]	StatusTest		Mutating status code with 416(Range Not Satisfiable)
+[KILLED]	StatusTest		Mutating status code with 417(Expectation Failed)
+[KILLED]	StatusTest		Mutating status code with 418(I’m a teapot)
+[KILLED]	StatusTest		Mutating status code with 421(Misdirected Request)
+[KILLED]	StatusTest		Mutating status code with 426(Upgrade Required)
+[KILLED]	StatusTest		Mutating status code with 428(Precondition Required)
+[KILLED]	StatusTest		Mutating status code with 429(Too Many Requests)
+[KILLED]	StatusTest		Mutating status code with 431(Request Header Fields Too Large)
+[KILLED]	StatusTest		Mutating status code with 451(Unavailable For Legal Reasons)
+[KILLED]	StatusTest		Mutating status code with 500(Internal Server Error)
+[KILLED]	StatusTest		Mutating status code with 501(Not Implemented)
+[KILLED]	StatusTest		Mutating status code with 502(Bad Gateway)
+[KILLED]	StatusTest		Mutating status code with 503(Service Unavailable)
+[KILLED]	StatusTest		Mutating status code with 504(Gateway Timeout)
+[KILLED]	StatusTest		Mutating status code with 505(HTTP Version Not Supported)
+[KILLED]	StatusTest		Mutating status code with 506(Variant Also Negotiates)
+[KILLED]	StatusTest		Mutating status code with 510(Not Extended)
+[KILLED]	StatusTest		Mutating status code with 511(Network Authentication Required)
+[KILLED]	BodyTest		Mutating response body with {error=null, error_description=This is a description}
+[KILLED]	BodyTest		Mutating response body with {error=This is an error, error_description=null}
+[KILLED]	BodyTest		Mutating response body with {error=This is an error, error_description=This is a description, x=null}
+[KILLED]	BodyTest		Mutating response body with {error=This is an error, error_description=This is a description, x={}}
+[KILLED]	BodyTest		Mutating response body with {error=This is an error, error_description={}}
+[KILLED]	BodyTest		Mutating response body with {error=This is an error, error_description=This is a description, x=true}
+[KILLED]	BodyTest		Mutating response body with {error=false, error_description=This is a description}
+[KILLED]	BodyTest		Mutating response body with {error=This is an error, error_description=false}
+[KILLED]	BodyTest		Mutating response body with {error=This is an error, error_description=This is a description, x=false}
+[KILLED]	BodyTest		Mutating response body with {error=This is an error, error_description=a string}
+[KILLED]	BodyTest		Mutating response body with {error=This is an error, error_description=This is a description, x=99.0}
+[KILLED]	BodyTest		Mutating response body with {error=-99.0, error_description=This is a description}
+[KILLED]	BodyTest		Mutating response body with {error={}, error_description=This is a description}
+[KILLED]	BodyTest		Mutating response body with {error=This is an error, error_description=This is a description, x=-99.0}
+[KILLED]	BodyTest		Mutating response body with {error=0.0, error_description=This is a description}
+[KILLED]	BodyTest		Mutating response body with {error=This is an error, error_description=This is a description, x=[]}
+[KILLED]	BodyTest		Mutating response body with {error=This is an error, error_description=This is a description, x=0.0}
+[KILLED]	BodyTest		Mutating response body with {error=a string, error_description=This is a description}
+[KILLED]	BodyTest		Mutating response body with {error_description=This is a description}
+[SURVIVED]	HeaderTest		Mutating request header with {Accept=application/vnd.github.v3+json, Authorization=token THIS_IS_MY_TOKEN, x=[]}
+[KILLED]	HeaderTest		Mutating request header with {Accept=application/vnd.github.v3+json, Authorization=a string}
+[SURVIVED]	HeaderTest		Mutating request header with {Accept=application/vnd.github.v3+json, Authorization=token THIS_IS_MY_TOKEN, x=null}
+[SURVIVED]	HeaderTest		Mutating request header with {Accept=application/vnd.github.v3+json, Authorization=token THIS_IS_MY_TOKEN, x=a string}
+[KILLED]	HeaderTest		Mutating request header with {Accept=application/vnd.github.v3+json, Authorization={}}
+[SURVIVED]	HeaderTest		Mutating request header with {Accept=application/vnd.github.v3+json, Authorization=token THIS_IS_MY_TOKEN, x=true}
+[KILLED]	HeaderTest		Mutating request header with {Accept=false, Authorization=token THIS_IS_MY_TOKEN}
+[KILLED]	HeaderTest		Mutating request header with {Accept=application/vnd.github.v3+json, Authorization=false}
+[KILLED]	HeaderTest		Mutating request header with {Accept=[], Authorization=token THIS_IS_MY_TOKEN}
+[KILLED]	HeaderTest		Mutating request header with {Accept=99.0, Authorization=token THIS_IS_MY_TOKEN}
+[SURVIVED]	HeaderTest		Mutating request header with {Accept=application/vnd.github.v3+json, Authorization=token THIS_IS_MY_TOKEN, x={}}
+[SURVIVED]	HeaderTest		Mutating request header with {Accept=application/vnd.github.v3+json, Authorization=token THIS_IS_MY_TOKEN, x=99.0}
+[KILLED]	HeaderTest		Mutating request header with {Accept=-99.0, Authorization=token THIS_IS_MY_TOKEN}
+[KILLED]	HeaderTest		Mutating request header with {Accept=a string, Authorization=token THIS_IS_MY_TOKEN}
+[SURVIVED]	HeaderTest		Mutating request header with {Accept=application/vnd.github.v3+json, Authorization=token THIS_IS_MY_TOKEN, x=-99.0}
+[SURVIVED]	HeaderTest		Mutating request header with {Accept=application/vnd.github.v3+json, Authorization=token THIS_IS_MY_TOKEN, x=1.0}
+[SURVIVED]	HeaderTest		Mutating request header with {Accept=application/vnd.github.v3+json, Authorization=token THIS_IS_MY_TOKEN, x=0.0}
+[KILLED]	HeaderTest		Mutating request header with {Accept=1.0, Authorization=token THIS_IS_MY_TOKEN}
+[KILLED]	HeaderTest		Mutating request header with {Authorization=token THIS_IS_MY_TOKEN}
+[KILLED]	StatusTest		Mutating status code with 100(Continue)
+[KILLED]	StatusTest		Mutating status code with 101(Switching Protocol)
+[KILLED]	StatusTest		Mutating status code with 201(Created)
+[KILLED]	StatusTest		Mutating status code with 202(Accepted)
+[KILLED]	StatusTest		Mutating status code with 203(Non-Authoritive Information)
+[KILLED]	StatusTest		Mutating status code with 204(No Content)
+[KILLED]	StatusTest		Mutating status code with 205(Reset Content)
+[KILLED]	StatusTest		Mutating status code with 206(Partial Content)
+[KILLED]	StatusTest		Mutating status code with 226(IM Used)
+[KILLED]	StatusTest		Mutating status code with 300(Multiple Choices)
+[KILLED]	StatusTest		Mutating status code with 301(Moved Permanently)
+[KILLED]	StatusTest		Mutating status code with 302(Found)
+[KILLED]	StatusTest		Mutating status code with 303(See Other)
+[KILLED]	StatusTest		Mutating status code with 304(Not Modified)
+[KILLED]	StatusTest		Mutating status code with 305(Use Proxy)
+[KILLED]	StatusTest		Mutating status code with 306(Switch Proxy)
+[KILLED]	StatusTest		Mutating status code with 307(Temporary Redirect)
+[KILLED]	StatusTest		Mutating status code with 308(Permanent Redirect)
+[KILLED]	StatusTest		Mutating status code with 400(Bad Request)
+[KILLED]	StatusTest		Mutating status code with 401(Unauthorized)
+[KILLED]	StatusTest		Mutating status code with 402(Payment Required)
+[KILLED]	StatusTest		Mutating status code with 403(Forbidden)
+[KILLED]	StatusTest		Mutating status code with 404(Not Found)
+[KILLED]	StatusTest		Mutating status code with 405(Method Not Allowed)
+[KILLED]	StatusTest		Mutating status code with 406(Not Acceptable)
+[KILLED]	StatusTest		Mutating status code with 407(Proxy Authentication Required)
+[KILLED]	StatusTest		Mutating status code with 408(Request Timeout)
+[KILLED]	StatusTest		Mutating status code with 409(Conflict)
+[KILLED]	StatusTest		Mutating status code with 410(Gone)
+[KILLED]	StatusTest		Mutating status code with 411(Length Required)
+[KILLED]	StatusTest		Mutating status code with 412(Precondition Failed)
+[KILLED]	StatusTest		Mutating status code with 413(Payload Too Large)
+[KILLED]	StatusTest		Mutating status code with 414(URI Too Long)
+[KILLED]	StatusTest		Mutating status code with 415(Unsupported Media Type)
+[KILLED]	StatusTest		Mutating status code with 416(Range Not Satisfiable)
+[KILLED]	StatusTest		Mutating status code with 417(Expectation Failed)
+[KILLED]	StatusTest		Mutating status code with 418(I’m a teapot)
+[KILLED]	StatusTest		Mutating status code with 421(Misdirected Request)
+[KILLED]	StatusTest		Mutating status code with 426(Upgrade Required)
+[KILLED]	StatusTest		Mutating status code with 428(Precondition Required)
+[KILLED]	StatusTest		Mutating status code with 429(Too Many Requests)
+[KILLED]	StatusTest		Mutating status code with 431(Request Header Fields Too Large)
+[KILLED]	StatusTest		Mutating status code with 451(Unavailable For Legal Reasons)
+[KILLED]	StatusTest		Mutating status code with 500(Internal Server Error)
+[KILLED]	StatusTest		Mutating status code with 501(Not Implemented)
+[KILLED]	StatusTest		Mutating status code with 502(Bad Gateway)
+[KILLED]	StatusTest		Mutating status code with 503(Service Unavailable)
+[KILLED]	StatusTest		Mutating status code with 504(Gateway Timeout)
+[KILLED]	StatusTest		Mutating status code with 505(HTTP Version Not Supported)
+[KILLED]	StatusTest		Mutating status code with 506(Variant Also Negotiates)
+[KILLED]	StatusTest		Mutating status code with 510(Not Extended)
+[KILLED]	StatusTest		Mutating status code with 511(Network Authentication Required)
+[KILLED]	BodyTest		Mutating response body with {email=null, primary=true}
+[KILLED]	BodyTest		Mutating response body with {email=a string, primary=true}
+[KILLED]	BodyTest		Mutating response body with {email=-1.0, primary=true}
+[KILLED]	BodyTest		Mutating response body with {email=ben@example.com, primary=true, x=a string}
+[KILLED]	BodyTest		Mutating response body with {email=ben@example.com, primary=true, x=true}
+[KILLED]	BodyTest		Mutating response body with {email=false, primary=true}
+[KILLED]	BodyTest		Mutating response body with {email=ben@example.com, primary=false}
+[KILLED]	BodyTest		Mutating response body with {email=ben@example.com, primary=true, x=false}
+[KILLED]	BodyTest		Mutating response body with {primary=true}
+[KILLED]	BodyTest		Mutating response body with {email=ben@example.com, primary=99.0}
+[KILLED]	BodyTest		Mutating response body with {email=ben@example.com, primary=a string}
+[KILLED]	BodyTest		Mutating response body with {email={}, primary=true}
+[KILLED]	BodyTest		Mutating response body with {email=ben@example.com, primary=-99.0}
+[KILLED]	BodyTest		Mutating response body with {email=ben@example.com, primary=true, x=-99.0}
+[KILLED]	BodyTest		Mutating response body with {email=0.0, primary=true}
+[KILLED]	BodyTest		Mutating response body with {email=ben@example.com, primary=0.0}
+[KILLED]	BodyTest		Mutating response body with {email=ben@example.com, primary=[]}
+[KILLED]	BodyTest		Mutating response body with {email=1.0, primary=true}
+[KILLED]	BodyTest		Mutating response body with {email=ben@example.com, primary=1.0}
+[KILLED]	HeaderTest		Mutating request header with {Accept=null, Authorization=token THIS_IS_MY_TOKEN}
+[KILLED]	HeaderTest		Mutating request header with {Accept=application/vnd.github.v3+json, Authorization=null}
+[SURVIVED]	HeaderTest		Mutating request header with {Accept=application/vnd.github.v3+json, Authorization=token THIS_IS_MY_TOKEN, x=null}
+[SURVIVED]	HeaderTest		Mutating request header with {Accept=application/vnd.github.v3+json, Authorization=token THIS_IS_MY_TOKEN, x=[]}
+[KILLED]	HeaderTest		Mutating request header with {Accept=application/vnd.github.v3+json, Authorization=true}
+[SURVIVED]	HeaderTest		Mutating request header with {Accept=application/vnd.github.v3+json, Authorization=token THIS_IS_MY_TOKEN, x=true}
+[KILLED]	HeaderTest		Mutating request header with {Accept=a string, Authorization=token THIS_IS_MY_TOKEN}
+[KILLED]	HeaderTest		Mutating request header with {Accept=application/vnd.github.v3+json}
+[SURVIVED]	HeaderTest		Mutating request header with {Accept=application/vnd.github.v3+json, Authorization=token THIS_IS_MY_TOKEN, x=false}
+[KILLED]	HeaderTest		Mutating request header with {Accept=-1.0, Authorization=token THIS_IS_MY_TOKEN}
+[SURVIVED]	HeaderTest		Mutating request header with {Accept=application/vnd.github.v3+json, Authorization=token THIS_IS_MY_TOKEN, x=-1.0}
+[KILLED]	HeaderTest		Mutating request header with {Accept=application/vnd.github.v3+json, Authorization=a string}
+[KILLED]	HeaderTest		Mutating request header with {Accept=application/vnd.github.v3+json, Authorization=[]}
+[KILLED]	HeaderTest		Mutating request header with {Accept=application/vnd.github.v3+json, Authorization=-99.0}
+[SURVIVED]	HeaderTest		Mutating request header with {Accept=application/vnd.github.v3+json, Authorization=token THIS_IS_MY_TOKEN, x=-99.0}
+[KILLED]	HeaderTest		Mutating request header with {Accept=0.0, Authorization=token THIS_IS_MY_TOKEN}
+[KILLED]	HeaderTest		Mutating request header with {Accept=application/vnd.github.v3+json, Authorization=0.0}
+[SURVIVED]	HeaderTest		Mutating request header with {Accept=application/vnd.github.v3+json, Authorization=token THIS_IS_MY_TOKEN, x=0.0}
+[KILLED]	HeaderTest		Mutating request header with {Accept=application/vnd.github.v3+json, Authorization=-1.0}
+[KILLED]	HeaderTest		Mutating request header with {Accept=application/vnd.github.v3+json, Authorization={}}
+[KILLED]	StatusTest		Mutating status code with 100(Continue)
+[KILLED]	StatusTest		Mutating status code with 101(Switching Protocol)
+[SURVIVED]	StatusTest		Mutating status code with 200(OK)
+[KILLED]	StatusTest		Mutating status code with 201(Created)
+[KILLED]	StatusTest		Mutating status code with 202(Accepted)
+[KILLED]	StatusTest		Mutating status code with 203(Non-Authoritive Information)
+[KILLED]	StatusTest		Mutating status code with 204(No Content)
+[KILLED]	StatusTest		Mutating status code with 205(Reset Content)
+[KILLED]	StatusTest		Mutating status code with 206(Partial Content)
+[KILLED]	StatusTest		Mutating status code with 226(IM Used)
+[KILLED]	StatusTest		Mutating status code with 300(Multiple Choices)
+[KILLED]	StatusTest		Mutating status code with 301(Moved Permanently)
+[KILLED]	StatusTest		Mutating status code with 302(Found)
+[KILLED]	StatusTest		Mutating status code with 303(See Other)
+[KILLED]	StatusTest		Mutating status code with 304(Not Modified)
+[KILLED]	StatusTest		Mutating status code with 305(Use Proxy)
+[KILLED]	StatusTest		Mutating status code with 306(Switch Proxy)
+[KILLED]	StatusTest		Mutating status code with 307(Temporary Redirect)
+[KILLED]	StatusTest		Mutating status code with 308(Permanent Redirect)
+[KILLED]	StatusTest		Mutating status code with 401(Unauthorized)
+[KILLED]	StatusTest		Mutating status code with 402(Payment Required)
+[KILLED]	StatusTest		Mutating status code with 403(Forbidden)
+[KILLED]	StatusTest		Mutating status code with 404(Not Found)
+[KILLED]	StatusTest		Mutating status code with 405(Method Not Allowed)
+[KILLED]	StatusTest		Mutating status code with 406(Not Acceptable)
+[KILLED]	StatusTest		Mutating status code with 407(Proxy Authentication Required)
+[KILLED]	StatusTest		Mutating status code with 408(Request Timeout)
+[KILLED]	StatusTest		Mutating status code with 409(Conflict)
+[KILLED]	StatusTest		Mutating status code with 410(Gone)
+[KILLED]	StatusTest		Mutating status code with 411(Length Required)
+[KILLED]	StatusTest		Mutating status code with 412(Precondition Failed)
+[KILLED]	StatusTest		Mutating status code with 413(Payload Too Large)
+[KILLED]	StatusTest		Mutating status code with 414(URI Too Long)
+[KILLED]	StatusTest		Mutating status code with 415(Unsupported Media Type)
+[KILLED]	StatusTest		Mutating status code with 416(Range Not Satisfiable)
+[KILLED]	StatusTest		Mutating status code with 417(Expectation Failed)
+[KILLED]	StatusTest		Mutating status code with 418(I’m a teapot)
+[KILLED]	StatusTest		Mutating status code with 421(Misdirected Request)
+[KILLED]	StatusTest		Mutating status code with 426(Upgrade Required)
+[KILLED]	StatusTest		Mutating status code with 428(Precondition Required)
+[KILLED]	StatusTest		Mutating status code with 429(Too Many Requests)
+[KILLED]	StatusTest		Mutating status code with 431(Request Header Fields Too Large)
+[KILLED]	StatusTest		Mutating status code with 451(Unavailable For Legal Reasons)
+[KILLED]	StatusTest		Mutating status code with 500(Internal Server Error)
+[KILLED]	StatusTest		Mutating status code with 501(Not Implemented)
+[KILLED]	StatusTest		Mutating status code with 502(Bad Gateway)
+[KILLED]	StatusTest		Mutating status code with 503(Service Unavailable)
+[KILLED]	StatusTest		Mutating status code with 504(Gateway Timeout)
+[KILLED]	StatusTest		Mutating status code with 505(HTTP Version Not Supported)
+[KILLED]	StatusTest		Mutating status code with 506(Variant Also Negotiates)
+[KILLED]	StatusTest		Mutating status code with 510(Not Extended)
+[KILLED]	StatusTest		Mutating status code with 511(Network Authentication Required)
+[KILLED]	BodyTest		Mutating response body with {error=null, error_description=This is a description}
+[KILLED]	BodyTest		Mutating response body with {error=his is an error, error_description=null}
+[KILLED]	BodyTest		Mutating response body with {error=his is an error, error_description=This is a description, x=[]}
+[KILLED]	BodyTest		Mutating response body with {error=true, error_description=This is a description}
+[KILLED]	BodyTest		Mutating response body with {error=his is an error, error_description=true}
+[KILLED]	BodyTest		Mutating response body with {error={}, error_description=This is a description}
+[KILLED]	BodyTest		Mutating response body with {error=false, error_description=This is a description}
+[KILLED]	BodyTest		Mutating response body with {error=his is an error, error_description=false}
+[KILLED]	BodyTest		Mutating response body with {error=his is an error, error_description=This is a description, x=false}
+[KILLED]	BodyTest		Mutating response body with {error=his is an error, error_description=This is a description, x={}}
+[KILLED]	BodyTest		Mutating response body with {error=his is an error, error_description=99.0}
+[KILLED]	BodyTest		Mutating response body with {error=[], error_description=This is a description}
+[KILLED]	BodyTest		Mutating response body with {error=-99.0, error_description=This is a description}
+[KILLED]	BodyTest		Mutating response body with {error=his is an error}
+[KILLED]	BodyTest		Mutating response body with {error=his is an error, error_description=This is a description, x=-99.0}
+[KILLED]	BodyTest		Mutating response body with {error=0.0, error_description=This is a description}
+[KILLED]	BodyTest		Mutating response body with {error=his is an error, error_description=0.0}
+[KILLED]	BodyTest		Mutating response body with {error=-1.0, error_description=This is a description}
+[KILLED]	BodyTest		Mutating response body with {error=his is an error, error_description=-1.0}
+[KILLED]	BodyTest		Mutating response body with {error_description=This is a description}
+[KILLED]	HeaderTest		Mutating request header with {Accept=null, Authorization=token THIS_IS_MY_TOKEN}
+[KILLED]	HeaderTest		Mutating request header with {Accept=a string, Authorization=token THIS_IS_MY_TOKEN}
+[SURVIVED]	HeaderTest		Mutating request header with {Accept=application/vnd.github.v3+json, Authorization=token THIS_IS_MY_TOKEN, x=null}
+[KILLED]	HeaderTest		Mutating request header with {Accept=-1.0, Authorization=token THIS_IS_MY_TOKEN}
+[KILLED]	HeaderTest		Mutating request header with {Accept=application/vnd.github.v3+json, Authorization=true}
+[SURVIVED]	HeaderTest		Mutating request header with {Accept=application/vnd.github.v3+json, Authorization=token THIS_IS_MY_TOKEN, x=true}
+[KILLED]	HeaderTest		Mutating request header with {Accept=false, Authorization=token THIS_IS_MY_TOKEN}
+[KILLED]	HeaderTest		Mutating request header with {Accept=application/vnd.github.v3+json, Authorization=false}
+[SURVIVED]	HeaderTest		Mutating request header with {Accept=application/vnd.github.v3+json, Authorization=token THIS_IS_MY_TOKEN, x=-1.0}
+[KILLED]	HeaderTest		Mutating request header with {Accept=application/vnd.github.v3+json, Authorization=99.0}
+[KILLED]	HeaderTest		Mutating request header with {Accept=application/vnd.github.v3+json, Authorization=[]}
+[KILLED]	HeaderTest		Mutating request header with {Accept=-99.0, Authorization=token THIS_IS_MY_TOKEN}
+[SURVIVED]	HeaderTest		Mutating request header with {Accept=application/vnd.github.v3+json, Authorization=token THIS_IS_MY_TOKEN, x=[]}
+[SURVIVED]	HeaderTest		Mutating request header with {Accept=application/vnd.github.v3+json, Authorization=token THIS_IS_MY_TOKEN, x=-99.0}
+[KILLED]	HeaderTest		Mutating request header with {Accept=0.0, Authorization=token THIS_IS_MY_TOKEN}
+[KILLED]	HeaderTest		Mutating request header with {Authorization=token THIS_IS_MY_TOKEN}
+[SURVIVED]	HeaderTest		Mutating request header with {Accept=application/vnd.github.v3+json, Authorization=token THIS_IS_MY_TOKEN, x=0.0}
+[KILLED]	HeaderTest		Mutating request header with {Accept=application/vnd.github.v3+json, Authorization=-1.0}
+[KILLED]	HeaderTest		Mutating request header with {Accept=application/vnd.github.v3+json, Authorization=1.0}
+[KILLED]	StatusTest		Mutating status code with 100(Continue)
+[KILLED]	StatusTest		Mutating status code with 101(Switching Protocol)
+[KILLED]	StatusTest		Mutating status code with 201(Created)
+[KILLED]	StatusTest		Mutating status code with 202(Accepted)
+[KILLED]	StatusTest		Mutating status code with 203(Non-Authoritive Information)
+[KILLED]	StatusTest		Mutating status code with 204(No Content)
+[KILLED]	StatusTest		Mutating status code with 205(Reset Content)
+[KILLED]	StatusTest		Mutating status code with 206(Partial Content)
+[KILLED]	StatusTest		Mutating status code with 226(IM Used)
+[KILLED]	StatusTest		Mutating status code with 300(Multiple Choices)
+[KILLED]	StatusTest		Mutating status code with 301(Moved Permanently)
+[KILLED]	StatusTest		Mutating status code with 302(Found)
+[KILLED]	StatusTest		Mutating status code with 303(See Other)
+[KILLED]	StatusTest		Mutating status code with 304(Not Modified)
+[KILLED]	StatusTest		Mutating status code with 305(Use Proxy)
+[KILLED]	StatusTest		Mutating status code with 306(Switch Proxy)
+[KILLED]	StatusTest		Mutating status code with 307(Temporary Redirect)
+[KILLED]	StatusTest		Mutating status code with 308(Permanent Redirect)
+[KILLED]	StatusTest		Mutating status code with 400(Bad Request)
+[KILLED]	StatusTest		Mutating status code with 401(Unauthorized)
+[KILLED]	StatusTest		Mutating status code with 402(Payment Required)
+[KILLED]	StatusTest		Mutating status code with 403(Forbidden)
+[KILLED]	StatusTest		Mutating status code with 404(Not Found)
+[KILLED]	StatusTest		Mutating status code with 405(Method Not Allowed)
+[KILLED]	StatusTest		Mutating status code with 406(Not Acceptable)
+[KILLED]	StatusTest		Mutating status code with 407(Proxy Authentication Required)
+[KILLED]	StatusTest		Mutating status code with 408(Request Timeout)
+[KILLED]	StatusTest		Mutating status code with 409(Conflict)
+[KILLED]	StatusTest		Mutating status code with 410(Gone)
+[KILLED]	StatusTest		Mutating status code with 411(Length Required)
+[KILLED]	StatusTest		Mutating status code with 412(Precondition Failed)
+[KILLED]	StatusTest		Mutating status code with 413(Payload Too Large)
+[KILLED]	StatusTest		Mutating status code with 414(URI Too Long)
+[KILLED]	StatusTest		Mutating status code with 415(Unsupported Media Type)
+[KILLED]	StatusTest		Mutating status code with 416(Range Not Satisfiable)
+[KILLED]	StatusTest		Mutating status code with 417(Expectation Failed)
+[KILLED]	StatusTest		Mutating status code with 418(I’m a teapot)
+[KILLED]	StatusTest		Mutating status code with 421(Misdirected Request)
+[KILLED]	StatusTest		Mutating status code with 426(Upgrade Required)
+[KILLED]	StatusTest		Mutating status code with 428(Precondition Required)
+[KILLED]	StatusTest		Mutating status code with 429(Too Many Requests)
+[KILLED]	StatusTest		Mutating status code with 431(Request Header Fields Too Large)
+[KILLED]	StatusTest		Mutating status code with 451(Unavailable For Legal Reasons)
+[KILLED]	StatusTest		Mutating status code with 500(Internal Server Error)
+[KILLED]	StatusTest		Mutating status code with 501(Not Implemented)
+[KILLED]	StatusTest		Mutating status code with 502(Bad Gateway)
+[KILLED]	StatusTest		Mutating status code with 503(Service Unavailable)
+[KILLED]	StatusTest		Mutating status code with 504(Gateway Timeout)
+[KILLED]	StatusTest		Mutating status code with 505(HTTP Version Not Supported)
+[KILLED]	StatusTest		Mutating status code with 506(Variant Also Negotiates)
+[KILLED]	StatusTest		Mutating status code with 510(Not Extended)
+[KILLED]	StatusTest		Mutating status code with 511(Network Authentication Required)
+[KILLED]	BodyTest		Mutating response body with {access_token=null, refresh_token=yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy, expires_in=21600.0}
+[KILLED]	BodyTest		Mutating response body with {access_token=xxxx, refresh_token=null, expires_in=21600.0}
+[KILLED]	BodyTest		Mutating response body with {access_token=xxxx, refresh_token=yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy, expires_in=21600.0, x=a string}
+[SURVIVED]	BodyTest		Mutating response body with {access_token=xxxx, refresh_token=yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy, expires_in=21600.0, x=null}
+[KILLED]	BodyTest		Mutating response body with {access_token=true, refresh_token=yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy, expires_in=21600.0}
+[KILLED]	BodyTest		Mutating response body with {access_token=xxxx, refresh_token=true, expires_in=21600.0}
+[KILLED]	BodyTest		Mutating response body with {access_token=1.0, refresh_token=yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy, expires_in=21600.0}
+[KILLED]	BodyTest		Mutating response body with {access_token=xxxx, refresh_token=yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy, expires_in=21600.0, x=true}
+[KILLED]	BodyTest		Mutating response body with {access_token=xxxx, refresh_token=yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy, expires_in=1.0}
+[KILLED]	BodyTest		Mutating response body with {access_token=xxxx, refresh_token=0.0, expires_in=21600.0}
+[KILLED]	BodyTest		Mutating response body with {access_token=xxxx, refresh_token=yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy, expires_in=false}
+[KILLED]	BodyTest		Mutating response body with {access_token=xxxx, refresh_token=yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy, expires_in=21600.0, x=false}
+[KILLED]	BodyTest		Mutating response body with {access_token=xxxx, refresh_token=yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy, expires_in=0.0}
+[KILLED]	BodyTest		Mutating response body with {access_token=xxxx, refresh_token=-1.0, expires_in=21600.0}
+[KILLED]	BodyTest		Mutating response body with {access_token=xxxx, refresh_token=yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy, expires_in=99.0}
+[KILLED]	BodyTest		Mutating response body with {access_token=xxxx, refresh_token=yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy, expires_in=21600.0, x=99.0}
+[KILLED]	BodyTest		Mutating response body with {access_token=[], refresh_token=yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy, expires_in=21600.0}
+[KILLED]	BodyTest		Mutating response body with {access_token=xxxx, refresh_token=1.0, expires_in=21600.0}
+[KILLED]	BodyTest		Mutating response body with {access_token=xxxx, refresh_token=yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy, expires_in=-99.0}
+[KILLED]	BodyTest		Mutating response body with {access_token=0.0, refresh_token=yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy, expires_in=21600.0}
+[KILLED]	HeaderTest		Mutating request header with {Accept=a string, Authorization=token THIS_IS_MY_TOKEN}
+[KILLED]	HeaderTest		Mutating request header with {Accept=application/json, Authorization=null}
+[SURVIVED]	HeaderTest		Mutating request header with {Accept=application/json, Authorization=token THIS_IS_MY_TOKEN, x=null}
+[KILLED]	HeaderTest		Mutating request header with {Accept=true, Authorization=token THIS_IS_MY_TOKEN}
+[KILLED]	HeaderTest		Mutating request header with {Accept=application/json, Authorization=true}
+[SURVIVED]	HeaderTest		Mutating request header with {Accept=application/json, Authorization=token THIS_IS_MY_TOKEN, x=true}
+[KILLED]	HeaderTest		Mutating request header with {Accept=false, Authorization=token THIS_IS_MY_TOKEN}
+[KILLED]	HeaderTest		Mutating request header with {Accept=-1.0, Authorization=token THIS_IS_MY_TOKEN}
+[KILLED]	HeaderTest		Mutating request header with {Accept=application/json, Authorization=a string}
+[KILLED]	HeaderTest		Mutating request header with {Accept=[], Authorization=token THIS_IS_MY_TOKEN}
+[KILLED]	HeaderTest		Mutating request header with {Accept=application/json, Authorization=99.0}
+[SURVIVED]	HeaderTest		Mutating request header with {Accept=application/json, Authorization=token THIS_IS_MY_TOKEN, x=a string}
+[KILLED]	HeaderTest		Mutating request header with {Accept=-99.0, Authorization=token THIS_IS_MY_TOKEN}
+[KILLED]	HeaderTest		Mutating request header with {Accept=application/json, Authorization=-99.0}
+[SURVIVED]	HeaderTest		Mutating request header with {Accept=application/json, Authorization=token THIS_IS_MY_TOKEN, x=-99.0}
+[KILLED]	HeaderTest		Mutating request header with {Authorization=token THIS_IS_MY_TOKEN}
+[KILLED]	HeaderTest		Mutating request header with {Accept=application/json, Authorization={}}
+[KILLED]	HeaderTest		Mutating request header with {Accept=1.0, Authorization=token THIS_IS_MY_TOKEN}
+[KILLED]	HeaderTest		Mutating request header with {Accept=application/json}
+[KILLED]	StatusTest		Mutating status code with 100(Continue)
+[KILLED]	StatusTest		Mutating status code with 101(Switching Protocol)
+[SURVIVED]	StatusTest		Mutating status code with 200(OK)
+[KILLED]	StatusTest		Mutating status code with 201(Created)
+[KILLED]	StatusTest		Mutating status code with 202(Accepted)
+[KILLED]	StatusTest		Mutating status code with 203(Non-Authoritive Information)
+[KILLED]	StatusTest		Mutating status code with 204(No Content)
+[KILLED]	StatusTest		Mutating status code with 205(Reset Content)
+[KILLED]	StatusTest		Mutating status code with 206(Partial Content)
+[KILLED]	StatusTest		Mutating status code with 226(IM Used)
+[KILLED]	StatusTest		Mutating status code with 300(Multiple Choices)
+[KILLED]	StatusTest		Mutating status code with 301(Moved Permanently)
+[KILLED]	StatusTest		Mutating status code with 302(Found)
+[KILLED]	StatusTest		Mutating status code with 303(See Other)
+[KILLED]	StatusTest		Mutating status code with 304(Not Modified)
+[KILLED]	StatusTest		Mutating status code with 305(Use Proxy)
+[KILLED]	StatusTest		Mutating status code with 306(Switch Proxy)
+[KILLED]	StatusTest		Mutating status code with 307(Temporary Redirect)
+[KILLED]	StatusTest		Mutating status code with 308(Permanent Redirect)
+[KILLED]	StatusTest		Mutating status code with 401(Unauthorized)
+[KILLED]	StatusTest		Mutating status code with 402(Payment Required)
+[KILLED]	StatusTest		Mutating status code with 403(Forbidden)
+[KILLED]	StatusTest		Mutating status code with 404(Not Found)
+[KILLED]	StatusTest		Mutating status code with 405(Method Not Allowed)
+[KILLED]	StatusTest		Mutating status code with 406(Not Acceptable)
+[KILLED]	StatusTest		Mutating status code with 407(Proxy Authentication Required)
+[KILLED]	StatusTest		Mutating status code with 408(Request Timeout)
+[KILLED]	StatusTest		Mutating status code with 409(Conflict)
+[KILLED]	StatusTest		Mutating status code with 410(Gone)
+[KILLED]	StatusTest		Mutating status code with 411(Length Required)
+[KILLED]	StatusTest		Mutating status code with 412(Precondition Failed)
+[KILLED]	StatusTest		Mutating status code with 413(Payload Too Large)
+[KILLED]	StatusTest		Mutating status code with 414(URI Too Long)
+[KILLED]	StatusTest		Mutating status code with 415(Unsupported Media Type)
+[KILLED]	StatusTest		Mutating status code with 416(Range Not Satisfiable)
+[KILLED]	StatusTest		Mutating status code with 417(Expectation Failed)
+[KILLED]	StatusTest		Mutating status code with 418(I’m a teapot)
+[KILLED]	StatusTest		Mutating status code with 421(Misdirected Request)
+[KILLED]	StatusTest		Mutating status code with 426(Upgrade Required)
+[KILLED]	StatusTest		Mutating status code with 428(Precondition Required)
+[KILLED]	StatusTest		Mutating status code with 429(Too Many Requests)
+[KILLED]	StatusTest		Mutating status code with 431(Request Header Fields Too Large)
+[KILLED]	StatusTest		Mutating status code with 451(Unavailable For Legal Reasons)
+[KILLED]	StatusTest		Mutating status code with 500(Internal Server Error)
+[KILLED]	StatusTest		Mutating status code with 501(Not Implemented)
+[KILLED]	StatusTest		Mutating status code with 502(Bad Gateway)
+[KILLED]	StatusTest		Mutating status code with 503(Service Unavailable)
+[KILLED]	StatusTest		Mutating status code with 504(Gateway Timeout)
+[KILLED]	StatusTest		Mutating status code with 505(HTTP Version Not Supported)
+[KILLED]	StatusTest		Mutating status code with 506(Variant Also Negotiates)
+[KILLED]	StatusTest		Mutating status code with 510(Not Extended)
+[KILLED]	StatusTest		Mutating status code with 511(Network Authentication Required)
+[KILLED]	BodyTest		Mutating response body with {error=null, error_description=This is a description}
+[KILLED]	BodyTest		Mutating response body with {error=This is an error, error_description=null}
+[KILLED]	BodyTest		Mutating response body with {error=This is an error, error_description=This is a description, x=null}
+[KILLED]	BodyTest		Mutating response body with {error=true, error_description=This is a description}
+[KILLED]	BodyTest		Mutating response body with {error=This is an error, error_description=true}
+[KILLED]	BodyTest		Mutating response body with {error=This is an error, error_description=[]}
+[KILLED]	BodyTest		Mutating response body with {error=false, error_description=This is a description}
+[KILLED]	BodyTest		Mutating response body with {error=This is an error, error_description={}}
+[KILLED]	BodyTest		Mutating response body with {error=This is an error, error_description=This is a description, x=1.0}
+[KILLED]	BodyTest		Mutating response body with {error=99.0, error_description=This is a description}
+[KILLED]	BodyTest		Mutating response body with {error=This is an error, error_description=99.0}
+[KILLED]	BodyTest		Mutating response body with {error=This is an error}
+[KILLED]	BodyTest		Mutating response body with {error_description=This is a description}
+[KILLED]	BodyTest		Mutating response body with {error=This is an error, error_description=-99.0}
+[KILLED]	BodyTest		Mutating response body with {error=[], error_description=This is a description}
+[KILLED]	BodyTest		Mutating response body with {error=0.0, error_description=This is a description}
+[KILLED]	BodyTest		Mutating response body with {error=This is an error, error_description=0.0}
+[KILLED]	BodyTest		Mutating response body with {error={}, error_description=This is a description}
+[KILLED]	BodyTest		Mutating response body with {error=This is an error, error_description=a string}
+[KILLED]	BodyTest		Mutating response body with {error=This is an error, error_description=1.0}
+[SURVIVED]	HeaderTest		Mutating request header with {Accept=application/json, Authorization=token THIS_IS_MY_TOKEN, x=[]}
+[SURVIVED]	HeaderTest		Mutating request header with {Accept=application/json, Authorization=token THIS_IS_MY_TOKEN, x=1.0}
+[KILLED]	HeaderTest		Mutating request header with {Accept=application/json}
+[KILLED]	HeaderTest		Mutating request header with {Accept=true, Authorization=token THIS_IS_MY_TOKEN}
+[KILLED]	HeaderTest		Mutating request header with {Accept=application/json, Authorization=[]}
+[SURVIVED]	HeaderTest		Mutating request header with {Accept=application/json, Authorization=token THIS_IS_MY_TOKEN, x=true}
+[KILLED]	HeaderTest		Mutating request header with {Accept=false, Authorization=token THIS_IS_MY_TOKEN}
+[KILLED]	HeaderTest		Mutating request header with {Accept={}, Authorization=token THIS_IS_MY_TOKEN}
+[SURVIVED]	HeaderTest		Mutating request header with {Accept=application/json, Authorization=token THIS_IS_MY_TOKEN, x=-1.0}
+[SURVIVED]	HeaderTest		Mutating request header with {Accept=application/json, Authorization=token THIS_IS_MY_TOKEN, x=a string}
+[KILLED]	HeaderTest		Mutating request header with {Accept=application/json, Authorization=99.0}
+[SURVIVED]	HeaderTest		Mutating request header with {Accept=application/json, Authorization=token THIS_IS_MY_TOKEN, x=99.0}
+[KILLED]	HeaderTest		Mutating request header with {Accept=-99.0, Authorization=token THIS_IS_MY_TOKEN}
+[KILLED]	HeaderTest		Mutating request header with {Accept=application/json, Authorization={}}
+[SURVIVED]	HeaderTest		Mutating request header with {Accept=application/json, Authorization=token THIS_IS_MY_TOKEN, x=-99.0}
+[KILLED]	HeaderTest		Mutating request header with {Accept=0.0, Authorization=token THIS_IS_MY_TOKEN}
+[KILLED]	HeaderTest		Mutating request header with {Accept=a string, Authorization=token THIS_IS_MY_TOKEN}
+[SURVIVED]	HeaderTest		Mutating request header with {Accept=application/json, Authorization=token THIS_IS_MY_TOKEN, x=0.0}
+[SURVIVED]	HeaderTest		Mutating request header with {Accept=application/json, Authorization=token THIS_IS_MY_TOKEN, x={}}
+[KILLED]	HeaderTest		Mutating request header with {Accept=-1.0, Authorization=token THIS_IS_MY_TOKEN}
+[KILLED]	StatusTest		Mutating status code with 100(Continue)
+[KILLED]	StatusTest		Mutating status code with 101(Switching Protocol)
+[KILLED]	StatusTest		Mutating status code with 201(Created)
+[KILLED]	StatusTest		Mutating status code with 202(Accepted)
+[KILLED]	StatusTest		Mutating status code with 203(Non-Authoritive Information)
+[KILLED]	StatusTest		Mutating status code with 204(No Content)
+[KILLED]	StatusTest		Mutating status code with 205(Reset Content)
+[KILLED]	StatusTest		Mutating status code with 206(Partial Content)
+[KILLED]	StatusTest		Mutating status code with 226(IM Used)
+[KILLED]	StatusTest		Mutating status code with 300(Multiple Choices)
+[KILLED]	StatusTest		Mutating status code with 301(Moved Permanently)
+[KILLED]	StatusTest		Mutating status code with 302(Found)
+[KILLED]	StatusTest		Mutating status code with 303(See Other)
+[KILLED]	StatusTest		Mutating status code with 304(Not Modified)
+[KILLED]	StatusTest		Mutating status code with 305(Use Proxy)
+[KILLED]	StatusTest		Mutating status code with 306(Switch Proxy)
+[KILLED]	StatusTest		Mutating status code with 307(Temporary Redirect)
+[KILLED]	StatusTest		Mutating status code with 308(Permanent Redirect)
+[KILLED]	StatusTest		Mutating status code with 400(Bad Request)
+[KILLED]	StatusTest		Mutating status code with 401(Unauthorized)
+[KILLED]	StatusTest		Mutating status code with 402(Payment Required)
+[KILLED]	StatusTest		Mutating status code with 403(Forbidden)
+[KILLED]	StatusTest		Mutating status code with 404(Not Found)
+[KILLED]	StatusTest		Mutating status code with 405(Method Not Allowed)
+[KILLED]	StatusTest		Mutating status code with 406(Not Acceptable)
+[KILLED]	StatusTest		Mutating status code with 407(Proxy Authentication Required)
+[KILLED]	StatusTest		Mutating status code with 408(Request Timeout)
+[KILLED]	StatusTest		Mutating status code with 409(Conflict)
+[KILLED]	StatusTest		Mutating status code with 410(Gone)
+[KILLED]	StatusTest		Mutating status code with 411(Length Required)
+[KILLED]	StatusTest		Mutating status code with 412(Precondition Failed)
+[KILLED]	StatusTest		Mutating status code with 413(Payload Too Large)
+[KILLED]	StatusTest		Mutating status code with 414(URI Too Long)
+[KILLED]	StatusTest		Mutating status code with 415(Unsupported Media Type)
+[KILLED]	StatusTest		Mutating status code with 416(Range Not Satisfiable)
+[KILLED]	StatusTest		Mutating status code with 417(Expectation Failed)
+[KILLED]	StatusTest		Mutating status code with 418(I’m a teapot)
+[KILLED]	StatusTest		Mutating status code with 421(Misdirected Request)
+[KILLED]	StatusTest		Mutating status code with 426(Upgrade Required)
+[KILLED]	StatusTest		Mutating status code with 428(Precondition Required)
+[KILLED]	StatusTest		Mutating status code with 429(Too Many Requests)
+[KILLED]	StatusTest		Mutating status code with 431(Request Header Fields Too Large)
+[KILLED]	StatusTest		Mutating status code with 451(Unavailable For Legal Reasons)
+[KILLED]	StatusTest		Mutating status code with 500(Internal Server Error)
+[KILLED]	StatusTest		Mutating status code with 501(Not Implemented)
+[KILLED]	StatusTest		Mutating status code with 502(Bad Gateway)
+[KILLED]	StatusTest		Mutating status code with 503(Service Unavailable)
+[KILLED]	StatusTest		Mutating status code with 504(Gateway Timeout)
+[KILLED]	StatusTest		Mutating status code with 505(HTTP Version Not Supported)
+[KILLED]	StatusTest		Mutating status code with 506(Variant Also Negotiates)
+[KILLED]	StatusTest		Mutating status code with 510(Not Extended)
+[KILLED]	StatusTest		Mutating status code with 511(Network Authentication Required)
+[KILLED]	BodyTest		Mutating response body with {error=This is an error, error_description=-1.0}
+[KILLED]	BodyTest		Mutating response body with {error=This is an error, error_description=null}
+[KILLED]	BodyTest		Mutating response body with {error=This is an error, error_description=This is a description, x=null}
+[KILLED]	BodyTest		Mutating response body with {error=true, error_description=This is a description}
+[KILLED]	BodyTest		Mutating response body with {error=This is an error, error_description=true}
+[KILLED]	BodyTest		Mutating response body with {error=This is an error, error_description=This is a description, x=true}
+[KILLED]	BodyTest		Mutating response body with {error=false, error_description=This is a description}
+[KILLED]	BodyTest		Mutating response body with {error=This is an error, error_description=false}
+[KILLED]	BodyTest		Mutating response body with {error=This is an error, error_description=This is a description, x=false}
+[KILLED]	BodyTest		Mutating response body with {error=99.0, error_description=This is a description}
+[KILLED]	BodyTest		Mutating response body with {error=This is an error, error_description=99.0}
+[KILLED]	BodyTest		Mutating response body with {error=This is an error, error_description=This is a description, x=99.0}
+[KILLED]	BodyTest		Mutating response body with {error=-99.0, error_description=This is a description}
+[KILLED]	BodyTest		Mutating response body with {error=This is an error, error_description=-99.0}
+[KILLED]	BodyTest		Mutating response body with {error=This is an error, error_description=This is a description, x=-99.0}
+[KILLED]	BodyTest		Mutating response body with {error=This is an error, error_description=This is a description, x={}}
+[KILLED]	BodyTest		Mutating response body with {error=This is an error, error_description={}}
+[KILLED]	BodyTest		Mutating response body with {error=1.0, error_description=This is a description}
+[KILLED]	BodyTest		Mutating response body with {error=This is an error, error_description=This is a description, x=[]}
+[KILLED]	HeaderTest		Mutating request header with {Accept=application/json, Authorization={}}
+[KILLED]	HeaderTest		Mutating request header with {Accept=application/json, Authorization=null}
+[SURVIVED]	HeaderTest		Mutating request header with {Accept=application/json, Authorization=token THIS_IS_MY_TOKEN, x=null}
+[KILLED]	HeaderTest		Mutating request header with {Accept=-1.0, Authorization=token THIS_IS_MY_TOKEN}
+[KILLED]	HeaderTest		Mutating request header with {Accept=application/json, Authorization=true}
+[SURVIVED]	HeaderTest		Mutating request header with {Accept=application/json, Authorization=token THIS_IS_MY_TOKEN, x=true}
+[KILLED]	HeaderTest		Mutating request header with {Accept=false, Authorization=token THIS_IS_MY_TOKEN}
+[KILLED]	HeaderTest		Mutating request header with {Accept=application/json, Authorization=a string}
+[SURVIVED]	HeaderTest		Mutating request header with {Accept=application/json, Authorization=token THIS_IS_MY_TOKEN, x=false}
+[KILLED]	HeaderTest		Mutating request header with {Accept=99.0, Authorization=token THIS_IS_MY_TOKEN}
+[KILLED]	HeaderTest		Mutating request header with {Accept=application/json, Authorization=99.0}
+[SURVIVED]	HeaderTest		Mutating request header with {Accept=application/json, Authorization=token THIS_IS_MY_TOKEN, x=99.0}
+[KILLED]	HeaderTest		Mutating request header with {Accept=-99.0, Authorization=token THIS_IS_MY_TOKEN}
+[KILLED]	HeaderTest		Mutating request header with {Accept=application/json, Authorization=[]}
+[SURVIVED]	HeaderTest		Mutating request header with {Accept=application/json, Authorization=token THIS_IS_MY_TOKEN, x=1.0}
+[KILLED]	HeaderTest		Mutating request header with {Accept=0.0, Authorization=token THIS_IS_MY_TOKEN}
+[SURVIVED]	HeaderTest		Mutating request header with {Accept=application/json, Authorization=token THIS_IS_MY_TOKEN, x=0.0}
+[KILLED]	HeaderTest		Mutating request header with {Accept=application/json, Authorization=-1.0}
+[KILLED]	HeaderTest		Mutating request header with {Accept=application/json, Authorization=1.0}
+
+----------------------	SUMMARY	----------------------
+Total 21 test cases executed
+14 tests passed
+7 tests failed
+66% of tests were passed
+
+
+Mutations Executed: 635
+Mutations survived: 51
+Mutations killed: 584
+Mutation score: 91
+Disconnected from the target VM, address: '127.0.0.1:44055', transport: 'socket'
+
+Process finished with exit code 0

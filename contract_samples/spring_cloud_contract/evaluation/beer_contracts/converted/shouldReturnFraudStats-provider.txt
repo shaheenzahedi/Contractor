@@ -1,0 +1,41 @@
+{
+  "provider": "my provider name",
+  "consumer": "my consumer body",
+  "port": "8080",
+  "interactions": [
+    {
+      "method": "GET",
+      "path": "/frauds",
+      "status": 200,
+      "request": {
+      },
+      "response": {
+        "bodyRules": [
+          {
+            "name": "count",
+            "type": "MATCHES",
+            "value": "[2-9][0-9][0-9]"
+          }
+        ],
+        "headers": {
+          "Content-Accepted": "Application/Json"
+        }
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/drunks",
+      "status": 200,
+      "request": {
+      },
+      "response": {
+        "body": {
+          "count": 100
+        },
+        "headers": {
+          "Content-Accepted": "Application/Json"
+        }
+      }
+    }
+  ]
+}

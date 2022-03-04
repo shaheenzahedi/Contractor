@@ -1,0 +1,22 @@
+{
+    "provider": "my provider name",
+    "consumer": "my consumer body",
+    "port": "8080",
+    "interactions": [
+        {
+            "method": "GET",
+            "path": "/stout",
+            "status": 200,
+            "request": {
+            },
+            "response": {
+                "body": {
+                    "result": "STOUT"
+                },
+                "headers": {
+                    "Content-Accepted": "Application/Json"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,281 @@
+/usr/lib/jvm/java-1.11.0-openjdk-amd64/bin/java -agentlib:jdwp=transport=dt_socket,address=127.0.0.1:32819,suspend=y,server=n -javaagent:/opt/idea-IU-211.6693.111/plugins/Groovy/lib/agent/gragent.jar -javaagent:/opt/idea-IU-211.6693.111/plugins/java/lib/rt/debugger-agent.jar -Dfile.encoding=UTF-8 -classpath /opt/idea-IU-211.6693.111/lib/idea_rt.jar -jar /home/shaheen/Documents/Projects/Contractor/provider.jar
+Connected to the target VM, address: '127.0.0.1:32819', transport: 'socket'
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+Could not find the contract, select contract file?
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by khttp.requests.GenericRequest (file:/home/shaheen/Documents/Projects/Contractor/provider.jar) to field java.net.URL.host
+WARNING: Please consider reporting this to the maintainers of khttp.requests.GenericRequest
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+------	 Executing tests on http://localhost:8080/foo/1/bar 	------
+------	 Executing tests on http://localhost:8080/login 	------
+
+----------------------	<BodyTest>	----------------------
+`GET	/foo/1/bar
+
+[SUCCESS]	Asserts that the response has the desired body
+----------------------	<BodyTest />	----------------------
+
+----------------------	<HeaderTest>	----------------------
+`GET	/foo/1/bar
+
+[SUCCESS]	Asserts that the response has the desired header
+----------------------	<HeaderTest />	----------------------
+
+----------------------	<StatusTest>	----------------------
+`GET	/foo/1/bar
+
+[SUCCESS]	Assert if the status equals to 200
+----------------------	<StatusTest />	----------------------
+
+----------------------	<BodyTest>	----------------------
+`GET	/login
+
+[FAILED]	Asserts that the response has the desired body
+REASON:	The response is not present in the packet
+EXPECTED:
+{
+  "email": "kyle@bla.com",
+  "name": "Kyle",
+  "hasConfirmedEmail": false,
+  "token": "secret"
+}
+RECEIVED:
+
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | POST                                                <<<<< HTTP method does not match
+/login                                                     | /login
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+----------------------	<BodyTest />	----------------------
+
+----------------------	<HeaderTest>	----------------------
+`GET	/login
+
+[FAILED]	Asserts that the response has the desired header
+REASON:	Response did not include those header defined in contract
+EXPECTED:
+{
+  "Content-Accepted": "Application/Json"
+}
+RECEIVED:
+{
+  "Transfer-Encoding": "chunked",
+  "Content-Type": "text/plain"
+}
+----------------------	<HeaderTest />	----------------------
+
+----------------------	<StatusTest>	----------------------
+`GET	/login
+
+[FAILED]	Assert if the status equals to 200
+REASON:	Status is not 200 as defined in the contract
+EXPECTED:
+200
+RECEIVED:
+404
+----------------------	<StatusTest />	----------------------
+[KILLED]	StatusTest		Mutating status code with 100(Continue)
+[KILLED]	StatusTest		Mutating status code with 101(Switching Protocol)
+[KILLED]	StatusTest		Mutating status code with 201(Created)
+[KILLED]	StatusTest		Mutating status code with 202(Accepted)
+[KILLED]	StatusTest		Mutating status code with 203(Non-Authoritive Information)
+[KILLED]	StatusTest		Mutating status code with 204(No Content)
+[KILLED]	StatusTest		Mutating status code with 205(Reset Content)
+[KILLED]	StatusTest		Mutating status code with 206(Partial Content)
+[KILLED]	StatusTest		Mutating status code with 226(IM Used)
+[KILLED]	StatusTest		Mutating status code with 300(Multiple Choices)
+[KILLED]	StatusTest		Mutating status code with 301(Moved Permanently)
+[KILLED]	StatusTest		Mutating status code with 302(Found)
+[KILLED]	StatusTest		Mutating status code with 303(See Other)
+[KILLED]	StatusTest		Mutating status code with 304(Not Modified)
+[KILLED]	StatusTest		Mutating status code with 305(Use Proxy)
+[KILLED]	StatusTest		Mutating status code with 306(Switch Proxy)
+[KILLED]	StatusTest		Mutating status code with 307(Temporary Redirect)
+[KILLED]	StatusTest		Mutating status code with 308(Permanent Redirect)
+[KILLED]	StatusTest		Mutating status code with 400(Bad Request)
+[KILLED]	StatusTest		Mutating status code with 401(Unauthorized)
+[KILLED]	StatusTest		Mutating status code with 402(Payment Required)
+[KILLED]	StatusTest		Mutating status code with 403(Forbidden)
+[KILLED]	StatusTest		Mutating status code with 404(Not Found)
+[KILLED]	StatusTest		Mutating status code with 405(Method Not Allowed)
+[KILLED]	StatusTest		Mutating status code with 406(Not Acceptable)
+[KILLED]	StatusTest		Mutating status code with 407(Proxy Authentication Required)
+[KILLED]	StatusTest		Mutating status code with 408(Request Timeout)
+[KILLED]	StatusTest		Mutating status code with 409(Conflict)
+[KILLED]	StatusTest		Mutating status code with 410(Gone)
+[KILLED]	StatusTest		Mutating status code with 411(Length Required)
+[KILLED]	StatusTest		Mutating status code with 412(Precondition Failed)
+[KILLED]	StatusTest		Mutating status code with 413(Payload Too Large)
+[KILLED]	StatusTest		Mutating status code with 414(URI Too Long)
+[KILLED]	StatusTest		Mutating status code with 415(Unsupported Media Type)
+[KILLED]	StatusTest		Mutating status code with 416(Range Not Satisfiable)
+[KILLED]	StatusTest		Mutating status code with 417(Expectation Failed)
+[KILLED]	StatusTest		Mutating status code with 418(I’m a teapot)
+[KILLED]	StatusTest		Mutating status code with 421(Misdirected Request)
+[KILLED]	StatusTest		Mutating status code with 426(Upgrade Required)
+[KILLED]	StatusTest		Mutating status code with 428(Precondition Required)
+[KILLED]	StatusTest		Mutating status code with 429(Too Many Requests)
+[KILLED]	StatusTest		Mutating status code with 431(Request Header Fields Too Large)
+[KILLED]	StatusTest		Mutating status code with 451(Unavailable For Legal Reasons)
+[KILLED]	StatusTest		Mutating status code with 500(Internal Server Error)
+[KILLED]	StatusTest		Mutating status code with 501(Not Implemented)
+[KILLED]	StatusTest		Mutating status code with 502(Bad Gateway)
+[KILLED]	StatusTest		Mutating status code with 503(Service Unavailable)
+[KILLED]	StatusTest		Mutating status code with 504(Gateway Timeout)
+[KILLED]	StatusTest		Mutating status code with 505(HTTP Version Not Supported)
+[KILLED]	StatusTest		Mutating status code with 506(Variant Also Negotiates)
+[KILLED]	StatusTest		Mutating status code with 510(Not Extended)
+[KILLED]	StatusTest		Mutating status code with 511(Network Authentication Required)
+[KILLED]	BodyTest		Mutating response body with {foo=123.0, x={}}
+[SURVIVED]	BodyTest		Mutating response body with {foo=123.0, x=null}
+[KILLED]	BodyTest		Mutating response body with {foo=true}
+[KILLED]	BodyTest		Mutating response body with {foo=false}
+[KILLED]	BodyTest		Mutating response body with {foo=123.0, x=false}
+[KILLED]	BodyTest		Mutating response body with {foo=99.0}
+[KILLED]	BodyTest		Mutating response body with {foo=123.0, x=99.0}
+[KILLED]	BodyTest		Mutating response body with {foo=-99.0}
+[KILLED]	BodyTest		Mutating response body with {foo=123.0, x=-99.0}
+[KILLED]	BodyTest		Mutating response body with {foo=0.0}
+[KILLED]	BodyTest		Mutating response body with {foo=123.0, x=0.0}
+[KILLED]	BodyTest		Mutating response body with {foo=1.0}
+[KILLED]	BodyTest		Mutating response body with {foo=123.0, x=1.0}
+[KILLED]	BodyTest		Mutating response body with {foo=-1.0}
+[KILLED]	BodyTest		Mutating response body with {foo={}}
+[KILLED]	BodyTest		Mutating response body with {foo=a string}
+[KILLED]	BodyTest		Mutating response body with {foo=123.0, x=a string}
+[KILLED]	BodyTest		Mutating response body with {foo=[]}
+[KILLED]	BodyTest		Mutating response body with {foo=123.0, x=[]}
+[SURVIVED]	HeaderTest		Mutating request header with {something=null}
+[SURVIVED]	HeaderTest		Mutating request header with {something=another}
+[SURVIVED]	HeaderTest		Mutating request header with {something=true}
+[SURVIVED]	HeaderTest		Mutating request header with {something=another, x=true}
+[SURVIVED]	HeaderTest		Mutating request header with {something=false}
+[SURVIVED]	HeaderTest		Mutating request header with {something=another, x={}}
+[SURVIVED]	HeaderTest		Mutating request header with {something=99.0}
+[SURVIVED]	HeaderTest		Mutating request header with {something=another, x=99.0}
+[SURVIVED]	HeaderTest		Mutating request header with {something=-99.0}
+[SURVIVED]	HeaderTest		Mutating request header with {something=another, x=-99.0}
+[SURVIVED]	HeaderTest		Mutating request header with {something=0.0}
+[SURVIVED]	HeaderTest		Mutating request header with {something=another, x=0.0}
+[SURVIVED]	HeaderTest		Mutating request header with {something=1.0}
+[SURVIVED]	HeaderTest		Mutating request header with {something=another, x=1.0}
+[SURVIVED]	HeaderTest		Mutating request header with {something=-1.0}
+[SURVIVED]	HeaderTest		Mutating request header with {something=another, x=-1.0}
+[SURVIVED]	HeaderTest		Mutating request header with {something={}}
+[SURVIVED]	HeaderTest		Mutating request header with {something=another, x=a string}
+[SURVIVED]	HeaderTest		Mutating request header with {something=[]}
+[SURVIVED]	HeaderTest		Mutating request header with {something=another, x=[]}
+[KILLED]	StatusTest		Mutating status code with 100(Continue)
+[KILLED]	StatusTest		Mutating status code with 101(Switching Protocol)
+[KILLED]	StatusTest		Mutating status code with 201(Created)
+[KILLED]	StatusTest		Mutating status code with 202(Accepted)
+[KILLED]	StatusTest		Mutating status code with 203(Non-Authoritive Information)
+[KILLED]	StatusTest		Mutating status code with 204(No Content)
+[KILLED]	StatusTest		Mutating status code with 205(Reset Content)
+[KILLED]	StatusTest		Mutating status code with 206(Partial Content)
+[KILLED]	StatusTest		Mutating status code with 226(IM Used)
+[KILLED]	StatusTest		Mutating status code with 300(Multiple Choices)
+[KILLED]	StatusTest		Mutating status code with 301(Moved Permanently)
+[KILLED]	StatusTest		Mutating status code with 302(Found)
+[KILLED]	StatusTest		Mutating status code with 303(See Other)
+[KILLED]	StatusTest		Mutating status code with 304(Not Modified)
+[KILLED]	StatusTest		Mutating status code with 305(Use Proxy)
+[KILLED]	StatusTest		Mutating status code with 306(Switch Proxy)
+[KILLED]	StatusTest		Mutating status code with 307(Temporary Redirect)
+[KILLED]	StatusTest		Mutating status code with 308(Permanent Redirect)
+[KILLED]	StatusTest		Mutating status code with 400(Bad Request)
+[KILLED]	StatusTest		Mutating status code with 401(Unauthorized)
+[KILLED]	StatusTest		Mutating status code with 402(Payment Required)
+[KILLED]	StatusTest		Mutating status code with 403(Forbidden)
+[SURVIVED]	StatusTest		Mutating status code with 404(Not Found)
+[KILLED]	StatusTest		Mutating status code with 405(Method Not Allowed)
+[KILLED]	StatusTest		Mutating status code with 406(Not Acceptable)
+[KILLED]	StatusTest		Mutating status code with 407(Proxy Authentication Required)
+[KILLED]	StatusTest		Mutating status code with 408(Request Timeout)
+[KILLED]	StatusTest		Mutating status code with 409(Conflict)
+[KILLED]	StatusTest		Mutating status code with 410(Gone)
+[KILLED]	StatusTest		Mutating status code with 411(Length Required)
+[KILLED]	StatusTest		Mutating status code with 412(Precondition Failed)
+[KILLED]	StatusTest		Mutating status code with 413(Payload Too Large)
+[KILLED]	StatusTest		Mutating status code with 414(URI Too Long)
+[KILLED]	StatusTest		Mutating status code with 415(Unsupported Media Type)
+[KILLED]	StatusTest		Mutating status code with 416(Range Not Satisfiable)
+[KILLED]	StatusTest		Mutating status code with 417(Expectation Failed)
+[KILLED]	StatusTest		Mutating status code with 418(I’m a teapot)
+[KILLED]	StatusTest		Mutating status code with 421(Misdirected Request)
+[KILLED]	StatusTest		Mutating status code with 426(Upgrade Required)
+[KILLED]	StatusTest		Mutating status code with 428(Precondition Required)
+[KILLED]	StatusTest		Mutating status code with 429(Too Many Requests)
+[KILLED]	StatusTest		Mutating status code with 431(Request Header Fields Too Large)
+[KILLED]	StatusTest		Mutating status code with 451(Unavailable For Legal Reasons)
+[KILLED]	StatusTest		Mutating status code with 500(Internal Server Error)
+[KILLED]	StatusTest		Mutating status code with 501(Not Implemented)
+[KILLED]	StatusTest		Mutating status code with 502(Bad Gateway)
+[KILLED]	StatusTest		Mutating status code with 503(Service Unavailable)
+[KILLED]	StatusTest		Mutating status code with 504(Gateway Timeout)
+[KILLED]	StatusTest		Mutating status code with 505(HTTP Version Not Supported)
+[KILLED]	StatusTest		Mutating status code with 506(Variant Also Negotiates)
+[KILLED]	StatusTest		Mutating status code with 510(Not Extended)
+[KILLED]	StatusTest		Mutating status code with 511(Network Authentication Required)
+[KILLED]	BodyTest		Mutating response body with {email=null, name=Kyle, hasConfirmedEmail=false, token=secret}
+[KILLED]	BodyTest		Mutating response body with {email=kyle@bla.com, name=Kyle, hasConfirmedEmail=false, token=secret, x=1.0}
+[KILLED]	BodyTest		Mutating response body with {email=kyle@bla.com, name=Kyle, hasConfirmedEmail=1.0, token=secret}
+[KILLED]	BodyTest		Mutating response body with {email=kyle@bla.com, name=Kyle, hasConfirmedEmail=false, token=null}
+[KILLED]	BodyTest		Mutating response body with {email=kyle@bla.com, name=Kyle, hasConfirmedEmail=false, token=1.0}
+[KILLED]	BodyTest		Mutating response body with {email=kyle@bla.com, name=Kyle, hasConfirmedEmail=false, token=0.0}
+[KILLED]	BodyTest		Mutating response body with {email=kyle@bla.com, name=true, hasConfirmedEmail=false, token=secret}
+[KILLED]	BodyTest		Mutating response body with {email=kyle@bla.com, name=Kyle, hasConfirmedEmail=true, token=secret}
+[KILLED]	BodyTest		Mutating response body with {email=kyle@bla.com, name=Kyle, hasConfirmedEmail={}, token=secret}
+[KILLED]	BodyTest		Mutating response body with {email=kyle@bla.com, name=Kyle, hasConfirmedEmail=false, token=secret, x=true}
+[KILLED]	BodyTest		Mutating response body with {email=false, name=Kyle, hasConfirmedEmail=false, token=secret}
+[KILLED]	BodyTest		Mutating response body with {email=kyle@bla.com, name=false, hasConfirmedEmail=false, token=secret}
+[KILLED]	BodyTest		Mutating response body with {email=kyle@bla.com, name=0.0, hasConfirmedEmail=false, token=secret}
+[KILLED]	BodyTest		Mutating response body with {email=kyle@bla.com, name=Kyle, hasConfirmedEmail=false, token=secret, x=-99.0}
+[KILLED]	BodyTest		Mutating response body with {email=kyle@bla.com, name=Kyle, hasConfirmedEmail=false, token=-1.0}
+[KILLED]	BodyTest		Mutating response body with {email=kyle@bla.com, name=Kyle, token=secret}
+[KILLED]	BodyTest		Mutating response body with {email=kyle@bla.com, name=Kyle, hasConfirmedEmail=99.0, token=secret}
+[KILLED]	BodyTest		Mutating response body with {email=kyle@bla.com, name=Kyle, hasConfirmedEmail=false, token=secret, x=0.0}
+[KILLED]	BodyTest		Mutating response body with {email=kyle@bla.com, name=Kyle, hasConfirmedEmail=false, token=secret, x=a string}
+[KILLED]	HeaderTest		Mutating request header with {something=null}
+[KILLED]	HeaderTest		Mutating request header with {something=another, x=null}
+[KILLED]	HeaderTest		Mutating request header with {something=true}
+[KILLED]	HeaderTest		Mutating request header with {something=another, x=true}
+[KILLED]	HeaderTest		Mutating request header with {something=false}
+[KILLED]	HeaderTest		Mutating request header with {something=another, x=false}
+[KILLED]	HeaderTest		Mutating request header with {something=99.0}
+[KILLED]	HeaderTest		Mutating request header with {something=another, x=99.0}
+[KILLED]	HeaderTest		Mutating request header with {something=-99.0}
+[KILLED]	HeaderTest		Mutating request header with {something=another, x=-99.0}
+[KILLED]	HeaderTest		Mutating request header with {something=0.0}
+[KILLED]	HeaderTest		Mutating request header with {something=another, x=0.0}
+[KILLED]	HeaderTest		Mutating request header with {something=1.0}
+[KILLED]	HeaderTest		Mutating request header with {something=another, x=1.0}
+[KILLED]	HeaderTest		Mutating request header with {something=another, x={}}
+[KILLED]	HeaderTest		Mutating request header with {something=another, x=-1.0}
+[KILLED]	HeaderTest		Mutating request header with {something=a string}
+[KILLED]	HeaderTest		Mutating request header with {something=another, x=a string}
+[KILLED]	HeaderTest		Mutating request header with {something=[]}
+
+----------------------	SUMMARY	----------------------
+Total 6 test cases executed
+3 tests passed
+3 tests failed
+50% of tests were passed
+
+
+Mutations Executed: 181
+Mutations survived: 22
+Mutations killed: 159
+Mutation score: 87
+Disconnected from the target VM, address: '127.0.0.1:32819', transport: 'socket'
+
+Process finished with exit code 0

@@ -4,7 +4,7 @@
   "port": "8080",
   "interactions": [
     {
-      "method": "GET",
+      "method": "POST",
       "path": "/v0/contact_us/inquiries",
       "status": 200,
       "request": {
@@ -46,7 +46,7 @@
       }
     },
     {
-      "method": "GET",
+      "method": "POST",
       "path": "/v0/contact_us/inquiries",
       "status": 401,
       "request": {

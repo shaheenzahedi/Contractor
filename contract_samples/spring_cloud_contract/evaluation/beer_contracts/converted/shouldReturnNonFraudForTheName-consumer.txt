@@ -1,0 +1,5043 @@
+/usr/lib/jvm/java-1.11.0-openjdk-amd64/bin/java -Dfile.encoding=UTF-8 -jar /home/shaheen/Documents/Projects/Contractor/consumer.jar
+Could not find the contract, select contract file?
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2022-03-04 12:31:01.805 Verbose logging enabled
+Mock server is running! Access URLs:
+Local:      http://localhost:8080/
+External:   http://127.0.1.1:8080/
+Press CTRL+C to stop
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by khttp.requests.GenericRequest (file:/home/shaheen/Documents/Projects/Contractor/consumer.jar) to field java.net.URL.host
+WARNING: Please consider reporting this to the maintainers of khttp.requests.GenericRequest
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2022-03-04 12:31:02.707 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+------	 Executing tests on http://localhost:8080/frauds/name 	------
+BodyTest	OK
+HeaderTest	OK
+StatusTest	OK
+2022-03-04 12:31:42.722 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.342 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.347 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.352 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.356 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.360 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.363 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.367 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.370 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.374 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.377 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.381 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.384 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.387 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.398 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.402 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.406 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.410 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.414 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.418 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.422 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.426 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.430 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.434 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.437 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.440 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.444 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.447 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.450 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.454 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.457 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.461 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.463 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.467 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.470 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.474 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.479 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.483 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.487 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.490 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.493 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.497 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.500 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.503 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.506 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.510 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.513 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.516 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.519 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.522 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.525 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.528 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.531 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.534 Request received:
+127.0.0.1 - POST /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-04 12:31:44.537 Admin request received:
+127.0.0.1 - POST /not-matched
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+
+
+2022-03-04 12:31:44.553 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+PUT                                                        | POST                                                <<<<< HTTP method does not match
+/frauds/name                                               | /frauds/name
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-04 12:31:44.558 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+PUT                                                        | POST                                                <<<<< HTTP method does not match
+/frauds/name                                               | /frauds/name
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-04 12:31:44.562 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+PUT                                                        | DELETE                                              <<<<< HTTP method does not match
+/frauds/name                                               | /frauds/name
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-04 12:31:44.556 Request received:
+127.0.0.1 - POST /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-04 12:31:44.557 Admin request received:
+127.0.0.1 - POST /not-matched
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+
+
+2022-03-04 12:31:44.561 Request received:
+127.0.0.1 - DELETE /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-04 12:31:44.561 Admin request received:
+127.0.0.1 - DELETE /not-matched
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+
+
+2022-03-04 12:31:44.566 Request received:
+127.0.0.1 - PATCH /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-04 12:31:44.567 Admin request received:
+127.0.0.1 - PATCH /not-matched
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+
+
+2022-03-04 12:31:44.571 Request received:
+127.0.0.1 - OPTIONS /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-04 12:31:44.572 Admin request received:
+127.0.0.1 - OPTIONS /not-matched
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+
+
+2022-03-04 12:31:44.576 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.580 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.584 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.568 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+PUT                                                        | PATCH                                               <<<<< HTTP method does not match
+/frauds/name                                               | /frauds/name
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-04 12:31:44.572 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+PUT                                                        | OPTIONS                                             <<<<< HTTP method does not match
+/frauds/name                                               | /frauds/name
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-04 12:31:44.590 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.604 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.608 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.613 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.620 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.625 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.629 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.633 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.636 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.640 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.644 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.647 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.651 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.655 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.659 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.668 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [2]
+Content-Type: [application/json]
+{}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.672 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.676 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [13]
+Content-Type: [application/json]
+{"name":true}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.679 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [28]
+Content-Type: [application/json]
+{"name":"anything","x":true}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.683 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [14]
+Content-Type: [application/json]
+{"name":false}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.686 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [29]
+Content-Type: [application/json]
+{"name":"anything","x":false}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.692 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [26]
+Content-Type: [application/json]
+{"name":"anything","x":99}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.695 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [12]
+Content-Type: [application/json]
+{"name":-99}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.699 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [27]
+Content-Type: [application/json]
+{"name":"anything","x":-99}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.704 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [11]
+Content-Type: [application/json]
+{"name":{}}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.708 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [25]
+Content-Type: [application/json]
+{"name":"anything","x":0}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.718 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [10]
+Content-Type: [application/json]
+{"name":1}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.722 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [25]
+Content-Type: [application/json]
+{"name":"anything","x":1}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.725 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [11]
+Content-Type: [application/json]
+{"name":-1}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.728 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [26]
+Content-Type: [application/json]
+{"name":"anything","x":-1}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.733 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"a string"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.738 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [34]
+Content-Type: [application/json]
+{"name":"anything","x":"a string"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.742 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [11]
+Content-Type: [application/json]
+{"name":[]}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.744 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [26]
+Content-Type: [application/json]
+{"name":"anything","x":[]}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.748 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+x: [null]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+something: [another]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.751 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+something: [true]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.754 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+x: [true]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+something: [another]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.758 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+something: [false]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.762 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+x: [false]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+something: [another]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.767 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+something: [99.0]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.771 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+x: [{}]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+something: [another]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.776 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+something: [-99.0]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.780 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+x: [-99.0]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+something: [another]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.787 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+something: [0.0]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.791 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+x: [0.0]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+something: [another]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.795 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+something: [1.0]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.800 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+x: [1.0]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+something: [another]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.804 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+something: [another]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.807 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+x: [-1.0]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+something: [another]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.811 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+something: [a string]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.814 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+x: [a string]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+something: [another]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.817 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+something: [[]]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.820 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+x: [[]]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+something: [another]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.832 Request received:
+127.0.0.1 - PUT /frauds/name?something=null
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-04 12:31:44.834 Admin request received:
+127.0.0.1 - PUT /not-matched?something=null
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+
+
+2022-03-04 12:31:44.837 Request received:
+127.0.0.1 - PUT /frauds/name?something=another&x=null
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-04 12:31:44.838 Admin request received:
+127.0.0.1 - PUT /not-matched?something=another&x=null
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+
+
+2022-03-04 12:31:44.842 Request received:
+127.0.0.1 - PUT /frauds/name?something=another&x=%7B%7D
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-04 12:31:44.843 Admin request received:
+127.0.0.1 - PUT /not-matched?something=another&x=%7B%7D
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+
+
+2022-03-04 12:31:44.847 Request received:
+127.0.0.1 - PUT /frauds/name?something=another&x=true
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-04 12:31:44.848 Admin request received:
+127.0.0.1 - PUT /not-matched?something=another&x=true
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+
+
+2022-03-04 12:31:44.852 Request received:
+127.0.0.1 - PUT /frauds/name?something=false
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-04 12:31:44.852 Admin request received:
+127.0.0.1 - PUT /not-matched?something=false
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+
+
+2022-03-04 12:31:44.834 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+PUT                                                        | PUT
+/frauds/name                                               | /frauds/name?something=null                         <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-04 12:31:44.839 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+PUT                                                        | PUT
+/frauds/name                                               | /frauds/name?something=another&x=null               <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-04 12:31:44.844 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+PUT                                                        | PUT
+/frauds/name                                               | /frauds/name?something=another&x=%7B%7D             <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-04 12:31:44.849 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+PUT                                                        | PUT
+/frauds/name                                               | /frauds/name?something=another&x=true               <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-04 12:31:44.853 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+PUT                                                        | PUT
+/frauds/name                                               | /frauds/name?something=false                        <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-04 12:31:44.857 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+PUT                                                        | PUT
+/frauds/name                                               | /frauds/name?something=another                      <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-04 12:31:44.861 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+PUT                                                        | PUT
+/frauds/name                                               | /frauds/name?something=99.0                         <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-04 12:31:44.865 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+PUT                                                        | PUT
+/frauds/name                                               | /frauds/name?something=another&x=99.0               <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-04 12:31:44.870 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+PUT                                                        | PUT
+/frauds/name                                               | /frauds/name?something=-99.0                        <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-04 12:31:44.856 Request received:
+127.0.0.1 - PUT /frauds/name?something=another
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-04 12:31:44.856 Admin request received:
+127.0.0.1 - PUT /not-matched?something=another
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+
+
+2022-03-04 12:31:44.860 Request received:
+127.0.0.1 - PUT /frauds/name?something=99.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-04 12:31:44.861 Admin request received:
+127.0.0.1 - PUT /not-matched?something=99.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+
+
+2022-03-04 12:31:44.864 Request received:
+127.0.0.1 - PUT /frauds/name?something=another&x=99.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-04 12:31:44.865 Admin request received:
+127.0.0.1 - PUT /not-matched?something=another&x=99.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+
+
+2022-03-04 12:31:44.869 Request received:
+127.0.0.1 - PUT /frauds/name?something=-99.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-04 12:31:44.869 Admin request received:
+127.0.0.1 - PUT /not-matched?something=-99.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+
+
+2022-03-04 12:31:44.873 Request received:
+127.0.0.1 - PUT /frauds/name?something=another&x=-99.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-04 12:31:44.874 Admin request received:
+127.0.0.1 - PUT /not-matched?something=another&x=-99.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+
+
+2022-03-04 12:31:44.877 Request received:
+127.0.0.1 - PUT /frauds/name?something=0.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-04 12:31:44.878 Admin request received:
+127.0.0.1 - PUT /not-matched?something=0.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+
+
+2022-03-04 12:31:44.881 Request received:
+127.0.0.1 - PUT /frauds/name?something=%7B%7D
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-04 12:31:44.882 Admin request received:
+127.0.0.1 - PUT /not-matched?something=%7B%7D
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+
+
+2022-03-04 12:31:44.885 Request received:
+127.0.0.1 - PUT /frauds/name?something=1.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-04 12:31:44.886 Admin request received:
+127.0.0.1 - PUT /not-matched?something=1.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+
+
+2022-03-04 12:31:44.889 Request received:
+127.0.0.1 - PUT /frauds/name?something=another&x=1.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-04 12:31:44.890 Admin request received:
+127.0.0.1 - PUT /not-matched?something=another&x=1.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+
+
+2022-03-04 12:31:44.893 Request received:
+127.0.0.1 - PUT /frauds/name?something=-1.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-04 12:31:44.893 Admin request received:
+127.0.0.1 - PUT /not-matched?something=-1.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+
+
+2022-03-04 12:31:44.874 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+PUT                                                        | PUT
+/frauds/name                                               | /frauds/name?something=another&x=-99.0              <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-04 12:31:44.879 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+PUT                                                        | PUT
+/frauds/name                                               | /frauds/name?something=0.0                          <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-04 12:31:44.882 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+PUT                                                        | PUT
+/frauds/name                                               | /frauds/name?something=%7B%7D                       <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-04 12:31:44.887 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+PUT                                                        | PUT
+/frauds/name                                               | /frauds/name?something=1.0                          <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-04 12:31:44.890 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+PUT                                                        | PUT
+/frauds/name                                               | /frauds/name?something=another&x=1.0                <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-04 12:31:44.894 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+PUT                                                        | PUT
+/frauds/name                                               | /frauds/name?something=-1.0                         <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-04 12:31:44.897 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+PUT                                                        | PUT
+/frauds/name                                               | /frauds/name?something=another&x=-1.0               <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-04 12:31:44.901 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+PUT                                                        | PUT
+/frauds/name                                               | /frauds/name?something=a+string                     <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-04 12:31:44.905 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+PUT                                                        | PUT
+/frauds/name                                               | /frauds/name?something=another&x=a+string           <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-04 12:31:44.909 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+PUT                                                        | PUT
+/frauds/name                                               | /frauds/name?something=%5B%5D                       <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-04 12:31:44.912 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+PUT                                                        | PUT
+/frauds/name                                               | /frauds/name?something=another&x=%5B%5D             <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-04 12:31:44.896 Request received:
+127.0.0.1 - PUT /frauds/name?something=another&x=-1.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-04 12:31:44.897 Admin request received:
+127.0.0.1 - PUT /not-matched?something=another&x=-1.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+
+
+2022-03-04 12:31:44.899 Request received:
+127.0.0.1 - PUT /frauds/name?something=a+string
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-04 12:31:44.900 Admin request received:
+127.0.0.1 - PUT /not-matched?something=a+string
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+
+
+2022-03-04 12:31:44.904 Request received:
+127.0.0.1 - PUT /frauds/name?something=another&x=a+string
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-04 12:31:44.904 Admin request received:
+127.0.0.1 - PUT /not-matched?something=another&x=a+string
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+
+
+2022-03-04 12:31:44.908 Request received:
+127.0.0.1 - PUT /frauds/name?something=%5B%5D
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-04 12:31:44.908 Admin request received:
+127.0.0.1 - PUT /not-matched?something=%5B%5D
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+
+
+2022-03-04 12:31:44.911 Request received:
+127.0.0.1 - PUT /frauds/name?something=another&x=%5B%5D
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-04 12:31:44.912 Admin request received:
+127.0.0.1 - PUT /not-matched?something=another&x=%5B%5D
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+
+
+2022-03-04 12:31:44.917 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: [something=null]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.919 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: [something=another; x=null]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.922 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: [something=true]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.925 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: [something=another; x=true]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.928 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: [something=false]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.931 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: [something=another; x=false]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.934 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: [something=99.0]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.937 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: [something=another; x=99.0]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.939 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: [something=-99.0]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.942 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: [something=another; x=-99.0]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.945 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: [something=another; x={}]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.948 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: [something=another; x=0.0]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.950 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: [something=1.0]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.953 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: [something=another; x=1.0]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.955 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: [something=-1.0]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.958 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: [something=another; x=-1.0]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.961 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: [something=another]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.964 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: [something=another; x=a string]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.966 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: [something=[]]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+
+2022-03-04 12:31:44.971 Request received:
+127.0.0.1 - PUT /frauds/name
+
+Cookie: [something={}]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"Don\\u0027t worry you\\u0027re not a fraud\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [7623a283-42e1-4c6c-b8a6-4a9c55628a8d]
+
+

@@ -1,0 +1,177 @@
+/usr/lib/jvm/java-1.11.0-openjdk-amd64/bin/java -agentlib:jdwp=transport=dt_socket,address=127.0.0.1:60187,suspend=y,server=n -javaagent:/opt/idea-IU-211.6693.111/plugins/Groovy/lib/agent/gragent.jar -javaagent:/opt/idea-IU-211.6693.111/plugins/java/lib/rt/debugger-agent.jar -Dfile.encoding=UTF-8 -classpath /opt/idea-IU-211.6693.111/lib/idea_rt.jar -jar /home/shaheen/Documents/Projects/Contractor/consumer.jar
+Connected to the target VM, address: '127.0.0.1:60187', transport: 'socket'
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+Could not find the contract, select contract file?
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2022-02-26 19:48:19.058 Verbose logging enabled
+Mock server is running! Access URLs:
+Local:      http://localhost:8080/
+External:   http://127.0.1.1:8080/
+Press CTRL+C to stop
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by khttp.requests.GenericRequest (file:/home/shaheen/Documents/Projects/Contractor/consumer.jar) to field java.net.URL.host
+WARNING: Please consider reporting this to the maintainers of khttp.requests.GenericRequest
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2022-02-26 19:48:20.672 Request received:
+127.0.0.1 - POST /mathe
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [13]
+Content-Type: [application/json]
+{"first":500}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "null",
+  "headers" : {
+    "Content-Type" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Type: [Application/Json]
+Matched-Stub-Id: [3ee40d9f-1182-49a2-965a-e48cfe335be3]
+
+
+------	 Executing tests on http://localhost:8080/mathe 	------
+2022-02-26 19:48:26.020 Request received:
+127.0.0.1 - POST /mathe
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [25]
+Content-Type: [application/json]
+{"first":500,"after":100}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "null",
+  "headers" : {
+    "Content-Type" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Type: [Application/Json]
+Matched-Stub-Id: [3ee40d9f-1182-49a2-965a-e48cfe335be3]
+
+
+------	 Executing tests on http://localhost:8080/mathe 	------
+2022-02-26 19:48:26.026 Request received:
+127.0.0.1 - POST /mathe
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [29]
+Content-Type: [application/json]
+{"first":500,"objectId":1565}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "null",
+  "headers" : {
+    "Content-Type" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Type: [Application/Json]
+Matched-Stub-Id: [3ee40d9f-1182-49a2-965a-e48cfe335be3]
+
+
+------	 Executing tests on http://localhost:8080/mathe 	------
+2022-02-26 19:48:26.032 Request received:
+127.0.0.1 - POST /mathe
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [25]
+Content-Type: [application/json]
+{"first":500,"actorId":1}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "null",
+  "headers" : {
+    "Content-Type" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Type: [Application/Json]
+Matched-Stub-Id: [3ee40d9f-1182-49a2-965a-e48cfe335be3]
+
+
+------	 Executing tests on http://localhost:8080/mathe 	------
+2022-02-26 19:48:26.038 Request received:
+127.0.0.1 - POST /mathe
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [29]
+Content-Type: [application/json]
+{"first":500,"instance":"de"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "null",
+  "headers" : {
+    "Content-Type" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Type: [Application/Json]
+Matched-Stub-Id: [3ee40d9f-1182-49a2-965a-e48cfe335be3]
+
+
+------	 Executing tests on http://localhost:8080/mathe 	------
+HeaderTest	OK
+StatusTest	OK
+HeaderTest	OK
+StatusTest	OK
+HeaderTest	OK
+StatusTest	OK
+HeaderTest	OK
+StatusTest	OK
+HeaderTest	OK
+StatusTest	OK
