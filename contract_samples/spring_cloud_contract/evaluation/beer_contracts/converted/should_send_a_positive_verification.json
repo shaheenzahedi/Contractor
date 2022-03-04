@@ -5,7 +5,7 @@
     "interactions": [
         {
             "method": "POST",
-            "path": "seda/person",
+            "path": "/seda/person",
             "status": 200,
             "request": {
                 "age": 25

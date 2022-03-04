@@ -4,18 +4,14 @@
     "port": "8080",
     "interactions": [
         {
-            "method": "POST",
-            "path": "/frauds/name",
+            "method": "GET",
+            "path": "/stout",
             "status": 200,
             "request": {
-                "body": {
-                    "name": "foo",
-                    "name2": "bar"
-                }
             },
             "response": {
                 "body": {
-                   "content": "foo bar"
+                    "result": "STOUT"
                 },
                 "headers": {
                     "Content-Accepted": "Application/Json"

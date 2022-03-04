@@ -13,7 +13,7 @@
                     "age": 25
                 },
                 "headers": {
-                    "Content-Type": "Application/Json"
+                    "Content-Type": "application/json"
                 }
             },
             "response": {
@@ -29,7 +29,7 @@
                     }
                 ],
                 "headers": {
-                    "Content-Accepted": "Application/Json"
+                    "Content-Type": "application/json"
                 }
             }
         }

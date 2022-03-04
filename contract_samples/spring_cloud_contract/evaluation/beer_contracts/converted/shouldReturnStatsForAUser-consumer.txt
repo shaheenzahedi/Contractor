@@ -1,0 +1,4974 @@
+/usr/lib/jvm/java-1.11.0-openjdk-amd64/bin/java -Dfile.encoding=UTF-8 -jar /home/shaheen/Documents/Projects/Contractor/consumer.jar
+Could not find the contract, select contract file?
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2022-03-04 12:32:21.104 Verbose logging enabled
+Mock server is running! Access URLs:
+Local:      http://localhost:8080/
+External:   http://127.0.1.1:8080/
+Press CTRL+C to stop
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by khttp.requests.GenericRequest (file:/home/shaheen/Documents/Projects/Contractor/consumer.jar) to field java.net.URL.host
+WARNING: Please consider reporting this to the maintainers of khttp.requests.GenericRequest
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2022-03-04 12:32:21.943 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+------	 Executing tests on http://localhost:8080/stats 	------
+BodyTest	OK
+HeaderTest	OK
+StatusTest	OK
+2022-03-04 12:32:44.212 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:45.835 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:45.839 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:45.844 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:45.848 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:45.853 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:45.856 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:45.860 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:45.864 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:45.869 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:45.874 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:45.878 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:45.881 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:45.885 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:45.891 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:45.895 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:45.899 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:45.902 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:45.916 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:45.919 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:45.922 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:45.925 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:45.928 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:45.931 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:45.935 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:45.938 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:45.941 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:45.944 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:45.948 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:45.951 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:45.955 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:45.959 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:45.962 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:45.965 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:45.967 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:45.970 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:45.973 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:45.977 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:45.980 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:45.983 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:45.986 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:45.990 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:45.994 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:45.997 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.000 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.003 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.007 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.010 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.013 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.015 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.018 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.021 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.024 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.028 Request received:
+127.0.0.1 - PUT /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-04 12:32:46.030 Admin request received:
+127.0.0.1 - PUT /not-matched
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+
+
+2022-03-04 12:32:46.043 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+POST                                                       | PUT                                                 <<<<< HTTP method does not match
+/stats                                                     | /stats
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-04 12:32:46.052 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+POST                                                       | DELETE                                              <<<<< HTTP method does not match
+/stats                                                     | /stats
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-04 12:32:46.057 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+POST                                                       | PATCH                                               <<<<< HTTP method does not match
+/stats                                                     | /stats
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-04 12:32:46.062 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+POST                                                       | OPTIONS                                             <<<<< HTTP method does not match
+/stats                                                     | /stats
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-04 12:32:46.047 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.050 Request received:
+127.0.0.1 - DELETE /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-04 12:32:46.051 Admin request received:
+127.0.0.1 - DELETE /not-matched
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+
+
+2022-03-04 12:32:46.056 Request received:
+127.0.0.1 - PATCH /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-04 12:32:46.056 Admin request received:
+127.0.0.1 - PATCH /not-matched
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+
+
+2022-03-04 12:32:46.060 Request received:
+127.0.0.1 - OPTIONS /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-04 12:32:46.061 Admin request received:
+127.0.0.1 - OPTIONS /not-matched
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+
+
+2022-03-04 12:32:46.066 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.070 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.074 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.078 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.081 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.085 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.089 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.093 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.096 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.099 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.102 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.105 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.107 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.111 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.114 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.117 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.120 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.123 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.133 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.137 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.139 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [13]
+Content-Type: [application/json]
+{"name":true}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.146 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [28]
+Content-Type: [application/json]
+{"name":"anything","x":true}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.149 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [14]
+Content-Type: [application/json]
+{"name":false}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.152 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [29]
+Content-Type: [application/json]
+{"name":"anything","x":false}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.155 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [11]
+Content-Type: [application/json]
+{"name":99}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.158 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [11]
+Content-Type: [application/json]
+{"name":{}}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.161 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [12]
+Content-Type: [application/json]
+{"name":-99}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.164 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [27]
+Content-Type: [application/json]
+{"name":"anything","x":-99}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.166 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [10]
+Content-Type: [application/json]
+{"name":0}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.169 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [26]
+Content-Type: [application/json]
+{"name":"anything","x":{}}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.171 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [10]
+Content-Type: [application/json]
+{"name":1}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.174 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [25]
+Content-Type: [application/json]
+{"name":"anything","x":1}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.177 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [11]
+Content-Type: [application/json]
+{"name":-1}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.179 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [26]
+Content-Type: [application/json]
+{"name":"anything","x":-1}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.182 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"a string"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.184 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [34]
+Content-Type: [application/json]
+{"name":"anything","x":"a string"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.187 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [11]
+Content-Type: [application/json]
+{"name":[]}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.190 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [26]
+Content-Type: [application/json]
+{"name":"anything","x":[]}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.192 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+something: [{}]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.195 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+x: [null]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+something: [another]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.198 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+something: [true]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.202 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+x: [{}]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+something: [another]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.205 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+x: [false]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+something: [another]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.209 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+something: [99.0]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.214 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+x: [99.0]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+something: [another]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.217 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+something: [-99.0]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.222 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+x: [-99.0]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+something: [another]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.225 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+something: [0.0]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.229 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+x: [0.0]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+something: [another]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.234 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+something: [1.0]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.238 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+x: [1.0]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+something: [another]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.241 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+something: [-1.0]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.244 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+x: [-1.0]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+something: [another]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.247 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+something: [a string]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.250 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+x: [a string]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+something: [another]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.254 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+something: [[]]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.258 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+x: [[]]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+something: [another]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.269 Request received:
+127.0.0.1 - POST /stats?something=null
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-04 12:32:46.271 Admin request received:
+127.0.0.1 - POST /not-matched?something=null
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+
+
+2022-03-04 12:32:46.275 Request received:
+127.0.0.1 - POST /stats?something=another&x=null
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-04 12:32:46.276 Admin request received:
+127.0.0.1 - POST /not-matched?something=another&x=null
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+
+
+2022-03-04 12:32:46.281 Request received:
+127.0.0.1 - POST /stats?something=true
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-04 12:32:46.281 Admin request received:
+127.0.0.1 - POST /not-matched?something=true
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+
+
+2022-03-04 12:32:46.285 Request received:
+127.0.0.1 - POST /stats?something=another&x=true
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-04 12:32:46.286 Admin request received:
+127.0.0.1 - POST /not-matched?something=another&x=true
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+
+
+2022-03-04 12:32:46.271 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+POST                                                       | POST
+/stats                                                     | /stats?something=null                               <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-04 12:32:46.277 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+POST                                                       | POST
+/stats                                                     | /stats?something=another&x=null                     <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-04 12:32:46.282 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+POST                                                       | POST
+/stats                                                     | /stats?something=true                               <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-04 12:32:46.287 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+POST                                                       | POST
+/stats                                                     | /stats?something=another&x=true                     <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-04 12:32:46.292 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+POST                                                       | POST
+/stats                                                     | /stats?something=false                              <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-04 12:32:46.296 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+POST                                                       | POST
+/stats                                                     | /stats?something=another&x=false                    <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-04 12:32:46.300 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+POST                                                       | POST
+/stats                                                     | /stats?something=another&x=%7B%7D                   <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-04 12:32:46.304 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+POST                                                       | POST
+/stats                                                     | /stats?something=another&x=99.0                     <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-04 12:32:46.291 Request received:
+127.0.0.1 - POST /stats?something=false
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-04 12:32:46.292 Admin request received:
+127.0.0.1 - POST /not-matched?something=false
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+
+
+2022-03-04 12:32:46.295 Request received:
+127.0.0.1 - POST /stats?something=another&x=false
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-04 12:32:46.295 Admin request received:
+127.0.0.1 - POST /not-matched?something=another&x=false
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+
+
+2022-03-04 12:32:46.299 Request received:
+127.0.0.1 - POST /stats?something=another&x=%7B%7D
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-04 12:32:46.299 Admin request received:
+127.0.0.1 - POST /not-matched?something=another&x=%7B%7D
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+
+
+2022-03-04 12:32:46.303 Request received:
+127.0.0.1 - POST /stats?something=another&x=99.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-04 12:32:46.303 Admin request received:
+127.0.0.1 - POST /not-matched?something=another&x=99.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+
+
+2022-03-04 12:32:46.307 Request received:
+127.0.0.1 - POST /stats?something=another&x=-99.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-04 12:32:46.307 Admin request received:
+127.0.0.1 - POST /not-matched?something=another&x=-99.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+
+
+2022-03-04 12:32:46.310 Request received:
+127.0.0.1 - POST /stats?something=0.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-04 12:32:46.311 Admin request received:
+127.0.0.1 - POST /not-matched?something=0.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+
+
+2022-03-04 12:32:46.314 Request received:
+127.0.0.1 - POST /stats?something=another&x=0.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-04 12:32:46.315 Admin request received:
+127.0.0.1 - POST /not-matched?something=another&x=0.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+
+
+2022-03-04 12:32:46.318 Request received:
+127.0.0.1 - POST /stats?something=1.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-04 12:32:46.319 Admin request received:
+127.0.0.1 - POST /not-matched?something=1.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+
+
+2022-03-04 12:32:46.322 Request received:
+127.0.0.1 - POST /stats?something=another&x=1.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-04 12:32:46.322 Admin request received:
+127.0.0.1 - POST /not-matched?something=another&x=1.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+
+
+2022-03-04 12:32:46.325 Request received:
+127.0.0.1 - POST /stats?something=-1.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-04 12:32:46.326 Admin request received:
+127.0.0.1 - POST /not-matched?something=-1.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+
+
+2022-03-04 12:32:46.308 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+POST                                                       | POST
+/stats                                                     | /stats?something=another&x=-99.0                    <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-04 12:32:46.311 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+POST                                                       | POST
+/stats                                                     | /stats?something=0.0                                <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-04 12:32:46.315 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+POST                                                       | POST
+/stats                                                     | /stats?something=another&x=0.0                      <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-04 12:32:46.319 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+POST                                                       | POST
+/stats                                                     | /stats?something=1.0                                <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-04 12:32:46.323 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+POST                                                       | POST
+/stats                                                     | /stats?something=another&x=1.0                      <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-04 12:32:46.326 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+POST                                                       | POST
+/stats                                                     | /stats?something=-1.0                               <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-04 12:32:46.330 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+POST                                                       | POST
+/stats                                                     | /stats?something=another&x=-1.0                     <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-04 12:32:46.333 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+POST                                                       | POST
+/stats                                                     | /stats?something=a+string                           <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-04 12:32:46.336 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+POST                                                       | POST
+/stats                                                     | /stats?something=another&x=a+string                 <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-04 12:32:46.339 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+POST                                                       | POST
+/stats                                                     | /stats?something=%5B%5D                             <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-04 12:32:46.343 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+POST                                                       | POST
+/stats                                                     | /stats?something=another&x=%5B%5D                   <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-04 12:32:46.329 Request received:
+127.0.0.1 - POST /stats?something=another&x=-1.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-04 12:32:46.329 Admin request received:
+127.0.0.1 - POST /not-matched?something=another&x=-1.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+
+
+2022-03-04 12:32:46.332 Request received:
+127.0.0.1 - POST /stats?something=a+string
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-04 12:32:46.332 Admin request received:
+127.0.0.1 - POST /not-matched?something=a+string
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+
+
+2022-03-04 12:32:46.335 Request received:
+127.0.0.1 - POST /stats?something=another&x=a+string
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-04 12:32:46.335 Admin request received:
+127.0.0.1 - POST /not-matched?something=another&x=a+string
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+
+
+2022-03-04 12:32:46.338 Request received:
+127.0.0.1 - POST /stats?something=%5B%5D
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-04 12:32:46.339 Admin request received:
+127.0.0.1 - POST /not-matched?something=%5B%5D
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+
+
+2022-03-04 12:32:46.342 Request received:
+127.0.0.1 - POST /stats?something=another&x=%5B%5D
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-04 12:32:46.342 Admin request received:
+127.0.0.1 - POST /not-matched?something=another&x=%5B%5D
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+
+
+2022-03-04 12:32:46.347 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: [something=null]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.350 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: [something=true]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.353 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: [something=another; x=true]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.356 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: [something=false]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.358 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: [something=another; x=false]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.361 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: [something=99.0]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.363 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: [something={}]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.365 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: [something=-99.0]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.367 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: [something=another; x=-99.0]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.370 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: [something=another; x={}]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.372 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: [something=another; x=0.0]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.375 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: [something=1.0]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.377 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: [something=another; x=1.0]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.380 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: [something=-1.0]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.382 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: [something=another; x=-1.0]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.385 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: [something=a string]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.388 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: [something=another; x=a string]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.390 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: [something=[]]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+
+2022-03-04 12:32:46.393 Request received:
+127.0.0.1 - POST /stats
+
+Cookie: [something=another; x=[]]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"name":"anything"}
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"text\":\"Dear thanks for your interested in drinking beer\",\"quantity\":5.0}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [fe3c1dfa-e984-4865-9345-f4c5133b652e]
+
+

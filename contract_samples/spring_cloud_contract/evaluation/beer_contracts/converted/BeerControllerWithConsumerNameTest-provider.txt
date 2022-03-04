@@ -1,0 +1,244 @@
+/usr/lib/jvm/java-1.13.0-openjdk-amd64/bin/java -javaagent:/opt/idea-IU-211.6693.111/lib/idea_rt.jar=34791:/opt/idea-IU-211.6693.111/bin -Dfile.encoding=UTF-8 -classpath /home/shaheen/Documents/Projects/Contractor/provider/build/classes/kotlin/main:/home/shaheen/Documents/Projects/Contractor/provider/build/resources/main:/home/shaheen/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.8/431fc3cbc0ff81abdbfde070062741089c3ba874/gson-2.8.8.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/com.squareup/javapoet/1.13.0/d6562d385049f35eb50403fa86bb11cce76b866a/javapoet-1.13.0.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/com.squareup/kotlinpoet/1.8.0/35091cdf46ea7e911e433f5269bcd73c8d536c9/kotlinpoet-1.8.0.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.11.3/4f7b27416934dc929bb6c2d2c5fe521829e6a4ec/jackson-databind-2.11.3.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/io.insert-koin/koin-core-ext/3.0.1/feb5987f1ee3b7d5f504ab09b6fc58aa1f173696/koin-core-ext-3.0.1.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.6.10/e80fe6ac3c3573a80305f5ec43f86b829e8ab53d/kotlin-stdlib-jdk8-1.6.10.jar:/home/shaheen/Documents/Projects/Contractor/core/build/classes/kotlin/main:/home/shaheen/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.11.3/25d4e9c777e7a8805c4a000a8629d3009c779c9b/jackson-annotations-2.11.3.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.11.3/c2351800432bdbdd8284c3f5a7f0782a352aa84a/jackson-core-2.11.3.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.6.10/b8af3fe6f1ca88526914929add63cf5e7c5049af/kotlin-stdlib-1.6.10.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/io.insert-koin/koin-core-jvm/3.0.1/73a0438fee50a9ccfb750da4d3f0562e5f688dd4/koin-core-jvm-3.0.1.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.6.10/e1c380673654a089c4f0c9f83d0ddfdc1efdb498/kotlin-stdlib-jdk7-1.6.10.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.6.10/c118700e3a33c8a0d9adc920e9dec0831171925/kotlin-stdlib-common-1.6.10.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.6.0-M1/2c3360a9d5a92b8a83150fa3b921989815fa3b5b/kotlin-reflect-1.6.0-M1.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/com.github.jkcclemens/khttp/0.1.0/b53478881ce329afce653bc34d156f833011dd48/khttp-0.1.0.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.json/json/20210307/528c8df3757e8bcf151817b1d7b9b434f6aa08d5/json-20210307.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter/5.7.0/3152d152da916ccbb0715f89f7f873f45362ad7f/junit-jupiter-5.7.0.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/com.natpryce/snodge/3.7.0.0/d91005515e0f985b3fdd0f51c37e4e8abb0af7d4/snodge-3.7.0.0.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.glassfish/javax.json/1.1/6f8ce9246049c7af84926758aeea7bc24f5dd160/javax.json-1.1.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-contract-spec/3.1.0/97239aabd7604b34adb34e1fee3cffdbaba4c101/spring-cloud-contract-spec-3.1.0.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy-json/3.0.9/b99a364b9f2231b6829b12e10f6c4c69d47add87/groovy-json-3.0.9.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-params/5.7.0/521dbecace93d5d7ef13a74aab231befd7954424/junit-jupiter-params-5.7.0.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-engine/5.7.0/d9044d6b45e2232ddd53fa56c15333e43d1749fd/junit-jupiter-engine-5.7.0.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.7.0/b25f3815c4c1860a73041e733a14a0379d00c4d5/junit-jupiter-api-5.7.0.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/javax.json/javax.json-api/1.1/e708aaf715872f220cc932fd4350189559628c66/javax.json-api-1.1.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-contract-spec-groovy/3.1.0/5061521652064c65512731831ca6a7fc760000e0/spring-cloud-contract-spec-groovy-3.1.0.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-contract-spec-java/3.1.0/2f819eac0aa85f0c4fdbf443bd354561b98a44f/spring-cloud-contract-spec-java-3.1.0.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy/3.0.9/bd159803bedc434e7af0f714693fb5578a719e95/groovy-3.0.9.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.apiguardian/apiguardian-api/1.1.0/fc9dff4bb36d627bdc553de77e1f17efd790876c/apiguardian-api-1.1.0.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-engine/1.7.0/eadb73c5074a4ac71061defd00fc176152a4d12c/junit-platform-engine-1.7.0.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.7.0/84e309fbf21d857aac079a3c1fffd84284e1114d/junit-platform-commons-1.7.0.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.2.0/28c11eb91f9b6d8e200631d46e20a7f407f2a046/opentest4j-1.2.0.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy-nio/3.0.9/bf53959629f875d773e5190360af531b4679ba02/groovy-nio-3.0.9.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy-xml/3.0.9/dae68f2e9f5e12dc5cc0a27ee7003f18702a2bcd/groovy-xml-3.0.9.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-text/1.9/ba6ac8c2807490944a0a27f6f8e68fb5ed2e80e2/commons-text-1.9.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jcl/5.3.13/3aa15be194887fbda3912ecbb4ab6ec8dfdebdb0/spring-jcl-5.3.13.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/5.3.13/d2a6c3372dd337e08144f9f49f386b8ec7a8080d/spring-core-5.3.13.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/dk.brics.automaton/automaton/1.11-8/6ebfa65eb431ff4b715a23be7a750cbc4cc96d0f/automaton-1.11-8.jar:/home/shaheen/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.11/68e9a6adf7cf8eb7e9d31bbc554c7c75eeaac568/commons-lang3-3.11.jar MainKt
+Could not find the contract, select contract file?
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by khttp.requests.GenericRequest (file:/home/shaheen/.gradle/caches/modules-2/files-2.1/com.github.jkcclemens/khttp/0.1.0/b53478881ce329afce653bc34d156f833011dd48/khttp-0.1.0.jar) to field java.net.URL.host
+WARNING: Please consider reporting this to the maintainers of khttp.requests.GenericRequest
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+------	 Executing tests on http://localhost:8080/beer 	------
+------	 Executing tests on http://localhost:8080/beer 	------
+
+----------------------	<BodyTest>	----------------------
+`POST	/beer
+
+[SUCCESS]	Asserts that the response has the desired body
+----------------------	<BodyTest />	----------------------
+
+----------------------	<HeaderTest>	----------------------
+`POST	/beer
+
+[SUCCESS]	Asserts that the response has the desired header
+----------------------	<HeaderTest />	----------------------
+
+----------------------	<StatusTest>	----------------------
+`POST	/beer
+
+[SUCCESS]	Assert if the status equals to 200
+----------------------	<StatusTest />	----------------------
+
+----------------------	<BodyTest>	----------------------
+`POST	/beer
+
+[FAILED]	Asserts that the response has the desired body
+REASON:	Response did not match the body defined in the contract
+EXPECTED:
+{
+  "content": "THERE YOU GO MY DEAR FRIEND [marcin]"
+}
+RECEIVED:
+{
+  "content": "GET LOST MY DEAR FRIEND [marcin]"
+}
+----------------------	<BodyTest />	----------------------
+
+----------------------	<HeaderTest>	----------------------
+`POST	/beer
+
+[SUCCESS]	Asserts that the response has the desired header
+----------------------	<HeaderTest />	----------------------
+
+----------------------	<StatusTest>	----------------------
+`POST	/beer
+
+[SUCCESS]	Assert if the status equals to 200
+----------------------	<StatusTest />	----------------------
+[KILLED]	StatusTest		Mutating status code with 100(Continue)
+[KILLED]	StatusTest		Mutating status code with 101(Switching Protocol)
+[KILLED]	StatusTest		Mutating status code with 201(Created)
+[KILLED]	StatusTest		Mutating status code with 202(Accepted)
+[KILLED]	StatusTest		Mutating status code with 203(Non-Authoritive Information)
+[KILLED]	StatusTest		Mutating status code with 204(No Content)
+[KILLED]	StatusTest		Mutating status code with 205(Reset Content)
+[KILLED]	StatusTest		Mutating status code with 206(Partial Content)
+[KILLED]	StatusTest		Mutating status code with 226(IM Used)
+[KILLED]	StatusTest		Mutating status code with 300(Multiple Choices)
+[KILLED]	StatusTest		Mutating status code with 301(Moved Permanently)
+[KILLED]	StatusTest		Mutating status code with 302(Found)
+[KILLED]	StatusTest		Mutating status code with 303(See Other)
+[KILLED]	StatusTest		Mutating status code with 304(Not Modified)
+[KILLED]	StatusTest		Mutating status code with 305(Use Proxy)
+[KILLED]	StatusTest		Mutating status code with 306(Switch Proxy)
+[KILLED]	StatusTest		Mutating status code with 307(Temporary Redirect)
+[KILLED]	StatusTest		Mutating status code with 308(Permanent Redirect)
+[KILLED]	StatusTest		Mutating status code with 400(Bad Request)
+[KILLED]	StatusTest		Mutating status code with 401(Unauthorized)
+[KILLED]	StatusTest		Mutating status code with 402(Payment Required)
+[KILLED]	StatusTest		Mutating status code with 403(Forbidden)
+[KILLED]	StatusTest		Mutating status code with 404(Not Found)
+[KILLED]	StatusTest		Mutating status code with 405(Method Not Allowed)
+[KILLED]	StatusTest		Mutating status code with 406(Not Acceptable)
+[KILLED]	StatusTest		Mutating status code with 407(Proxy Authentication Required)
+[KILLED]	StatusTest		Mutating status code with 408(Request Timeout)
+[KILLED]	StatusTest		Mutating status code with 409(Conflict)
+[KILLED]	StatusTest		Mutating status code with 410(Gone)
+[KILLED]	StatusTest		Mutating status code with 411(Length Required)
+[KILLED]	StatusTest		Mutating status code with 412(Precondition Failed)
+[KILLED]	StatusTest		Mutating status code with 413(Payload Too Large)
+[KILLED]	StatusTest		Mutating status code with 414(URI Too Long)
+[KILLED]	StatusTest		Mutating status code with 415(Unsupported Media Type)
+[KILLED]	StatusTest		Mutating status code with 416(Range Not Satisfiable)
+[KILLED]	StatusTest		Mutating status code with 417(Expectation Failed)
+[KILLED]	StatusTest		Mutating status code with 418(I’m a teapot)
+[KILLED]	StatusTest		Mutating status code with 421(Misdirected Request)
+[KILLED]	StatusTest		Mutating status code with 426(Upgrade Required)
+[KILLED]	StatusTest		Mutating status code with 428(Precondition Required)
+[KILLED]	StatusTest		Mutating status code with 429(Too Many Requests)
+[KILLED]	StatusTest		Mutating status code with 431(Request Header Fields Too Large)
+[KILLED]	StatusTest		Mutating status code with 451(Unavailable For Legal Reasons)
+[KILLED]	StatusTest		Mutating status code with 500(Internal Server Error)
+[KILLED]	StatusTest		Mutating status code with 501(Not Implemented)
+[KILLED]	StatusTest		Mutating status code with 502(Bad Gateway)
+[KILLED]	StatusTest		Mutating status code with 503(Service Unavailable)
+[KILLED]	StatusTest		Mutating status code with 504(Gateway Timeout)
+[KILLED]	StatusTest		Mutating status code with 505(HTTP Version Not Supported)
+[KILLED]	StatusTest		Mutating status code with 506(Variant Also Negotiates)
+[KILLED]	StatusTest		Mutating status code with 510(Not Extended)
+[KILLED]	StatusTest		Mutating status code with 511(Network Authentication Required)
+[KILLED]	BodyTest		Mutating response body with {content=null}
+[SURVIVED]	BodyTest		Mutating response body with {content=THERE YOU GO MY DEAR FRIEND [marcin], x=null}
+[KILLED]	BodyTest		Mutating response body with {content=true}
+[KILLED]	BodyTest		Mutating response body with {content=THERE YOU GO MY DEAR FRIEND [marcin], x=true}
+[KILLED]	BodyTest		Mutating response body with {content=THERE YOU GO MY DEAR FRIEND [marcin], x={}}
+[KILLED]	BodyTest		Mutating response body with {content=THERE YOU GO MY DEAR FRIEND [marcin], x=false}
+[KILLED]	BodyTest		Mutating response body with {content=99.0}
+[KILLED]	BodyTest		Mutating response body with {content=THERE YOU GO MY DEAR FRIEND [marcin], x=99.0}
+[KILLED]	BodyTest		Mutating response body with {content=-99.0}
+[KILLED]	BodyTest		Mutating response body with {content=THERE YOU GO MY DEAR FRIEND [marcin], x=-99.0}
+[KILLED]	BodyTest		Mutating response body with {content=0.0}
+[KILLED]	BodyTest		Mutating response body with {content=THERE YOU GO MY DEAR FRIEND [marcin], x=0.0}
+[KILLED]	BodyTest		Mutating response body with {content=THERE YOU GO MY DEAR FRIEND [marcin], x=1.0}
+[KILLED]	BodyTest		Mutating response body with {content=-1.0}
+[KILLED]	BodyTest		Mutating response body with {content=THERE YOU GO MY DEAR FRIEND [marcin], x=-1.0}
+[KILLED]	BodyTest		Mutating response body with {content=a string}
+[KILLED]	BodyTest		Mutating response body with {content=THERE YOU GO MY DEAR FRIEND [marcin], x=a string}
+[KILLED]	BodyTest		Mutating response body with {content={}}
+[KILLED]	HeaderTest		Mutating request header with {Content-Accepted=null}
+[SURVIVED]	HeaderTest		Mutating request header with {Content-Accepted=Application/Json, x=null}
+[KILLED]	HeaderTest		Mutating request header with {Content-Accepted=true}
+[SURVIVED]	HeaderTest		Mutating request header with {Content-Accepted=Application/Json, x=true}
+[KILLED]	HeaderTest		Mutating request header with {Content-Accepted=false}
+[SURVIVED]	HeaderTest		Mutating request header with {Content-Accepted=Application/Json, x=false}
+[KILLED]	HeaderTest		Mutating request header with {Content-Accepted=99.0}
+[KILLED]	HeaderTest		Mutating request header with {Content-Accepted=-99.0}
+[SURVIVED]	HeaderTest		Mutating request header with {Content-Accepted=Application/Json, x=-99.0}
+[KILLED]	HeaderTest		Mutating request header with {Content-Accepted=0.0}
+[SURVIVED]	HeaderTest		Mutating request header with {Content-Accepted=Application/Json, x=0.0}
+[SURVIVED]	HeaderTest		Mutating request header with {Content-Accepted=Application/Json, x={}}
+[SURVIVED]	HeaderTest		Mutating request header with {Content-Accepted=Application/Json, x=1.0}
+[KILLED]	HeaderTest		Mutating request header with {Content-Accepted=-1.0}
+[KILLED]	HeaderTest		Mutating request header with {Content-Accepted=a string}
+[KILLED]	HeaderTest		Mutating request header with {Content-Accepted={}}
+[KILLED]	HeaderTest		Mutating request header with {Content-Accepted=[]}
+[SURVIVED]	HeaderTest		Mutating request header with {Content-Accepted=Application/Json, x=[]}
+[KILLED]	StatusTest		Mutating status code with 100(Continue)
+[KILLED]	StatusTest		Mutating status code with 101(Switching Protocol)
+[KILLED]	StatusTest		Mutating status code with 201(Created)
+[KILLED]	StatusTest		Mutating status code with 202(Accepted)
+[KILLED]	StatusTest		Mutating status code with 203(Non-Authoritive Information)
+[KILLED]	StatusTest		Mutating status code with 204(No Content)
+[KILLED]	StatusTest		Mutating status code with 205(Reset Content)
+[KILLED]	StatusTest		Mutating status code with 206(Partial Content)
+[KILLED]	StatusTest		Mutating status code with 226(IM Used)
+[KILLED]	StatusTest		Mutating status code with 300(Multiple Choices)
+[KILLED]	StatusTest		Mutating status code with 301(Moved Permanently)
+[KILLED]	StatusTest		Mutating status code with 302(Found)
+[KILLED]	StatusTest		Mutating status code with 303(See Other)
+[KILLED]	StatusTest		Mutating status code with 304(Not Modified)
+[KILLED]	StatusTest		Mutating status code with 305(Use Proxy)
+[KILLED]	StatusTest		Mutating status code with 306(Switch Proxy)
+[KILLED]	StatusTest		Mutating status code with 307(Temporary Redirect)
+[KILLED]	StatusTest		Mutating status code with 308(Permanent Redirect)
+[KILLED]	StatusTest		Mutating status code with 400(Bad Request)
+[KILLED]	StatusTest		Mutating status code with 401(Unauthorized)
+[KILLED]	StatusTest		Mutating status code with 402(Payment Required)
+[KILLED]	StatusTest		Mutating status code with 403(Forbidden)
+[KILLED]	StatusTest		Mutating status code with 404(Not Found)
+[KILLED]	StatusTest		Mutating status code with 405(Method Not Allowed)
+[KILLED]	StatusTest		Mutating status code with 406(Not Acceptable)
+[KILLED]	StatusTest		Mutating status code with 407(Proxy Authentication Required)
+[KILLED]	StatusTest		Mutating status code with 408(Request Timeout)
+[KILLED]	StatusTest		Mutating status code with 409(Conflict)
+[KILLED]	StatusTest		Mutating status code with 410(Gone)
+[KILLED]	StatusTest		Mutating status code with 411(Length Required)
+[KILLED]	StatusTest		Mutating status code with 412(Precondition Failed)
+[KILLED]	StatusTest		Mutating status code with 413(Payload Too Large)
+[KILLED]	StatusTest		Mutating status code with 414(URI Too Long)
+[KILLED]	StatusTest		Mutating status code with 415(Unsupported Media Type)
+[KILLED]	StatusTest		Mutating status code with 416(Range Not Satisfiable)
+[KILLED]	StatusTest		Mutating status code with 417(Expectation Failed)
+[KILLED]	StatusTest		Mutating status code with 418(I’m a teapot)
+[KILLED]	StatusTest		Mutating status code with 421(Misdirected Request)
+[KILLED]	StatusTest		Mutating status code with 426(Upgrade Required)
+[KILLED]	StatusTest		Mutating status code with 428(Precondition Required)
+[KILLED]	StatusTest		Mutating status code with 429(Too Many Requests)
+[KILLED]	StatusTest		Mutating status code with 431(Request Header Fields Too Large)
+[KILLED]	StatusTest		Mutating status code with 451(Unavailable For Legal Reasons)
+[KILLED]	StatusTest		Mutating status code with 500(Internal Server Error)
+[KILLED]	StatusTest		Mutating status code with 501(Not Implemented)
+[KILLED]	StatusTest		Mutating status code with 502(Bad Gateway)
+[KILLED]	StatusTest		Mutating status code with 503(Service Unavailable)
+[KILLED]	StatusTest		Mutating status code with 504(Gateway Timeout)
+[KILLED]	StatusTest		Mutating status code with 505(HTTP Version Not Supported)
+[KILLED]	StatusTest		Mutating status code with 506(Variant Also Negotiates)
+[KILLED]	StatusTest		Mutating status code with 510(Not Extended)
+[KILLED]	StatusTest		Mutating status code with 511(Network Authentication Required)
+[KILLED]	BodyTest		Mutating response body with {content=null}
+[KILLED]	BodyTest		Mutating response body with {content=GET LOST MY DEAR FRIEND [marcin], x=null}
+[KILLED]	BodyTest		Mutating response body with {content=true}
+[KILLED]	BodyTest		Mutating response body with {content=GET LOST MY DEAR FRIEND [marcin], x=true}
+[KILLED]	BodyTest		Mutating response body with {content=false}
+[KILLED]	BodyTest		Mutating response body with {content=GET LOST MY DEAR FRIEND [marcin], x=false}
+[KILLED]	BodyTest		Mutating response body with {content=99.0}
+[KILLED]	BodyTest		Mutating response body with {content=GET LOST MY DEAR FRIEND [marcin], x=99.0}
+[KILLED]	BodyTest		Mutating response body with {content=GET LOST MY DEAR FRIEND [marcin], x={}}
+[KILLED]	BodyTest		Mutating response body with {content=GET LOST MY DEAR FRIEND [marcin], x=-99.0}
+[KILLED]	BodyTest		Mutating response body with {content={}}
+[KILLED]	BodyTest		Mutating response body with {content=GET LOST MY DEAR FRIEND [marcin], x=0.0}
+[KILLED]	BodyTest		Mutating response body with {content=1.0}
+[KILLED]	BodyTest		Mutating response body with {content=-1.0}
+[KILLED]	BodyTest		Mutating response body with {content=GET LOST MY DEAR FRIEND [marcin], x=-1.0}
+[KILLED]	BodyTest		Mutating response body with {content=GET LOST MY DEAR FRIEND [marcin], x=a string}
+[KILLED]	BodyTest		Mutating response body with {content=[]}
+[KILLED]	BodyTest		Mutating response body with {content=GET LOST MY DEAR FRIEND [marcin], x=[]}
+[KILLED]	HeaderTest		Mutating request header with {Content-Accepted=null}
+[SURVIVED]	HeaderTest		Mutating request header with {Content-Accepted=Application/Json, x=null}
+[KILLED]	HeaderTest		Mutating request header with {Content-Accepted=true}
+[SURVIVED]	HeaderTest		Mutating request header with {Content-Accepted=Application/Json, x=true}
+[KILLED]	HeaderTest		Mutating request header with {Content-Accepted=false}
+[KILLED]	HeaderTest		Mutating request header with {Content-Accepted=99.0}
+[SURVIVED]	HeaderTest		Mutating request header with {Content-Accepted=Application/Json, x=99.0}
+[SURVIVED]	HeaderTest		Mutating request header with {Content-Accepted=Application/Json, x={}}
+[SURVIVED]	HeaderTest		Mutating request header with {Content-Accepted=Application/Json, x=-99.0}
+[KILLED]	HeaderTest		Mutating request header with {Content-Accepted=0.0}
+[SURVIVED]	HeaderTest		Mutating request header with {Content-Accepted=Application/Json, x=0.0}
+[KILLED]	HeaderTest		Mutating request header with {Content-Accepted=1.0}
+[SURVIVED]	HeaderTest		Mutating request header with {Content-Accepted=Application/Json, x=1.0}
+[KILLED]	HeaderTest		Mutating request header with {Content-Accepted=-1.0}
+[KILLED]	HeaderTest		Mutating request header with {Content-Accepted={}}
+[SURVIVED]	HeaderTest		Mutating request header with {Content-Accepted=Application/Json, x=a string}
+[KILLED]	HeaderTest		Mutating request header with {Content-Accepted=[]}
+[SURVIVED]	HeaderTest		Mutating request header with {Content-Accepted=Application/Json, x=[]}
+
+----------------------	SUMMARY	----------------------
+Total 6 test cases executed
+5 tests passed
+1 tests failed
+83% of tests were passed
+
+
+Mutations Executed: 176
+Mutations survived: 18
+Mutations killed: 158
+Mutation score: 89
+
+Process finished with exit code 0
