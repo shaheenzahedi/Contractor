@@ -1,0 +1,374 @@
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 200
+[SUCCESS]	Assert if the status equals to 201
+[SUCCESS]	Assert if the status equals to 201
+[SUCCESS]	Assert if the status equals to 201
+[SUCCESS]	Assert if the status equals to 201
+[SUCCESS]	Assert if the status equals to 201
+[SUCCESS]	Assert if the status equals to 201
+[SUCCESS]	Assert if the status equals to 201
+[SUCCESS]	Assert if the status equals to 202
+[SUCCESS]	Assert if the status equals to 400
+[SUCCESS]	Assert if the status equals to 400
+[SUCCESS]	Assert if the status equals to 401
+[SUCCESS]	Assert if the status equals to 401
+[SUCCESS]	Assert if the status equals to 401
+[SUCCESS]	Assert if the status equals to 401
+[SUCCESS]	Assert if the status equals to 401
+[SUCCESS]	Assert if the status equals to 404
+[SUCCESS]	Assert if the status equals to 404
+[SUCCESS]	Assert if the status equals to 404
+[SUCCESS]	Assert if the status equals to 404
+[SUCCESS]	Assert if the status equals to 404
+[SUCCESS]	Assert if the status equals to 404
+[SUCCESS]	Assert if the status equals to 404
+[SUCCESS]	Assert if the status equals to 404
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired body
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
+[SUCCESS]	Asserts that the response has the desired header
