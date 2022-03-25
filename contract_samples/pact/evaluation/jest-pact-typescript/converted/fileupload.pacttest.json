@@ -12,9 +12,6 @@
           "Content-Type": "multipart/form-data; boundary=--------------------------560782525175769486914756",
           "Content-Length": "299",
           "Authorization": "Bearer eyJhbGciOiJIUzI1NiIXVCJ9"
-        },
-        "body": {
-          "test": "test"
         }
       },
       "response": {

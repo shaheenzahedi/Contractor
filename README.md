@@ -10,7 +10,7 @@ body file
 body xml
 body simple text
 pattern url
-Desciption per each
+Description per each
 State management
 File
 Multipart
@@ -18,3 +18,5 @@ XML body
 anyAlphaUnicode
 multipart
 Directory before execution
+GraphQl
+Grpc

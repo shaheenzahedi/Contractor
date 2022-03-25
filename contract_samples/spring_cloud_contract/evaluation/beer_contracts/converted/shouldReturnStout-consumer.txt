@@ -1,22 +1,5054 @@
+/usr/lib/jvm/java-1.11.0-openjdk-amd64/bin/java -Dfile.encoding=UTF-8 -jar /home/shaheen/Documents/Projects/Contractor/consumer.jar
+Could not find the contract, select contract file?
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2022-03-07 09:42:08.999 Verbose logging enabled
+Mock server is running! Access URLs:
+Local:      http://localhost:8080/
+External:   http://127.0.1.1:8080/
+Press CTRL+C to stop
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by khttp.requests.GenericRequest (file:/home/shaheen/Documents/Projects/Contractor/consumer.jar) to field java.net.URL.host
+WARNING: Please consider reporting this to the maintainers of khttp.requests.GenericRequest
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2022-03-07 09:42:21.954 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
 {
-    "provider": "my provider name",
-    "consumer": "my consumer body",
-    "port": "8080",
-    "interactions": [
-        {
-            "method": "GET",
-            "path": "/stout",
-            "status": 200,
-            "request": {
-            },
-            "response": {
-                "body": {
-                    "result": "STOUT"
-                },
-                "headers": {
-                    "Content-Accepted": "Application/Json"
-                }
-            }
-        }
-    ]
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
 }
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+------	 Executing tests on http://localhost:8080/stout 	------
+BodyTest	OK
+HeaderTest	OK
+StatusTest	OK
+2022-03-07 09:42:44.306 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:45.908 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:45.913 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:45.917 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:45.921 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:45.925 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:45.928 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:45.932 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:45.936 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:45.939 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:45.943 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:45.946 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:45.950 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:45.953 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:45.959 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:45.963 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:45.966 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:45.970 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:45.973 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:45.977 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:45.982 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:45.986 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:45.990 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:45.994 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:45.997 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.001 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.003 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.007 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.010 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.014 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.017 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.020 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.024 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.027 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.031 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.034 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.037 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.040 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.044 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.047 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.050 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.054 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.057 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.060 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.063 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.066 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.068 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.071 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.075 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.078 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.081 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.086 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.089 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.093 Request received:
+127.0.0.1 - PUT /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-07 09:42:46.096 Admin request received:
+127.0.0.1 - PUT /not-matched
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+2022-03-07 09:42:46.136 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | PUT                                                 <<<<< HTTP method does not match
+/stout                                                     | /stout
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-07 09:42:46.141 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | POST                                                <<<<< HTTP method does not match
+/stout                                                     | /stout
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-07 09:42:46.146 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | DELETE                                              <<<<< HTTP method does not match
+/stout                                                     | /stout
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-07 09:42:46.151 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | PATCH                                               <<<<< HTTP method does not match
+/stout                                                     | /stout
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-07 09:42:46.155 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | OPTIONS                                             <<<<< HTTP method does not match
+/stout                                                     | /stout
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-07 09:42:46.140 Request received:
+127.0.0.1 - POST /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-07 09:42:46.141 Admin request received:
+127.0.0.1 - POST /not-matched
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+2022-03-07 09:42:46.145 Request received:
+127.0.0.1 - DELETE /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-07 09:42:46.145 Admin request received:
+127.0.0.1 - DELETE /not-matched
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+2022-03-07 09:42:46.149 Request received:
+127.0.0.1 - PATCH /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-07 09:42:46.150 Admin request received:
+127.0.0.1 - PATCH /not-matched
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+2022-03-07 09:42:46.154 Request received:
+127.0.0.1 - OPTIONS /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-07 09:42:46.154 Admin request received:
+127.0.0.1 - OPTIONS /not-matched
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+2022-03-07 09:42:46.160 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.165 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.173 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.177 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.180 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.183 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.186 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.190 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.194 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.198 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.201 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.205 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.209 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.212 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.216 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.219 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.222 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.227 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.236 Request received:
+127.0.0.1 - POST /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [23]
+Content-Type: [application/json]
+{"something":"another"}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-07 09:42:46.237 Admin request received:
+127.0.0.1 - POST /not-matched
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [23]
+Content-Type: [application/json]
+
+
+2022-03-07 09:42:46.241 Request received:
+127.0.0.1 - POST /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [23]
+Content-Type: [application/json]
+{"something":"another"}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-07 09:42:46.242 Admin request received:
+127.0.0.1 - POST /not-matched
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [23]
+Content-Type: [application/json]
+
+
+2022-03-07 09:42:46.246 Request received:
+127.0.0.1 - POST /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [18]
+Content-Type: [application/json]
+{"something":true}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-07 09:42:46.247 Admin request received:
+127.0.0.1 - POST /not-matched
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [18]
+Content-Type: [application/json]
+
+
+2022-03-07 09:42:46.251 Request received:
+127.0.0.1 - POST /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [32]
+Content-Type: [application/json]
+{"x":true,"something":"another"}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-07 09:42:46.251 Admin request received:
+127.0.0.1 - POST /not-matched
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [32]
+Content-Type: [application/json]
+
+
+2022-03-07 09:42:46.254 Request received:
+127.0.0.1 - POST /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+{"something":false}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-07 09:42:46.255 Admin request received:
+127.0.0.1 - POST /not-matched
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [19]
+Content-Type: [application/json]
+
+
+2022-03-07 09:42:46.238 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | POST                                                <<<<< HTTP method does not match
+/stout                                                     | /stout
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-07 09:42:46.243 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | POST                                                <<<<< HTTP method does not match
+/stout                                                     | /stout
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-07 09:42:46.247 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | POST                                                <<<<< HTTP method does not match
+/stout                                                     | /stout
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-07 09:42:46.252 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | POST                                                <<<<< HTTP method does not match
+/stout                                                     | /stout
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-07 09:42:46.255 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | POST                                                <<<<< HTTP method does not match
+/stout                                                     | /stout
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-07 09:42:46.259 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | POST                                                <<<<< HTTP method does not match
+/stout                                                     | /stout
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-07 09:42:46.263 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | POST                                                <<<<< HTTP method does not match
+/stout                                                     | /stout
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-07 09:42:46.258 Request received:
+127.0.0.1 - POST /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [16]
+Content-Type: [application/json]
+{"something":99}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-07 09:42:46.259 Admin request received:
+127.0.0.1 - POST /not-matched
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [16]
+Content-Type: [application/json]
+
+
+2022-03-07 09:42:46.262 Request received:
+127.0.0.1 - POST /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [30]
+Content-Type: [application/json]
+{"x":{},"something":"another"}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-07 09:42:46.262 Admin request received:
+127.0.0.1 - POST /not-matched
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [30]
+Content-Type: [application/json]
+
+
+2022-03-07 09:42:46.265 Request received:
+127.0.0.1 - POST /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [17]
+Content-Type: [application/json]
+{"something":-99}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-07 09:42:46.266 Admin request received:
+127.0.0.1 - POST /not-matched
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [17]
+Content-Type: [application/json]
+
+
+2022-03-07 09:42:46.269 Request received:
+127.0.0.1 - POST /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [31]
+Content-Type: [application/json]
+{"x":-99,"something":"another"}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-07 09:42:46.270 Admin request received:
+127.0.0.1 - POST /not-matched
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [31]
+Content-Type: [application/json]
+
+
+2022-03-07 09:42:46.273 Request received:
+127.0.0.1 - POST /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [15]
+Content-Type: [application/json]
+{"something":0}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-07 09:42:46.274 Admin request received:
+127.0.0.1 - POST /not-matched
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [15]
+Content-Type: [application/json]
+
+
+2022-03-07 09:42:46.277 Request received:
+127.0.0.1 - POST /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [29]
+Content-Type: [application/json]
+{"x":0,"something":"another"}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-07 09:42:46.277 Admin request received:
+127.0.0.1 - POST /not-matched
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [29]
+Content-Type: [application/json]
+
+
+2022-03-07 09:42:46.280 Request received:
+127.0.0.1 - POST /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [15]
+Content-Type: [application/json]
+{"something":1}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-07 09:42:46.280 Admin request received:
+127.0.0.1 - POST /not-matched
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [15]
+Content-Type: [application/json]
+
+
+2022-03-07 09:42:46.283 Request received:
+127.0.0.1 - POST /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [29]
+Content-Type: [application/json]
+{"x":1,"something":"another"}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-07 09:42:46.283 Admin request received:
+127.0.0.1 - POST /not-matched
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [29]
+Content-Type: [application/json]
+
+
+2022-03-07 09:42:46.266 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | POST                                                <<<<< HTTP method does not match
+/stout                                                     | /stout
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-07 09:42:46.271 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | POST                                                <<<<< HTTP method does not match
+/stout                                                     | /stout
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-07 09:42:46.274 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | POST                                                <<<<< HTTP method does not match
+/stout                                                     | /stout
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-07 09:42:46.278 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | POST                                                <<<<< HTTP method does not match
+/stout                                                     | /stout
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-07 09:42:46.281 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | POST                                                <<<<< HTTP method does not match
+/stout                                                     | /stout
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-07 09:42:46.284 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | POST                                                <<<<< HTTP method does not match
+/stout                                                     | /stout
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-07 09:42:46.287 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | POST                                                <<<<< HTTP method does not match
+/stout                                                     | /stout
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-07 09:42:46.290 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | POST                                                <<<<< HTTP method does not match
+/stout                                                     | /stout
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-07 09:42:46.294 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | POST                                                <<<<< HTTP method does not match
+/stout                                                     | /stout
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-07 09:42:46.298 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | POST                                                <<<<< HTTP method does not match
+/stout                                                     | /stout
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-07 09:42:46.301 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | POST                                                <<<<< HTTP method does not match
+/stout                                                     | /stout
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-07 09:42:46.286 Request received:
+127.0.0.1 - POST /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [16]
+Content-Type: [application/json]
+{"something":-1}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-07 09:42:46.287 Admin request received:
+127.0.0.1 - POST /not-matched
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [16]
+Content-Type: [application/json]
+
+
+2022-03-07 09:42:46.289 Request received:
+127.0.0.1 - POST /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [30]
+Content-Type: [application/json]
+{"x":-1,"something":"another"}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-07 09:42:46.290 Admin request received:
+127.0.0.1 - POST /not-matched
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [30]
+Content-Type: [application/json]
+
+
+2022-03-07 09:42:46.293 Request received:
+127.0.0.1 - POST /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [24]
+Content-Type: [application/json]
+{"something":"a string"}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-07 09:42:46.293 Admin request received:
+127.0.0.1 - POST /not-matched
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [24]
+Content-Type: [application/json]
+
+
+2022-03-07 09:42:46.296 Request received:
+127.0.0.1 - POST /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [16]
+Content-Type: [application/json]
+{"something":{}}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-07 09:42:46.297 Admin request received:
+127.0.0.1 - POST /not-matched
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [16]
+Content-Type: [application/json]
+
+
+2022-03-07 09:42:46.300 Request received:
+127.0.0.1 - POST /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [16]
+Content-Type: [application/json]
+{"something":[]}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-07 09:42:46.301 Admin request received:
+127.0.0.1 - POST /not-matched
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [16]
+Content-Type: [application/json]
+
+
+2022-03-07 09:42:46.304 Request received:
+127.0.0.1 - POST /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [30]
+Content-Type: [application/json]
+{"x":[],"something":"another"}
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-07 09:42:46.305 Admin request received:
+127.0.0.1 - POST /not-matched
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+Content-Length: [30]
+Content-Type: [application/json]
+
+
+2022-03-07 09:42:46.308 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+x: [{}]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+something: [another]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.311 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+x: [null]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+something: [another]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.314 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+something: [true]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.317 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+x: [true]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+something: [another]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.321 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+something: [false]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.324 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+x: [false]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+something: [another]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.305 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | POST                                                <<<<< HTTP method does not match
+/stout                                                     | /stout
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-07 09:42:46.327 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+something: [99.0]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.330 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+something: [{}]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.333 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+something: [-99.0]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.337 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+x: [-99.0]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+something: [another]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.341 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+something: [0.0]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.344 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+something: [1.0]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.347 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+something: [another]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.351 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+something: [-1.0]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.355 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+x: [-1.0]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+something: [another]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.359 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+something: [a string]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.364 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+x: [a string]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+something: [another]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.367 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+something: [[]]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.370 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+x: [[]]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+something: [another]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.386 Request received:
+127.0.0.1 - GET /stout?something=null
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-07 09:42:46.411 Admin request received:
+127.0.0.1 - GET /not-matched?something=null
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+2022-03-07 09:42:46.415 Request received:
+127.0.0.1 - GET /stout?something=another&x=null
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-07 09:42:46.416 Admin request received:
+127.0.0.1 - GET /not-matched?something=another&x=null
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+2022-03-07 09:42:46.419 Request received:
+127.0.0.1 - GET /stout?something=true
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-07 09:42:46.420 Admin request received:
+127.0.0.1 - GET /not-matched?something=true
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+2022-03-07 09:42:46.423 Request received:
+127.0.0.1 - GET /stout?something=another&x=true
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-07 09:42:46.424 Admin request received:
+127.0.0.1 - GET /not-matched?something=another&x=true
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+2022-03-07 09:42:46.427 Request received:
+127.0.0.1 - GET /stout?something=false
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-07 09:42:46.429 Admin request received:
+127.0.0.1 - GET /not-matched?something=false
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+2022-03-07 09:42:46.412 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | GET
+/stout                                                     | /stout?something=null                               <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-07 09:42:46.416 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | GET
+/stout                                                     | /stout?something=another&x=null                     <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-07 09:42:46.421 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | GET
+/stout                                                     | /stout?something=true                               <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-07 09:42:46.425 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | GET
+/stout                                                     | /stout?something=another&x=true                     <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-07 09:42:46.430 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | GET
+/stout                                                     | /stout?something=false                              <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-07 09:42:46.434 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | GET
+/stout                                                     | /stout?something=another&x=false                    <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-07 09:42:46.439 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | GET
+/stout                                                     | /stout?something=another&x=99.0                     <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-07 09:42:46.444 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | GET
+/stout                                                     | /stout?something=-99.0                              <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-07 09:42:46.449 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | GET
+/stout                                                     | /stout?something=another&x=-99.0                    <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-07 09:42:46.432 Request received:
+127.0.0.1 - GET /stout?something=another&x=false
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-07 09:42:46.433 Admin request received:
+127.0.0.1 - GET /not-matched?something=another&x=false
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+2022-03-07 09:42:46.437 Request received:
+127.0.0.1 - GET /stout?something=another&x=99.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-07 09:42:46.438 Admin request received:
+127.0.0.1 - GET /not-matched?something=another&x=99.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+2022-03-07 09:42:46.442 Request received:
+127.0.0.1 - GET /stout?something=-99.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-07 09:42:46.444 Admin request received:
+127.0.0.1 - GET /not-matched?something=-99.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+2022-03-07 09:42:46.447 Request received:
+127.0.0.1 - GET /stout?something=another&x=-99.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-07 09:42:46.448 Admin request received:
+127.0.0.1 - GET /not-matched?something=another&x=-99.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+2022-03-07 09:42:46.452 Request received:
+127.0.0.1 - GET /stout?something=0.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-07 09:42:46.454 Admin request received:
+127.0.0.1 - GET /not-matched?something=0.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+2022-03-07 09:42:46.457 Request received:
+127.0.0.1 - GET /stout?something=another&x=0.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-07 09:42:46.459 Admin request received:
+127.0.0.1 - GET /not-matched?something=another&x=0.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+2022-03-07 09:42:46.462 Request received:
+127.0.0.1 - GET /stout?something=another
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-07 09:42:46.463 Admin request received:
+127.0.0.1 - GET /not-matched?something=another
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+2022-03-07 09:42:46.466 Request received:
+127.0.0.1 - GET /stout?something=another&x=1.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-07 09:42:46.467 Admin request received:
+127.0.0.1 - GET /not-matched?something=another&x=1.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+2022-03-07 09:42:46.471 Request received:
+127.0.0.1 - GET /stout?something=-1.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-07 09:42:46.472 Admin request received:
+127.0.0.1 - GET /not-matched?something=-1.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+2022-03-07 09:42:46.454 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | GET
+/stout                                                     | /stout?something=0.0                                <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-07 09:42:46.459 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | GET
+/stout                                                     | /stout?something=another&x=0.0                      <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-07 09:42:46.464 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | GET
+/stout                                                     | /stout?something=another                            <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-07 09:42:46.468 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | GET
+/stout                                                     | /stout?something=another&x=1.0                      <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-07 09:42:46.473 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | GET
+/stout                                                     | /stout?something=-1.0                               <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-07 09:42:46.478 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | GET
+/stout                                                     | /stout?something=another&x=-1.0                     <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-07 09:42:46.482 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | GET
+/stout                                                     | /stout?something=a+string                           <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-07 09:42:46.487 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | GET
+/stout                                                     | /stout?something=another&x=a+string                 <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-07 09:42:46.491 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | GET
+/stout                                                     | /stout?something=%5B%5D                             <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-07 09:42:46.476 Request received:
+127.0.0.1 - GET /stout?something=another&x=-1.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-07 09:42:46.477 Admin request received:
+127.0.0.1 - GET /not-matched?something=another&x=-1.0
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+2022-03-07 09:42:46.480 Request received:
+127.0.0.1 - GET /stout?something=a+string
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-07 09:42:46.482 Admin request received:
+127.0.0.1 - GET /not-matched?something=a+string
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+2022-03-07 09:42:46.485 Request received:
+127.0.0.1 - GET /stout?something=another&x=a+string
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-07 09:42:46.486 Admin request received:
+127.0.0.1 - GET /not-matched?something=another&x=a+string
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+2022-03-07 09:42:46.489 Request received:
+127.0.0.1 - GET /stout?something=%5B%5D
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-07 09:42:46.490 Admin request received:
+127.0.0.1 - GET /not-matched?something=%5B%5D
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+2022-03-07 09:42:46.494 Request received:
+127.0.0.1 - GET /stout?something=another&x=%5B%5D
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-07 09:42:46.495 Admin request received:
+127.0.0.1 - GET /not-matched?something=another&x=%5B%5D
+
+Cookie: []
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+2022-03-07 09:42:46.501 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: [something=null]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.503 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: [something=another; x=null]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.506 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: [something=true]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.509 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: [something=another; x=true]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.511 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: [something=false]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.514 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: [something={}]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.496 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | GET
+/stout                                                     | /stout?something=another&x=%5B%5D                   <<<<< URL does not match
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-07 09:42:46.517 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: [something=99.0]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.519 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: [something=another; x=99.0]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.522 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: [something=-99.0]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.525 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: [something=another; x=-99.0]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.527 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: [something=0.0]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.529 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: [something=another; x=0.0]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.532 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: [something=1.0]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.535 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: [something=another]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.537 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: [something=-1.0]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.540 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: [something=another; x=-1.0]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.543 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: [something=a string]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.546 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: [something=another; x=a string]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.549 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: [something=[]]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
+2022-03-07 09:42:46.552 Request received:
+127.0.0.1 - GET /stout
+
+Cookie: [something=another; x=[]]
+Accept: [*/*]
+User-Agent: [khttp/1.0.0-SNAPSHOT]
+Connection: [keep-alive]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"result\":\"STOUT\"}",
+  "headers" : {
+    "Content-Accepted" : "Application/Json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Accepted: [Application/Json]
+Matched-Stub-Id: [a177e013-9543-4300-a219-aaa12cd01741]
+
+
