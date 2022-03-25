@@ -1,0 +1,75 @@
+[FAILED]	Assert if the status equals to 200
+[FAILED]	Assert if the status equals to 200
+[FAILED]	Assert if the status equals to 200
+[FAILED]	Assert if the status equals to 200
+[FAILED]	Assert if the status equals to 200
+[FAILED]	Assert if the status equals to 200
+[FAILED]	Assert if the status equals to 200
+[FAILED]	Assert if the status equals to 200
+[FAILED]	Assert if the status equals to 200
+[FAILED]	Assert if the status equals to 200
+[FAILED]	Assert if the status equals to 200
+[FAILED]	Assert if the status equals to 200
+[FAILED]	Assert if the status equals to 201
+[FAILED]	Assert if the status equals to 400
+[FAILED]	Assert if the status equals to 400
+[FAILED]	Assert if the status equals to 400
+[FAILED]	Assert if the status equals to 400
+[FAILED]	Assert if the status equals to 400
+[FAILED]	Assert if the status equals to 400
+[FAILED]	Assert if the status equals to 401
+[FAILED]	Assert if the status equals to 401
+[FAILED]	Assert if the status equals to 403
+[FAILED]	Assert if the status equals to 404
+[FAILED]	Assert if the status equals to 406
+[FAILED]	Assert if the status equals to 406
+[FAILED]	Asserts that `age` is equal to [2-9][0-9]
+[FAILED]	Asserts that `age` is equal to [2-9][0-9]
+[FAILED]	Asserts that `null` is equal to 123.123
+[FAILED]	Asserts that `null` is equal to [0-9]{10}
+[FAILED]	Asserts that the response has the desired body
+[FAILED]	Asserts that the response has the desired body
+[FAILED]	Asserts that the response has the desired body
+[FAILED]	Asserts that the response has the desired body
+[FAILED]	Asserts that the response has the desired body
+[FAILED]	Asserts that the response has the desired body
+[FAILED]	Asserts that the response has the desired body
+[FAILED]	Asserts that the response has the desired body
+[FAILED]	Asserts that the response has the desired body
+[FAILED]	Asserts that the response has the desired body
+[FAILED]	Asserts that the response has the desired body
+[FAILED]	Asserts that the response has the desired body
+[FAILED]	Asserts that the response has the desired body
+[FAILED]	Asserts that the response has the desired body
+[FAILED]	Asserts that the response has the desired body
+[FAILED]	Asserts that the response has the desired body
+[FAILED]	Asserts that the response has the desired body
+[FAILED]	Asserts that the response has the desired body
+[FAILED]	Asserts that the response has the desired body
+[FAILED]	Asserts that the response has the desired body
+[FAILED]	Asserts that the response has the desired body
+[FAILED]	Asserts that the response has the desired body
+[FAILED]	Asserts that the response has the desired body
+[FAILED]	Asserts that the response has the desired body
+[FAILED]	Asserts that the response has the desired body
+[FAILED]	Asserts that the response has the desired body
+[FAILED]	Asserts that the response has the desired body
+[FAILED]	Asserts that the response has the desired body
+[FAILED]	Asserts that the response has the desired body
+[FAILED]	Asserts that the response has the desired body
+[FAILED]	Asserts that the response has the desired header
+[FAILED]	Asserts that the response has the desired header
+[FAILED]	Asserts that the response has the desired header
+[FAILED]	Asserts that the response has the desired header
+[FAILED]	Asserts that the response has the desired header
+[FAILED]	Asserts that the response has the desired header
+[FAILED]	Asserts that the response has the desired header
+[FAILED]	Asserts that the response has the desired header
+[FAILED]	Asserts that the response has the desired header
+[FAILED]	Asserts that the response has the desired header
+[FAILED]	Asserts that the response has the desired header
+[FAILED]	Asserts that the response has the desired header
+[FAILED]	Asserts that the response has the desired header
+[FAILED]	Asserts that the response has the desired header
+[FAILED]	Asserts that the response has the desired header
+[FAILED]	Asserts that the response has the desired header
